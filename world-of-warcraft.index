@@ -4,7 +4,7 @@
 		<name>World of Warcraft</name>
 		<description>World of Warcraft by Andrey Kuzinskiy: classes, species, spells, feats, gear and renown for D&amp;D 2024. Requires the Aurora Legacy Player’s Handbook (2024).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="0.5.0">
+		<update version="1.0.0">
 			<file name="world-of-warcraft.index" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft.index" />
 		</update>
 	</info>
@@ -14,6 +14,7 @@
 		<file name="wow-barbarian-spiritual-guardian.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-barbarian-spiritual-guardian.xml" />
 		<file name="wow-cleric-discipline.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-cleric-discipline.xml" />
 		<file name="wow-cleric-shadow.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-cleric-shadow.xml" />
+		<file name="wow-druid-forms.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-druid-forms.xml" />
 		<file name="wow-fighter-warrior-maneuvers.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-fighter-warrior-maneuvers.xml" />
 		<file name="wow-monk-mystic-brews.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-monk-mystic-brews.xml" />
 		<file name="wow-paladin-ebon-blade.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-paladin-ebon-blade.xml" />
@@ -22,12 +23,14 @@
 		<file name="wow-ranger-hunter-pets.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-ranger-hunter-pets.xml" />
 		<file name="wow-rogue-swashbuckler.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-rogue-swashbuckler.xml" />
 		<file name="wow-sorcerer-evoker.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-sorcerer-evoker.xml" />
+		<file name="wow-companions.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/companions/wow-companions.xml" />
 		<file name="wow-eldritch-invocations.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-eldritch-invocations.xml" />
 		<file name="wow-feats-general.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-feats-general.xml" />
 		<file name="wow-feats-origin.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-feats-origin.xml" />
 		<file name="wow-companion-creatures.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-companion-creatures.xml" />
 		<file name="wow-magic-items.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-magic-items.xml" />
 		<file name="wow-mounts-vehicles.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-mounts-vehicles.xml" />
+		<file name="wow-renown-perks.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-renown-perks.xml" />
 		<file name="wow-languages.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/misc/wow-languages.xml" />
 		<file name="wow-race-dracthyr.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-dracthyr.xml" />
 		<file name="wow-race-draenei.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-draenei.xml" />

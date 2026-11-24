@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Companion stat blocks from World of Warcraft (Andrey Kuzinskiy): Legion demons and mounts.</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-companions.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/companions/wow-companions.xml" />
+		</update>
+	</info>
+
+	<element name="Fel Imp" type="Companion" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_FEL_IMP">
+		<supports>WoW Legion Familiar</supports>
+		<description>
+			<p>Fel imps are mischievous demons that cackle with glee while immolating their foes in fel flames. They are the easiest demons for Warlocks to bind and control, making them common familiars for those who make pacts with the Burning Legion.</p>
+		</description>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Fiend (Demon)</set>
+			<set name="alignment">Chaotic Evil</set>
+			<set name="ac">13</set>
+			<set name="hp">21 (6d4 + 6)</set>
+			<set name="speed">20 ft.</set>
+			<set name="strength">6</set>
+			<set name="dexterity">17</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">11</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">14</set>
+			<set name="skills">Stealth +5</set>
+			<set name="resistances">Cold</set>
+			<set name="immunities">Fire, Poison</set>
+			<set name="conditionImmunities">Poisoned</set>
+			<set name="senses">Darkvision 120 ft.; Passive Perception 11</set>
+			<set name="languages">Common, Eredun, Orcish</set>
+			<set name="challenge">1</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_KAYA_WOW_COMPANION_TRAIT_FEL_IMP_MAGIC_RESISTANCE</set>
+			<set name="actions">ID_KAYA_WOW_COMPANION_ACTION_FEL_IMP_MULTIATTACK,ID_KAYA_WOW_COMPANION_ACTION_FEL_IMP_FEL_FIREBOLT</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:hp:max" value="21" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Magic Resistance" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_FEL_IMP_MAGIC_RESISTANCE">
+		<compendium display="false" />
+		<description>
+			<p>The imp has Advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>The imp has Advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+
+	<element name="Multiattack" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_FEL_IMP_MULTIATTACK">
+		<compendium display="false" />
+		<description>
+			<p>The imp makes two Fel Firebolt attacks.</p>
+		</description>
+		<sheet>
+			<description>The imp makes two Fel Firebolt attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Fel Firebolt" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_FEL_IMP_FEL_FIREBOLT">
+		<compendium display="false" />
+		<description>
+			<p>Ranged Attack Roll: +4, range 30 ft. Hit: 7 (2d6) Fire damage.</p>
+		</description>
+		<sheet>
+			<description>Ranged Attack Roll: +4, range 30 ft. Hit: 7 (2d6) Fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Voidwalker" type="Companion" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_VOIDWALKER">
+		<supports>WoW Legion Familiar</supports>
+		<requirements>ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_CALL_OF_THE_VOID</requirements>
+		<description>
+			<p>Voidwalkers are creatures of the Void, hulking figures made of pure shadow. Warlocks highly prize ordinary voidwalkers as servants because of their ability to both attract and withstand enemy attacks.</p>
+		</description>
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Fiend</set>
+			<set name="alignment">Neutral Evil</set>
+			<set name="ac">16</set>
+			<set name="hp">38 (7d8 + 7)</set>
+			<set name="speed">40 ft.</set>
+			<set name="strength">19</set>
+			<set name="dexterity">11</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">14</set>
+			<set name="resistances">Poison</set>
+			<set name="immunities">Necrotic</set>
+			<set name="conditionImmunities">Exhaustion, Poisoned</set>
+			<set name="senses">Darkvision 120 ft.; Passive Perception 11</set>
+			<set name="languages">Common, Eredun, Orcish</set>
+			<set name="challenge">1</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_KAYA_WOW_COMPANION_TRAIT_VOIDWALKER_MAGIC_RESISTANCE,ID_KAYA_WOW_COMPANION_TRAIT_VOIDWALKER_THREATENING_PRESENCE</set>
+			<set name="actions">ID_KAYA_WOW_COMPANION_ACTION_VOIDWALKER_CONSUMING_SHADOWS</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="16" bonus="base" />
+			<stat name="companion:hp:max" value="38" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Magic Resistance" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_VOIDWALKER_MAGIC_RESISTANCE">
+		<compendium display="false" />
+		<description>
+			<p>The voidwalker has Advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>The voidwalker has Advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+
+	<element name="Threatening Presence" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_VOIDWALKER_THREATENING_PRESENCE">
+		<compendium display="false" />
+		<description>
+			<p>An enemy that starts its turn within 5 feet of the voidwalker has Disadvantage on attack rolls against any creature other than a voidwalker.</p>
+		</description>
+		<sheet>
+			<description>An enemy that starts its turn within 5 feet of the voidwalker has Disadvantage on attack rolls against any creature other than a voidwalker.</description>
+		</sheet>
+	</element>
+
+	<element name="Consuming Shadows" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_VOIDWALKER_CONSUMING_SHADOWS">
+		<compendium display="false" />
+		<description>
+			<p>Melee Attack Roll: +6 to hit, reach 5 ft. Hit: 6 (1d4 + 4) Necrotic damage, and the voidwalker regains 3 Hit Points.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +6 to hit, reach 5 ft. Hit: 6 (1d4 + 4) Necrotic damage, and the voidwalker regains 3 Hit Points.</description>
+		</sheet>
+	</element>
+
+	<element name="Felguard" type="Companion" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_FELGUARD">
+		<supports>WoW Legion Summon</supports>
+		<description>
+			<p>Conscripted from the demonic mo’arg species, felguard serve as the Burning Legion’s rank-and-file soldiers. They are fearless and unwaveringly loyal to Sargeras’s godlike will.</p>
+		</description>
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Fiend (Demon)</set>
+			<set name="alignment">Neutral Evil</set>
+			<set name="ac">17</set>
+			<set name="hp">60 (8d8 + 24)</set>
+			<set name="speed">30 ft.</set>
+			<set name="strength">16</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">17</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">11</set>
+			<set name="skills">Athletics +5</set>
+			<set name="resistances">Cold, Fire, Lightning</set>
+			<set name="immunities">Poison</set>
+			<set name="conditionImmunities">Poisoned</set>
+			<set name="senses">Darkvision 60 ft.; Passive Perception 10</set>
+			<set name="languages">Common, Eredun, Orcish</set>
+			<set name="challenge">4</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_KAYA_WOW_COMPANION_TRAIT_FELGUARD_DEMONIC_RESTORATION,ID_KAYA_WOW_COMPANION_TRAIT_FELGUARD_FIENDISH_DEVOTION,ID_KAYA_WOW_COMPANION_TRAIT_FELGUARD_PACK_TACTICS</set>
+			<set name="actions">ID_KAYA_WOW_COMPANION_ACTION_FELGUARD_MULTIATTACK,ID_KAYA_WOW_COMPANION_ACTION_FELGUARD_FEL_BATTLEAXE,ID_KAYA_WOW_COMPANION_ACTION_FELGUARD_FEL_JAVELIN</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" bonus="base" />
+			<stat name="companion:hp:max" value="60" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Demonic Restoration" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_FELGUARD_DEMONIC_RESTORATION">
+		<compendium display="false" />
+		<description>
+			<p>If the felguard dies outside the Twisting Nether, its body dissolves into ichor, and it gains a new body in 2d4 weeks, reviving with all its Hit Points somewhere in the Twisting Nether.</p>
+		</description>
+		<sheet>
+			<description>If the felguard dies outside the Twisting Nether, its body dissolves into ichor, and it gains a new body in 2d4 weeks, reviving with all its Hit Points somewhere in the Twisting Nether.</description>
+		</sheet>
+	</element>
+
+	<element name="Fiendish Devotion" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_FELGUARD_FIENDISH_DEVOTION">
+		<compendium display="false" />
+		<description>
+			<p>The felguard has Advantage on saving throws against the Charmed and Frightened conditions.</p>
+		</description>
+		<sheet>
+			<description>The felguard has Advantage on saving throws against the Charmed and Frightened conditions.</description>
+		</sheet>
+	</element>
+
+	<element name="Pack Tactics" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_FELGUARD_PACK_TACTICS">
+		<compendium display="false" />
+		<description>
+			<p>The felguard has Advantage on an attack roll against a creature if at least one of the felguard’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>
+		</description>
+		<sheet>
+			<description>The felguard has Advantage on an attack roll against a creature if at least one of the felguard’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Multiattack" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_FELGUARD_MULTIATTACK">
+		<compendium display="false" />
+		<description>
+			<p>The felguard makes two attacks, using Fel Battleaxe or Fel Javelin in any combination.</p>
+		</description>
+		<sheet>
+			<description>The felguard makes two attacks, using Fel Battleaxe or Fel Javelin in any combination.</description>
+		</sheet>
+	</element>
+
+	<element name="Fel Battleaxe" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_FELGUARD_FEL_BATTLEAXE">
+		<compendium display="false" />
+		<description>
+			<p>Melee Attack Roll: +5 to hit, reach 5 ft. Hit: 12 (2d8 + 3) Slashing damage plus 7 (2d6) Fire damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +5 to hit, reach 5 ft. Hit: 12 (2d8 + 3) Slashing damage plus 7 (2d6) Fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Fel Javelin" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_FELGUARD_FEL_JAVELIN">
+		<compendium display="false" />
+		<description>
+			<p>Melee or Ranged Attack Roll: +5 to hit, reach 5 ft. or range 30/120 ft. Hit: 10 (2d6 + 3) Piercing damage plus 7 (2d6) Fire damage.</p>
+		</description>
+		<sheet>
+			<description>Melee or Ranged Attack Roll: +5 to hit, reach 5 ft. or range 30/120 ft. Hit: 10 (2d6 + 3) Piercing damage plus 7 (2d6) Fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Felhound" type="Companion" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_FELHOUND">
+		<supports>WoW Legion Summon</supports>
+		<description>
+			<p>Felhounds are demonic canines used by pit lords to sniff out sources of magic. Unlike most demons, which are born of corrupted mortals, felhounds are shaped from raw fel energy.</p>
+		</description>
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Fiend (Demon)</set>
+			<set name="alignment">Neutral Evil</set>
+			<set name="ac">15</set>
+			<set name="hp">84 (13d8 + 26)</set>
+			<set name="speed">50 ft.</set>
+			<set name="strength">16</set>
+			<set name="dexterity">17</set>
+			<set name="constitution">14</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">8</set>
+			<set name="skills">Perception +8</set>
+			<set name="resistances">Cold, Fire, Lightning</set>
+			<set name="immunities">Poison</set>
+			<set name="conditionImmunities">Poisoned</set>
+			<set name="senses">Darkvision 60 ft.; Passive Perception 18</set>
+			<set name="languages">Understands Eredun but can’t speak</set>
+			<set name="challenge">5</set>
+			<set name="proficiency">3</set>
+			<set name="traits">ID_KAYA_WOW_COMPANION_TRAIT_FELHOUND_DEMONIC_RESTORATION,ID_KAYA_WOW_COMPANION_TRAIT_FELHOUND_MAGIC_RESISTANCE,ID_KAYA_WOW_COMPANION_TRAIT_FELHOUND_SMELL_MAGIC</set>
+			<set name="actions">ID_KAYA_WOW_COMPANION_ACTION_FELHOUND_MULTIATTACK,ID_KAYA_WOW_COMPANION_ACTION_FELHOUND_BITE,ID_KAYA_WOW_COMPANION_ACTION_FELHOUND_GRAPPLING_TENTACLES,ID_KAYA_WOW_COMPANION_ACTION_FELHOUND_DRINK_MAGIC_BONUS_ACTION</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="15" bonus="base" />
+			<stat name="companion:hp:max" value="84" bonus="base" />
+			<stat name="companion:speed" value="50" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Demonic Restoration" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_FELHOUND_DEMONIC_RESTORATION">
+		<compendium display="false" />
+		<description>
+			<p>If the felhound dies outside the Twisting Nether, its body dissolves into ichor, and it gains a new body in 2d4 weeks, reviving with all its Hit Points somewhere in the Twisting Nether.</p>
+		</description>
+		<sheet>
+			<description>If the felhound dies outside the Twisting Nether, its body dissolves into ichor, and it gains a new body in 2d4 weeks, reviving with all its Hit Points somewhere in the Twisting Nether.</description>
+		</sheet>
+	</element>
+
+	<element name="Magic Resistance" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_FELHOUND_MAGIC_RESISTANCE">
+		<compendium display="false" />
+		<description>
+			<p>The felhound has Advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>The felhound has Advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+
+	<element name="Smell Magic" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_FELHOUND_SMELL_MAGIC">
+		<compendium display="false" />
+		<description>
+			<p>The felhound can sense the presence and location of magic within 120 feet of itself. It also has Advantage on attack rolls against creatures that have cast a spell or taken the Magic action since the end of the felhound’s last turn.</p>
+		</description>
+		<sheet>
+			<description>The felhound can sense the presence and location of magic within 120 feet of itself. It also has Advantage on attack rolls against creatures that have cast a spell or taken the Magic action since the end of the felhound’s last turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Multiattack" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_FELHOUND_MULTIATTACK">
+		<compendium display="false" />
+		<description>
+			<p>The felhound makes one Bite attack and one Grappling Tentacles attack.</p>
+		</description>
+		<sheet>
+			<description>The felhound makes one Bite attack and one Grappling Tentacles attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Bite" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_FELHOUND_BITE">
+		<compendium display="false" />
+		<description>
+			<p>Melee Attack Roll: +6, reach 5 ft. Hit: 13 (3d6 + 3) Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +6, reach 5 ft. Hit: 13 (3d6 + 3) Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Grappling Tentacles" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_FELHOUND_GRAPPLING_TENTACLES">
+		<compendium display="false" />
+		<description>
+			<p>Melee Attack Roll: +6, reach 5 ft. Hit: 12 (2d8 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from both tentacles.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +6, reach 5 ft. Hit: 12 (2d8 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from both tentacles.</description>
+		</sheet>
+	</element>
+
+	<element name="Drink Magic (Bonus Action)" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_FELHOUND_DRINK_MAGIC_BONUS_ACTION">
+		<compendium display="false" />
+		<description>
+			<p>Constitution Saving Throw: DC 13, one Medium or smaller creature Grappled by the felhound. Failure: 10 (3d6) Necrotic damage, and the target can’t take the Magic action until the start of the felhound’s next turn.</p>
+		</description>
+		<sheet>
+			<description>Constitution Saving Throw: DC 13, one Medium or smaller creature Grappled by the felhound. Failure: 10 (3d6) Necrotic damage, and the target can’t take the Magic action until the start of the felhound’s next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Mechanostrider" type="Companion" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_MECHANOSTRIDER">
+		<supports>WoW Mount</supports>
+		<description>
+			<p>A mechanical riding mount built by the gnomes of Gnomeregan (Renown 10+ with Gnomeregan, 450 GP).</p>
+		</description>
+		<setters>
+			<set name="size">Large</set>
+			<set name="type">Construct</set>
+			<set name="alignment">Unaligned</set>
+			<set name="ac">13</set>
+			<set name="hp">34 (4d10 + 12)</set>
+			<set name="speed">60 ft.</set>
+			<set name="strength">14</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">9</set>
+			<set name="charisma">6</set>
+			<set name="immunities">Poison</set>
+			<set name="conditionImmunities">Exhaustion, Poisoned</set>
+			<set name="senses">Passive Perception 9</set>
+			<set name="languages">None</set>
+			<set name="challenge">1/2</set>
+			<set name="proficiency">2</set>
+			<set name="actions">ID_KAYA_WOW_COMPANION_ACTION_MECHANOSTRIDER_PECK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:hp:max" value="34" bonus="base" />
+			<stat name="companion:speed" value="60" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Peck" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_MECHANOSTRIDER_PECK">
+		<compendium display="false" />
+		<description>
+			<p>Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Pandarian Dragon Turtle" type="Companion" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_PANDARIAN_DRAGON_TURTLE">
+		<supports>WoW Mount</supports>
+		<description>
+			<p>A sturdy riding turtle of Pandaria (Renown 10+ with the Huojin or the Tushui, 500 GP).</p>
+		</description>
+		<setters>
+			<set name="size">Large</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Unaligned</set>
+			<set name="ac">17</set>
+			<set name="hp">30 (4d10 + 8)</set>
+			<set name="speed">30 ft., Swim 60 ft.</set>
+			<set name="strength">16</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">9</set>
+			<set name="senses">Darkvision 60 ft.; Passive Perception 11</set>
+			<set name="languages">None</set>
+			<set name="challenge">1/2</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_KAYA_WOW_COMPANION_TRAIT_PANDARIAN_DRAGON_TURTLE_AMPHIBIOUS</set>
+			<set name="actions">ID_KAYA_WOW_COMPANION_ACTION_PANDARIAN_DRAGON_TURTLE_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" bonus="base" />
+			<stat name="companion:hp:max" value="30" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:swim" value="60" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Amphibious" type="Companion Trait" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_TRAIT_PANDARIAN_DRAGON_TURTLE_AMPHIBIOUS">
+		<compendium display="false" />
+		<description>
+			<p>The turtle can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>The turtle can breathe air and water.</description>
+		</sheet>
+	</element>
+
+	<element name="Bite" type="Companion Action" source="World of Warcraft" id="ID_KAYA_WOW_COMPANION_ACTION_PANDARIAN_DRAGON_TURTLE_BITE">
+		<compendium display="false" />
+		<description>
+			<p>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 13).</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 13).</description>
+		</sheet>
+	</element>
+
+</elements>

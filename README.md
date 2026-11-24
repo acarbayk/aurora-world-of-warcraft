@@ -15,20 +15,33 @@ Aurora Builder content for **World of Warcraft**, a fan-made D&D 5e (2024 rules)
    ```
 3. Click **Update Content Files**, then restart Aurora.
 
-## Status
+## What's included
 
-| Part | Status |
+| Part | Contents |
 |---|---|
-| Spells (69) | ✅ |
-| Languages of Azeroth | ✅ |
-| Species (17, incl. Mechagnome and Azeroth elven lineages) | ✅ |
-| Subclasses and class options (Ebon Blade, Demon Hunter, Evoker, Hunter pets, Mystic Brews, Holy, Discipline, Shadow, Swashbuckler, Shaman totems, Elements, Spiritual Guardian, warrior maneuvers) | ✅ |
-| Feats (11) and Eldritch Invocations (7) | ✅ |
-| Magic items (26), mounts, vehicles, companion creatures | ✅ |
-| Faction renown perks | 🚧 |
-| Companion stat blocks | 🚧 |
+| Species | Dracthyr, Draenei, Dwarf, Earthen, Elf (Blood, High, Night, Nightborne, Void), Forsaken, Gnome, Mechagnome, Goblin, Haranir, Human, Orc, Pandaren, Tauren, Troll, Vulpera, Worgen |
+| Languages | All Alliance, Horde and rare languages of Azeroth |
+| Subclasses | Oath of the Ebon Blade (Death Knight), Demon Hunter, Oath of the Holy, Discipline Domain, Shadow Domain, Warrior of Mystic Brews, Swashbuckler, Path of the Elements, Path of the Spiritual Guardian |
+| Class options | Evoker (optional for Draconic Sorcery), Hunter Pet Specialization (optional for Beast Master), Shaman Totems (optional for Barbarian), Cat Form and Bear Form (optional for Circle of the Moon), warrior maneuvers for Battle Master |
+| Spells | 69 new spells, plus Player's Handbook spells added to the Wizard and Cleric lists |
+| Feats | Mage, monk and inscription General feats; human Origin feats; Void Warrior fighting style option |
+| Eldritch Invocations | Pact of the Legion, Call of the Void, Curse of Corruption, Expendable Minions, Health Funnel, Legion Summoning, Master Demonologist |
+| Equipment | 26 magic items, mounts, powered vehicles, companion creature types |
+| Renown | General rules and all faction renown perks (Equipment tab, category "Renown Perks") |
+| Companions | Fel Imp, Voidwalker, Felguard, Felhound, Mechanostrider, Pandarian Dragon Turtle |
 
-Lore, adventures and the bestiary (chapters 5–7) are not included; Aurora is a character builder.
+Optional class options (Evoker, Pet Specialization, Shaman Totems, Cat/Bear Form) appear as optional selections at the right level in the class or subclass they modify.
+
+Not included: the specialization guides (they are advice, not rules), profession crafting rules, and chapters 5–7 (lore, adventures, bestiary). Aurora is a character builder.
+
+## Known limitations
+
+- Hero classes (Death Knight, Demon Hunter) change level 1–2 features. In Aurora those features apply once the subclass is chosen at level 3, which matches the book's default of starting hero classes at level 3.
+- Resource pools such as Runic Power or Soul Fragments are shown on the sheet with usage counts; Aurora doesn't track them automatically.
+
+## Maintenance
+
+`tools/` holds the Python scripts that generated the XML from the book text and `tools/build.py`, which rebuilds the index and validates every file (well-formed XML, unique ids, every referenced id exists in this content or in Aurora Legacy).
 
 ## Credits
 

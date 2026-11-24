@@ -1,0 +1,58 @@
+{
+ "Frostscythe": {
+  "paras": [
+   "Sweeping your weapon before you, you unleash a blast of icy cold. Each creature in a 20-foot Cone makes a Constitution saving throw. On a failed save, a creature takes 3d8 Cold damage, and its Speed is reduced by 10 feet for 1 minute. On a successful save, a creature takes half as much damage only.",
+   "Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 2."
+  ]
+ },
+ "Sigil of Chains": {
+  "drop": [
+   "A Demon Hunter casts Metamorphosis. "
+  ]
+ },
+ "Throw Glaive": {
+  "paras": [
+   "You create a demonic warglaive and hurl it at a creature or object in range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Slashing damage plus 1d8 Fire damage, and the glaive ricochets to a different target of your choice within 30 feet of the target. Make new attack and damage rolls against the new target.",
+   "Using a Higher-Level Spell Slot. The Fire damage increases by 1d8 for each spell slot level above 1. The glaive ricochets a maximum number of times equal to the level of the slot expended; a creature can be targeted only once by each casting of this spell."
+  ]
+ },
+ "Wrath": {
+  "keep": 2,
+  "cut": " Dracthyr"
+ },
+ "Serpent Sting": {
+  "keep": 1,
+  "cut": " Medivh"
+ },
+ "Mass Polymorph": {
+  "keep": 5,
+  "cut": " Chen Stormstout"
+ },
+ "Guided Prayer": {
+  "keep": 1,
+  "cut": " Prophet Velen"
+ },
+ "Psychic Horror": {
+  "paras": [
+   "A creature within range is overwhelmed with mental visions of the Void and makes a Wisdom saving throw. On a failed save, the target takes 2d10 Psychic damage and has the Frightened condition for 1 minute. A Frightened creature also has the Stunned condition until the end of your next turn. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. On a successful save, the creature takes half as much damage only.",
+   "Using a Higher-Level Spell Slot. The damage increases by 1d10 for each spell slot level above 4."
+  ]
+ },
+ "Void Eruption": {
+  "keep": 3,
+  "cut": " Rogues are"
+ },
+ "Rain of Fire": {
+  "keep": 4,
+  "cut": " Eldritch Invocations"
+ },
+ "Arcane Pulse": {
+  "paras": [
+   "You create a pulse of arcane energy in a 10-foot Emanation originating from yourself. Each creature of your choice within this area makes a Constitution saving throw. On a failed save, it takes 1d8 Force damage, and its Speed is reduced by 10 feet (to a minimum of 0 feet) until the end of your next turn."
+  ]
+ },
+ "Entropic Embrace": {
+  "keep": 5,
+  "cut": " Forsaken The vast"
+ }
+}

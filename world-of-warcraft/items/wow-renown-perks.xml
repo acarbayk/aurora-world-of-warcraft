@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Renown Perks</name>
+		<description>Faction renown perks from World of Warcraft (Andrey Kuzinskiy). Add earned perks to your character from the Equipment tab (category: Renown Perks).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-renown-perks.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-renown-perks.xml" />
+		</update>
+	</info>
+
+	<element name="General Renown Perks" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_GENERAL">
+		<description>
+			<p>The perks listed here apply to all the factions of Azeroth:</p>
+			<p class="indent">Friendly (Renown 3+). Other members of the faction are Friendly to you by default.</p>
+			<p class="indent">Honored (Renown 10+). You can purchase equipment found in the Player’s Handbook, as well as Common or Uncommon magic items, from merchants of the faction at a 10% discount.</p>
+			<p class="indent">Revered (Renown 25+). Your discount increases to 15% and extends to Rare magic items.</p>
+			<p class="indent">Exalted (Renown 50+). Your discount increases to 25% and extends to Very Rare magic items.</p>
+			<p class="indent">Certain mounts and magic items are available only from merchants associated with a particular faction and might require a minimum Renown Score with that faction to purchase.</p>
+			<p class="indent"><strong><em>Starting Renown.</em></strong> Most characters created using the World of Warcraft species have a starting Renown Score of 3 with one of the subfactions associated with either the Alliance or the Horde. A few species and class options give starting Renown Scores with other factions.</p>
+		</description>
+		<sheet>
+			<description>The perks listed here apply to all the factions of Azeroth: Friendly (Renown 3+). Other members of the faction are Friendly to you by default. Honored (Renown 10+). You can purchase equipment found in the Player’s Handbook, as well as Common or Uncommon magic items, from merchants of the faction at a 10% discount. Revered (Renown 25+). Your discount increases to 15% and extends to Rare magic items. Exalted (Renown 50+). Your discount increases to 25% and extends to Very Rare magic items. Certain mounts and magic items are available only from merchants associated with a particular faction and might require a minimum Renown Score with that faction to purchase. Starting Renown. Most characters created using the World of Warcraft species have a starting Renown Score of 3 with one of the subfactions associated with either the Alliance or the Horde. A few species and class options give starting Renown Scores with other factions.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Renown Training" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_TRAINING">
+		<description>
+			<p>Several renown perks give you the opportunity to work with a trainer to learn a language or gain a proficiency. The days required needn’t be consecutive, but you must spend 8 consecutive hours with the trainer for a day to count. You can gain only one tool proficiency from each renown perk.</p>
+		</description>
+		<sheet>
+			<description>Several renown perks give you the opportunity to work with a trainer to learn a language or gain a proficiency. The days required needn’t be consecutive, but you must spend 8 consecutive hours with the trainer for a day to count. You can gain only one tool proficiency from each renown perk.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Subfaction Renown (Alliance and Horde)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_SUBFACTIONS">
+		<description>
+			<p>If your species gives you a starting Renown Score with an Alliance or Horde subfaction, gaining renown with different subfactions of the same faction also increases your Renown Score with your starting faction:</p>
+			<p class="indent"><strong><em>Friendly.</em></strong> The first time your Renown Score with each other subfaction reaches 3, increase your Renown Score with your starting faction by 1.</p>
+			<p class="indent"><strong><em>Honored.</em></strong> The first time your Renown Score with each other subfaction reaches 10, increase your Renown Score with your starting faction by 2.</p>
+			<p class="indent"><strong><em>Revered.</em></strong> The first time your Renown Score with each other subfaction reaches 25, increase your Renown Score with your starting faction by 3.</p>
+			<p class="indent"><strong><em>Exalted.</em></strong> The first time your Renown Score with each other subfaction reaches 50, increase your Renown Score with your starting faction by 5.</p>
+			<p class="indent">Alliance subfactions: Darnassus (night elves), Exodar (draenei), Gilneas (worgen), Gnomeregan (gnomes), Ironforge (dwarves), Obsidian Warders (dracthyr), Stormwind (humans), Tushui (pandaren).</p>
+			<p class="indent">Horde subfactions: Bilgewater Cartel (goblins), Dark Talons (dracthyr), Darkspear Tribe (trolls), Huojin (pandaren), Orgrimmar (orcs and vulpera), Silvermoon City (blood elves), Thunder Bluff (tauren), Undercity (Forsaken).</p>
+		</description>
+		<sheet>
+			<description>If your species gives you a starting Renown Score with an Alliance or Horde subfaction, gaining renown with different subfactions of the same faction also increases your Renown Score with your starting faction: Friendly. The first time your Renown Score with each other subfaction reaches 3, increase your Renown Score with your starting faction by 1. Honored. The first time your Renown Score with each other subfaction reaches 10, increase your Renown Score with your starting faction by 2. Revered. The first time your Renown Score with each other subfaction reaches 25, increase your Renown Score with your starting faction by 3. Exalted. The first time your Renown Score with each other subfaction reaches 50, increase your Renown Score with your starting faction by 5. Alliance subfactions: Darnassus (night elves), Exodar (draenei), Gilneas (worgen), Gnomeregan (gnomes), Ironforge (dwarves), Obsidian Warders (dracthyr), Stormwind (humans), Tushui (pandaren). Horde subfactions: Bilgewater Cartel (goblins), Dark Talons (dracthyr), Darkspear Tribe (trolls), Huojin (pandaren), Orgrimmar (orcs and vulpera), Silvermoon City (blood elves), Thunder Bluff (tauren), Undercity (Forsaken).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Alliance: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ALLIANCE_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Any Alliance Subfaction</p>
+			<p>Creatures associated with the Alliance are Friendly to you by default.</p>
+		</description>
+		<sheet>
+			<description>Creatures associated with the Alliance are Friendly to you by default.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Alliance: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ALLIANCE_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Any Alliance Subfaction</p>
+			<p>If your Bastion is in territory controlled by the Alliance, when you issue the Maintain order to your Bastion, the DM rolls twice on the Bastion Events table, and you pick which event occurs.</p>
+		</description>
+		<sheet>
+			<description>If your Bastion is in territory controlled by the Alliance, when you issue the Maintain order to your Bastion, the DM rolls twice on the Bastion Events table, and you pick which event occurs.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Ambassador of the Alliance" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_AMBASSADOR_OF_THE_ALLIANCE">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Darnassus, the Exodar, Gilneas, Gnomeregan, Ironforge, and Stormwind</p>
+			<p>You have the title Ambassador of the Alliance. You can gain an audience with the leader of any Alliance subfaction at any time, and you can summon the leaders of the Alliance forces into council, given 1 week’s notice. For a worthy cause, any or all of these leaders will commit troops to aid you, at the DM’s discretion. You can also call on Alleria Windrunner, Anduin Wrynn, or Jaina Proudmoore (all described in chapter 7) to assist you on one adventure.</p>
+		</description>
+		<sheet>
+			<description>You have the title Ambassador of the Alliance. You can gain an audience with the leader of any Alliance subfaction at any time, and you can summon the leaders of the Alliance forces into council, given 1 week’s notice. For a worthy cause, any or all of these leaders will commit troops to aid you, at the DM’s discretion. You can also call on Alleria Windrunner, Anduin Wrynn, or Jaina Proudmoore (all described in chapter 7) to assist you on one adventure.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Darnassus: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARNASSUS_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with Darnassus</p>
+			<p>You can spend 30 days with a trainer to learn Darnassian or Thalassian or to gain proficiency with the Herbalism Kit (see the “Training” sidebar).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Darnassian or Thalassian or to gain proficiency with the Herbalism Kit (see the “Training” sidebar).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Darnassus: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARNASSUS_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Darnassus</p>
+			<p>When you succeed on a check to gather herbs using herbalism (see chapter 3), you gain one extra resource, and you find a rare resource if you beat the check DC by 4 or more.</p>
+		</description>
+		<sheet>
+			<description>When you succeed on a check to gather herbs using herbalism (see chapter 3), you gain one extra resource, and you find a rare resource if you beat the check DC by 4 or more.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Darnassus: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARNASSUS_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Darnassus</p>
+			<p>You can request a Blessing from the leaders of Darnassus before you undertake a quest on their behalf. You receive one of the Blessings described in the Dungeon Master’s Guide (your choice), and it lasts until you complete or abandon the quest. Once you request this Blessing, you can’t do so again until your Renown Score with Darnassus increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a Blessing from the leaders of Darnassus before you undertake a quest on their behalf. You receive one of the Blessings described in the Dungeon Master’s Guide (your choice), and it lasts until you complete or abandon the quest. Once you request this Blessing, you can’t do so again until your Renown Score with Darnassus increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Darnassus: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARNASSUS_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Darnassus</p>
+			<p>You can call on a Warden (Questing Knight), a leading Sentinel (Warrior Commander) with three Sentinel scouts (Scout Captains), or a leading priestess of Elune (Archpriest) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Darnassus increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on a Warden (Questing Knight), a leading Sentinel (Warrior Commander) with three Sentinel scouts (Scout Captains), or a leading priestess of Elune (Archpriest) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Darnassus increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Exodar: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EXODAR_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Exodar</p>
+			<p>You can spend 30 days with a trainer to learn the Draenei language or gain proficiency with Glassblower’s Tools or Jeweler’s Tools (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn the Draenei language or gain proficiency with Glassblower’s Tools or Jeweler’s Tools (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Exodar: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EXODAR_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Exodar</p>
+			<p>When you use jewelcrafting to craft an item (see chapter 3), the time required to craft it is halved.</p>
+		</description>
+		<sheet>
+			<description>When you use jewelcrafting to craft an item (see chapter 3), the time required to craft it is halved.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Exodar: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EXODAR_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Exodar</p>
+			<p>You can request a Charm from the leaders of the Exodar before you undertake a quest on their behalf. You receive a Charm of Heroism, Charm of Restoration, or Charm of Vitality (your choice; see the Dungeon Master’s Guide), which lasts until you expend it or you complete or abandon the quest. Once you request a Charm, you can’t do so again until your Renown Score with the Exodar increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a Charm from the leaders of the Exodar before you undertake a quest on their behalf. You receive a Charm of Heroism, Charm of Restoration, or Charm of Vitality (your choice; see the Dungeon Master’s Guide), which lasts until you expend it or you complete or abandon the quest. Once you request a Charm, you can’t do so again until your Renown Score with the Exodar increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Exodar: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EXODAR_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Exodar</p>
+			<p>You can call on fifty draenei soldiers (Warrior Infantry) led by three sergeants (Warrior Veterans) and one commander (Warrior Commander) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with the Exodar increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on fifty draenei soldiers (Warrior Infantry) led by three sergeants (Warrior Veterans) and one commander (Warrior Commander) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with the Exodar increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Gilneas: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_GILNEAS_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with Gilneas</p>
+			<p>You can spend 30 days with a trainer to learn Common or Common Sign Language or gain proficiency with Leatherworker’s Tools (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Common or Common Sign Language or gain proficiency with Leatherworker’s Tools (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Gilneas: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_GILNEAS_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Gilneas</p>
+			<p>You gain a +2 bonus to ability checks you make to skin a creature (see chapter 3).</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to ability checks you make to skin a creature (see chapter 3).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Gilneas: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_GILNEAS_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Gilneas</p>
+			<p>You can request a Charm of Animal Conjuring from the leaders of Gilneas before you undertake a quest on their behalf, which lasts until you expend it or you complete or abandon the quest. When you use the Charm, the conjured animal spirits appear as worgen spirits from the Emerald Dream. Once you request a Charm, you can’t do so again until your Renown Score with Gilneas increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a Charm of Animal Conjuring from the leaders of Gilneas before you undertake a quest on their behalf, which lasts until you expend it or you complete or abandon the quest. When you use the Charm, the conjured animal spirits appear as worgen spirits from the Emerald Dream. Once you request a Charm, you can’t do so again until your Renown Score with Gilneas increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Gilneas: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_GILNEAS_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Gilneas</p>
+			<p>You can call on a pack of six worgen skirmishers (Berserkers) with one leader (Berserker Commander) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Gilneas increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on a pack of six worgen skirmishers (Berserkers) with one leader (Berserker Commander) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Gilneas increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Gnomeregan: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_GNOMEREGAN_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with Gnomeregan</p>
+			<p>You can spend 30 days with a trainer to learn Gnomish or gain proficiency with Tinker’s Tools (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Gnomish or gain proficiency with Tinker’s Tools (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Gnomeregan: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_GNOMEREGAN_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Gnomeregan</p>
+			<p>When you use engineering to craft an item (see chapter 3), the time required to craft it is halved.</p>
+		</description>
+		<sheet>
+			<description>When you use engineering to craft an item (see chapter 3), the time required to craft it is halved.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Gnomeregan: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_GNOMEREGAN_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Gnomeregan</p>
+			<p>You can request a complicated engineering device from the leaders of Gnomeregan before you undertake a quest on their behalf. You receive a mechanical device that functions as a Wand of Wonder, but it can’t regain charges, and it explodes dramatically but harmlessly when its last charge is expended. The device doesn’t require Attunement, but it functions only for you.</p>
+		</description>
+		<sheet>
+			<description>You can request a complicated engineering device from the leaders of Gnomeregan before you undertake a quest on their behalf. You receive a mechanical device that functions as a Wand of Wonder, but it can’t regain charges, and it explodes dramatically but harmlessly when its last charge is expended. The device doesn’t require Attunement, but it functions only for you.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Gnomeregan: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_GNOMEREGAN_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Gnomeregan</p>
+			<p>In recognition of your service to gnomekind, you are given a Shield Guardian that serves you. If your Renown Score with Gnomeregan falls below 50, the guardian turns on you.</p>
+		</description>
+		<sheet>
+			<description>In recognition of your service to gnomekind, you are given a Shield Guardian that serves you. If your Renown Score with Gnomeregan falls below 50, the guardian turns on you.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Ironforge: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_IRONFORGE_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with Ironforge</p>
+			<p>You can spend 30 days with a trainer to learn Dwarven or gain proficiency with Mason’s Tools or Smith’s Tools (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Dwarven or gain proficiency with Mason’s Tools or Smith’s Tools (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Ironforge: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_IRONFORGE_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Ironforge</p>
+			<p>When you use blacksmithing to craft an item (see chapter 3), the time required to craft it is halved.</p>
+		</description>
+		<sheet>
+			<description>When you use blacksmithing to craft an item (see chapter 3), the time required to craft it is halved.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Ironforge: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_IRONFORGE_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Ironforge</p>
+			<p>You can request a dwarven relic from the leaders of Ironforge before you undertake a quest on their behalf. You receive a Belt of Dwarvenkind, Dwarven Plate, or a Dwarven Thrower (your choice). You must return the relic on the completion of the quest; failure to do so reduces your Renown Score with Ironforge by 1d8.</p>
+		</description>
+		<sheet>
+			<description>You can request a dwarven relic from the leaders of Ironforge before you undertake a quest on their behalf. You receive a Belt of Dwarvenkind, Dwarven Plate, or a Dwarven Thrower (your choice). You must return the relic on the completion of the quest; failure to do so reduces your Renown Score with Ironforge by 1d8.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Ironforge: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_IRONFORGE_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Ironforge</p>
+			<p>You can call on fifty dwarf soldiers (Warrior Infantry) led by three sergeants (Warrior Veterans) and one commander (Warrior Commander) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Ironforge increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on fifty dwarf soldiers (Warrior Infantry) led by three sergeants (Warrior Veterans) and one commander (Warrior Commander) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Ironforge increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Obsidian Warders: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_OBSIDIAN_WARDERS_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Obsidian Warders</p>
+			<p>You can spend 30 days with a trainer to learn Draconic or gain proficiency in History (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Draconic or gain proficiency in History (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Obsidian Warders: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_OBSIDIAN_WARDERS_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Obsidian Warders</p>
+			<p>You receive the Sight of the Earth-Warder. This Blessing gives you Advantage on Initiative rolls and Wisdom (Perception) checks. You lose the Blessing if your Renown Score with the Obsidian Warders falls below 10.</p>
+		</description>
+		<sheet>
+			<description>You receive the Sight of the Earth-Warder. This Blessing gives you Advantage on Initiative rolls and Wisdom (Perception) checks. You lose the Blessing if your Renown Score with the Obsidian Warders falls below 10.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Obsidian Warders: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_OBSIDIAN_WARDERS_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Obsidian Warders</p>
+			<p>You can request a Blessing from the leaders of the Obsidian Warders before you undertake a quest on their behalf. You receive the Blessing of Protection (see the Dungeon Master’s Guide), and it lasts until you complete or abandon the quest. Once you request this Blessing, you can’t do so again until your Renown Score with the Obsidian Warders increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a Blessing from the leaders of the Obsidian Warders before you undertake a quest on their behalf. You receive the Blessing of Protection (see the Dungeon Master’s Guide), and it lasts until you complete or abandon the quest. Once you request this Blessing, you can’t do so again until your Renown Score with the Obsidian Warders increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Obsidian Warders: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_OBSIDIAN_WARDERS_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Obsidian Warders</p>
+			<p>You can call on a Black Dragonflight Whelp (see chapter 7) to assist you for a single adventure. If the dragon is killed, your Renown Score with the Obsidian Warders is reduced by 2d6. Once you request this assistance, you can’t do so again until your Renown Score with the Obsidian Warders increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on a Black Dragonflight Whelp (see chapter 7) to assist you for a single adventure. If the dragon is killed, your Renown Score with the Obsidian Warders is reduced by 2d6. Once you request this assistance, you can’t do so again until your Renown Score with the Obsidian Warders increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Stormwind: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_STORMWIND_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with Stormwind</p>
+			<p>You can spend 30 days with a trainer to learn Common or Common Sign Language or gain proficiency with Weaver’s Tools (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Common or Common Sign Language or gain proficiency with Weaver’s Tools (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Stormwind: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_STORMWIND_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Stormwind</p>
+			<p>When you use tailoring to craft an item (see chapter 3), the time required to craft it is halved.</p>
+		</description>
+		<sheet>
+			<description>When you use tailoring to craft an item (see chapter 3), the time required to craft it is halved.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Stormwind: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_STORMWIND_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Stormwind</p>
+			<p>You can request a supernatural gift from the leaders of Stormwind before you undertake a quest on their behalf. You receive any Blessing or Charm from the Dungeon Master’s Guide, and it lasts until you complete or abandon the quest or expend it. Once you request this gift, you can’t do so again until your Renown Score with Stormwind increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a supernatural gift from the leaders of Stormwind before you undertake a quest on their behalf. You receive any Blessing or Charm from the Dungeon Master’s Guide, and it lasts until you complete or abandon the quest or expend it. Once you request this gift, you can’t do so again until your Renown Score with Stormwind increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Stormwind: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_STORMWIND_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Stormwind</p>
+			<p>You can call on Stormwind forces to assist you for a single adventure. You receive your choice of one of the following groups:</p>
+			<ul><li>Fifty human soldiers (Warrior Infantry) led by three sergeants (Warrior Veterans) and one commander (Warrior Commander)</li><li>Three SI:7 agents (Scout Captains) and their leader (Spy Master)</li><li>A champion of the Holy Light (Questing Knight)</li><li>A Kul Tiran admiral (Pirate Admiral) with a Warship (you must hire the ship’s crew)</li></ul>
+			<p class="indent">Once you request this assistance, you can’t do so again until your Renown Score with Stormwind increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on Stormwind forces to assist you for a single adventure. You receive your choice of one of the following groups: Once you request this assistance, you can’t do so again until your Renown Score with Stormwind increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Tushui: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_TUSHUI_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Tushui</p>
+			<p>You can spend 30 days with a trainer to learn the Pandaren language or gain proficiency with Brewer’s Supplies or Cook’s Utensils (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn the Pandaren language or gain proficiency with Brewer’s Supplies or Cook’s Utensils (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Tushui: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_TUSHUI_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Tushui</p>
+			<p>If you spend a Short Rest in silent meditation, you gain Heroic Inspiration when you finish the rest.</p>
+		</description>
+		<sheet>
+			<description>If you spend a Short Rest in silent meditation, you gain Heroic Inspiration when you finish the rest.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Tushui: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_TUSHUI_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Tushui</p>
+			<p>You receive the Blessing of Understanding (see the Dungeon Master’s Guide). You lose the Blessing if your Renown Score with the Tushui falls below 25.</p>
+		</description>
+		<sheet>
+			<description>You receive the Blessing of Understanding (see the Dungeon Master’s Guide). You lose the Blessing if your Renown Score with the Tushui falls below 25.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Tushui: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_TUSHUI_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Tushui</p>
+			<p>A Tushui monk establishes a Meditation Chamber special facility in your Bastion. This facility doesn’t count toward the total number of special facilities in your Bastion. The monk departs and the facility becomes unusable if your Renown Score with the Tushui falls below 50.</p>
+		</description>
+		<sheet>
+			<description>A Tushui monk establishes a Meditation Chamber special facility in your Bastion. This facility doesn’t count toward the total number of special facilities in your Bastion. The monk departs and the facility becomes unusable if your Renown Score with the Tushui falls below 50.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Horde: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_HORDE_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Any Horde Subfaction</p>
+			<p>Creatures associated with the Horde are Friendly to you by default.</p>
+		</description>
+		<sheet>
+			<description>Creatures associated with the Horde are Friendly to you by default.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Horde: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_HORDE_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Any Horde Subfaction</p>
+			<p>If your Bastion is in territory controlled by the Horde, when you issue the Maintain order to your Bastion, the DM rolls twice on the Bastion Events table, and you can pick which event occurs.</p>
+		</description>
+		<sheet>
+			<description>If your Bastion is in territory controlled by the Horde, when you issue the Maintain order to your Bastion, the DM rolls twice on the Bastion Events table, and you can pick which event occurs.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Ambassador of the Horde" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_AMBASSADOR_OF_THE_HORDE">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Bilgewater Cartel, Darkspear Tribe, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity</p>
+			<p>You carry the title Ambassador of the Horde. You can gain an audience with the leader of any Horde subfaction at any time, and you can summon the leaders of the Horde forces into council, given 1 week’s notice. For a worthy cause, any or all of these leaders will commit troops to aid you, at the DM’s discretion. You can also call on Sylvanas Windrunner or Thrall (both described in chapter 7) to assist you on one adventure.</p>
+		</description>
+		<sheet>
+			<description>You carry the title Ambassador of the Horde. You can gain an audience with the leader of any Horde subfaction at any time, and you can summon the leaders of the Horde forces into council, given 1 week’s notice. For a worthy cause, any or all of these leaders will commit troops to aid you, at the DM’s discretion. You can also call on Sylvanas Windrunner or Thrall (both described in chapter 7) to assist you on one adventure.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Bilgewater Cartel: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_BILGEWATER_CARTEL_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Bilgewater Cartel</p>
+			<p>You can spend 30 days with a trainer to learn the Goblin language or gain proficiency with Alchemist’s Supplies (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn the Goblin language or gain proficiency with Alchemist’s Supplies (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Bilgewater Cartel: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_BILGEWATER_CARTEL_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Bilgewater Cartel</p>
+			<p>When you use alchemy to craft an item (see chapter 3), the time required to craft it is halved.</p>
+		</description>
+		<sheet>
+			<description>When you use alchemy to craft an item (see chapter 3), the time required to craft it is halved.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Bilgewater Cartel: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_BILGEWATER_CARTEL_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Bilgewater Cartel</p>
+			<p>You can request a Clockwerk Charm from the leaders of the Bilgewater Cartel before you undertake a quest on their behalf. This Charm allows you to cast the Summon Construct spell (Metal only), which lasts for 1 hour and doesn’t require Concentration. The Construct Spirit appears as a mechanical goblin. When it drops to 0 Hit Points or the spell ends, the summoned spirit explodes in a 10-foot-radius Sphere of fire. Creatures in the Sphere make a DC 13 Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent">The Charm lasts until you use it once or you complete or abandon the quest. Once you request this Charm, you can’t do so again until your Renown Score with the Bilgewater Cartel increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a Clockwerk Charm from the leaders of the Bilgewater Cartel before you undertake a quest on their behalf. This Charm allows you to cast the Summon Construct spell (Metal only), which lasts for 1 hour and doesn’t require Concentration. The Construct Spirit appears as a mechanical goblin. When it drops to 0 Hit Points or the spell ends, the summoned spirit explodes in a 10-foot-radius Sphere of fire. Creatures in the Sphere make a DC 13 Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one. The Charm lasts until you use it once or you complete or abandon the quest. Once you request this Charm, you can’t do so again until your Renown Score with the Bilgewater Cartel increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Bilgewater Cartel: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_BILGEWATER_CARTEL_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Bilgewater Cartel</p>
+			<p>You can call on a cartel captain (Pirate Admiral) with six crew members (Pirates) to assist you for a single adventure. The captain has a Sailing Ship, but you need to hire additional crew (at your own expense) to use the ship. Once you request this assistance, you can’t do so again until your Renown Score with the Bilgewater Cartel increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on a cartel captain (Pirate Admiral) with six crew members (Pirates) to assist you for a single adventure. The captain has a Sailing Ship, but you need to hire additional crew (at your own expense) to use the ship. Once you request this assistance, you can’t do so again until your Renown Score with the Bilgewater Cartel increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Dark Talons: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARK_TALONS_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Dark Talons</p>
+			<p>You can spend 30 days with a trainer to learn Draconic or gain proficiency in History (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Draconic or gain proficiency in History (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Dark Talons: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARK_TALONS_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Dark Talons</p>
+			<p>You receive the Strike of the Earth-Warder. This Blessing improves your Unarmed Strikes, giving you a +1 bonus to attack rolls and damage rolls made with them and increasing the saving throw DC of your Grapple and Shove options by 1. You lose the Blessing if your Renown Score with the Dark Talons falls below 10.</p>
+		</description>
+		<sheet>
+			<description>You receive the Strike of the Earth-Warder. This Blessing improves your Unarmed Strikes, giving you a +1 bonus to attack rolls and damage rolls made with them and increasing the saving throw DC of your Grapple and Shove options by 1. You lose the Blessing if your Renown Score with the Dark Talons falls below 10.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Dark Talons: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARK_TALONS_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Dark Talons</p>
+			<p>You can request a Charm from the leaders of the Dark Talons before you undertake a quest on their behalf. You receive the Charm of Terror, and it lasts until you use it three times or you complete or abandon the quest. You can take a Magic action to release a wave of terror. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened, a creature must spend its turns trying to move as far away from you as it can, and it can’t make Opportunity Attacks. For its action, it can take only the Dash action or an action to try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can take the Dodge action. At the end of each of its turns, a creature repeats the save, ending the effect on itself on a success.</p>
+			<p class="indent">Once you request this Charm, you can’t do so again until your Renown Score with the Dark Talons increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a Charm from the leaders of the Dark Talons before you undertake a quest on their behalf. You receive the Charm of Terror, and it lasts until you use it three times or you complete or abandon the quest. You can take a Magic action to release a wave of terror. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened, a creature must spend its turns trying to move as far away from you as it can, and it can’t make Opportunity Attacks. For its action, it can take only the Dash action or an action to try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can take the Dodge action. At the end of each of its turns, a creature repeats the save, ending the effect on itself on a success. Once you request this Charm, you can’t do so again until your Renown Score with the Dark Talons increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Dark Talons: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARK_TALONS_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Dark Talons</p>
+			<p>You can call on a Black Dragonflight Whelp (see chapter 7) to assist you for a single adventure. If the dragon is killed, your Renown Score with the Dark Talons is reduced by 2d6. Once you request this assistance, you can’t do so again until your Renown Score with the Dark Talons increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on a Black Dragonflight Whelp (see chapter 7) to assist you for a single adventure. If the dragon is killed, your Renown Score with the Dark Talons is reduced by 2d6. Once you request this assistance, you can’t do so again until your Renown Score with the Dark Talons increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Darkspear Tribe: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARKSPEAR_TRIBE_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Darkspear Tribe</p>
+			<p>You can spend 30 days with a trainer to learn Zandali or gain proficiency in Religion (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Zandali or gain proficiency in Religion (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Darkspear Tribe: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARKSPEAR_TRIBE_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Darkspear Tribe</p>
+			<p>During a Short Rest, you can make offerings to the loa revered by trolls to gain a Charm. When you finish the rest, make a DC 15 Intelligence (Religion) check. On a successful check, you gain a Charm that allows you to gain the benefit of one of the following Potions as a Bonus Action (choose when you gain the Charm): Potion of Animal Friendship, Potion of Climbing, Potion of Comprehension, Potion of Fire Breath, Potion of Giant Strength (hill), Potion of Growth, Potion of Healing (greater), Potion of Mana (greater; see chapter 3), Potion of Pugilism, Potion of Resistance (your choice of damage type), or Potion of Water Breathing.</p>
+			<p class="indent">The Charm vanishes from you after you use it, if you use this feature again, or if your Renown Score with the Darkspear tribe falls below 10. Once you receive a Charm in this way, you can’t gain another until your Renown Score with the Darkspear tribe increases.</p>
+		</description>
+		<sheet>
+			<description>During a Short Rest, you can make offerings to the loa revered by trolls to gain a Charm. When you finish the rest, make a DC 15 Intelligence (Religion) check. On a successful check, you gain a Charm that allows you to gain the benefit of one of the following Potions as a Bonus Action (choose when you gain the Charm): Potion of Animal Friendship, Potion of Climbing, Potion of Comprehension, Potion of Fire Breath, Potion of Giant Strength (hill), Potion of Growth, Potion of Healing (greater), Potion of Mana (greater; see chapter 3), Potion of Pugilism, Potion of Resistance (your choice of damage type), or Potion of Water Breathing. The Charm vanishes from you after you use it, if you use this feature again, or if your Renown Score with the Darkspear tribe falls below 10. Once you receive a Charm in this way, you can’t gain another until your Renown Score with the Darkspear tribe increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Darkspear Tribe: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARKSPEAR_TRIBE_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Darkspear Tribe</p>
+			<p>When you request a Charm from the loa, you can choose from the following additional Potion effects for your Charm: Potion of Clairvoyance, Potion of Diminution, Potion of Gaseous Form, Potion of Giant Strength (fire), Potion of Healing (superior), Potion of Mana (superior; see chapter 3), Potion of Heroism, Potion of Invisibility, Potion of Invulnerability, or Potion of Mind Reading.</p>
+			<p class="indent">If you choose one of the options listed above, the Charm vanishes from you if your Renown Score with the Darkspear tribe falls below 25.</p>
+		</description>
+		<sheet>
+			<description>When you request a Charm from the loa, you can choose from the following additional Potion effects for your Charm: Potion of Clairvoyance, Potion of Diminution, Potion of Gaseous Form, Potion of Giant Strength (fire), Potion of Healing (superior), Potion of Mana (superior; see chapter 3), Potion of Heroism, Potion of Invisibility, Potion of Invulnerability, or Potion of Mind Reading. If you choose one of the options listed above, the Charm vanishes from you if your Renown Score with the Darkspear tribe falls below 25.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Darkspear Tribe: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_DARKSPEAR_TRIBE_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Darkspear Tribe</p>
+			<p>You can call on a shadow hunter (Cultist Hierophant) and six hexxers (Cultist Fanatics) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with the Darkspear tribe increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on a shadow hunter (Cultist Hierophant) and six hexxers (Cultist Fanatics) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with the Darkspear tribe increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Huojin: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_HUOJIN_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Huojin</p>
+			<p>You can spend 30 days with a trainer to learn the Pandaren language or gain proficiency with Brewer’s Supplies or Cook’s Utensils (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn the Pandaren language or gain proficiency with Brewer’s Supplies or Cook’s Utensils (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Huojin: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_HUOJIN_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Huojin</p>
+			<p>You have Advantage on Initiative rolls as long as your Renown Score with the Huojin is 10+.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Initiative rolls as long as your Renown Score with the Huojin is 10+.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Huojin: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_HUOJIN_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Huojin</p>
+			<p>You receive the Blessing of Health (see the Dungeon Master’s Guide). You lose the Blessing if your Renown Score with the Huojin falls below 25.</p>
+		</description>
+		<sheet>
+			<description>You receive the Blessing of Health (see the Dungeon Master’s Guide). You lose the Blessing if your Renown Score with the Huojin falls below 25.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Huojin: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_HUOJIN_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Huojin</p>
+			<p>A group of Huojin monks establishes a Training Area special facility in your Bastion. This facility doesn’t count toward the total number of special facilities in your Bastion. The monks depart and the facility becomes unusable if your Renown Score with the Huojin falls below 50.</p>
+		</description>
+		<sheet>
+			<description>A group of Huojin monks establishes a Training Area special facility in your Bastion. This facility doesn’t count toward the total number of special facilities in your Bastion. The monks depart and the facility becomes unusable if your Renown Score with the Huojin falls below 50.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Orgrimmar: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ORGRIMMAR_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with Orgrimmar</p>
+			<p>You can spend 30 days with a trainer to learn Orcish, Orcish Sign Language, or Vulpera or to gain proficiency with Leatherworker’s Tools (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Orcish, Orcish Sign Language, or Vulpera or to gain proficiency with Leatherworker’s Tools (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Orgrimmar: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ORGRIMMAR_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Orgrimmar</p>
+			<p>When you use leatherworking to craft an item (see chapter 3), the time required to craft it is halved.</p>
+		</description>
+		<sheet>
+			<description>When you use leatherworking to craft an item (see chapter 3), the time required to craft it is halved.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Orgrimmar: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ORGRIMMAR_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Orgrimmar</p>
+			<p>You can request a Blessing from the leaders of Orgrimmar before you undertake a quest on their behalf. You receive one of the Blessings described in the Dungeon Master’s Guide, and it lasts until you complete or abandon the quest. Once you request a Blessing, you can’t do so again until your Renown Score with Orgrimmar increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a Blessing from the leaders of Orgrimmar before you undertake a quest on their behalf. You receive one of the Blessings described in the Dungeon Master’s Guide, and it lasts until you complete or abandon the quest. Once you request a Blessing, you can’t do so again until your Renown Score with Orgrimmar increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Orgrimmar: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ORGRIMMAR_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Orgrimmar</p>
+			<p>You can call on a warband leader (Berserker Commander), a shaman (Elemental Cultist), and three experienced warriors (Berserkers), all mounted on Dire Wolves, to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Orgrimmar increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on a warband leader (Berserker Commander), a shaman (Elemental Cultist), and three experienced warriors (Berserkers), all mounted on Dire Wolves, to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Orgrimmar increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Silvermoon City: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_SILVERMOON_CITY_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with Silvermoon City</p>
+			<p>You can spend 30 days with a trainer to learn Shalassian or Thalassian or to gain proficiency with Carpenter’s Tools, Potter’s Tools, or Woodcarver’s Tools (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Shalassian or Thalassian or to gain proficiency with Carpenter’s Tools, Potter’s Tools, or Woodcarver’s Tools (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Silvermoon City: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_SILVERMOON_CITY_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Silvermoon City</p>
+			<p>When you use enchanting to craft an item (see chapter 3), the time required to craft it is halved.</p>
+		</description>
+		<sheet>
+			<description>When you use enchanting to craft an item (see chapter 3), the time required to craft it is halved.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Silvermoon City: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_SILVERMOON_CITY_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Silvermoon City</p>
+			<p>You can request a Charm from the leaders of Silvermoon City before you undertake a quest on their behalf. You receive a Charm that duplicates the effect of one of the following Wands: Wand of Binding, Wand of Enemy Detection, Wand of Fear, Wand of Fireballs, Wand of Lightning Bolts, Wand of Magic Missiles, Wand of Paralysis, Wand of Polymorph, or Wand of Web. The Charm doesn’t regain charges. It vanishes from you if you spend all its charges, if you complete or abandon the quest, or if your Renown Score with Silvermoon City falls below 25. Once you request a Charm, you can’t do so again until your Renown Score with Silvermoon City increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a Charm from the leaders of Silvermoon City before you undertake a quest on their behalf. You receive a Charm that duplicates the effect of one of the following Wands: Wand of Binding, Wand of Enemy Detection, Wand of Fear, Wand of Fireballs, Wand of Lightning Bolts, Wand of Magic Missiles, Wand of Paralysis, Wand of Polymorph, or Wand of Web. The Charm doesn’t regain charges. It vanishes from you if you spend all its charges, if you complete or abandon the quest, or if your Renown Score with Silvermoon City falls below 25. Once you request a Charm, you can’t do so again until your Renown Score with Silvermoon City increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Silvermoon City: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_SILVERMOON_CITY_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Silvermoon City</p>
+			<p>You can call on a single Magister (Archmage) or four Mages to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Silvermoon City increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on a single Magister (Archmage) or four Mages to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Silvermoon City increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Thunder Bluff: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_THUNDER_BLUFF_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with Thunder Bluff</p>
+			<p>You can spend 30 days with a trainer to learn Taur-ahe or gain proficiency with the Herbalism Kit (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Taur-ahe or gain proficiency with the Herbalism Kit (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Thunder Bluff: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_THUNDER_BLUFF_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Thunder Bluff</p>
+			<p>When you succeed on a check to gather herbs using herbalism (see chapter 3), you gain one extra resource, and you find a rare resource if you beat the check DC by 4 or more.</p>
+		</description>
+		<sheet>
+			<description>When you succeed on a check to gather herbs using herbalism (see chapter 3), you gain one extra resource, and you find a rare resource if you beat the check DC by 4 or more.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Thunder Bluff: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_THUNDER_BLUFF_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Thunder Bluff</p>
+			<p>You can request the Charm of An’she from the leaders of Thunder Bluff before you undertake a quest on their behalf. This Charm allows you to cast Summon Beast (level 3 version). Once used three times, the Charm vanishes from you; it also vanishes if you complete or abandon the quest. Once you request a Charm, you can’t do so again until your Renown Score with Thunder Bluff increases.</p>
+		</description>
+		<sheet>
+			<description>You can request the Charm of An’she from the leaders of Thunder Bluff before you undertake a quest on their behalf. This Charm allows you to cast Summon Beast (level 3 version). Once used three times, the Charm vanishes from you; it also vanishes if you complete or abandon the quest. Once you request a Charm, you can’t do so again until your Renown Score with Thunder Bluff increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Thunder Bluff: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_THUNDER_BLUFF_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Thunder Bluff</p>
+			<p>You can call on a tauren shaman (Elemental Cultist) and eight assistant shaman (Berserkers) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Thunder Bluff increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on a tauren shaman (Elemental Cultist) and eight assistant shaman (Berserkers) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Thunder Bluff increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Undercity: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_UNDERCITY_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with Undercity</p>
+			<p>You can spend 30 days with a trainer to learn the Forsaken language or gain proficiency with Alchemist’s Supplies (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn the Forsaken language or gain proficiency with Alchemist’s Supplies (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Undercity: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_UNDERCITY_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with Undercity</p>
+			<p>When you use alchemy to craft an item (see chapter 3), the time required to craft it is halved.</p>
+		</description>
+		<sheet>
+			<description>When you use alchemy to craft an item (see chapter 3), the time required to craft it is halved.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Undercity: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_UNDERCITY_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with Undercity</p>
+			<p>You can request the Charm of the Banshee from the leaders of Undercity before you undertake a quest on their behalf. This Charm allows you to cast Summon Undead. Once used three times, the Charm vanishes from you; it also vanishes if you complete or abandon the quest. Once you request a Charm, you can’t do so again until your Renown Score with Undercity increases.</p>
+		</description>
+		<sheet>
+			<description>You can request the Charm of the Banshee from the leaders of Undercity before you undertake a quest on their behalf. This Charm allows you to cast Summon Undead. Once used three times, the Charm vanishes from you; it also vanishes if you complete or abandon the quest. Once you request a Charm, you can’t do so again until your Renown Score with Undercity increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Undercity: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_UNDERCITY_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with Undercity</p>
+			<p>You can call on two Forsaken necromancers (Ghast Gravecallers) and five unliving soldiers (Wights) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Undercity increases.</p>
+		</description>
+		<sheet>
+			<description>You can call on two Forsaken necromancers (Ghast Gravecallers) and five unliving soldiers (Wights) to assist you for a single adventure. Once you request this assistance, you can’t do so again until your Renown Score with Undercity increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Argent Dawn: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ARGENT_DAWN_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Argent Dawn</p>
+			<p>You receive the Blessing of Argent Will. This Blessing gives you Advantage on saving throws to avoid or end the Charmed condition caused by a Fiend or Undead. You lose the Blessing if your Renown Score with the Argent Dawn falls below 3.</p>
+		</description>
+		<sheet>
+			<description>You receive the Blessing of Argent Will. This Blessing gives you Advantage on saving throws to avoid or end the Charmed condition caused by a Fiend or Undead. You lose the Blessing if your Renown Score with the Argent Dawn falls below 3.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Argent Dawn: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ARGENT_DAWN_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Argent Dawn</p>
+			<p>If you spend a Long Rest in Light’s Hope Chapel or another Argent Dawn sanctuary, you gain a Charm that lasts for 7 days or until you use it. The Charm allows you to cast Healing Word once.</p>
+		</description>
+		<sheet>
+			<description>If you spend a Long Rest in Light’s Hope Chapel or another Argent Dawn sanctuary, you gain a Charm that lasts for 7 days or until you use it. The Charm allows you to cast Healing Word once.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Argent Dawn: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ARGENT_DAWN_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Argent Dawn</p>
+			<p>You receive the Blessing of Argent Fortitude. This Blessing gives you Immunity to the Poisoned condition and Poison damage. You lose the Blessing if your Renown Score with the Argent Dawn falls below 25.</p>
+		</description>
+		<sheet>
+			<description>You receive the Blessing of Argent Fortitude. This Blessing gives you Immunity to the Poisoned condition and Poison damage. You lose the Blessing if your Renown Score with the Argent Dawn falls below 25.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Argent Dawn: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_ARGENT_DAWN_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Argent Dawn</p>
+			<p>For a cost of 15,000 GP, the Argent Dawn will add a magical property to any Rare magic item you are attuned to. While attuned to the item, you have Resistance to one of the following damage types (chosen when the property is added): Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. The item’s rarity then increases to Very Rare.</p>
+		</description>
+		<sheet>
+			<description>For a cost of 15,000 GP, the Argent Dawn will add a magical property to any Rare magic item you are attuned to. While attuned to the item, you have Resistance to one of the following damage types (chosen when the property is added): Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. The item’s rarity then increases to Very Rare.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Cenarion Circle: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_CENARION_CIRCLE_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Cenarion Circle</p>
+			<p>You can spend 30 days with a trainer to learn Druidic or gain proficiency in Nature (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Druidic or gain proficiency in Nature (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Cenarion Circle: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_CENARION_CIRCLE_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Cenarion Circle</p>
+			<p>If you spend a Long Rest in a Cenarion Circle sanctuary, you gain the Charm of Restoration (see the Dungeon Master’s Guide).</p>
+		</description>
+		<sheet>
+			<description>If you spend a Long Rest in a Cenarion Circle sanctuary, you gain the Charm of Restoration (see the Dungeon Master’s Guide).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Cenarion Circle: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_CENARION_CIRCLE_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Cenarion Circle</p>
+			<p>You receive the Wildguard Blessing. This Blessing gives you Advantage on saving throws against spells. You lose the Blessing if your Renown Score with the Cenarion Circle falls below 25.</p>
+		</description>
+		<sheet>
+			<description>You receive the Wildguard Blessing. This Blessing gives you Advantage on saving throws against spells. You lose the Blessing if your Renown Score with the Cenarion Circle falls below 25.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Cenarion Circle: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_CENARION_CIRCLE_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Cenarion Circle</p>
+			<p>You carry the title Guardian of Cenarius. For a cost of 2,000 GP, you can purchase a Cenarion war hippogryph mount (Hippogriff). If your Renown Score falls below 50, you lose the title, and your mount no longer obeys your commands.</p>
+		</description>
+		<sheet>
+			<description>You carry the title Guardian of Cenarius. For a cost of 2,000 GP, you can purchase a Cenarion war hippogryph mount (Hippogriff). If your Renown Score falls below 50, you lose the title, and your mount no longer obeys your commands.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Earthen Ring: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EARTHEN_RING_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Earthen Ring</p>
+			<p>You can spend 30 days with a trainer to learn the Kalimag language (see the “Training” sidebar earlier in this chapter). Elementals that haven’t been corrupted by the Old Gods are Friendly to you by default.</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn the Kalimag language (see the “Training” sidebar earlier in this chapter). Elementals that haven’t been corrupted by the Old Gods are Friendly to you by default.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Earthen Ring: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EARTHEN_RING_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Earthen Ring</p>
+			<p>You can freely use the portals located in the Eastern and Western Earthshrine.</p>
+			<p class="indent">Additionally, if you spend a Long Rest in an Earthen Ring sanctuary, you gain the Charm of the Earthen Ring, which allows you to cast Summon Elemental. The Charm vanishes from you once used three times, after 7 days, or if your Renown Score with the Earthen Ring falls below 10.</p>
+		</description>
+		<sheet>
+			<description>You can freely use the portals located in the Eastern and Western Earthshrine. Additionally, if you spend a Long Rest in an Earthen Ring sanctuary, you gain the Charm of the Earthen Ring, which allows you to cast Summon Elemental. The Charm vanishes from you once used three times, after 7 days, or if your Renown Score with the Earthen Ring falls below 10.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Earthen Ring: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EARTHEN_RING_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Earthen Ring</p>
+			<p>You receive the Blessing of the Earthen Ring. The Blessing enables you to take a Magic action to summon an Air Elemental, an Earth Elemental, a Fire Elemental, or a Water Elemental. The elemental appears in an unoccupied space you choose within 30 feet of yourself, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. You can’t use this Blessing again until the next dawn. You lose the Blessing if your Renown Score with the Earthen Ring falls below 25.</p>
+		</description>
+		<sheet>
+			<description>You receive the Blessing of the Earthen Ring. The Blessing enables you to take a Magic action to summon an Air Elemental, an Earth Elemental, a Fire Elemental, or a Water Elemental. The elemental appears in an unoccupied space you choose within 30 feet of yourself, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. You can’t use this Blessing again until the next dawn. You lose the Blessing if your Renown Score with the Earthen Ring falls below 25.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Earthen Ring: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EARTHEN_RING_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Earthen Ring</p>
+			<p>You receive the Blessing of the Farseer. The Blessing gives you the benefits of a Ring of Elemental Command linked to an Elemental Plane of your choice. When you finish a Long Rest, you can change the plane it’s linked to. You lose the Blessing if your Renown Score with the Earthen Ring falls below 50.</p>
+		</description>
+		<sheet>
+			<description>You receive the Blessing of the Farseer. The Blessing gives you the benefits of a Ring of Elemental Command linked to an Elemental Plane of your choice. When you finish a Long Rest, you can change the plane it’s linked to. You lose the Blessing if your Renown Score with the Earthen Ring falls below 50.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Explorers’ League/Reliquary: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EXPLORERS_LEAGUE_RELIQUARY_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Faction</p>
+			<p>You can spend 30 days with a trainer to learn any language from the language tables in chapter 2 or gain proficiency in History (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn any language from the language tables in chapter 2 or gain proficiency in History (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Explorers’ League/Reliquary: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EXPLORERS_LEAGUE_RELIQUARY_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Faction</p>
+			<p>When you gather archaeology fragments from a dig site (see chapter 3), you gain one additional fragment on a successful check, and you have Advantage on Intelligence (History) checks to assemble fragments into a complete relic.</p>
+		</description>
+		<sheet>
+			<description>When you gather archaeology fragments from a dig site (see chapter 3), you gain one additional fragment on a successful check, and you have Advantage on Intelligence (History) checks to assemble fragments into a complete relic.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Explorers’ League/Reliquary: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EXPLORERS_LEAGUE_RELIQUARY_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Faction</p>
+			<p>If you spend 7 days studying the relics in the Hall of Explorers in Ironforge or the Reliquary in Silvermoon City (or some other significant Explorers’ League or Reliquary facility, at the DM’s discretion) and then finish a Long Rest there, you gain a Charm that lasts for 7 days or until you use it. You can’t gain another Charm from this feature while you still have one. The effect of the Charm depends on the origin of the relics you study; you can choose one of the following options:</p>
+			<p class="indent"><strong><em>Charm of Draenor.</em></strong> While you have this Charm, you know Draenei and Orcish. You can expend the Charm to cast Conjure Minor Elementals.</p>
+			<p class="indent"><strong><em>Charm of Pandaria.</em></strong> While you have this Charm, you know the Pandaren language. You can expend the Charm to cast Gaseous Form, targeting yourself. The effect lasts for 1 hour or until you end the effect as a Bonus Action. Charm of the Burning Legion. While you have this Charm, you know the Eredun language. You can expend the Charm to cast Rain of Fire (level 4 version; see chapter 1).</p>
+			<p class="indent"><strong><em>Charm of the Highborne.</em></strong> While you have this Charm, you know Thalassian. You can expend the Charm to cast Charm Monster.</p>
+			<p class="indent"><strong><em>Charm of the Old Gods.</em></strong> While you have this Charm, you know Shath’Yar. You can expend the Charm to cast Summon Aberration.</p>
+			<p class="indent"><strong><em>Charm of the Titan-Forged.</em></strong> While you have this Charm, you know Titan. You can expend the Charm to gain Resistance to all damage for 1 minute as your flesh takes on a mineral appearance.</p>
+			<p class="indent"><strong><em>Charm of the Zandalari.</em></strong> While you have this Charm, you know Zandali. You can expend the Charm to cast Summon Beast (level 4 version). The summoned Bestial Spirit resembles a loa.</p>
+		</description>
+		<sheet>
+			<description>If you spend 7 days studying the relics in the Hall of Explorers in Ironforge or the Reliquary in Silvermoon City (or some other significant Explorers’ League or Reliquary facility, at the DM’s discretion) and then finish a Long Rest there, you gain a Charm that lasts for 7 days or until you use it. You can’t gain another Charm from this feature while you still have one. The effect of the Charm depends on the origin of the relics you study; you can choose one of the following options: Charm of Draenor. While you have this Charm, you know Draenei and Orcish. You can expend the Charm to cast Conjure Minor Elementals. Charm of Pandaria. While you have this Charm, you know the Pandaren language. You can expend the Charm to cast Gaseous Form, targeting yourself. The effect lasts for 1 hour or until you end the effect as a Bonus Action. Charm of the Burning Legion. While you have this Charm, you know the Eredun language. You can expend the Charm to cast Rain of Fire (level 4 version; see chapter 1). Charm of the Highborne. While you have this Charm, you know Thalassian. You can expend the Charm to cast Charm Monster. Charm of the Old Gods. While you have this Charm, you know Shath’Yar. You can expend the Charm to cast Summon Aberration. Charm of the Titan-Forged. While you have this Charm, you know Titan. You can expend the Charm to gain Resistance to all damage for 1 minute as your flesh takes on a mineral appearance. Charm of the Zandalari. While you have this Charm, you know Zandali. You can expend the Charm to cast Summon Beast (level 4 version). The summoned Bestial Spirit resembles a loa.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Explorers’ League/Reliquary: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_EXPLORERS_LEAGUE_RELIQUARY_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Faction</p>
+			<p>You can request the use of a powerful magic item stored in your organization’s vaults to assist you for a single adventure that is relevant to your organization’s interests and aims. It takes 7 days for top agents in your organization to retrieve the item, which can be any Legendary magic item of your choice (subject to the DM’s discretion). If the item isn’t consumable, you must return it at the conclusion of the adventure, or your Renown Score decreases by 2d12. Once you use this benefit, you can’t do so again until your Renown Score with your organization increases.</p>
+		</description>
+		<sheet>
+			<description>You can request the use of a powerful magic item stored in your organization’s vaults to assist you for a single adventure that is relevant to your organization’s interests and aims. It takes 7 days for top agents in your organization to retrieve the item, which can be any Legendary magic item of your choice (subject to the DM’s discretion). If the item isn’t consumable, you must return it at the conclusion of the adventure, or your Renown Score decreases by 2d12. Once you use this benefit, you can’t do so again until your Renown Score with your organization increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Kirin Tor: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_KIRIN_TOR_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Kirin Tor</p>
+			<p>You can enjoy a Modest lifestyle in Dalaran at no cost. You can also request a favor from the archmages of the Kirin Tor, which can take one of the following forms:</p>
+			<p class="indent">An archmage casts for you a spell of level 3 or lower at half the usual cost.</p>
+			<p class="indent">An archmage provides you with a Common or Uncommon magic item from the Arcana tables in the Dungeon Master’s Guide at half the usual cost.</p>
+			<p class="indent">An archmage spends 30 days teaching you, so you learn a language from the tables in chapter 2 or gain proficiency with a tool (see the “Training”</p>
+			<p class="indent">sidebar earlier in this chapter). You can request such a favor a number of times equal to your Renown Score with the Kirin Tor. If your Renown Score falls below the number of favors you have requested, a higher-ranking member of the Kirin Tor might call in a favor from you, sending you on a mission for the organization.</p>
+		</description>
+		<sheet>
+			<description>You can enjoy a Modest lifestyle in Dalaran at no cost. You can also request a favor from the archmages of the Kirin Tor, which can take one of the following forms: An archmage casts for you a spell of level 3 or lower at half the usual cost. An archmage provides you with a Common or Uncommon magic item from the Arcana tables in the Dungeon Master’s Guide at half the usual cost. An archmage spends 30 days teaching you, so you learn a language from the tables in chapter 2 or gain proficiency with a tool (see the “Training” sidebar earlier in this chapter). You can request such a favor a number of times equal to your Renown Score with the Kirin Tor. If your Renown Score falls below the number of favors you have requested, a higher-ranking member of the Kirin Tor might call in a favor from you, sending you on a mission for the organization.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Kirin Tor: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_KIRIN_TOR_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Kirin Tor</p>
+			<p>You can enjoy a Comfortable lifestyle in Dalaran at no cost.</p>
+			<p class="indent">If your Bastion is in Dalaran, when you issue the Maintain order to your Bastion, the DM rolls twice on the Bastion Events table and you can pick which event occurs.</p>
+			<p class="indent">In addition, when you request a favor from the Kirin Tor (see “Kirin Tor: Friendly”), it can take one of the following additional forms:</p>
+			<p class="indent">An archmage casts for you a spell of level 4 or lower at half the usual cost.</p>
+			<p class="indent">An archmage provides you with a Rare magic item from the Arcana tables in the Dungeon Master’s Guide at half the usual cost.</p>
+			<p class="indent">Whenever you take a Bastion turn, you can issue the Research order to the Kirin Tor as if it were a Library facility in your Bastion.</p>
+		</description>
+		<sheet>
+			<description>You can enjoy a Comfortable lifestyle in Dalaran at no cost. If your Bastion is in Dalaran, when you issue the Maintain order to your Bastion, the DM rolls twice on the Bastion Events table and you can pick which event occurs. In addition, when you request a favor from the Kirin Tor (see “Kirin Tor: Friendly”), it can take one of the following additional forms: An archmage casts for you a spell of level 4 or lower at half the usual cost. An archmage provides you with a Rare magic item from the Arcana tables in the Dungeon Master’s Guide at half the usual cost. Whenever you take a Bastion turn, you can issue the Research order to the Kirin Tor as if it were a Library facility in your Bastion.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Kirin Tor: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_KIRIN_TOR_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Kirin Tor</p>
+			<p>You can enjoy a Wealthy lifestyle in Dalaran at no cost. In addition, when you request a favor from the Kirin Tor (see “Kirin Tor: Friendly”), it can take one of the following additional forms:</p>
+			<p class="indent">An archmage casts for you a spell of level 6 or lower at half the usual cost.</p>
+			<p class="indent">An archmage provides you with a Very Rare magic item from the Arcana tables in the Dungeon Master’s Guide at half the usual cost.</p>
+			<p class="indent">Whenever you take a Bastion turn, you can issue the Craft order to the Kirin Tor as if it were a Scriptorium facility in your Bastion.</p>
+		</description>
+		<sheet>
+			<description>You can enjoy a Wealthy lifestyle in Dalaran at no cost. In addition, when you request a favor from the Kirin Tor (see “Kirin Tor: Friendly”), it can take one of the following additional forms: An archmage casts for you a spell of level 6 or lower at half the usual cost. An archmage provides you with a Very Rare magic item from the Arcana tables in the Dungeon Master’s Guide at half the usual cost. Whenever you take a Bastion turn, you can issue the Craft order to the Kirin Tor as if it were a Scriptorium facility in your Bastion.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Kirin Tor: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_KIRIN_TOR_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Kirin Tor</p>
+			<p>You can enjoy an Aristocratic lifestyle in Dalaran at no cost.</p>
+			<p class="indent">In addition, when you request a favor from the Kirin Tor (see “Kirin Tor: Friendly”), it can take one of the following additional forms:</p>
+			<p class="indent">An archmage casts for you a spell of level 8 or lower at half the usual cost.</p>
+			<p class="indent">An archmage provides you with a Legendary magic item from the Arcana tables in the Dungeon Master’s Guide at half the usual cost.</p>
+			<p class="indent">When you craft a magic item, two Kirin Tor apprentices assist you, reducing the time required to craft the item accordingly.</p>
+		</description>
+		<sheet>
+			<description>You can enjoy an Aristocratic lifestyle in Dalaran at no cost. In addition, when you request a favor from the Kirin Tor (see “Kirin Tor: Friendly”), it can take one of the following additional forms: An archmage casts for you a spell of level 8 or lower at half the usual cost. An archmage provides you with a Legendary magic item from the Arcana tables in the Dungeon Master’s Guide at half the usual cost. When you craft a magic item, two Kirin Tor apprentices assist you, reducing the time required to craft the item accordingly.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Steamwheedle Cartel: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_STEAMWHEEDLE_CARTEL_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Steamwheedle Cartel</p>
+			<p>You can spend 30 days with a trainer to learn the Goblin language or gain proficiency with Alchemist’s Supplies or Tinker’s Tools (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn the Goblin language or gain proficiency with Alchemist’s Supplies or Tinker’s Tools (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Steamwheedle Cartel: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_STEAMWHEEDLE_CARTEL_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Steamwheedle Cartel</p>
+			<p>You can request a supply of 1d4 flasks of Noggenfogger Elixir (see chapter 3) from the leaders of the cartel before you undertake a quest on their behalf. Once you request these elixirs, you can’t do so again until your Renown Score with the cartel increases.</p>
+		</description>
+		<sheet>
+			<description>You can request a supply of 1d4 flasks of Noggenfogger Elixir (see chapter 3) from the leaders of the cartel before you undertake a quest on their behalf. Once you request these elixirs, you can’t do so again until your Renown Score with the cartel increases.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Steamwheedle Cartel: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_STEAMWHEEDLE_CARTEL_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Steamwheedle Cartel</p>
+			<p>You can purchase an Experimental Goblin Jetpack (see chapter 3) from the Steamwheedle Cartel for 2,000 GP (with no further discount).</p>
+		</description>
+		<sheet>
+			<description>You can purchase an Experimental Goblin Jetpack (see chapter 3) from the Steamwheedle Cartel for 2,000 GP (with no further discount).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Steamwheedle Cartel: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_STEAMWHEEDLE_CARTEL_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Steamwheedle Cartel</p>
+			<p>You can purchase a Steamwheedle Apparatus (which functions as an Apparatus of Kwalish) from the Steamwheedle Cartel for 100,000 GP (with no further discount).</p>
+		</description>
+		<sheet>
+			<description>You can purchase a Steamwheedle Apparatus (which functions as an Apparatus of Kwalish) from the Steamwheedle Cartel for 100,000 GP (with no further discount).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Valdrakken Accord: Friendly" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_VALDRAKKEN_ACCORD_FRIENDLY">
+		<description>
+			<p class="flavor">Prerequisite: Renown 3+ with the Valdrakken Accord</p>
+			<p>You can spend 30 days with a trainer to learn Draconic (see the “Training” sidebar earlier in this chapter).</p>
+		</description>
+		<sheet>
+			<description>You can spend 30 days with a trainer to learn Draconic (see the “Training” sidebar earlier in this chapter).</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Valdrakken Accord: Honored" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_VALDRAKKEN_ACCORD_HONORED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 10+ with the Valdrakken Accord</p>
+			<p>You receive the Blessing of the Proto-Whelp. This Blessing allows you to cast Find Familiar with no Material components. When you cast the spell in this way, your familiar is a crimson proto-whelp (Pseudodragon). Once you cast the spell in this way, you can’t do so again until you finish a Long Rest. You lose the Blessing and your proto-whelp familiar vanishes if your Renown Score with the Valdrakken Accord falls below 10.</p>
+			<p class="indent">Also, if you establish your Bastion in the Dragon Isles, it includes a Garden special facility. This facility doesn’t count toward the total number of special facilities in your Bastion. The hireling departs and the facility becomes unusable if your Renown Score with Valdrakken Accord falls below 10.</p>
+		</description>
+		<sheet>
+			<description>You receive the Blessing of the Proto-Whelp. This Blessing allows you to cast Find Familiar with no Material components. When you cast the spell in this way, your familiar is a crimson proto-whelp (Pseudodragon). Once you cast the spell in this way, you can’t do so again until you finish a Long Rest. You lose the Blessing and your proto-whelp familiar vanishes if your Renown Score with the Valdrakken Accord falls below 10. Also, if you establish your Bastion in the Dragon Isles, it includes a Garden special facility. This facility doesn’t count toward the total number of special facilities in your Bastion. The hireling departs and the facility becomes unusable if your Renown Score with Valdrakken Accord falls below 10.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Valdrakken Accord: Revered" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_VALDRAKKEN_ACCORD_REVERED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 25+ with the Valdrakken Accord</p>
+			<p>You receive the Blessing of the Wylderdrake. This Blessing allows you to cast Find Steed (level 4 version). The Otherworldly Steed summoned by the spell is a cliffside wylderdrake, which has the Dragon type, deals Force damage with its Otherworldly Slam, and has the following trait instead of the Bonus Action options shown in the Player’s Handbook:</p>
+			<p class="indent"><strong><em>Flyby.</em></strong> The steed doesn’t provoke an Opportunity Attack when it flies out of an enemy’s reach.</p>
+		</description>
+		<sheet>
+			<description>You receive the Blessing of the Wylderdrake. This Blessing allows you to cast Find Steed (level 4 version). The Otherworldly Steed summoned by the spell is a cliffside wylderdrake, which has the Dragon type, deals Force damage with its Otherworldly Slam, and has the following trait instead of the Bonus Action options shown in the Player’s Handbook: Flyby. The steed doesn’t provoke an Opportunity Attack when it flies out of an enemy’s reach.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Valdrakken Accord: Exalted" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_RENOWN_VALDRAKKEN_ACCORD_EXALTED">
+		<description>
+			<p class="flavor">Prerequisite: Renown 50+ with the Valdrakken Accord</p>
+			<p>The Valdrakken Accord grants you the title Ally of Dragons. Dragons are Friendly to you by default unless they are corrupted. You can petition one of the Dragon Aspects for a favor, which takes the form of a Wish spell. Once you are granted such a favor, you can’t ask for another one, even if your Renown Score falls below 50 and later reaches 50 again.</p>
+		</description>
+		<sheet>
+			<description>The Valdrakken Accord grants you the title Ally of Dragons. Dragons are Friendly to you by default unless they are corrupted. You can petition one of the Dragon Aspects for a favor, which takes the form of a Wish spell. Once you are granted such a favor, you can’t ask for another one, even if your Renown Score falls below 50 and later reaches 50 again.</description>
+		</sheet>
+		<setters>
+			<set name="category">Renown Perks</set>
+			<set name="type">Renown Perk</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+</elements>

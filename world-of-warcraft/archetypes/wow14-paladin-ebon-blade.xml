@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the Ebon Blade</name>
+		<description>Oath of the Ebon Blade (Death Knight) Paladin subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-paladin-ebon-blade.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-paladin-ebon-blade.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Ebon Blade" type="Archetype" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_PALADIN_OATH_OF_THE_EBON_BLADE">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p class="flavor">Wield the Power of Death Against the Scourge</p>
+			<p>The Oath of the Ebon Blade unites the free death knights of Azeroth. No longer directly under the Lich King’s control, they still serve Bolvar Fordragon—first as agents of the new Lich King, and later, after the destruction of the Helm of Domination, as troops devoted to stopping the Scourge’s spread.</p>
+			<p class="indent">Death knight is a hero class, which means you typically must start play at level 3 or higher. This subclass alters some of your core Paladin class features beginning at level 1. With your DM’s permission, you can start as a level 1 character of this class, but your subclass choice is fixed when you make the character. (In Aurora, the subclass’s level 1 and 2 features apply once you choose the subclass.)</p>
+			<p class="indent">This is a 2014 rules adaptation of a subclass from World of Warcraft (a 2024 rules book). Terms that exist only in the 2024 rules have been converted to their 2014 equivalents.</p>
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_DEATH_COIL" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_SMITE" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_OATH_OF_THE_EBON_BLADE_SPELLS" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNEFORGING" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_POWER" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_FAITHFUL_STEED" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_AURA_OF_DEATHLY_ENDURANCE" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_STRIKES" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_IMPROVED_DEATH_COIL" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_MASTERY" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_ASPECT_OF_THE_HORSEMEN" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_DEATH_COIL" level="1" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_SMITE" level="2" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_OATH_OF_THE_EBON_BLADE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNEFORGING" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_FAITHFUL_STEED" level="5" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_AURA_OF_DEATHLY_ENDURANCE" level="7" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_STRIKES" level="11" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_IMPROVED_DEATH_COIL" level="14" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_MASTERY" level="15" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_ASPECT_OF_THE_HORSEMEN" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Death Coil" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_DEATH_COIL">
+		<description>
+			<p>This feature replaces the Lay On Hands feature of the Paladin class.</p>
+			<p class="indent">Your creature type becomes Undead.</p>
+			<p class="indent">You also gain the ability to manipulate negative energy. You have a pool of d8s to fuel this ability. The number of dice in the pool equals one plus your Charisma modifier (minimum of one die).</p>
+			<p class="indent">As a Bonus Action, you can target a creature you can see within 60 feet of yourself and force it to make a Constitution saving throw, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend. The target takes Necrotic damage equal to the roll’s total on a failed save or half as much damage on a successful one. If the target is an Undead, you can choose to have it regain Hit Points equal to the roll’s total instead. Your pool regains all expended dice when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Death Coil" action="Bonus Action" usage="{{death coil:dice}}d8/Long Rest">
+			<description>Target a creature within 60 feet: Constitution save (DC {{paladin:spellcasting:dc}}), expending up to {{charisma:modifier}} dice from your pool of d8s. Necrotic damage equal to the roll on a failed save, half on success. An Undead target can instead regain that many Hit Points. Your creature type is Undead.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_LAY_ON_HANDS" />
+			<stat name="death coil:dice" value="1" bonus="base" />
+			<stat name="death coil:dice" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Runic Smite" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_SMITE">
+		<description>
+			<p>This feature replaces the Divine Smite feature of the Paladin class.</p>
+			<p class="indent">You always have the Rune Strike spell (see “Death Knight Spells”) prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Runic Smite" usage="1/Long Rest">
+			<description>You always have Rune Strike prepared and can cast it once without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_RUNE_STRIKE" level="2" spellcasting="Paladin" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Oath of the Ebon Blade Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_OATH_OF_THE_EBON_BLADE_SPELLS">
+		<description>
+			<p>The magic of your oath and your Runeforging feature (see below) ensure you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Ebon Blade Spells table, you thereafter always have the spell in the Spells (All) column prepared. You also have the additional spells listed in the column matching the rune you have inscribed on your weapon, if any.</p>
+			<h5>Oath of the Ebon Blade Spells</h5><table class="class-features"><thead><tr><td>Paladin Level</td><td>Spells (All)</td><td>Spells (Blood)</td><td>Spells (Frost)</td><td>Spells (Unholy)</td></tr></thead><tr><td>3</td><td>Death Grip</td><td>Vampiric Blood</td><td>Chains of Ice</td><td>Scourge Strike</td></tr><tr><td>5</td><td>Death and Decay</td><td>Spiritual Weapon</td><td>Frostscythe</td><td>Ray of Enfeeblement</td></tr><tr><td>9</td><td>Summon Undead</td><td>Leeching Strike</td><td>Remorseless Winter</td><td>Bestow Curse</td></tr><tr><td>13</td><td>Freedom of Movement</td><td>Evard’s Black Tentacles</td><td>Ice Storm</td><td>Blight</td></tr><tr><td>17</td><td>Circle of Power</td><td>Bonestorm</td><td>Cone of Cold</td><td>Contagion</td></tr></table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_DEATH_GRIP" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_DEATH_AND_DECAY" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUMMON_UNDEAD" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CIRCLE_OF_POWER" level="17" spellcasting="Paladin" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Runeforging" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNEFORGING">
+		<description>
+			<p>When you finish a Long Rest, you can inscribe one of the following runes on a melee weapon you are holding, or you can transfer the rune to a different weapon. Whenever you gain a level, you can replace it with a different rune.</p>
+			<p class="indent"><strong><em>Blood.</em></strong> When you inscribe this rune on your weapon, and whenever you finish a Long Rest while the rune is inscribed on your weapon, you gain Temporary Hit Points equal to your Charisma modifier plus your Paladin level. While you are wielding your inscribed weapon, you gain these Temporary Hit Points whenever you reduce an enemy to 0 Hit Points.</p>
+			<p class="indent"><strong><em>Frost.</em></strong> While you are wielding your inscribed weapon, damage from your weapon attacks, Paladin spells, and Paladin features ignores Resistance to Cold damage. When you make the extra attack of the Light property and hit while wielding your inscribed weapon, you deal an extra 1d4 Cold damage.</p>
+			<p class="indent"><strong><em>Unholy.</em></strong> While you are wielding your inscribed weapon, damage from your weapon attacks, Paladin spells, and Paladin features ignores Resistance to Necrotic damage. If your inscribed weapon has the Heavy property, the first creature you hit with it each turn takes extra Necrotic damage equal to your Charisma modifier (minimum of 1).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Rune (Runeforging)" supports="WoW Ebon Blade Rune" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Runic Power" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_POWER">
+		<description>
+			<p>Immediately after you cast Rune Strike, you can expend one use of your Channel Divinity to gain one of the following benefits based on the rune inscribed on your weapon.</p>
+			<p class="indent"><strong><em>Blood.</em></strong> You regain a number of Hit Points equal to the Necrotic damage dealt with your Rune Strike.</p>
+			<p class="indent"><strong><em>Frost.</em></strong> Frost covers your weapon and shatters on impact. The target of your Rune Strike and each enemy in a 10-foot Emanation originating from the target take 2d6 Cold damage.</p>
+			<p class="indent"><strong><em>Unholy.</em></strong> The target of your Rune Strike is cursed until the end of your next turn. The next time the cursed target makes a saving throw, it subtracts 1d6 from the roll, and the curse ends.</p>
+		</description>
+		<sheet alt="Runic Power" usage="Channel Divinity">
+			<description>After you cast Rune Strike, expend a Channel Divinity: Blood—regain HP equal to its Necrotic damage; Frost—target and enemies within 10 feet take 2d6 Cold; Unholy—target subtracts 1d6 from its next saving throw.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 5: Faithful Steed" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_FAITHFUL_STEED">
+		<description>
+			<p>You always have the Find Steed spell prepared, and you can cast it once without expending a spell slot; you regain the ability to do so when you finish a Long Rest. When you cast Find Steed, the steed can be Undead (such as a skeletal warhorse). An Undead steed deals Necrotic damage with its attacks and has this Bonus Action:</p>
+			<p class="indent">Ghostly Stride (Undead Only; Recharges After a Long Rest). The steed and its rider can move through other creatures and objects this turn as if they were Difficult Terrain. Both steed and rider take 5 (1d10) Force damage if they end their turn inside an object.</p>
+		</description>
+		<sheet alt="Faithful Steed" usage="1/Long Rest">
+			<description>You always have the Find Steed spell prepared, and you can cast it once without expending a spell slot; you regain the ability to do so when you finish a Long Rest. When you cast Find Steed, the steed can be Undead (such as a skeletal warhorse). An Undead steed deals Necrotic damage with its attacks and has this Bonus Action: Ghostly Stride (Undead Only; Recharges After a Long Rest). The steed and its rider can move through other creatures and objects this turn as if they were Difficult Terrain. Both steed and rider take 5 (1d10) Force damage if they end their turn inside an object.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_STEED" spellcasting="Paladin" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Aura of Deathly Endurance" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_AURA_OF_DEATHLY_ENDURANCE">
+		<description>
+			<p>You and your allies have Resistance to Cold, Necrotic, and Psychic damage while in your Aura of Protection.</p>
+		</description>
+		<sheet alt="Aura of Deathly Endurance">
+			<description>You and your allies have Resistance to Cold, Necrotic, and Psychic damage while in your Aura of Protection.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Runic Strikes" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_STRIKES">
+		<description>
+			<p>This feature replaces the Paladin’s Improved Divine Smite feature.</p>
+			<p class="indent">When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Necrotic damage.</p>
+		</description>
+		<sheet alt="Runic Strikes">
+			<description>When you hit a target with a Melee weapon or an Unarmed Strike, it takes an extra 1d8 Necrotic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_IMPROVED_DIVINE_SMITE" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Improved Death Coil" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_IMPROVED_DEATH_COIL">
+		<description>
+			<p>This feature replaces the Paladin’s Cleansing Touch feature.</p>
+			<p class="indent">When you use Death Coil to deal damage, the target takes extra Necrotic damage equal to your Charisma modifier (minimum of 1) whether or not it fails its saving throw. If the target is an Undead, and you have it regain Hit Points, it regains additional Hit Points equal to your Paladin level.</p>
+		</description>
+		<sheet alt="Improved Death Coil">
+			<description>This feature replaces the Paladin’s Cleansing Touch feature. When you use Death Coil to deal damage, the target takes extra Necrotic damage equal to your Charisma modifier (minimum of 1) whether or not it fails its saving throw. If the target is an Undead, and you have it regain Hit Points, it regains additional Hit Points equal to your Paladin level.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CLEANSING_TOUCH" />
+		</rules>
+	</element>
+
+	<element name="Level 15: Runic Mastery" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNIC_MASTERY">
+		<description>
+			<p>You can invoke the power of the rune inscribed on your weapon. Once you use this feature, you can’t do so again until you finish a Long Rest. The effect depends on the rune you have inscribed.</p>
+			<p class="indent"><strong><em>Blood.</em></strong> When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a Reaction to reduce the damage the target takes by your Paladin level. You then lose a number of Hit Points equal to your Paladin level.</p>
+			<p class="indent"><strong><em>Frost.</em></strong> When you take the Attack action on your turn, you can replace one attack with an exhalation of frost magic in a 30-foot Cone. Each creature in that area makes a Dexterity saving throw against your spell save DC. A creature takes 8d6 Cold damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent"><strong><em>Unholy.</em></strong> When you cast Summon Undead, you can modify it so that the spell doesn’t require Concentration. If you do so, the spell’s duration becomes 1 minute for that casting, and when summoned, the Undead Spirit has a number of Temporary Hit Points equal to your Paladin level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Paladin level (round up).</p>
+		</description>
+		<sheet alt="Runic Mastery" usage="1/Long Rest">
+			<description>Blood—Reaction: reduce damage to a creature within 10 feet by your Paladin level, then lose that many HP. Frost—replace an attack with a 30-ft Cone, Dex save, 8d6 Cold. Unholy—cast Summon Undead without Concentration (1 minute), spirit gains THP and extra Necrotic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Aspect of the Horsemen" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_ASPECT_OF_THE_HORSEMEN">
+		<description>
+			<p>As a Bonus Action, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+			<p class="indent"><strong><em>Generate Runic Power.</em></strong> You can restore a use of your Runic Mastery by expending a level 4 spell slot (no action required).</p>
+			<p class="indent"><strong><em>Runeforging.</em></strong> When you use your Runic Power and Runic Mastery features, you can choose any effect, not just the one that corresponds to the rune inscribed on your weapon.</p>
+		</description>
+		<sheet alt="Aspect of the Horsemen" action="Bonus Action" usage="1/Long Rest">
+			<description>As a Bonus Action, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required). Generate Runic Power. You can restore a use of your Runic Mastery by expending a level 4 spell slot (no action required). Runeforging. When you use your Runic Power and Runic Mastery features, you can choose any effect, not just the one that corresponds to the rune inscribed on your weapon.</description>
+		</sheet>
+	</element>
+
+	<element name="Blood Rune" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNE_BLOOD">
+		<supports>WoW Ebon Blade Rune</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you inscribe this rune on your weapon, and whenever you finish a Long Rest while the rune is inscribed on your weapon, you gain Temporary Hit Points equal to your Charisma modifier plus your Paladin level. While you are wielding your inscribed weapon, you gain these Temporary Hit Points whenever you reduce an enemy to 0 Hit Points.</p>
+		</description>
+		<sheet>
+			<description>When you inscribe this rune on your weapon, and whenever you finish a Long Rest while the rune is inscribed on your weapon, you gain Temporary Hit Points equal to your Charisma modifier plus your Paladin level. While you are wielding your inscribed weapon, you gain these Temporary Hit Points whenever you reduce an enemy to 0 Hit Points.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_VAMPIRIC_BLOOD" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPIRITUAL_WEAPON" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_LEECHING_STRIKE" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_BONESTORM" level="17" spellcasting="Paladin" />
+		</rules>
+	</element>
+
+	<element name="Frost Rune" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNE_FROST">
+		<supports>WoW Ebon Blade Rune</supports>
+		<compendium display="false" />
+		<description>
+			<p>While you are wielding your inscribed weapon, damage from your weapon attacks, Paladin spells, and Paladin features ignores Resistance to Cold damage. When you make the extra attack of the Light property and hit while wielding your inscribed weapon, you deal an extra 1d4 Cold damage.</p>
+		</description>
+		<sheet>
+			<description>While you are wielding your inscribed weapon, damage from your weapon attacks, Paladin spells, and Paladin features ignores Resistance to Cold damage. When you make the extra attack of the Light property and hit while wielding your inscribed weapon, you deal an extra 1d4 Cold damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_CHAINS_OF_ICE" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_FROSTSCYTHE" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_REMORSELESS_WINTER" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ICE_STORM" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONE_OF_COLD" level="17" spellcasting="Paladin" />
+		</rules>
+	</element>
+
+	<element name="Unholy Rune" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_EBON_BLADE_RUNE_UNHOLY">
+		<supports>WoW Ebon Blade Rune</supports>
+		<compendium display="false" />
+		<description>
+			<p>While you are wielding your inscribed weapon, damage from your weapon attacks, Paladin spells, and Paladin features ignores Resistance to Necrotic damage. If your inscribed weapon has the Heavy property, the first creature you hit with it each turn takes extra Necrotic damage equal to your Charisma modifier (minimum of 1).</p>
+		</description>
+		<sheet>
+			<description>While you are wielding your inscribed weapon, damage from your weapon attacks, Paladin spells, and Paladin features ignores Resistance to Necrotic damage. If your inscribed weapon has the Heavy property, the first creature you hit with it each turn takes extra Necrotic damage equal to your Charisma modifier (minimum of 1).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SCOURGE_STRIKE" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTAGION" level="17" spellcasting="Paladin" />
+		</rules>
+	</element>
+
+</elements>

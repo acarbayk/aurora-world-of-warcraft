@@ -123,9 +123,9 @@ write("feats/wow-feats-origin.xml", "Origin Feats", "Human Origin feats from Wor
 
 # ---------------------------------------------------------------- Eldritch Invocations
 INV = "PHB24 Eldritch Invocation"
-LEGION = f"{PREFIX}_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_LEGION"
+LEGION = f"({PREFIX}_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_LEGION||ID_KAYA_WOW14_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_LEGION)"
 inv = lambda name, prereq, req, paras, sheet, rules=(), usage=None, action=None: feat(
-    name, "Eldritch Invocation", prereq, req, paras, sheet, rules=rules, supports=INV, usage=usage, action=action,
+    name, "Eldritch Invocation", prereq, req, paras, sheet, rules=rules, supports=INV if name == "Pact of the Legion" else INV + ", Eldritch Invocation", usage=usage, action=action,
     fid=f"{PREFIX}_CLASS_FEATURE_ELDRITCH_INVOCATION_{slug(name)}", etype="Class Feature", flavor=False)
 invs = [
     inv("Pact of the Legion", "", "", [

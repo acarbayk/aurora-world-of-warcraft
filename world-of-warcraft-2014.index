@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>World of Warcraft (2014 rules)</name>
+		<description>World of Warcraft by Andrey Kuzinskiy, with subclasses and class options adapted to the 2014 Player’s Handbook classes. Species, spells, feats, items and renown are shared with the 2024 version. Requires the Aurora Legacy Player’s Handbook (2024) to be loaded as well.</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="world-of-warcraft-2014.index" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft-2014.index" />
+		</update>
+	</info>
+	<files>
+		<file name="wow-fighter-warrior-maneuvers.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-fighter-warrior-maneuvers.xml" />
+		<file name="wow14-barbarian-elements.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-barbarian-elements.xml" />
+		<file name="wow14-barbarian-shaman-totems.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-barbarian-shaman-totems.xml" />
+		<file name="wow14-barbarian-spiritual-guardian.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-barbarian-spiritual-guardian.xml" />
+		<file name="wow14-cleric-discipline.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-cleric-discipline.xml" />
+		<file name="wow14-cleric-shadow.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-cleric-shadow.xml" />
+		<file name="wow14-druid-forms.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-druid-forms.xml" />
+		<file name="wow14-monk-mystic-brews.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-monk-mystic-brews.xml" />
+		<file name="wow14-paladin-ebon-blade.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-paladin-ebon-blade.xml" />
+		<file name="wow14-paladin-holy.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-paladin-holy.xml" />
+		<file name="wow14-ranger-demon-hunter.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-ranger-demon-hunter.xml" />
+		<file name="wow14-ranger-hunter-pets.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-ranger-hunter-pets.xml" />
+		<file name="wow14-rogue-swashbuckler.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-rogue-swashbuckler.xml" />
+		<file name="wow14-sorcerer-evoker.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-sorcerer-evoker.xml" />
+		<file name="wow14-warlock-pact-of-the-legion.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-warlock-pact-of-the-legion.xml" />
+		<file name="wow-companions.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/companions/wow-companions.xml" />
+		<file name="wow-eldritch-invocations.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-eldritch-invocations.xml" />
+		<file name="wow-feats-general.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-feats-general.xml" />
+		<file name="wow-feats-origin.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-feats-origin.xml" />
+		<file name="wow-companion-creatures.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-companion-creatures.xml" />
+		<file name="wow-magic-items.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-magic-items.xml" />
+		<file name="wow-mounts-vehicles.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-mounts-vehicles.xml" />
+		<file name="wow-renown-perks.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-renown-perks.xml" />
+		<file name="wow-languages.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/misc/wow-languages.xml" />
+		<file name="wow-race-dracthyr.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-dracthyr.xml" />
+		<file name="wow-race-draenei.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-draenei.xml" />
+		<file name="wow-race-dwarf.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-dwarf.xml" />
+		<file name="wow-race-earthen.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-earthen.xml" />
+		<file name="wow-race-elf.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-elf.xml" />
+		<file name="wow-race-forsaken.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-forsaken.xml" />
+		<file name="wow-race-gnome.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-gnome.xml" />
+		<file name="wow-race-goblin.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-goblin.xml" />
+		<file name="wow-race-haranir.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-haranir.xml" />
+		<file name="wow-race-human.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-human.xml" />
+		<file name="wow-race-mechagnome.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-mechagnome.xml" />
+		<file name="wow-race-orc.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-orc.xml" />
+		<file name="wow-race-pandaren.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-pandaren.xml" />
+		<file name="wow-race-tauren.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-tauren.xml" />
+		<file name="wow-race-troll.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-troll.xml" />
+		<file name="wow-race-vulpera.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-vulpera.xml" />
+		<file name="wow-race-worgen.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-worgen.xml" />
+		<file name="wow-spell-list-additions.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/spells/wow-spell-list-additions.xml" />
+		<file name="wow-spells.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/spells/wow-spells.xml" />
+		<file name="wow-source.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/wow-source.xml" />
+		<file name="wow14-source.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/wow14-source.xml" />
+	</files>
+</index>

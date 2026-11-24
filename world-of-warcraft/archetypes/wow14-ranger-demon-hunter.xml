@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Demon Hunter</name>
+		<description>The Demon Hunter Ranger subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-ranger-demon-hunter.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-ranger-demon-hunter.xml" />
+		</update>
+	</info>
+
+	<element name="Demon Hunter" type="Archetype" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_RANGER_DEMON_HUNTER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p class="flavor">Embrace the Magic of Demons to Fight Fire with Fire</p>
+			<p>Most Demon Hunters joined Illidan on Outland as he marshaled his forces to battle the Burning Legion. You might have followed a different path, inspired by Illidan rather than directly trained by him, but the result is the same: You have embraced the magic of the Burning Legion with the singular goal of defeating it on Azeroth and every other world.</p>
+			<p class="indent">Demon hunter is a hero class, which means you typically must start play at level 3 or higher. All demon hunters in World of Warcraft lore are elves (blood elves, night elves, or void elves), so check with your DM before playing a demon hunter of another species. (In Aurora, the subclass’s level 1 and 2 features apply once you choose the subclass.)</p>
+			<p class="indent">This is a 2014 rules adaptation of a subclass from World of Warcraft (a 2024 rules book). Terms that exist only in the 2024 rules have been converted to their 2014 equivalents.</p>
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SPELLCASTING" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_FAVORED_ENEMY_LANGUAGES" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_FIGHTING_STYLE" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_DEMON_HUNTER_SPELLS" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SOUL_FRAGMENTS" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SPECTRAL_SIGHT" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_TORMENT" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_ILLIDARI_KNOWLEDGE" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SOUL_SHATTER" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_IMPROVED_SPECTRAL_SIGHT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SPELLCASTING" level="2" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_FAVORED_ENEMY_LANGUAGES" level="1" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_FIGHTING_STYLE" level="2" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_DEMON_HUNTER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SOUL_FRAGMENTS" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SPECTRAL_SIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_TORMENT" level="7" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_ILLIDARI_KNOWLEDGE" level="11" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SOUL_SHATTER" level="15" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_IMPROVED_SPECTRAL_SIGHT" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Spellcasting" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SPELLCASTING">
+		<description>
+			<p>You can use an Arcane Focus as a Spellcasting Focus for your Ranger spells.</p>
+		</description>
+		<sheet alt="Spellcasting">
+			<description>You can use an Arcane Focus as a Spellcasting Focus for your Ranger spells.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 1: Favored Enemy Languages" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_FAVORED_ENEMY_LANGUAGES">
+		<description>
+			<p>When you learn a language from the Favored Enemy (or Deft Explorer) class feature, choose from the language tables in chapter 2. Eredun and Nathrezim are recommended.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 2: Fighting Style" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_FIGHTING_STYLE">
+		<description>
+			<p>As a Demon Hunter, you can choose a Fighting Style, or the Void Warrior option below.</p>
+			<p class="indent"><strong><em>Void Warrior.</em></strong> You learn two Warlock cantrips of your choice. Chill Touch and Mind Sliver are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Warlock cantrip.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Demon Hunter Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_DEMON_HUNTER_SPELLS">
+		<description>
+			<p>When you reach a Ranger level specified in the Demon Hunter Spells table, you thereafter always have the spell in the Spells (All) column prepared. You also have the additional spells listed in one other column of your choice.</p>
+			<h5>Demon Hunter Spells</h5><table class="class-features"><thead><tr><td>Ranger Level</td><td>Spells (All)</td><td>Spells (Devourer)</td><td>Spells (Havoc)</td><td>Spells (Vengeance)</td></tr></thead><tr><td>3</td><td>Throw Glaive</td><td>Consume Soul</td><td>Fel Rush</td><td>Infernal Strike</td></tr><tr><td>5</td><td>Sigil of Flame</td><td>Misty Step</td><td>Eye Beam</td><td>Fiery Brand</td></tr><tr><td>9</td><td>Metamorphosis</td><td>Soul Reap</td><td>Blink</td><td>Demon Spikes</td></tr><tr><td>13</td><td>Chaos Nova</td><td>Collapsing Star</td><td>Fire Shield</td><td>Banishment</td></tr><tr><td>17</td><td>Destructive Wave</td><td>Steel Wind Strike</td><td>Conjure Volley</td><td>Sigil of Chains</td></tr></table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_THROW_GLAIVE" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SIGIL_OF_FLAME" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_METAMORPHOSIS" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_CHAOS_NOVA" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DESTRUCTIVE_WAVE" level="17" spellcasting="Ranger" />
+			<select type="Archetype Feature" name="Demon Hunter Spells (Column)" supports="WoW Demon Hunter Specialization" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Soul Fragments" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SOUL_FRAGMENTS">
+		<description>
+			<p>You harvest the energy of souls to fuel some of your special powers. Whenever you finish a Long Rest, you gain a number of soul fragments equal to your Wisdom modifier (minimum of one fragment); each soul fragment is a Tiny object in the form of a crystal. These fragments last until you finish another Long Rest, at which point they disintegrate. If you ever move more than 30 feet from a fragment, the fragment immediately teleports to you, appearing somewhere on your person.</p>
+			<p class="indent">If a soul fragment effect requires a saving throw, the DC equals your Ranger spell save DC.</p>
+			<p class="indent">The number of soul fragments you gain when you finish a Long Rest increases when you reach Ranger levels 13 (Wisdom modifier plus one soul fragment) and 17 (Wisdom modifier plus two soul fragments).</p>
+			<p class="indent"><strong><em>Using Soul Fragments.</em></strong> You can use soul fragments in the following ways:</p>
+			<p class="indent"><strong><em>Double Jump.</em></strong> You can expend one soul fragment to cast Feather Fall or Jump without expending a spell slot.</p>
+			<p class="indent"><strong><em>Soul Cleave.</em></strong> Once on each of your turns, when you take the Attack action, you can expend one soul fragment and replace one of your attacks with a whirlwind of soul energy. Each creature in a 10-foot Emanation originating from you makes a Dexterity saving throw. On a failed save, a creature takes Psychic damage equal to 1d12 plus your Wisdom modifier, and you regain Hit Points equal to your Wisdom modifier.</p>
+			<p class="indent"><strong><em>Regaining Soul Fragments.</em></strong> When an enemy you can see within 30 feet of you dies, you can take a Reaction to regain one expended soul fragment.</p>
+		</description>
+		<sheet alt="Soul Fragments" usage="{{soul fragments}}/Long Rest">
+			<description>Double Jump: 1 fragment to cast Feather Fall or Jump. Soul Cleave: once per turn, replace an attack; each creature within 10 feet makes a Dex save (DC {{ranger:spellcasting:dc}}) or takes 1d12 + {{wisdom:modifier}} Psychic; you regain {{wisdom:modifier}} HP. Reaction: regain 1 fragment when an enemy within 30 feet dies.</description>
+			<description level="11">Double Jump: 1 fragment to cast Feather Fall or Jump. Soul Cleave: once per turn, replace an attack; each creature within 10 feet makes a Dex save (DC {{ranger:spellcasting:dc}}) or takes 1d12 + {{wisdom:modifier}} Psychic; you regain {{wisdom:modifier}} HP. Disrupt: 2 fragments to cast Counterspell. Warglaive Mastery: Bonus Action, 1 fragment to cast Throw Glaive. Reaction: regain 1 fragment when an enemy within 30 feet dies.</description>
+			<description level="15">Double Jump: 1 fragment to cast Feather Fall or Jump. Soul Cleave: once per turn, replace an attack; each creature within 10 feet makes a Dex save (DC {{ranger:spellcasting:dc}}) or takes 2d12 + {{wisdom:modifier}} Psychic; you regain {{wisdom:modifier}} HP. Disrupt: 2 fragments to cast Counterspell. Warglaive Mastery: Bonus Action, 1 fragment to cast Throw Glaive. Regain 1 fragment on Initiative if you have none; Reaction: regain 1 when an enemy within 30 feet dies.</description>
+		</sheet>
+		<rules>
+			<stat name="soul fragments" value="wisdom:modifier" />
+			<stat name="soul fragments" value="1" level="13" />
+			<stat name="soul fragments" value="1" level="17" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEATHER_FALL" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_JUMP" level="3" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Spectral Sight" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SPECTRAL_SIGHT">
+		<description>
+			<p>You have Blindsight with a range of 10 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="10" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Torment" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_TORMENT">
+		<description>
+			<p>A creature marked by your Hunter’s Mark spell has Disadvantage on attack rolls against targets other than you.</p>
+			<p class="indent">Additionally, once per turn when you hit a creature marked by your Hunter’s Mark with an attack roll with a weapon or a Ranger spell, you can impose one of the following effects on the target (your choice):</p>
+			<p class="indent"><strong><em>Aura of Pain.</em></strong> The target subtracts 1d4 from the next saving throw it makes before the end of your next turn.</p>
+			<p class="indent"><strong><em>Chaos Strike.</em></strong> The target takes an extra 1d8 Fire damage.</p>
+		</description>
+		<sheet alt="Torment">
+			<description>A creature marked by your Hunter’s Mark spell has Disadvantage on attack rolls against targets other than you. Additionally, once per turn when you hit a creature marked by your Hunter’s Mark with an attack roll with a weapon or a Ranger spell, you can impose one of the following effects on the target (your choice): Aura of Pain. The target subtracts 1d4 from the next saving throw it makes before the end of your next turn. Chaos Strike. The target takes an extra 1d8 Fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Illidari Knowledge" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_ILLIDARI_KNOWLEDGE">
+		<description>
+			<p>You gain new mastery over souls, granting you new ways to use soul fragments:</p>
+			<p class="indent"><strong><em>Disrupt.</em></strong> You can expend two soul fragments to cast Counterspell in response to that spell’s trigger, using your spellcasting ability.</p>
+			<p class="indent"><strong><em>Warglaive Mastery.</em></strong> As a Bonus Action, you can expend one soul fragment to cast Throw Glaive (see “Demon Hunter Spells”) without expending a spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COUNTERSPELL" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Level 15: Soul Shatter" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SOUL_SHATTER">
+		<description>
+			<p>Your mastery of fel magic reaches new heights. When you use the Soul Cleave option of Soul Fragments, the damage increases to 2d12 plus your Wisdom modifier.</p>
+			<p class="indent">In addition, when you roll Initiative, you regain one soul fragment if you have none.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 18: Improved Spectral Sight" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_IMPROVED_SPECTRAL_SIGHT">
+		<description>
+			<p>This feature replaces the Ranger’s Feral Senses feature.</p>
+			<p class="indent">You have Truesight with a range of 30 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_FERAL_SENSES" />
+			<grant type="Vision" id="ID_VISION_TRUESIGHT" />
+			<stat name="truesight:range" value="30" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Devourer Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SPELLS_DEVOURER">
+		<supports>WoW Demon Hunter Specialization</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the spells in the Spells (Devourer) column of the Demon Hunter Spells table prepared.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_CONSUME_SOUL" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SOUL_REAP" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_COLLAPSING_STAR" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STEEL_WIND_STRIKE" level="17" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Havoc Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SPELLS_HAVOC">
+		<supports>WoW Demon Hunter Specialization</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the spells in the Spells (Havoc) column of the Demon Hunter Spells table prepared.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_FEL_RUSH" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_EYE_BEAM" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLINK" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_SHIELD" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONJURE_VOLLEY" level="17" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Vengeance Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_RANGER_DEMON_HUNTER_SPELLS_VENGEANCE">
+		<supports>WoW Demon Hunter Specialization</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the spells in the Spells (Vengeance) column of the Demon Hunter Spells table prepared.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_INFERNAL_STRIKE" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_FIERY_BRAND" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_DEMON_SPIKES" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANISHMENT" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SIGIL_OF_CHAINS" level="17" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Void Warrior" type="Class Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_CLASS_FEATURE_FIGHTING_STYLE_VOID_WARRIOR">
+		<supports>Fighting Style, Ranger</supports>
+		<requirements>ID_KAYA_WOW14_ARCHETYPE_RANGER_DEMON_HUNTER</requirements>
+		<description>
+			<p>You learn two Warlock cantrips of your choice. <i>Chill Touch</i> and <i>Mind Sliver</i> are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Warlock cantrip. (Demon Hunter only; if you choose your Fighting Style before your subclass, you can switch to this option once you become a Demon Hunter.)</p>
+		</description>
+		<sheet>
+			<description>Whenever you gain a Ranger level, you can replace one of the chosen cantrips with another Warlock cantrip.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Void Warrior" supports="0, Warlock" number="2" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+</elements>

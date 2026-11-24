@@ -4,7 +4,7 @@
 		<name>Oath of the Holy</name>
 		<description>The Oath of the Holy Paladin subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="wow-paladin-holy.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-paladin-holy.xml" />
 		</update>
 	</info>

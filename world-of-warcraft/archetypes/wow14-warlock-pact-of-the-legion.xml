@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pact of the Legion</name>
+		<description>Pact of the Legion as a 2014 Pact Boon, from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-warlock-pact-of-the-legion.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-warlock-pact-of-the-legion.xml" />
+		</update>
+	</info>
+
+	<element name="Pact of the Legion" type="Class Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_LEGION">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>You learn the <i>Find Familiar</i> spell and can cast it as an action without expending a spell slot. When you cast the spell, you summon a Fel Imp familiar (see chapter 7).</p>
+			<p class="indent">Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack with its reaction.</p>
+			<p class="indent">(In 2014 rules, Pact of the Legion is a Pact Boon gained at Warlock level 3.)</p>
+		</description>
+		<sheet>
+			<description>You can cast Find Familiar without a spell slot, summoning a Fel Imp. You can forgo one of your attacks to let your familiar attack with its reaction.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" />
+			<select type="Companion" name="Pact of the Legion Familiar" supports="WoW Legion Familiar" />
+		</rules>
+	</element>
+
+</elements>

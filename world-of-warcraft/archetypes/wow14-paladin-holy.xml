@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the Holy</name>
+		<description>The Oath of the Holy Paladin subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-paladin-holy.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-paladin-holy.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Holy" type="Archetype" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_PALADIN_OATH_OF_THE_HOLY">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p class="flavor">Serve as a Beacon of the Light</p>
+			<p>The Oath of the Holy unites Paladins who nurture life and use the power of the Light for healing and support. They combine great piety and virtue with martial skill, aspiring to the highest standards of morality, service to others, and self-sacrifice.</p>
+			<p class="indent">These paladins share the following tenets:</p>
+			<ul><li>Live your life in service to others of goodwill.</li><li>Do all in your power to ease the suffering of the innocent.</li><li>Let the Light shine through you to banish the darkness.</li></ul>
+			<p class="indent">This is a 2014 rules adaptation of a subclass from World of Warcraft (a 2024 rules book). Terms that exist only in the 2024 rules have been converted to their 2014 equivalents.</p>
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_OATH_OF_THE_HOLY_SPELLS" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_BEACON_OF_LIGHT" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_LIGHTBRINGERS_AURA" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_INFUSION_OF_LIGHT" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_HOLY_DELIVERANCE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_OATH_OF_THE_HOLY_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_BEACON_OF_LIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_LIGHTBRINGERS_AURA" level="7" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_INFUSION_OF_LIGHT" level="15" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_HOLY_DELIVERANCE" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Oath of the Holy Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_OATH_OF_THE_HOLY_SPELLS">
+		<description>
+			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Holy Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Oath of the Holy Spells</h5><table class="class-features"><thead><tr><td>Paladin Level</td><td>Spells</td></tr></thead><tr><td>3</td><td>Cure Wounds, Healing Word</td></tr><tr><td>5</td><td>Lesser Restoration, Prayer of Healing</td></tr><tr><td>9</td><td>Dispel Magic, Mass Healing Word</td></tr><tr><td>13</td><td>Aura of Life, Death Ward</td></tr><tr><td>17</td><td>Greater Restoration, Mass Cure Wounds</td></tr></table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEALING_WORD" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LESSER_RESTORATION" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PRAYER_OF_HEALING" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISPEL_MAGIC" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_HEALING_WORD" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AURA_OF_LIFE" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_RESTORATION" level="17" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Paladin" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Beacon of Light" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_BEACON_OF_LIGHT">
+		<description>
+			<p>As an action, you can expend one use of your Channel Divinity to wrap an ally within 60 feet in holy energy. For 1 minute, anytime you heal a creature other than the affected ally with a spell or your Lay On Hands, the chosen ally also regains half as many Hit Points.</p>
+		</description>
+		<sheet alt="Beacon of Light" action="Magic Action" usage="Channel Divinity">
+			<description>As an action, you can expend one use of your Channel Divinity to wrap an ally within 60 feet in holy energy. For 1 minute, anytime you heal a creature other than the affected ally with a spell or your Lay On Hands, the chosen ally also regains half as many Hit Points.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Lightbringer’s Aura" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_LIGHTBRINGERS_AURA">
+		<description>
+			<p>Whenever you cast a spell or use Lay On Hands to restore Hit Points to a creature that has half its Hit Points or fewer within your Aura of Protection, the creature regains an extra 1d6 Hit Points.</p>
+		</description>
+		<sheet alt="Lightbringer’s Aura">
+			<description>Whenever you cast a spell or use Lay On Hands to restore Hit Points to a creature that has half its Hit Points or fewer within your Aura of Protection, the creature regains an extra 1d6 Hit Points.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Infusion of Light" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_INFUSION_OF_LIGHT">
+		<description>
+			<p>Whenever you cast a spell that deals Radiant damage, you refresh the pool of healing power that fuels your Lay On Hands feature. Your pool of healing power regains a number of Hit Points equal to the total number rolled for the spell’s Radiant damage, to a maximum of five times your Paladin level.</p>
+		</description>
+		<sheet alt="Infusion of Light">
+			<description>Whenever you cast a spell that deals Radiant damage, you refresh the pool of healing power that fuels your Lay On Hands feature. Your pool of healing power regains a number of Hit Points equal to the total number rolled for the spell’s Radiant damage, to a maximum of five times your Paladin level.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Holy Deliverance" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_HOLY_HOLY_DELIVERANCE">
+		<description>
+			<p>As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+			<p class="indent"><strong><em>Healing Power.</em></strong> Whenever an ally starts its turn with half its Hit Points or fewer and in the aura, that creature regains Hit Points equal to your Charisma modifier plus your Proficiency Bonus.</p>
+			<p class="indent"><strong><em>Sunlight.</em></strong> The aura is filled with Bright Light that is sunlight.</p>
+		</description>
+		<sheet alt="Holy Deliverance" action="Bonus Action" usage="1/Long Rest">
+			<description>As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required). Healing Power. Whenever an ally starts its turn with half its Hit Points or fewer and in the aura, that creature regains Hit Points equal to your Charisma modifier plus your Proficiency Bonus. Sunlight. The aura is filled with Bright Light that is sunlight.</description>
+		</sheet>
+	</element>
+
+</elements>

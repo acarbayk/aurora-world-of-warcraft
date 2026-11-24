@@ -4,13 +4,13 @@
 		<name>Warrior Maneuvers</name>
 		<description>Additional Battle Master maneuvers for World of Warcraft warriors (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="wow-fighter-warrior-maneuvers.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-fighter-warrior-maneuvers.xml" />
 		</update>
 	</info>
 
 	<element name="Battle Shout" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MANEUVER_BATTLE_SHOUT">
-		<supports>Maneuver, PHB24 Battle Master</supports>
+		<supports>Maneuver, PHB24 Battle Master, Battle Master</supports>
 		<description>
 			<p>As a Bonus Action, you can expend one Superiority Die to shout encouragement to allies within 30 feet of you that can hear you. Until the start of your next turn, each affected ally adds the Superiority Die to the damage roll the next time it hits with a melee attack.</p>
 		</description>
@@ -20,7 +20,7 @@
 	</element>
 
 	<element name="Demoralizing Shout" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MANEUVER_DEMORALIZING_SHOUT">
-		<supports>Maneuver, PHB24 Battle Master</supports>
+		<supports>Maneuver, PHB24 Battle Master, Battle Master</supports>
 		<description>
 			<p>As a Bonus Action, you can expend one Superiority Die to shout, demoralizing enemies within 30 feet of you that can hear you. Until the end of your next turn, each affected enemy subtracts the Superiority Die from the damage roll the next time it hits a target other than you with a melee attack.</p>
 		</description>
@@ -30,7 +30,7 @@
 	</element>
 
 	<element name="Heroic Leap" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MANEUVER_HEROIC_LEAP">
-		<supports>Maneuver, PHB24 Battle Master</supports>
+		<supports>Maneuver, PHB24 Battle Master, Battle Master</supports>
 		<description>
 			<p>As a Bonus Action, you can expend one Superiority Die to jump a number of feet up to your Strength score. Creatures within 5 feet of you when you land make a Strength saving throw, taking Bludgeoning damage equal to the Superiority Die roll on a failed save, or half as much damage on a successful one.</p>
 		</description>
@@ -40,7 +40,7 @@
 	</element>
 
 	<element name="Mortal Strike" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MANEUVER_MORTAL_STRIKE">
-		<supports>Maneuver, PHB24 Battle Master</supports>
+		<supports>Maneuver, PHB24 Battle Master, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to prevent the target from healing. Add the Superiority Die to the attack’s damage roll. The target can’t regain Hit Points until the end of your next turn.</p>
 		</description>
@@ -50,7 +50,7 @@
 	</element>
 
 	<element name="Warding Maneuver" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MANEUVER_WARDING_MANEUVER">
-		<supports>Maneuver, PHB24 Battle Master</supports>
+		<supports>Maneuver, PHB24 Battle Master, Battle Master</supports>
 		<description>
 			<p>When you or a creature you can see within 5 feet of you is hit by an attack roll, you can take a Reaction and expend one Superiority Die if you’re wielding a Melee weapon or a Shield. Add the Superiority Die to the target’s AC against the triggering attack. If the attack still hits, the target has Resistance against the attack’s damage.</p>
 		</description>

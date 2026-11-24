@@ -4,7 +4,7 @@
 		<name>World of Warcraft</name>
 		<description>World of Warcraft by Andrey Kuzinskiy: classes, species, spells, feats, gear and renown for D&amp;D 2024. Requires the Aurora Legacy Player’s Handbook (2024).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="world-of-warcraft.index" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft.index" />
 		</update>
 	</info>

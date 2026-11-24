@@ -48,18 +48,37 @@ for r, f in missing:
     errors.append(f"UNKNOWN ref {r} in {f}")
 
 # index
-lines = [f'<?xml version="1.0" encoding="utf-8"?>', "<index>", "\t<info>",
-         "\t\t<name>World of Warcraft</name>",
-         "\t\t<description>World of Warcraft by Andrey Kuzinskiy: classes, species, spells, feats, gear and renown for D&amp;D 2024. Requires the Aurora Legacy Player’s Handbook (2024).</description>",
-         f'\t\t<author url="https://github.com/{REPO}">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>',
-         f'\t\t<update version="{VERSION}">',
-         f'\t\t\t<file name="world-of-warcraft.index" url="{BASE}/world-of-warcraft.index" />',
-         "\t\t</update>", "\t</info>", "\t<files>"]
-for f in files:
-    rel = f.relative_to(root).as_posix()
-    lines.append(f'\t\t<file name="{f.name}" url="{BASE}/{rel}" />')
-lines += ["\t</files>", "</index>", ""]
-(root / "world-of-warcraft.index").write_text("\n".join(lines))
+def is14(f):
+    return f.name.startswith("wow14-")
+
+
+def is24only(f):
+    return f.parent.name == "archetypes" and f.name.startswith("wow-") and f.name != "wow-fighter-warrior-maneuvers.xml"
+
+
+def write_index(fname, title, desc, sel):
+    lines = ['<?xml version="1.0" encoding="utf-8"?>', "<index>", "\t<info>",
+             f"\t\t<name>{title}</name>",
+             f"\t\t<description>{desc}</description>",
+             f'\t\t<author url="https://github.com/{REPO}">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>',
+             f'\t\t<update version="{VERSION}">',
+             f'\t\t\t<file name="{fname}" url="{BASE}/{fname}" />',
+             "\t\t</update>", "\t</info>", "\t<files>"]
+    for f in sel:
+        rel = f.relative_to(root).as_posix()
+        lines.append(f'\t\t<file name="{f.name}" url="{BASE}/{rel}" />')
+    lines += ["\t</files>", "</index>", ""]
+    (root / fname).write_text("\n".join(lines))
+    return len(sel)
+
+
+n24 = write_index("world-of-warcraft.index", "World of Warcraft",
+                  "World of Warcraft by Andrey Kuzinskiy: classes, species, spells, feats, gear and renown for D&amp;D 2024. Requires the Aurora Legacy Player’s Handbook (2024).",
+                  [f for f in files if not is14(f)])
+n14 = write_index("world-of-warcraft-2014.index", "World of Warcraft (2014 rules)",
+                  "World of Warcraft by Andrey Kuzinskiy, with subclasses and class options adapted to the 2014 Player’s Handbook classes. Species, spells, feats, items and renown are shared with the 2024 version. Requires the Aurora Legacy Player’s Handbook (2024) to be loaded as well.",
+                  [f for f in files if not is24only(f)])
+print(f"2024 index: {n24} files, 2014 index: {n14} files")
 
 names = [f.name for f in files]
 dupe_names = {n for n in names if names.count(n) > 1}

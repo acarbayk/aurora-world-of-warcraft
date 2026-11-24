@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Spiritual Guardian</name>
+		<description>The Path of the Spiritual Guardian Barbarian subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-barbarian-spiritual-guardian.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-barbarian-spiritual-guardian.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Spiritual Guardian" type="Archetype" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN">
+		<supports>Primal Path</supports>
+		<description>
+			<p class="flavor">Call on the Spirits for Combat Aid</p>
+			<p>Barbarians who walk the Path of the Spiritual Guardian call on spirits—whether bestial spirits of nature, spirits of departed ancestors, or spirits of raw elemental power—to guide and protect them. When these Barbarians rage, they contact the realm of the spirits and call on them for aid.</p>
+			<p class="indent">This is a 2014 rules adaptation of a subclass from World of Warcraft (a 2024 rules book). Terms that exist only in the 2024 rules have been converted to their 2014 equivalents.</p>
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_SPIRITUAL_PROTECTORS" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_SPIRIT_SHIELD" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_CONSULT_THE_SPIRITS" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_SPIRITS_FURY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_SPIRITUAL_PROTECTORS" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_SPIRIT_SHIELD" level="6" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_CONSULT_THE_SPIRITS" level="10" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_SPIRITS_FURY" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Spiritual Protectors" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_SPIRITUAL_PROTECTORS">
+		<description>
+			<p>Your Rage summons spectral warriors to your aid. While your Rage is active, when you hit a creature with a weapon or an Unarmed Strike, that creature becomes a target of the spirits, which cause one of the following effects of your choice.</p>
+			<p class="indent"><strong><em>Distract.</em></strong> Until the start of your next turn, the target has Disadvantage on attack rolls against targets other than you or another Barbarian who has this feature.</p>
+			<p class="indent"><strong><em>Hinder.</em></strong> The target’s Speed is reduced by 10 feet until the start of your next turn.</p>
+			<p class="indent"><strong><em>Strike.</em></strong> The target takes an extra 1d4 damage, which can be Cold, Fire, or Lightning damage (your choice).</p>
+		</description>
+		<sheet alt="Spiritual Protectors">
+			<description>Your Rage summons spectral warriors to your aid. While your Rage is active, when you hit a creature with a weapon or an Unarmed Strike, that creature becomes a target of the spirits, which cause one of the following effects of your choice. Distract. Until the start of your next turn, the target has Disadvantage on attack rolls against targets other than you or another Barbarian who has this feature. Hinder. The target’s Speed is reduced by 10 feet until the start of your next turn. Strike. The target takes an extra 1d4 damage, which can be Cold, Fire, or Lightning damage (your choice).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Spirit Shield" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_SPIRIT_SHIELD">
+		<description>
+			<p>Your guardian spirits can provide supernatural protection to those you defend. While your Rage is active, when another creature you can see within 30 feet of you takes damage, you can take a Reaction to reduce that damage. To determine the amount the damage is reduced by, roll a number of d6s equal to your Rage Damage bonus, and add them together.</p>
+		</description>
+		<sheet alt="Spirit Shield" action="Reaction">
+			<description>Your guardian spirits can provide supernatural protection to those you defend. While your Rage is active, when another creature you can see within 30 feet of you takes damage, you can take a Reaction to reduce that damage. To determine the amount the damage is reduced by, roll a number of d6s equal to your Rage Damage bonus, and add them together.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Consult the Spirits" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_CONSULT_THE_SPIRITS">
+		<description>
+			<p>You gain the ability to consult with your guardian spirits. When you do so, you cast the Augury or Clairvoyance spell without expending a spell slot or needing Material components. Rather than creating a spherical sensor, this use of Clairvoyance invisibly summons one of your guardian spirits to the chosen location. Wisdom is your spellcasting ability for these spells.</p>
+			<p class="indent">After you cast either spell in this way, you can’t use this feature again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Consult the Spirits" usage="1/Short Rest">
+			<description>You gain the ability to consult with your guardian spirits. When you do so, you cast the Augury or Clairvoyance spell without expending a spell slot or needing Material components. Rather than creating a spherical sensor, this use of Clairvoyance invisibly summons one of your guardian spirits to the chosen location. Wisdom is your spellcasting ability for these spells. After you cast either spell in this way, you can’t use this feature again until you finish a Short or Long Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AUGURY" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Spirits’ Fury" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_BARBARIAN_PATH_OF_THE_SPIRITUAL_GUARDIAN_SPIRITS_FURY">
+		<description>
+			<p>Your spirits hasten your attacks. When you make an attack roll with a Melee weapon as part of the Attack action and roll 18–20 on the d20, you can make one additional attack roll with the same weapon as part of that action. Once you use this feature, you can’t do so again until the start of your next turn.</p>
+		</description>
+		<sheet alt="Spirits’ Fury">
+			<description>Your spirits hasten your attacks. When you make an attack roll with a Melee weapon as part of the Attack action and roll 18–20 on the d20, you can make one additional attack roll with the same weapon as part of that action. Once you use this feature, you can’t do so again until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+</elements>

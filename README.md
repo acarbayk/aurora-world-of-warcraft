@@ -9,11 +9,28 @@ Aurora Builder content for **World of Warcraft**, a fan-made D&D 5e (2024 rules)
 ## Installation
 
 1. Open Aurora → **Start → Additional Content**.
-2. Paste this URL into **Remote .index file URL** and click **Download**:
-   ```
-   https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft.index
-   ```
+2. Paste one of these URLs into **Remote .index file URL** and click **Download**:
+   - 2024 rules (as written in the book):
+     ```
+     https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft.index
+     ```
+   - 2014 rules (subclasses and class options adapted to the 2014 Player's Handbook classes):
+     ```
+     https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft-2014.index
+     ```
 3. Click **Update Content Files**, then restart Aurora.
+
+You can load both. The 2014 subclasses use the source "World of Warcraft (2014)", so you can switch either set on or off in **Start → Sources**. Species, spells, feats, items and renown are shared by both versions.
+
+### 2014 adaptation notes
+
+The book is written for the 2024 rules. The 2014 version is an unofficial adaptation:
+- Death Knight replaces Lay on Hands, Divine Smite, Improved Divine Smite and Cleansing Touch; Demon Hunter replaces Feral Senses; Void Warrior is a Ranger Fighting Style option.
+- Evoker Spells (Draconic Bloodline, level 1), Pet Specialization (Beast Master, level 6), Shaman Totems (Barbarian, level 3) and Cat/Bear Form (Circle of the Moon, level 2) are optional additions; in 2014 they don't replace anything.
+- Swashbuckler's Panache options are paid for by giving up Sneak Attack dice. Spiritual Guardian's Hinder reduces Speed by 10 feet instead of using Weapon Mastery.
+- Pact of the Legion is a Pact Boon. The other new invocations work with both warlocks.
+- Focus Points become ki points, Bloodied becomes "half Hit Points or fewer", Heroic Inspiration becomes Inspiration and the Magic action becomes an action.
+- Discipline and Shadow Domain features start at Cleric level 3, as in the book, even though 2014 clerics pick their domain at level 1.
 
 ## What's included
 

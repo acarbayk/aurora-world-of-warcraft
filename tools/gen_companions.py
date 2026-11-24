@@ -2,7 +2,8 @@
 import sys, re
 sys.path.insert(0, "/home/claude/tools")
 from textfmt import escape, slug
-from common import header, footer, SOURCE, PREFIX, ROOT
+from common import header, footer, SOURCE, PREFIX, ROOT, ED, FP
+E14 = ED == "2014"
 
 SK = {"Athletics": "athletics", "Stealth": "stealth", "Perception": "perception"}
 
@@ -107,7 +108,7 @@ els = [
 
 def block(name, size, ac, hp, speed, skills, senses, actions, extra_title=None, extra=()):
     rows = [f"<p><em>{escape(size)}; Your Creature Type And Alignment Don’t Change. Requires Circle Forms.</em></p>",
-            f"<p><strong>AC</strong> {escape(ac)}; <strong>Temp HP</strong> {escape(hp)}; <strong>Speed</strong> {escape(speed)}</p>",
+            f"<p><strong>AC</strong> {escape(ac)}; <strong>{'Hit Points' if E14 else 'Temp HP'}</strong> {escape(hp)}; <strong>Speed</strong> {escape(speed)}</p>",
             "<p><strong>Str., Dex.</strong> Your Strength and Dexterity scores are equal to your Wisdom score. <strong>Con., Int., Wis., Cha.</strong> Your Constitution, Intelligence, Wisdom, and Charisma don’t change.</p>"]
     if skills:
         rows.append(f"<p><strong>Skills</strong> {escape(skills)}</p>")
@@ -132,26 +133,28 @@ bear = block("Bear Form", "Large", "15 + your Wisdom modifier", "3 times your Dr
     extra_title=True, extra=[("Bonus Actions", [("Frenzied Regeneration", "You expend a level 1+ spell slot and gain Temporary Hit Points equal to five times the spell slot level.")]),
                              ("Reactions", [("Growl", "Trigger: A creature you can see attacks a target other than you that is within 5 feet of you. Response: You impose Disadvantage on the triggering attack roll and all other attack rolls against the target until the start of your next turn if you remain within 5 feet of the target.")])])
 fid = f"{PREFIX}_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_THE_MOON_CLASSIC_FORMS"
-forms = f'''	<element name="Level 3: Cat Form and Bear Form" type="Archetype Feature" source="{SOURCE}" id="{fid}">
-		<supports>WoW Druid Forms</supports>
+forms = f'''	<element name="Level {2 if E14 else 3}: Cat Form and Bear Form" type="Archetype Feature" source="{SOURCE}" id="{fid}">
+		<supports>WoW Druid Forms{' 2014' if E14 else ''}</supports>
 		<description>
 			<p>The beast forms that every druid in World of Warcraft learns are Cat Form, Bear Form, and Travel Form. If you have the Circle of the Moon subclass, when you use Wild Shape you can adopt the Cat Form (feral druids) or Bear Form (guardian druids) stat blocks below.</p>
+			{'<p class="indent">2014 rules: when you take on one of these forms with Wild Shape, the form’s Hit Points equal 3 times your Druid level; when they drop to 0 you revert to your normal form, as with any Wild Shape form.</p>' if E14 else ''}
 			<p class="indent">Without the Circle of the Moon, you can become a Panther at level 2 and a Tiger at level 8 (Cat Form), a Black Bear at level 4 and a Brown Bear at level 8 (Bear Form), and an Elk starting at level 2 (Travel Form). For fast swimming, consider a Giant Seahorse starting at level 4 (or level 3 for the Circle of the Moon). When you gain access to flying forms at level 8, you can become an Eagle, a Giant Bat, a Hawk, a Pteranodon, or a Raven.</p>
 			{cat}
 			{bear}
 		</description>
 		<sheet alt="Cat Form and Bear Form">
-			<description>Wild Shape: Cat Form (Medium, AC 13 + {{{{wisdom:modifier}}}}, Temp HP 3 × Druid level, Speed 40 ft., Pounce + Prowl, Primal Wrath) or Bear Form (Large, AC 15 + {{{{wisdom:modifier}}}}, Temp HP 3 × Druid level, Speed 30 ft., two Mangle attacks, Frenzied Regeneration, Growl). Str and Dex equal your Wisdom.</description>
+			<description>Wild Shape: Cat Form (Medium, AC 13 + {{{{wisdom:modifier}}}}, {'HP' if E14 else 'Temp HP'} 3 × Druid level, Speed 40 ft., Pounce + Prowl, Primal Wrath) or Bear Form (Large, AC 15 + {{{{wisdom:modifier}}}}, {'HP' if E14 else 'Temp HP'} 3 × Druid level, Speed 30 ft., two Mangle attacks, Frenzied Regeneration, Growl). Str and Dex equal your Wisdom.</description>
 		</sheet>
 	</element>
 
-	<append id="ID_WOTC_PHB24_ARCHETYPE_DRUID_CIRCLE_OF_THE_MOON">
+	<append id="{'ID_WOTC_PHB_ARCHETYPE_CIRCLEOFTHEMOON' if E14 else 'ID_WOTC_PHB24_ARCHETYPE_DRUID_CIRCLE_OF_THE_MOON'}">
 		<rules>
-			<select type="Archetype Feature" name="Cat Form and Bear Form (World of Warcraft, optional)" supports="WoW Druid Forms" level="3" optional="true" />
+			<select type="Archetype Feature" name="Cat Form and Bear Form (World of Warcraft, optional)" supports="WoW Druid Forms{' 2014' if E14 else ''}" level="{2 if E14 else 3}" optional="true" />
 		</rules>
 	</append>'''
-path = "companions/wow-companions.xml"
-open(f"{ROOT}/world-of-warcraft/{path}", "w").write(header(path, "Companions", "Companion stat blocks from World of Warcraft (Andrey Kuzinskiy): Legion demons and mounts.") + "\n\n".join(els) + footer())
-path = "archetypes/wow-druid-forms.xml"
+if not E14:
+  path = "companions/wow-companions.xml"
+  open(f"{ROOT}/world-of-warcraft/{path}", "w").write(header(path, "Companions", "Companion stat blocks from World of Warcraft (Andrey Kuzinskiy): Legion demons and mounts.") + "\n\n".join(els) + footer())
+path = f"archetypes/{FP}druid-forms.xml"
 open(f"{ROOT}/world-of-warcraft/{path}", "w").write(header(path, "Druid Forms", "Cat Form and Bear Form for the Circle of the Moon from World of Warcraft (Andrey Kuzinskiy).") + forms + footer())
 print("companions written")

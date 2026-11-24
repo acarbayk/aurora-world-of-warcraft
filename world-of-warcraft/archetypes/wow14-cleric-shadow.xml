@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shadow Domain</name>
+		<description>The Shadow Domain Cleric subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-cleric-shadow.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-cleric-shadow.xml" />
+		</update>
+	</info>
+
+	<element name="Shadow Domain" type="Archetype" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_CLERIC_SHADOW_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p class="flavor">Draw on the Debilitating Power of the Void</p>
+			<p>The Shadow Domain deals with the powers of shadow and the Void—a sinister mirror of the life-giving powers of the Light. Clerics who embrace these powers can wither their enemies’ flesh and debilitate their minds.</p>
+			<p class="indent">This is a 2014 rules adaptation of a subclass from World of Warcraft (a 2024 rules book). Terms that exist only in the 2024 rules have been converted to their 2014 equivalents.</p>
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_SHADOW_SPELLS" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_SHADOWFORM" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_DEVOURING_PLAGUE" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_DISPERSION" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_VAMPIRIC_EMBRACE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_SHADOW_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_SHADOWFORM" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_DEVOURING_PLAGUE" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_DISPERSION" level="6" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_VAMPIRIC_EMBRACE" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Shadow Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_SHADOW_SPELLS">
+		<description>
+			<p>Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Shadow Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Shadow Domain Spells</h5><table class="class-features"><thead><tr><td>Cleric Level</td><td>Spells</td></tr></thead><tr><td>3</td><td>Crown of Madness, Dissonant Whispers, Mind Spike, Shadow Word: Pain</td></tr><tr><td>5</td><td>Summon Undead, Vampiric Touch</td></tr><tr><td>7</td><td>Evard’s Black Tentacles, Psychic Horror</td></tr><tr><td>9</td><td>Dominate Person, Void Eruption</td></tr></table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CROWN_OF_MADNESS" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISSONANT_WHISPERS" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIND_SPIKE" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SHADOW_WORD_PAIN" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUMMON_UNDEAD" level="5" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_PSYCHIC_HORROR" level="7" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_VOID_ERUPTION" level="9" spellcasting="Cleric" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Shadowform" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_SHADOWFORM">
+		<description>
+			<p>As a Bonus Action, you can expend a use of your Channel Divinity to take on a shadowy form that grants you the following benefits:</p>
+			<p class="indent"><strong><em>Shadow Stealth.</em></strong> While you are in an area of Dim Light or Darkness, you can take the Hide action as a Bonus Action.</p>
+			<p class="indent"><strong><em>Void Empowerment.</em></strong> When you cast a spell using a spell slot that deals Psychic or Necrotic damage, you can add 1d6 to one damage roll of the spell.</p>
+			<p class="indent">The form lasts for 1 minute, but it ends early if you dismiss it (no action required), if you have the Incapacitated condition, or if you deal Radiant damage with a spell.</p>
+		</description>
+		<sheet alt="Shadowform" action="Bonus Action" usage="Channel Divinity">
+			<description>As a Bonus Action, you can expend a use of your Channel Divinity to take on a shadowy form that grants you the following benefits: Shadow Stealth. While you are in an area of Dim Light or Darkness, you can take the Hide action as a Bonus Action. Void Empowerment. When you cast a spell using a spell slot that deals Psychic or Necrotic damage, you can add 1d6 to one damage roll of the spell. The form lasts for 1 minute, but it ends early if you dismiss it (no action required), if you have the Incapacitated condition, or if you deal Radiant damage with a spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Devouring Plague" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_DEVOURING_PLAGUE">
+		<description>
+			<p>When a creature you can see within 30 feet of you fails a saving throw, you can cause that creature to take 1d10 Necrotic damage. If you do, you regain Hit Points equal to the Necrotic damage dealt.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Devouring Plague" usage="{{wisdom:modifier}}/Long Rest">
+			<description>When a creature you can see within 30 feet fails a saving throw, it takes 1d10 Necrotic damage and you regain that many HP.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Dispersion" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_DISPERSION">
+		<description>
+			<p>When you are hit by an attack roll, you can take a Reaction to disperse into shadowy energy. Until the end of your next turn, you have Resistance to all damage (including the damage from the triggering attack); you can’t take any action, Bonus Action, or Reaction; and you have a Fly Speed of 40 feet. When the effect ends, you can spend up to half of your total Hit Point Dice, regaining Hit Points as if you had finished a Short Rest.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Dispersion" action="Reaction" usage="1/Short Rest">
+			<description>When you are hit by an attack roll, you can take a Reaction to disperse into shadowy energy. Until the end of your next turn, you have Resistance to all damage (including the damage from the triggering attack); you can’t take any action, Bonus Action, or Reaction; and you have a Fly Speed of 40 feet. When the effect ends, you can spend up to half of your total Hit Point Dice, regaining Hit Points as if you had finished a Short Rest. Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Vampiric Embrace" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_VAMPIRIC_EMBRACE">
+		<description>
+			<p>While your Shadowform is active, whenever you roll 1d6 to add extra damage to a spell, one creature of your choice within 30 feet of you regains that many Hit Points.</p>
+		</description>
+		<sheet alt="Vampiric Embrace">
+			<description>While your Shadowform is active, whenever you roll 1d6 to add extra damage to a spell, one creature of your choice within 30 feet of you regains that many Hit Points.</description>
+		</sheet>
+	</element>
+
+</elements>

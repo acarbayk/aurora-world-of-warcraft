@@ -4,7 +4,7 @@
 		<name>Eldritch Invocations</name>
 		<description>New Eldritch Invocations from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="wow-eldritch-invocations.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-eldritch-invocations.xml" />
 		</update>
 	</info>
@@ -25,8 +25,8 @@
 	</element>
 
 	<element name="Call of the Void" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_CALL_OF_THE_VOID">
-		<supports>PHB24 Eldritch Invocation</supports>
-		<requirements>[level:warlock:5],ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_LEGION</requirements>
+		<supports>PHB24 Eldritch Invocation, Eldritch Invocation</supports>
+		<requirements>[level:warlock:5],(ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_LEGION||ID_KAYA_WOW14_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_LEGION)</requirements>
 		<prerequisite>Level 5+ Warlock, Pact of the Legion Invocation</prerequisite>
 		<description>
 			<p><em>Prerequisite: Level 5+ Warlock, Pact of the Legion Invocation</em></p>
@@ -41,7 +41,7 @@
 	</element>
 
 	<element name="Curse of Corruption" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_CURSE_OF_CORRUPTION">
-		<supports>PHB24 Eldritch Invocation</supports>
+		<supports>PHB24 Eldritch Invocation, Eldritch Invocation</supports>
 		<requirements>[level:warlock:2]</requirements>
 		<prerequisite>Level 2+ Warlock</prerequisite>
 		<description>
@@ -54,7 +54,7 @@
 	</element>
 
 	<element name="Expendable Minions" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_EXPENDABLE_MINIONS">
-		<supports>PHB24 Eldritch Invocation</supports>
+		<supports>PHB24 Eldritch Invocation, Eldritch Invocation</supports>
 		<requirements>[level:warlock:9]</requirements>
 		<prerequisite>Level 9+ Warlock</prerequisite>
 		<description>
@@ -67,7 +67,7 @@
 	</element>
 
 	<element name="Health Funnel" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_HEALTH_FUNNEL">
-		<supports>PHB24 Eldritch Invocation</supports>
+		<supports>PHB24 Eldritch Invocation, Eldritch Invocation</supports>
 		<requirements>[level:warlock:2]</requirements>
 		<prerequisite>Level 2+ Warlock</prerequisite>
 		<description>
@@ -80,8 +80,8 @@
 	</element>
 
 	<element name="Legion Summoning" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_LEGION_SUMMONING">
-		<supports>PHB24 Eldritch Invocation</supports>
-		<requirements>[level:warlock:9],ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_LEGION</requirements>
+		<supports>PHB24 Eldritch Invocation, Eldritch Invocation</supports>
+		<requirements>[level:warlock:9],(ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_LEGION||ID_KAYA_WOW14_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_LEGION)</requirements>
 		<prerequisite>Level 9+ Warlock, Pact of the Legion Invocation</prerequisite>
 		<description>
 			<p><em>Prerequisite: Level 9+ Warlock, Pact of the Legion Invocation</em></p>
@@ -97,7 +97,7 @@
 	</element>
 
 	<element name="Master Demonologist" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_MASTER_DEMONOLOGIST">
-		<supports>PHB24 Eldritch Invocation</supports>
+		<supports>PHB24 Eldritch Invocation, Eldritch Invocation</supports>
 		<requirements>[level:warlock:5]</requirements>
 		<prerequisite>Level 5+ Warlock</prerequisite>
 		<description>

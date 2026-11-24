@@ -6,7 +6,13 @@ from sublib import *
 from common import header, footer, SOURCE, PREFIX, ROOT
 
 sublib.OUR_SPELLS.update(s["name"] for s in json.load(open("/home/claude/wow/spells.json")))
-R = lambda cls, feat: f"ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_{cls}_{feat}"
+from common import ED, FP
+E14 = ED == "2014"
+R = lambda cls, feat: (f"ID_INTERNAL_FEATURE_REPLACEMENT_{cls}_{feat}" if E14 else f"ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_{cls}_{feat}")
+T14 = {"Paladin": "Sacred Oath", "Ranger": "Ranger Archetype", "Monk": "Monastic Tradition", "Cleric": "Divine Domain",
+       "Rogue": "Roguish Archetype", "Barbarian": "Primal Path"}
+TAG = lambda c: T14[c] if E14 else None
+NOTE14 = "(2014 adaptation of a World of Warcraft 2024 subclass; see the README for how 2024 terms were converted.)"
 F = Feature
 
 
@@ -46,12 +52,12 @@ dk_features = [
                         "Your creature type becomes Undead.",
                         "You also gain the ability to manipulate negative energy. You have a pool of d8s to fuel this ability. The number of dice in the pool equals one plus your Charisma modifier (minimum of one die).",
                         "As a Bonus Action, you can target a creature you can see within 60 feet of yourself and force it to make a Constitution saving throw, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend. The target takes Necrotic damage equal to the roll’s total on a failed save or half as much damage on a successful one. If the target is an Undead, you can choose to have it regain Hit Points equal to the roll’s total instead. Your pool regains all expended dice when you finish a Long Rest."],
-      replaces=[R("PALADIN", "LAY_ON_HANDS"), R("PALADIN", "RESTORING_TOUCH")], action="Bonus Action", usage="{{death coil:dice}}d8/Long Rest",
+      replaces=[R("PALADIN", "LAY_ON_HANDS")] + ([] if E14 else [R("PALADIN", "RESTORING_TOUCH")]), action="Bonus Action", usage="{{death coil:dice}}d8/Long Rest",
       sheet="Target a creature within 60 feet: Constitution save (DC {{paladin:spellcasting:dc}}), expending up to {{charisma:modifier}} dice from your pool of d8s. Necrotic damage equal to the roll on a failed save, half on success. An Undead target can instead regain that many Hit Points. Your creature type is Undead.",
       rules=['<stat name="death coil:dice" value="1" bonus="base" />', '<stat name="death coil:dice" value="charisma:modifier" />']),
-    F(2, "Runic Smite", ["This feature replaces the Paladin’s Smite feature of the Paladin class.",
+    F(2, "Runic Smite", ["This feature replaces the Divine Smite feature of the Paladin class." if E14 else "This feature replaces the Paladin’s Smite feature of the Paladin class.",
                          "You always have the Rune Strike spell (see “Death Knight Spells”) prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest."],
-      replaces=[R("PALADIN", "PALADINS_SMITE")], usage="1/Long Rest",
+      replaces=[R("PALADIN", "DIVINE_SMITE" if E14 else "PALADINS_SMITE")], usage="1/Long Rest",
       sheet="You always have Rune Strike prepared and can cast it once without a spell slot.",
       rules=[grant_spell("Rune Strike", 2, "Paladin")]),
     F(3, "Oath of the Ebon Blade Spells", ["The magic of your oath and your Runeforging feature (see below) ensure you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Ebon Blade Spells table, you thereafter always have the spell in the Spells (All) column prepared. You also have the additional spells listed in the column matching the rune you have inscribed on your weapon, if any.", dk_table],
@@ -64,15 +70,17 @@ dk_features = [
                          "Frost. Frost covers your weapon and shatters on impact. The target of your Rune Strike and each enemy in a 10-foot Emanation originating from the target take 2d6 Cold damage.",
                          "Unholy. The target of your Rune Strike is cursed until the end of your next turn. The next time the cursed target makes a saving throw, it subtracts 1d6 from the roll, and the curse ends."],
       usage="Channel Divinity", sheet="After you cast Rune Strike, expend a Channel Divinity: Blood—regain HP equal to its Necrotic damage; Frost—target and enemies within 10 feet take 2d6 Cold; Unholy—target subtracts 1d6 from its next saving throw."),
-    F(5, "Faithful Steed", ["In addition to the benefits of the Paladin’s Faithful Steed feature, when you cast Find Steed, the Otherworldly Steed can be Undead. An Undead steed deals Necrotic damage with its Otherworldly Slam action and has this Bonus Action:",
-                            "Ghostly Stride (Undead Only; Recharges After a Long Rest). The steed and its rider can move through other creatures and objects this turn as if they were Difficult Terrain. Both steed and rider take 5 (1d10) Force damage if they end their turn inside an object."]),
+    F(5, "Faithful Steed", (["You always have the Find Steed spell prepared, and you can cast it once without expending a spell slot; you regain the ability to do so when you finish a Long Rest. When you cast Find Steed, the steed can be Undead (such as a skeletal warhorse). An Undead steed deals Necrotic damage with its attacks and has this Bonus Action:"] if E14 else
+                            ["In addition to the benefits of the Paladin’s Faithful Steed feature, when you cast Find Steed, the Otherworldly Steed can be Undead. An Undead steed deals Necrotic damage with its Otherworldly Slam action and has this Bonus Action:"]) + [
+                            "Ghostly Stride (Undead Only; Recharges After a Long Rest). The steed and its rider can move through other creatures and objects this turn as if they were Difficult Terrain. Both steed and rider take 5 (1d10) Force damage if they end their turn inside an object."],
+      rules=['<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_STEED" spellcasting="Paladin" />'] if E14 else [], usage="1/Long Rest" if E14 else None),
     F(7, "Aura of Deathly Endurance", ["You and your allies have Resistance to Cold, Necrotic, and Psychic damage while in your Aura of Protection."]),
-    F(11, "Runic Strikes", ["This feature replaces the Paladin’s Radiant Strikes feature.",
+    F(11, "Runic Strikes", ["This feature replaces the Paladin’s Improved Divine Smite feature." if E14 else "This feature replaces the Paladin’s Radiant Strikes feature.",
                             "When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Necrotic damage."],
-      replaces=[R("PALADIN", "RADIANT_STRIKES")], sheet="When you hit a target with a Melee weapon or an Unarmed Strike, it takes an extra 1d8 Necrotic damage."),
-    F(14, "Improved Death Coil", ["This feature replaces the Paladin’s Restoring Touch feature.",
+      replaces=[R("PALADIN", "IMPROVED_DIVINE_SMITE" if E14 else "RADIANT_STRIKES")], sheet="When you hit a target with a Melee weapon or an Unarmed Strike, it takes an extra 1d8 Necrotic damage."),
+    F(14, "Improved Death Coil", ["This feature replaces the Paladin’s Cleansing Touch feature." if E14 else "This feature replaces the Paladin’s Restoring Touch feature.",
                                   "When you use Death Coil to deal damage, the target takes extra Necrotic damage equal to your Charisma modifier (minimum of 1) whether or not it fails its saving throw. If the target is an Undead, and you have it regain Hit Points, it regains additional Hit Points equal to your Paladin level."],
-      replaces=[R("PALADIN", "RESTORING_TOUCH")]),
+      replaces=[R("PALADIN", "CLEANSING_TOUCH" if E14 else "RESTORING_TOUCH")]),
     F(15, "Runic Mastery", ["You can invoke the power of the rune inscribed on your weapon. Once you use this feature, you can’t do so again until you finish a Long Rest. The effect depends on the rune you have inscribed.",
                             "Blood. When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a Reaction to reduce the damage the target takes by your Paladin level. You then lose a number of Hit Points equal to your Paladin level.",
                             "Frost. When you take the Attack action on your turn, you can replace one attack with an exhalation of frost magic in a 30-foot Cone. Each creature in that area makes a Dexterity saving throw against your spell save DC. A creature takes 8d6 Cold damage on a failed save or half as much damage on a successful one.",
@@ -83,10 +91,10 @@ dk_features = [
                                      "Runeforging. When you use your Runic Power and Runic Mastery features, you can choose any effect, not just the one that corresponds to the rune inscribed on your weapon."],
       action="Bonus Action", usage="1/Long Rest"),
 ] + rune_opts
-archetype("wow-paladin-ebon-blade.xml", "Oath of the Ebon Blade", "Paladin", "Wield the Power of Death Against the Scourge",
+archetype(f"{FP}paladin-ebon-blade.xml", "Oath of the Ebon Blade", "Paladin", "Wield the Power of Death Against the Scourge",
           ["The Oath of the Ebon Blade unites the free death knights of Azeroth. No longer directly under the Lich King’s control, they still serve Bolvar Fordragon—first as agents of the new Lich King, and later, after the destruction of the Helm of Domination, as troops devoted to stopping the Scourge’s spread.",
            "Death knight is a hero class, which means you typically must start play at level 3 or higher. This subclass alters some of your core Paladin class features beginning at level 1. With your DM’s permission, you can start as a level 1 character of this class, but your subclass choice is fixed when you make the character. (In Aurora, the subclass’s level 1 and 2 features apply once you choose the subclass.)"],
-          dk_features, file_desc="Oath of the Ebon Blade (Death Knight) Paladin subclass from World of Warcraft (Andrey Kuzinskiy).")
+          dk_features, tag=TAG("Paladin"), file_desc="Oath of the Ebon Blade (Death Knight) Paladin subclass from World of Warcraft (Andrey Kuzinskiy).")
 
 # =====================================================================
 # Demon Hunter (Ranger)
@@ -105,9 +113,10 @@ dh_table = spell_table("Demon Hunter Spells", ["Ranger Level", "Spells (All)", "
 dh_opts = [option(f"{base}_SPELLS_{c.upper()}", f"{c} Spells", [f"You always have the spells in the Spells ({c}) column of the Demon Hunter Spells table prepared."], COL_TAG,
                   rules=[grant_spell(n, l, "Ranger") for l, n in dh_cols[c]], sheet=False) for c in dh_cols]
 dh_features = [
-    F(1, "Spellcasting", ["You can use an Arcane Focus (not a Druidic Focus) as a Spellcasting Focus for your Ranger spells."]),
-    F(2, "Deft Explorer", ["When you choose languages for the Deft Explorer class feature, choose from the language tables in chapter 2. Eredun and Nathrezim are recommended."], sheet=False),
-    F(2, "Fighting Style", ["As a Demon Hunter, you can choose a Fighting Style feat, the Druidic Warrior option in the Player’s Handbook, or the Void Warrior option below.",
+    F(2 if E14 else 1, "Spellcasting", ["You can use an Arcane Focus as a Spellcasting Focus for your Ranger spells." if E14 else "You can use an Arcane Focus (not a Druidic Focus) as a Spellcasting Focus for your Ranger spells."]),
+    (F(1, "Favored Enemy Languages", ["When you learn a language from the Favored Enemy (or Deft Explorer) class feature, choose from the language tables in chapter 2. Eredun and Nathrezim are recommended."], sheet=False) if E14 else
+     F(2, "Deft Explorer", ["When you choose languages for the Deft Explorer class feature, choose from the language tables in chapter 2. Eredun and Nathrezim are recommended."], sheet=False)),
+    F(2, "Fighting Style", ["As a Demon Hunter, you can choose a Fighting Style, or the Void Warrior option below." if E14 else "As a Demon Hunter, you can choose a Fighting Style feat, the Druidic Warrior option in the Player’s Handbook, or the Void Warrior option below.",
                             "Void Warrior. You learn two Warlock cantrips of your choice. Chill Touch and Mind Sliver are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Warlock cantrip."], sheet=False),
     F(3, "Demon Hunter Spells", ["When you reach a Ranger level specified in the Demon Hunter Spells table, you thereafter always have the spell in the Spells (All) column prepared. You also have the additional spells listed in one other column of your choice.", dh_table],
       sheet=False, rules=[grant_spell(n, l, "Ranger") for l, n in dh_all] + [f'<select type="Archetype Feature" name="Demon Hunter Spells (Column)" supports="{COL_TAG}" />']),
@@ -154,10 +163,24 @@ void_warrior = f'''	<element name="Void Warrior" type="Feat" source="{SOURCE}" i
 			<select type="Spell" name="Void Warrior" supports="0, Warlock" number="2" spellcasting="Ranger" />
 		</rules>
 	</element>'''
-archetype("wow-ranger-demon-hunter.xml", "Demon Hunter", "Ranger", "Embrace the Magic of Demons to Fight Fire with Fire",
+if E14:
+    void_warrior = f'''	<element name="Void Warrior" type="Class Feature" source="{SOURCE}" id="{PREFIX}_CLASS_FEATURE_FIGHTING_STYLE_VOID_WARRIOR">
+		<supports>Fighting Style, Ranger</supports>
+		<requirements>{DH_ID}</requirements>
+		<description>
+			<p>You learn two Warlock cantrips of your choice. <i>Chill Touch</i> and <i>Mind Sliver</i> are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Warlock cantrip. (Demon Hunter only; if you choose your Fighting Style before your subclass, you can switch to this option once you become a Demon Hunter.)</p>
+		</description>
+		<sheet>
+			<description>Whenever you gain a Ranger level, you can replace one of the chosen cantrips with another Warlock cantrip.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Void Warrior" supports="0, Warlock" number="2" spellcasting="Ranger" />
+		</rules>
+	</element>'''
+archetype(f"{FP}ranger-demon-hunter.xml", "Demon Hunter", "Ranger", "Embrace the Magic of Demons to Fight Fire with Fire",
           ["Most Demon Hunters joined Illidan on Outland as he marshaled his forces to battle the Burning Legion. You might have followed a different path, inspired by Illidan rather than directly trained by him, but the result is the same: You have embraced the magic of the Burning Legion with the singular goal of defeating it on Azeroth and every other world.",
            "Demon hunter is a hero class, which means you typically must start play at level 3 or higher. All demon hunters in World of Warcraft lore are elves (blood elves, night elves, or void elves), so check with your DM before playing a demon hunter of another species. (In Aurora, the subclass’s level 1 and 2 features apply once you choose the subclass.)"],
-          dh_features, extra=[void_warrior])
+          dh_features, extra=[void_warrior], tag=TAG("Ranger"))
 
 # =====================================================================
 # Evoker (Draconic Sorcery addition)
@@ -177,16 +200,16 @@ ev_opts = [option(f"{base}_SPELLS_{c.upper()}", f"{c} Spells", [f"You always hav
                   rules=gs(ev_cols[c]), sheet=False) for c in ev_cols]
 evoker = F(3, "Evoker Spells", ["Evokers wield the magic of the five ordered dragonflights—the chaotic flames of the red flight, the focused magic of the blue flight, the might of the black flight, the life-giving spirit of the green flight, and the time-bending magic of the bronze flight. To play an evoker, choose the Sorcerer class and the Draconic Sorcery subclass at level 3. Instead of the Draconic Spells subclass feature, you gain the Evoker Spells feature.",
                                 "When you reach a Sorcerer level specified in the Evoker Spells table, you thereafter always have the spells in the Spells (All) column prepared. You also have the additional spells listed in one other column of your choice.", ev_table],
-           sheet=False, etype="Archetype Feature", fid=f"{base}_EVOKER_SPELLS", supports="WoW Evoker", grant=False,
-           replaces=[R("SORCERER", "DRACONIC_SORCERY_DRACONIC_SPELLS")],
+           sheet=False, etype="Archetype Feature", fid=f"{base}_EVOKER_SPELLS", supports="WoW Evoker 2014" if E14 else "WoW Evoker", grant=False,
+           replaces=[] if E14 else [R("SORCERER", "DRACONIC_SORCERY_DRACONIC_SPELLS")],
            rules=gs(ev_all) + [f'<select type="Archetype Feature" name="Evoker Spells (Column)" supports="{EV_TAG}" />'])
 evoker.alt = "Evoker Spells"
-ev_append = '''	<append id="ID_WOTC_PHB24_ARCHETYPE_SORCERER_DRACONIC_SORCERY">
+ev_append = f'''	<append id="{'ID_WOTC_PHB_ARCHETYPE_DRACONIC_BLOODLINE' if E14 else 'ID_WOTC_PHB24_ARCHETYPE_SORCERER_DRACONIC_SORCERY'}">
 		<rules>
-			<select type="Archetype Feature" name="Evoker (World of Warcraft, optional)" supports="WoW Evoker" level="3" optional="true" />
+			<select type="Archetype Feature" name="Evoker (World of Warcraft, optional)" supports="WoW Evoker{' 2014' if E14 else ''}" level="{1 if E14 else 3}" optional="true" />
 		</rules>
 	</append>'''
-write("archetypes/wow-sorcerer-evoker.xml", "Evoker", "Evoker option for the Draconic Sorcery subclass from World of Warcraft (Andrey Kuzinskiy).",
+write(f"archetypes/{FP}sorcerer-evoker.xml", "Evoker", "Evoker option for the Draconic Sorcery subclass from World of Warcraft (Andrey Kuzinskiy).",
       [evoker.xml(base)] + [o.xml(base) for o in ev_opts] + [ev_append])
 
 # =====================================================================
@@ -224,14 +247,14 @@ spec_opts = [option(f"{base}_PET_SPECIALIZATION_{k.upper()}", f"Pet Specializati
 petspec = F(6, "Pet Specialization", ["This feature replaces the Ranger’s Roving feature. (Beast mastery and survival hunters.)",
                                       "While the beast from your Primal Companion feature is within 60 feet of you, you gain one of the following benefits, depending on the beast’s pet family and its specialization (see “Hunter Pets”)."] +
             [f"{k}. {v[0]}" for k, v in pet_specs.items()] + ["<h5>Hunter Pets</h5>"] + pet_intro,
-            sheet=False, fid=f"{base}_PET_SPECIALIZATION", supports=PET_TAG, grant=False, replaces=[R("RANGER", "ROVING")],
+            sheet=False, fid=f"{base}_PET_SPECIALIZATION", supports=PET_TAG, grant=False, replaces=[] if E14 else [R("RANGER", "ROVING")],
             rules=[f'<select type="Archetype Feature" name="Pet Family Specialization" supports="{PET_TAG} Option" />'])
-pet_append = f'''	<append id="ID_WOTC_PHB24_ARCHETYPE_RANGER_BEAST_MASTER">
+pet_append = f'''	<append id="{'ID_WOTC_ARCHETYPE_RANGER_BEAST_MASTER' if E14 else 'ID_WOTC_PHB24_ARCHETYPE_RANGER_BEAST_MASTER'}">
 		<rules>
 			<select type="Archetype Feature" name="Pet Specialization (World of Warcraft, optional)" supports="{PET_TAG}" level="6" optional="true" />
 		</rules>
 	</append>'''
-write("archetypes/wow-ranger-hunter-pets.xml", "Hunter Pets", "Hunter Pet Specialization option for the Beast Master subclass from World of Warcraft (Andrey Kuzinskiy).",
+write(f"archetypes/{FP}ranger-hunter-pets.xml", "Hunter Pets", "Hunter Pet Specialization option for the Beast Master subclass from World of Warcraft (Andrey Kuzinskiy).",
       [petspec.xml(base)] + [o.xml(base) for o in spec_opts] + [pet_append])
 
 # =====================================================================
@@ -267,9 +290,9 @@ mb = [
     F(17, "Master Brewer", ["When you create a magical beverage using your Mystic Brew feature, you can choose two different options and produce one magical beverage. Drinking the beverage provides the effects of both options for the duration."], sheet=False),
     F(17, "Intoxicated Frenzy", ["Immediately after you use your Patient Defense, you can move up to your Speed. During this movement, whenever you enter a space within 5 feet of a creature, you can make an Unarmed Strike targeting that creature. In addition, when you hit a creature with an Unarmed Strike granted by this feature, the creature must succeed on a Dexterity saving throw or have the Prone condition. A creature can be targeted by an Unarmed Strike granted by this feature only once per turn."]),
 ]
-archetype("wow-monk-mystic-brews.xml", "Warrior of Mystic Brews", "Monk", "Drink Mystic Brews to Overwhelm and Confound Foes",
+archetype(f"{FP}monk-mystic-brews.xml", "Warrior of Mystic Brews", "Monk", "Drink Mystic Brews to Overwhelm and Confound Foes",
           ["Warriors of Mystic Brews move with the jerky, unpredictable movements typical of someone who is intoxicated. Their apparently erratic stumbles conceal a carefully executed dance of blocks, parries, advances, attacks, and retreats. Warriors of Mystic Brews frequent bars and taverns to gather information or spy on potential threats. These warriors drink magical concoctions that enhance their martial arts.",
-           "Warriors of Mystic Brews often enjoy playing the fool to bring gladness to the downtrodden or to teach humility to the arrogant, but these Monks are maddening, masterful foes in battle."], mb)
+           "Warriors of Mystic Brews often enjoy playing the fool to bring gladness to the downtrodden or to teach humility to the arrogant, but these Monks are maddening, masterful foes in battle."], mb, tag=TAG("Monk"))
 
 # =====================================================================
 # Oath of the Holy (Paladin)
@@ -288,10 +311,10 @@ holy = [
                                "Healing Power. Whenever an ally starts its turn Bloodied and in the aura, that creature regains Hit Points equal to your Charisma modifier plus your Proficiency Bonus.",
                                "Sunlight. The aura is filled with Bright Light that is sunlight."], action="Bonus Action", usage="1/Long Rest"),
 ]
-archetype("wow-paladin-holy.xml", "Oath of the Holy", "Paladin", "Serve as a Beacon of the Light",
+archetype(f"{FP}paladin-holy.xml", "Oath of the Holy", "Paladin", "Serve as a Beacon of the Light",
           ["The Oath of the Holy unites Paladins who nurture life and use the power of the Light for healing and support. They combine great piety and virtue with martial skill, aspiring to the highest standards of morality, service to others, and self-sacrifice.",
            "These paladins share the following tenets:",
-           '<ul><li>Live your life in service to others of goodwill.</li><li>Do all in your power to ease the suffering of the innocent.</li><li>Let the Light shine through you to banish the darkness.</li></ul>'], holy)
+           '<ul><li>Live your life in service to others of goodwill.</li><li>Do all in your power to ease the suffering of the innocent.</li><li>Let the Light shine through you to banish the darkness.</li></ul>'], holy, tag=TAG("Paladin"))
 
 # =====================================================================
 # Discipline Domain / Shadow Domain (Cleric)
@@ -312,8 +335,8 @@ disc = [
                                  "Ascending Step. When you use Holy Bolt, you can teleport to an unoccupied space you can see within 30 feet before you make an attack roll.",
                                  "Ascending Volley. When you use Holy Bolt, you can expend a spell slot as part of the Bonus Action to hurl a number of additional bolts equal to the spell slot level expended. You can direct the bolts to hit one creature or several. Make a separate attack roll for each bolt."]),
 ]
-archetype("wow-cleric-discipline.xml", "Discipline Domain", "Cleric", "Cure Allies’ Wounds While Smiting Enemies",
-          ["The Discipline Domain focuses on the balance between the Holy Light and its shadowy mirror, the Void. Wielding both powers at once, Clerics who embrace this domain aid their allies and harm their foes, often with a single spell."], disc)
+archetype(f"{FP}cleric-discipline.xml", "Discipline Domain", "Cleric", "Cure Allies’ Wounds While Smiting Enemies",
+          ["The Discipline Domain focuses on the balance between the Holy Light and its shadowy mirror, the Void. Wielding both powers at once, Clerics who embrace this domain aid their allies and harm their foes, often with a single spell."], disc, tag=TAG("Cleric"))
 shad_sp = [(3, ["Crown of Madness", "Dissonant Whispers", "Mind Spike", "Shadow Word: Pain"]), (5, ["Summon Undead", "Vampiric Touch"]),
            (7, ["Evard’s Black Tentacles", "Psychic Horror"]), (9, ["Dominate Person", "Void Eruption"])]
 shad = [
@@ -332,8 +355,8 @@ shad = [
                         "Once you use this feature, you can’t use it again until you finish a Short or Long Rest."], action="Reaction", usage="1/Short Rest"),
     F(17, "Vampiric Embrace", ["While your Shadowform is active, whenever you roll 1d6 to add extra damage to a spell, one creature of your choice within 30 feet of you regains that many Hit Points."]),
 ]
-archetype("wow-cleric-shadow.xml", "Shadow Domain", "Cleric", "Draw on the Debilitating Power of the Void",
-          ["The Shadow Domain deals with the powers of shadow and the Void—a sinister mirror of the life-giving powers of the Light. Clerics who embrace these powers can wither their enemies’ flesh and debilitate their minds."], shad)
+archetype(f"{FP}cleric-shadow.xml", "Shadow Domain", "Cleric", "Draw on the Debilitating Power of the Void",
+          ["The Shadow Domain deals with the powers of shadow and the Void—a sinister mirror of the life-giving powers of the Light. Clerics who embrace these powers can wither their enemies’ flesh and debilitate their minds."], shad, tag=TAG("Cleric"))
 
 # =====================================================================
 # Swashbuckler (Rogue)
@@ -344,16 +367,16 @@ swash = [
                              "You also gain an additional way to use your Sneak Attack: You don’t need Advantage on the attack roll to use your Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don’t have Disadvantage on the attack roll. All the other rules for Sneak Attack still apply to you."],
       sheet="You can use Sneak Attack without Advantage against a creature within 5 feet of you if no other creatures are within 5 feet of you and you don’t have Disadvantage.",
       rules=['<stat name="initiative" value="charisma:modifier" />']),
-    F(9, "Panache", ["You have practiced new ways to use your Sneak Attack. The following effects are now among your Cunning Strike options.",
+    F(9, "Panache", ["You have practiced new ways to use your Sneak Attack. When you deal Sneak Attack damage, you can forgo a number of the Sneak Attack dice equal to an option’s cost to apply one of the following effects (only one per turn). A saving throw against these effects uses a DC equal to 8 plus your Dexterity modifier and Proficiency Bonus." if E14 else "You have practiced new ways to use your Sneak Attack. The following effects are now among your Cunning Strike options.",
                      "Goad (Cost: 1d6). The target must succeed on a Wisdom saving throw, or until the end of its next turn, the target has Disadvantage on attack rolls against targets other than you and can’t make Opportunity Attacks against targets other than you.",
                      "Awe (Cost: 3d6). Each creature of your choice within 30 feet of you must succeed on a Wisdom saving throw or have the Charmed condition until the end of your next turn."]),
-    F(13, "Dashing Strikes", ["You have practiced new ways to use your Sneak Attack. The following effects are now among your Cunning Strike options.",
+    F(13, "Dashing Strikes", ["You have practiced new ways to use your Sneak Attack. The following effects are added to the options you can choose with your Panache feature." if E14 else "You have practiced new ways to use your Sneak Attack. The following effects are now among your Cunning Strike options.",
                               "Invigorate (Cost: 2d6). Choose a creature you can see within 30 feet of yourself. Until the end of that creature’s next turn, whenever it makes an attack roll or a saving throw, it can roll 1d6 and add the number rolled to the attack roll or saving throw.",
                               "Parrying Stance (Cost: 2d6). Roll 1d6. Until the start of your next turn, you gain a bonus to your AC equal to the number rolled."]),
     F(17, "Master Duelist", ["Immediately after you use your Sneak Attack, you can make another attack against the same target, provided you are within 5 feet of it and no other creatures are within 5 feet of you."]),
 ]
-archetype("wow-rogue-swashbuckler.xml", "Swashbuckler (World of Warcraft)", "Rogue", "Glide into Melee with Panache and Agility",
-          ["As a Swashbuckler, you focus on the art of the blade, bringing speed, elegance, and charm to your combat style—topped off with an exquisite flourish of panache. You excel in single combat, and your methods make a duel look like a flamboyant performance."], swash)
+archetype(f"{FP}rogue-swashbuckler.xml", "Swashbuckler (World of Warcraft)", "Rogue", "Glide into Melee with Panache and Agility",
+          ["As a Swashbuckler, you focus on the art of the blade, bringing speed, elegance, and charm to your combat style—topped off with an exquisite flourish of panache. You excel in single combat, and your methods make a duel look like a flamboyant performance."], swash, tag=TAG("Rogue"))
 
 # =====================================================================
 # Shaman: Totems (Barbarian addition), Path of the Elements, Spiritual Guardian
@@ -369,16 +392,16 @@ totems = F(3, "Totems", ["This feature replaces the Barbarian’s Primal Knowled
                          "You can coalesce elemental spirits into a totem that aids you and your allies. As a Bonus Action, you can plant one of the totems below into the ground in an unoccupied space you can see within 10 feet of yourself.",
                          "A totem is a Small object that has AC 10 and 1 Hit Point and lasts for 1 minute, until it drops to 0 Hit Points, or until you use this feature again. At the end of each of your turns, the totem pulses with elemental energy that fills a 30-foot Emanation."] +
            [f"{n}. {t}" for n, t in totem_list],
-           etype="Class Feature", fid=f"{base}_TOTEMS", supports="WoW Shaman Totems", grant=False, action="Bonus Action",
-           replaces=[R("BARBARIAN", "PRIMAL_KNOWLEDGE")],
+           etype="Class Feature", fid=f"{base}_TOTEMS", supports="WoW Shaman Totems 2014" if E14 else "WoW Shaman Totems", grant=False, action="Bonus Action",
+           replaces=[] if E14 else [R("BARBARIAN", "PRIMAL_KNOWLEDGE")],
            sheet="Plant a totem (AC 10, 1 HP, 1 minute) within 10 feet; at the end of each of your turns it pulses in a 30-foot Emanation. Earthbind: enemies’ Speed −10 ft. Primal Knowledge (1/Long Rest or 1 Rage): allies use Strength for Acrobatics, Intimidation, Perception, Stealth, Survival checks. Tremor: allies immune to Charmed and Frightened. Wind Rush: allies’ Speed +10 ft.")
 totems.alt = "Totems"
-totem_append = '''	<append id="ID_WOTC_PHB24_CLASS_BARBARIAN">
+totem_append = f'''	<append id="{'ID_WOTC_PHB_CLASS_BARBARIAN' if E14 else 'ID_WOTC_PHB24_CLASS_BARBARIAN'}">
 		<rules>
-			<select type="Class Feature" name="Shaman Totems (World of Warcraft, optional)" supports="WoW Shaman Totems" level="3" optional="true" requirements="!ID_WOTC_PHB24_MULTICLASS_BARBARIAN" />
+			<select type="Class Feature" name="Shaman Totems (World of Warcraft, optional)" supports="WoW Shaman Totems{' 2014' if E14 else ''}" level="3" optional="true" requirements="!{'ID_WOTC_PHB_MULTICLASS_BARBARIAN' if E14 else 'ID_WOTC_PHB24_MULTICLASS_BARBARIAN'}" />
 		</rules>
 	</append>'''
-write("archetypes/wow-barbarian-shaman-totems.xml", "Shaman Totems", "Shaman Totems option for Barbarians from World of Warcraft (Andrey Kuzinskiy).",
+write(f"archetypes/{FP}barbarian-shaman-totems.xml", "Shaman Totems", "Shaman Totems option for Barbarians from World of Warcraft (Andrey Kuzinskiy).",
       [totems.xml(base), totem_append])
 
 elem = [
@@ -397,12 +420,12 @@ elem = [
                                  "Lava Burst. Whether or not the target fails its saving throw against this option, the target and each enemy within 10 feet of it start burning.",
                                  "Lightning Bolt. Whether or not the target fails its saving throw against this option, a bolt of lightning leaps from the target to another target of your choice that you can see within 30 feet of the first target. The new target makes a Dexterity saving throw, taking Lightning damage equal to the roll’s total on a failed save or half as much damage on a successful one."]),
 ]
-archetype("wow-barbarian-elements.xml", "Path of the Elements", "Barbarian", "Wield the Fury of the Elements",
-          ["Barbarians who follow the Path of the Elements learn to harness their Rage into a storm of flames, frost, and lightning. When in their Rage, these Barbarians tap into the elemental forces of nature to create powerful magical effects."], elem)
+archetype(f"{FP}barbarian-elements.xml", "Path of the Elements", "Barbarian", "Wield the Fury of the Elements",
+          ["Barbarians who follow the Path of the Elements learn to harness their Rage into a storm of flames, frost, and lightning. When in their Rage, these Barbarians tap into the elemental forces of nature to create powerful magical effects."], elem, tag=TAG("Barbarian"))
 spirit = [
     F(3, "Spiritual Protectors", ["Your Rage summons spectral warriors to your aid. While your Rage is active, when you hit a creature with a weapon or an Unarmed Strike, that creature becomes a target of the spirits, which cause one of the following effects of your choice.",
                                   "Distract. Until the start of your next turn, the target has Disadvantage on attack rolls against targets other than you or another Barbarian who has this feature.",
-                                  "Hinder. You can activate the Slow mastery property in addition to a different mastery property you’re using with that weapon.",
+                                  ("Hinder. The target’s Speed is reduced by 10 feet until the start of your next turn." if E14 else "Hinder. You can activate the Slow mastery property in addition to a different mastery property you’re using with that weapon."),
                                   "Strike. The target takes an extra 1d4 damage, which can be Cold, Fire, or Lightning damage (your choice)."]),
     F(6, "Spirit Shield", ["Your guardian spirits can provide supernatural protection to those you defend. While your Rage is active, when another creature you can see within 30 feet of you takes damage, you can take a Reaction to reduce that damage. To determine the amount the damage is reduced by, roll a number of d6s equal to your Rage Damage bonus, and add them together."], action="Reaction"),
     F(10, "Consult the Spirits", ["You gain the ability to consult with your guardian spirits. When you do so, you cast the Augury or Clairvoyance spell without expending a spell slot or needing Material components. Rather than creating a spherical sensor, this use of Clairvoyance invisibly summons one of your guardian spirits to the chosen location. Wisdom is your spellcasting ability for these spells.",
@@ -410,8 +433,28 @@ spirit = [
       usage="1/Short Rest", rules=['<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AUGURY" />', '<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" />']),
     F(14, "Spirits’ Fury", ["Your spirits hasten your attacks. When you make an attack roll with a Melee weapon as part of the Attack action and roll 18–20 on the d20, you can make one additional attack roll with the same weapon as part of that action. Once you use this feature, you can’t do so again until the start of your next turn."]),
 ]
-archetype("wow-barbarian-spiritual-guardian.xml", "Path of the Spiritual Guardian", "Barbarian", "Call on the Spirits for Combat Aid",
-          ["Barbarians who walk the Path of the Spiritual Guardian call on spirits—whether bestial spirits of nature, spirits of departed ancestors, or spirits of raw elemental power—to guide and protect them. When these Barbarians rage, they contact the realm of the spirits and call on them for aid."], spirit)
+archetype(f"{FP}barbarian-spiritual-guardian.xml", "Path of the Spiritual Guardian", "Barbarian", "Call on the Spirits for Combat Aid",
+          ["Barbarians who walk the Path of the Spiritual Guardian call on spirits—whether bestial spirits of nature, spirits of departed ancestors, or spirits of raw elemental power—to guide and protect them. When these Barbarians rage, they contact the realm of the spirits and call on them for aid."], spirit, tag=TAG("Barbarian"))
+
+if E14:
+    LEG = f"{PREFIX}_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_LEGION"
+    write(f"archetypes/{FP}warlock-pact-of-the-legion.xml", "Pact of the Legion", "Pact of the Legion as a 2014 Pact Boon, from World of Warcraft (Andrey Kuzinskiy).", [f'''	<element name="Pact of the Legion" type="Class Feature" source="{SOURCE}" id="{LEG}">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>You learn the <i>Find Familiar</i> spell and can cast it as an action without expending a spell slot. When you cast the spell, you summon a Fel Imp familiar (see chapter 7).</p>
+			<p class="indent">Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack with its reaction.</p>
+			<p class="indent">(In 2014 rules, Pact of the Legion is a Pact Boon gained at Warlock level 3.)</p>
+		</description>
+		<sheet>
+			<description>You can cast Find Familiar without a spell slot, summoning a Fel Imp. You can forgo one of your attacks to let your familiar attack with its reaction.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" />
+			<select type="Companion" name="Pact of the Legion Familiar" supports="WoW Legion Familiar" />
+		</rules>
+	</element>'''])
+    print("2014 subclasses written")
+    sys.exit(0)
 
 # =====================================================================
 # Warrior Maneuvers (Battle Master)
@@ -424,7 +467,7 @@ mans = [
     ("Mortal Strike", "When you hit a creature with an attack roll, you can expend one Superiority Die to prevent the target from healing. Add the Superiority Die to the attack’s damage roll. The target can’t regain Hit Points until the end of your next turn.", None),
     ("Warding Maneuver", "When you or a creature you can see within 5 feet of you is hit by an attack roll, you can take a Reaction and expend one Superiority Die if you’re wielding a Melee weapon or a Shield. Add the Superiority Die to the target’s AC against the triggering attack. If the attack still hits, the target has Resistance against the attack’s damage.", "Reaction"),
 ]
-man_el = [option(f"{base}_{slug(n)}", n, [t], "Maneuver, PHB24 Battle Master", sheet=t, usage="Superiority Die", action=a) for n, t, a in mans]
+man_el = [option(f"{base}_{slug(n)}", n, [t], "Maneuver, PHB24 Battle Master, Battle Master", sheet=t, usage="Superiority Die", action=a) for n, t, a in mans]
 for m in man_el:
     m.compendium = True
 write("archetypes/wow-fighter-warrior-maneuvers.xml", "Warrior Maneuvers", "Additional Battle Master maneuvers for World of Warcraft warriors (Andrey Kuzinskiy).",

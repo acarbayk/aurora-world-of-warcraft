@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source (2014)</name>
+		<description>Source element for World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-source.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/wow14-source.xml" />
+		</update>
+	</info>
+
+	<element name="World of Warcraft (2014)" type="Source" source="Homebrew" id="ID_KAYA_WOW14_SOURCE_WORLD_OF_WARCRAFT_2014">
+		<description>
+			<p><strong>World of Warcraft</strong> by Andrey Kuzinskiy: a fan-made Dungeons &amp; Dragons sourcebook that brings Azeroth to the fifth edition (2024) rules. It adds World of Warcraft classes built on the Player’s Handbook (2024) classes, seventeen playable species, professions and gear, faction renown and new spells.</p>
+			<p class="indent">This is the 2014 rules adaptation of the World of Warcraft subclasses and class options (an unofficial conversion; the book itself uses the 2024 rules). It shares species, spells, feats, items and renown with the 2024 version and still needs the Aurora Legacy Player’s Handbook (2024) to be loaded, because some species traits and spells reference it. World of Warcraft is a trademark of Blizzard Entertainment; this is an unofficial fan conversion.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">WoW14</set>
+			<set name="url">https://github.com/acarbayk/aurora-world-of-warcraft</set>
+			<set name="author" abbreviation="AK">Andrey Kuzinskiy</set>
+			<set name="information">D&amp;D 5.5e homebrew</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="supplement">true</set>
+			<set name="homebrew">true</set>
+			<set name="release">20261119</set>
+		</setters>
+	</element>
+</elements>

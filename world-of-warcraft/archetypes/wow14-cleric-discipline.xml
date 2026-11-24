@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Discipline Domain</name>
+		<description>The Discipline Domain Cleric subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-cleric-discipline.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-cleric-discipline.xml" />
+		</update>
+	</info>
+
+	<element name="Discipline Domain" type="Archetype" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_CLERIC_DISCIPLINE_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p class="flavor">Cure Allies’ Wounds While Smiting Enemies</p>
+			<p>The Discipline Domain focuses on the balance between the Holy Light and its shadowy mirror, the Void. Wielding both powers at once, Clerics who embrace this domain aid their allies and harm their foes, often with a single spell.</p>
+			<p class="indent">This is a 2014 rules adaptation of a subclass from World of Warcraft (a 2024 rules book). Terms that exist only in the 2024 rules have been converted to their 2014 equivalents.</p>
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_DISCIPLINE_SPELLS" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_HOLY_BOLT" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ATONEMENT" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_LUMINOUS_BARRIER" />
+			<div element="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ULTIMATE_PENITENCE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_DISCIPLINE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_HOLY_BOLT" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ATONEMENT" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_LUMINOUS_BARRIER" level="6" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ULTIMATE_PENITENCE" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Discipline Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_DISCIPLINE_SPELLS">
+		<description>
+			<p>Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Discipline Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Discipline Domain Spells</h5><table class="class-features"><thead><tr><td>Cleric Level</td><td>Spells</td></tr></thead><tr><td>3</td><td>Arcane Vigor, Guiding Bolt, Magic Weapon, Shield of Faith</td></tr><tr><td>5</td><td>Prayer of Mending, Protection from Energy</td></tr><tr><td>7</td><td>Guardian of Faith, Stoneskin</td></tr><tr><td>9</td><td>Circle of Power, Destructive Wave</td></tr></table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_VIGOR" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDING_BOLT" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGIC_WEAPON" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHIELD_OF_FAITH" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_PRAYER_OF_MENDING" level="5" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONESKIN" level="7" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CIRCLE_OF_POWER" level="9" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DESTRUCTIVE_WAVE" level="9" spellcasting="Cleric" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Holy Bolt" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_HOLY_BOLT">
+		<description>
+			<p>As a Bonus Action, you present your Holy Symbol and expend a use of your Channel Divinity to make a ranged spell attack, hurling a bolt of holy energy targeting one creature within 60 feet of yourself. On a hit, the target takes Radiant damage equal to 2d10 plus your Wisdom modifier, and you can choose a creature you can see within 60 feet of yourself to regain Hit Points equal to 1d10 plus your Wisdom modifier.</p>
+		</description>
+		<sheet alt="Holy Bolt" action="Bonus Action" usage="Channel Divinity">
+			<description>Ranged spell attack (+{{cleric:spellcasting:attack}}) against a creature within 60 feet: 2d10 + {{wisdom:modifier}} Radiant damage on a hit, and a creature you can see within 60 feet regains 1d10 + {{wisdom:modifier}} HP.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Atonement" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ATONEMENT">
+		<description>
+			<p>When a level 1+ spell you cast restores Hit Points to one or more creatures, each of those creatures gains a blessing that lasts until the end of your next turn. Whenever you cast a spell that deals damage to a creature using a spell slot, each blessed creature regains additional Hit Points equal to the level of the spell slot you used to cast the damaging spell.</p>
+		</description>
+		<sheet alt="Atonement">
+			<description>When a level 1+ spell you cast restores Hit Points to one or more creatures, each of those creatures gains a blessing that lasts until the end of your next turn. Whenever you cast a spell that deals damage to a creature using a spell slot, each blessed creature regains additional Hit Points equal to the level of the spell slot you used to cast the damaging spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Luminous Barrier" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_LUMINOUS_BARRIER">
+		<description>
+			<p>As a Bonus Action, you can expend a use of your Channel Divinity to place a magical ward of glowing light on each creature blessed by your Atonement. Each affected creature gains a number of Temporary Hit Points equal to your Cleric level plus your Wisdom modifier. While a creature has Temporary Hit Points gained from this feature, it has Resistance to all damage.</p>
+		</description>
+		<sheet alt="Luminous Barrier" action="Bonus Action" usage="Channel Divinity">
+			<description>As a Bonus Action, you can expend a use of your Channel Divinity to place a magical ward of glowing light on each creature blessed by your Atonement. Each affected creature gains a number of Temporary Hit Points equal to your Cleric level plus your Wisdom modifier. While a creature has Temporary Hit Points gained from this feature, it has Resistance to all damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Ultimate Penitence" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ULTIMATE_PENITENCE">
+		<description>
+			<p>Your Holy Bolt grows more powerful as detailed below.</p>
+			<p class="indent"><strong><em>Ascending Step.</em></strong> When you use Holy Bolt, you can teleport to an unoccupied space you can see within 30 feet before you make an attack roll.</p>
+			<p class="indent"><strong><em>Ascending Volley.</em></strong> When you use Holy Bolt, you can expend a spell slot as part of the Bonus Action to hurl a number of additional bolts equal to the spell slot level expended. You can direct the bolts to hit one creature or several. Make a separate attack roll for each bolt.</p>
+		</description>
+		<sheet alt="Ultimate Penitence">
+			<description>Your Holy Bolt grows more powerful as detailed below. Ascending Step. When you use Holy Bolt, you can teleport to an unoccupied space you can see within 30 feet before you make an attack roll. Ascending Volley. When you use Holy Bolt, you can expend a spell slot as part of the Bonus Action to hurl a number of additional bolts equal to the spell slot level expended. You can direct the bolts to hit one creature or several. Make a separate attack roll for each bolt.</description>
+		</sheet>
+	</element>
+
+</elements>

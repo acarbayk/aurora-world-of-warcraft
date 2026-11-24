@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shaman Totems</name>
+		<description>Shaman Totems option for Barbarians from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-barbarian-shaman-totems.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-barbarian-shaman-totems.xml" />
+		</update>
+	</info>
+
+	<element name="Level 3: Totems" type="Class Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_CLASS_FEATURE_BARBARIAN_SHAMAN_TOTEMS">
+		<supports>WoW Shaman Totems 2014</supports>
+		<description>
+			<p>This feature replaces the Barbarian’s Primal Knowledge feature. (Shaman are Barbarians in World of Warcraft; adopting the Barbarian class as a shaman increases a character’s Renown Score with the Earthen Ring by 3.)</p>
+			<p class="indent">You can coalesce elemental spirits into a totem that aids you and your allies. As a Bonus Action, you can plant one of the totems below into the ground in an unoccupied space you can see within 10 feet of yourself.</p>
+			<p class="indent">A totem is a Small object that has AC 10 and 1 Hit Point and lasts for 1 minute, until it drops to 0 Hit Points, or until you use this feature again. At the end of each of your turns, the totem pulses with elemental energy that fills a 30-foot Emanation.</p>
+			<p class="indent"><strong><em>Earthbind Totem.</em></strong> Each enemy in the Emanation has its Speed reduced by 10 feet until the end of your next turn.</p>
+			<p class="indent"><strong><em>Primal Knowledge Totem.</em></strong> Each ally in the Emanation is empowered with nature’s focus until the end of your next turn. While empowered in this way, whenever the creature makes an ability check using one of the following skills, the creature can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. After you plant this totem, you can’t do so again until you finish a Long Rest. You can also restore your use of this totem by expending one use of your Rage (no action required).</p>
+			<p class="indent"><strong><em>Tremor Totem.</em></strong> Each ally in the Emanation has Immunity to the Charmed and Frightened conditions until the end of your next turn. If the creature was already Charmed or Frightened, those conditions are suppressed until the end of its next turn.</p>
+			<p class="indent"><strong><em>Wind Rush Totem.</em></strong> Each ally in the Emanation has its Speed increased by 10 feet until the end of your next turn.</p>
+		</description>
+		<sheet alt="Totems" action="Bonus Action">
+			<description>Plant a totem (AC 10, 1 HP, 1 minute) within 10 feet; at the end of each of your turns it pulses in a 30-foot Emanation. Earthbind: enemies’ Speed −10 ft. Primal Knowledge (1/Long Rest or 1 Rage): allies use Strength for Acrobatics, Intimidation, Perception, Stealth, Survival checks. Tremor: allies immune to Charmed and Frightened. Wind Rush: allies’ Speed +10 ft.</description>
+		</sheet>
+	</element>
+
+	<append id="ID_WOTC_PHB_CLASS_BARBARIAN">
+		<rules>
+			<select type="Class Feature" name="Shaman Totems (World of Warcraft, optional)" supports="WoW Shaman Totems 2014" level="3" optional="true" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+		</rules>
+	</append>
+
+</elements>

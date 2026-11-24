@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Evoker</name>
+		<description>Evoker option for the Draconic Sorcery subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="1.1.0">
+			<file name="wow14-sorcerer-evoker.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-sorcerer-evoker.xml" />
+		</update>
+	</info>
+
+	<element name="Level 3: Evoker Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_CLASS_FEATURE_SORCERER_EVOKER_EVOKER_SPELLS">
+		<supports>WoW Evoker 2014</supports>
+		<description>
+			<p>Evokers wield the magic of the five ordered dragonflights—the chaotic flames of the red flight, the focused magic of the blue flight, the might of the black flight, the life-giving spirit of the green flight, and the time-bending magic of the bronze flight. To play an evoker, choose the Sorcerer class and the Draconic Sorcery subclass at level 3. Instead of the Draconic Spells subclass feature, you gain the Evoker Spells feature.</p>
+			<p class="indent">When you reach a Sorcerer level specified in the Evoker Spells table, you thereafter always have the spells in the Spells (All) column prepared. You also have the additional spells listed in one other column of your choice.</p>
+			<h5>Evoker Spells</h5><table class="class-features"><thead><tr><td>Sorcerer Level</td><td>Spells (All)</td><td>Spells (Augmentation)</td><td>Spells (Devastation)</td><td>Spells (Preservation)</td></tr></thead><tr><td>3</td><td>Chromatic Orb, Dragon’s Breath</td><td>Ebon Might, Eruption</td><td>Azure Strike, Scorching Ray</td><td>Dream Breath, Living Flame</td></tr><tr><td>5</td><td>Fly</td><td>Blistering Scales</td><td>Fireball</td><td>Emerald Blossom</td></tr><tr><td>7</td><td>Arcane Eye</td><td>Upheaval</td><td>Emberstorm</td><td>Time Dilation</td></tr><tr><td>9</td><td>Summon Dragon</td><td>Breath of Eons</td><td>Shattering Star</td><td>Dream Flight</td></tr></table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHROMATIC_ORB" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DRAGONS_BREATH" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FLY" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_EYE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUMMON_DRAGON" level="9" spellcasting="Sorcerer" />
+			<select type="Archetype Feature" name="Evoker Spells (Column)" supports="WoW Evoker Specialization" />
+		</rules>
+	</element>
+
+	<element name="Augmentation Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_CLASS_FEATURE_SORCERER_EVOKER_SPELLS_AUGMENTATION">
+		<supports>WoW Evoker Specialization</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the spells in the Spells (Augmentation) column of the Evoker Spells table prepared.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_EBON_MIGHT" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_ERUPTION" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_BLISTERING_SCALES" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_UPHEAVAL" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_BREATH_OF_EONS" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+
+	<element name="Devastation Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_CLASS_FEATURE_SORCERER_EVOKER_SPELLS_DEVASTATION">
+		<supports>WoW Evoker Specialization</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the spells in the Spells (Devastation) column of the Evoker Spells table prepared.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_AZURE_STRIKE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCORCHING_RAY" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIREBALL" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_EMBERSTORM" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SHATTERING_STAR" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+
+	<element name="Preservation Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_CLASS_FEATURE_SORCERER_EVOKER_SPELLS_PRESERVATION">
+		<supports>WoW Evoker Specialization</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the spells in the Spells (Preservation) column of the Evoker Spells table prepared.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_DREAM_BREATH" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_LIVING_FLAME" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_EMERALD_BLOSSOM" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_TIME_DILATION" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_DREAM_FLIGHT" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+
+	<append id="ID_WOTC_PHB_ARCHETYPE_DRACONIC_BLOODLINE">
+		<rules>
+			<select type="Archetype Feature" name="Evoker (World of Warcraft, optional)" supports="WoW Evoker 2014" level="1" optional="true" />
+		</rules>
+	</append>
+
+</elements>

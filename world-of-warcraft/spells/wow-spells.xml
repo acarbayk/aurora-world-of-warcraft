@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>New spells from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-spells.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/spells/wow-spells.xml" />
+		</update>
+	</info>
+
+	<element name="Apotheosis" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_APOTHEOSIS">
+		<supports>Cleric</supports>
+		<description>
+			<p>You transform into a spectral, angelic form that grants you the following benefits.</p>
+			<p class="indent"><strong><em>Angelic Wings.</em></strong> You have a Fly Speed of 90 feet.</p>
+			<p class="indent"><strong><em>Spectral Form.</em></strong> You have Resistance to Bludgeoning, Piercing, Radiant, and Slashing damage.</p>
+			<p class="indent"><strong><em>Holy Empowerment.</em></strong> Whenever you cast a spell using a spell slot that restores Hit Points to one or more creatures or deals Radiant damage, determine the spell’s effects as if you had used a spell slot 2 levels higher than the spell slot you used to cast it (maximum of level 9).</p>
+		</description>
+		<setters>
+			<set name="level">9</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Arcane Pulse" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_ARCANE_PULSE">
+		<supports>Nightborne Elf, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You create a pulse of arcane energy in a 10-foot Emanation originating from yourself. Each creature of your choice within this area makes a Constitution saving throw. On a failed save, it takes 1d8 Force damage, and its Speed is reduced by 10 feet (to a minimum of 0 feet) until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Azure Strike" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_AZURE_STRIKE">
+		<supports>Sorcerer, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>You fire rays of arcane and frigid energy at up to two targets within range that are within 30 feet of each other. Make a ranged spell attack for each target. On a hit, the target takes 2d6 Force damage, and its Speed is reduced by 10 feet until the end of its next turn.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Azure Sweep" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_AZURE_SWEEP">
+		<supports>Sorcerer, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Pure magic sweeps out from you in a 30-foot Emanation. Creatures of your choice in the Emanation make a Constitution saving throw. On a failed save, a creature takes 7d8 Force damage, and its Speed is reduced by 20 feet for the duration. On a successful save, the target takes half as much damage only.</p>
+		</description>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Blistering Scales" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_BLISTERING_SCALES">
+		<supports>Sorcerer, Damaging Spell</supports>
+		<description>
+			<p>Choose a willing creature you can see within range. Five explosive scales form on the target, granting it a +1 bonus to AC for the duration. If a creature hits the target with a melee attack roll before the spell ends, a scale explodes, and the attacking creature takes 1d8 Fire damage. The spell ends early if the target has no explosive scales.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The number of explosive scales that form on the target increases by one for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a scale of a Dragon</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Bonestorm" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_BONESTORM">
+		<supports>Death Knight, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You conjure a whirl of battering bone and gore around yourself. You regain 4d6 Hit Points, and each creature in a 10-foot Emanation originating from you makes a Constitution saving throw. A target takes 4d8 Necrotic damage on a failed save or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Breath of Eons" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_BREATH_OF_EONS">
+		<supports>Sorcerer, Damaging Spell</supports>
+		<description>
+			<p>You draw on the magic of the bronze dragonflight. For the duration, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Temporal Wounds.</em></strong> When you move within 5 feet of a creature, you can curse it until the start of your next turn. While a creature is cursed, the next time it takes damage, it takes an extra 1d10 Force damage, and the curse ends. A creature can be cursed this way only once per turn.</p>
+			<p class="indent"><strong><em>Wings.</em></strong> You sprout spectral wings from your back if you don’t already have wings. You have a Fly Speed of 60 feet and can hover. In addition, your movement doesn’t provoke Opportunity Attacks.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Chains of Ice" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_CHAINS_OF_ICE">
+		<supports>Death Knight, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You create chains of ice around a creature you can see within range. The target makes a Dexterity saving throw. On a failed save, the target takes 1d10 Cold damage, and its Speed is halved until the end of its next turn. On a successful save, the target takes half as much damage only.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d10 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Chaos Nova" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_CHAOS_NOVA">
+		<supports>Demon Hunter, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Chaos energy bursts out in a 20-foot Emanation originating from you. Each creature of your choice in the Emanation takes 2d6 Force damage and must succeed on a Wisdom saving throw or have the Stunned condition until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Collapsing Star" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_COLLAPSING_STAR">
+		<supports>Demon Hunter, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You channel Void energy into a cataclysmic blast that fills a 20-foot-radius Sphere centered on a point you can see within range. Each creature of your choice within the Sphere makes a Constitution saving throw, taking 4d12 Force damage on a failed save or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Combustion" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_COMBUSTION">
+		<supports>Wizard, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>You engulf yourself in flames for the duration, shedding Bright Light in a 20-foot radius and Dim Light for an additional 10 feet. These flames grant you Immunity to Fire damage. While they last, you have Advantage on spell attack rolls.</p>
+			<p class="indent">At the end of each of your turns, each creature of your choice in a 5-foot Emanation originating from you takes 3d8 Fire damage.</p>
+		</description>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Consecration" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_CONSECRATION">
+		<supports>Paladin, Damaging Spell</supports>
+		<description>
+			<p>You consecrate the area in a 15-foot Emanation originating from you. Creatures of your choice that start their turn in the Emanation take 1d8 Radiant damage. The Emanation is Difficult Terrain for Fiends and Undead.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Consume Soul" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_CONSUME_SOUL">
+		<supports>Demon Hunter, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You drain the essence from a creature within range, which makes a Constitution saving throw. On a failed save, it takes 4d4 Force damage, and you gain Temporary Hit Points equal to half the Force damage dealt. On a successful save, it takes half as much damage only.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d4 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Curse of Agony" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_CURSE_OF_AGONY">
+		<supports>Warlock, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You curse one creature within range with excruciating pain. The target makes a Constitution saving throw; the spell’s damage starts at 1d4 Psychic damage. On a failed save, the target takes the spell’s damage, and the spell’s damage die increases: from 1d4 to 1d6, 1d6 to 1d8, 1d8 to 1d10, or 1d10 to 1d12 (the maximum). On a successful save, the target takes the spell’s damage, and the effect ends. The target repeats the save at the end of each of its turns.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Death Grip" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_DEATH_GRIP">
+		<supports>Death Knight, Spell Saving Throw</supports>
+		<description>
+			<p>You harness runic energies to bind a foe to you. One creature you can see within range must succeed on a Strength saving throw or be pulled straight toward you to the nearest unoccupied space within 5 feet of you.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Death and Decay" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_DEATH_AND_DECAY">
+		<supports>Death Knight, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Corruption ripples out in a 20-foot-radius Sphere from a point on the ground you can see within range. Each creature in that area makes a Wisdom saving throw. On a failed save, a target takes 2d6 Necrotic damage and is cursed until the end of your next turn. If you deal damage to a cursed target with an attack roll, the target takes an extra 1d6 Necrotic damage. On a successful save, the target takes half as much damage only.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Demon Spikes" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_DEMON_SPIKES">
+		<supports>Demon Hunter</supports>
+		<description>
+			<p>You surge with fel power and sprout hard, jagged spikes. You gain a +2 bonus to AC for the duration, and when a creature within 5 feet of you hits you with a melee attack roll, it takes 10 Piercing damage.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Divine Shield" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_DIVINE_SHIELD">
+		<supports>Paladin</supports>
+		<description>
+			<p>You have Immunity to all damage until the start of your next turn, including the triggering damage. For the duration, your Speed can’t be reduced, any current reductions to your Speed are suspended, and no effect can move you against your will.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Reaction, which you take when you take damage</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Dream Breath" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_DREAM_BREATH">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>You exhale verdant healing magic. Each creature of your choice in a 15-foot Cone regains 2d6 Hit Points.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The healing increases by 2d6 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Dream Flight" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_DREAM_FLIGHT">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>You draw on the magic of the green dragonflight. For the duration, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Healing Presence.</em></strong> When you move within 5 feet of a creature, you can restore 5d4 Hit Points to that creature. A creature can regain these Hit Points only once per turn.</p>
+			<p class="indent"><strong><em>Wings.</em></strong> You sprout spectral wings from your back if you don’t already have wings. You have a Fly Speed of 60 feet and can hover. In addition, your movement doesn’t provoke Opportunity Attacks.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Ebon Might" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_EBON_MIGHT">
+		<supports>Sorcerer, Damaging Spell</supports>
+		<description>
+			<p>As you invoke the black dragonflight, draconic might erupts from you. Each creature of your choice in a 10-foot Emanation originating from you is empowered until the end of your next turn. While a creature is empowered, when it hits a target with an attack roll, the attack deals an extra 1d4 Force damage.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Emberstorm" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_EMBERSTORM">
+		<supports>Sorcerer, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>White-hot embers fill a 20-foot-radius Sphere centered on a point you choose within range. Each creature in the Sphere makes a Constitution saving throw, taking 6d8 Fire damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent">Creatures and flammable objects in the Sphere that aren’t being worn or carried start burning, taking 1d8 Fire damage at the start of each of their turns instead of the normal burning damage.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d8 for each spell slot level above 4.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Emerald Blossom" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_EMERALD_BLOSSOM">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>You conjure a spectral bulb that sprouts from the ground in an unoccupied space that you can see within range. The bulb lasts for the duration.</p>
+			<p class="indent">The bulb emits healing magic in a 10-foot Emanation at the end of each of your turns. Allies of your choice in the Emanation regain 5 Hit Points. The bulb vanishes when it restores a total of 20 Hit Points.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The total Hit Points the bulb can restore increases by 5 for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Entropic Embrace" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_ENTROPIC_EMBRACE">
+		<supports>Void Elf, Warlock, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You are empowered by the essence of the Void for the duration, becoming swathed in shadow and taking on a dark-blue or purple appearance. While this effect lasts, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Preternatural Calm.</em></strong> You automatically succeed on Constitution saving throws to maintain Concentration.</p>
+			<p class="indent"><strong><em>Shadow Shroud.</em></strong> You are shrouded in shadow, making your space Lightly Obscured.</p>
+			<p class="indent"><strong><em>Touch of the Void.</em></strong> Once on each of your turns, you can deal an extra 1d4 Necrotic damage to one creature when you deal damage to it, or you can restore an extra 1d4 Hit Points to one creature when you heal it.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The extra damage or healing from the Touch of the Void effect increases by 1d4 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Reaction, which you take when you make a D20 Test with Advantage or Disadvantage and roll the same number on both dice</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Eruption" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_ERUPTION">
+		<supports>Sorcerer, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>The ground in a 20-foot-radius Sphere centered on a point within range erupts with flames. Each creature in the Sphere makes a Dexterity saving throw, taking 3d8 Fire damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent">The cracks turn the ground in the Sphere into Difficult Terrain until the end of your next turn, at which point they close.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d8 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Explosive Trap" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_EXPLOSIVE_TRAP">
+		<supports>Ranger, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>An Invisible, intangible trap appears on the ground at a point you choose within range. The first time a creature comes within 5 feet of the trap, the trap explodes in a fiery burst that fills a 20-foot-radius Sphere centered on the trap. The spell ends, and each creature within the Sphere makes a Dexterity saving throw. On a failed save, a creature takes 8d6 Fire damage and, if it is Huge or smaller, is pushed 20 feet straight away from the trap’s location.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Eye Beam" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_EYE_BEAM">
+		<supports>Demon Hunter, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You concentrate your magic into your eyes. When you cast the spell, and as a Magic action on your subsequent turns for the duration, you can unleash a burst of fel magic. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Force damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Fel Rush" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_FEL_RUSH">
+		<supports>Demon Hunter, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Fiery fel magic surrounds you and grants you explosive speed. Until the end of your turn, your Speed increases by 30 feet, and your movement doesn’t provoke Opportunity Attacks.</p>
+			<p class="indent">When you move within 5 feet of a creature or an object that isn’t being worn or carried, it makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one. A creature or object can take this damage only once per turn.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Feral Prowl" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_FERAL_PROWL">
+		<supports>Druid</supports>
+		<description>
+			<p>You shape-shift as if you had used Wild Shape, but you don’t expend a use of your Wild Shape. You have the Invisible condition until the spell ends. The spell ends early immediately after you make an attack roll, deal damage, cast a spell, or revert to your natural form.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Fiery Brand" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_FIERY_BRAND">
+		<supports>Demon Hunter, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You magically place a fiery demonic symbol on a creature within range, which makes a Wisdom saving throw. On a failed save, the creature takes 3d10 Fire damage and is cursed. While it remains cursed, you have Resistance to all damage it deals. On a successful save, it takes half as much damage only.</p>
+			<p class="indent">A cursed creature repeats the save at the end of each of its turns, ending the spell on a success.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Flurry" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_FLURRY">
+		<supports>Wizard, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>You hurl three shards of ice at one target within range or at several. Make a ranged spell attack for each shard. On a hit, the target takes 3d6 Cold damage. On a Critical Hit, the target has the Restrained condition until the end of your next turn.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> You create one additional shard of ice for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Freezing Trap" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_FREEZING_TRAP">
+		<supports>Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>An Invisible, intangible trap appears on the ground at a point you choose within range. The first time a creature comes within 5 feet of the trap, the trap explodes in a burst of frost, the spell ends, and the triggering creature makes a Constitution saving throw. On a failed save, the target has the Restrained condition for 1 minute. If the creature takes any damage, the Restrained condition from the trap ends.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Frost Nova" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_FROST_NOVA">
+		<supports>Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You unleash a burst of frost, creating a 15-foot Emanation originating from you. Each creature of your choice in the Emanation makes a Constitution saving throw. On a failed save, a creature takes 2d6 Cold damage, and it has the Restrained condition until the end of your next turn. On a successful save, the creature takes half as much damage only.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Frostscythe" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_FROSTSCYTHE">
+		<supports>Death Knight, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Sweeping your weapon before you, you unleash a blast of icy cold. Each creature in a 20-foot Cone makes a Constitution saving throw. On a failed save, a creature takes 3d8 Cold damage, and its Speed is reduced by 10 feet for 1 minute. On a successful save, a creature takes half as much damage only.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d8 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Guided Prayer" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_GUIDED_PRAYER">
+		<supports>Paladin</supports>
+		<description>
+			<p>You regain Hit Points equal to 8d4 plus your spellcasting ability modifier. You have Advantage on the next attack roll you make before the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">Reaction, which you take when you become Bloodied or take damage while you are Bloodied</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Hand of Gul’dan" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_HAND_OF_GULDAN">
+		<supports>Warlock, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>A demonic meteor hurtles from you to a point you choose within range and then erupts. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 2d8 Fire damage plus 2d8 Necrotic damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent">Demonic spirits resembling fel imps flit about the Sphere for the duration. A creature that enters the Sphere or ends its turn there makes a Dexterity saving throw, taking 1d8 Fire damage plus 1d8 Necrotic damage on a failed save or half as much damage on a successful one. A creature can be affected by this spell only once per turn.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Holy Nova" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_HOLY_NOVA">
+		<supports>Cleric, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>An explosion of holy light surrounds you in a 30-foot Emanation, harming your enemies and healing your allies. Each creature of your choice in the Emanation makes a Constitution saving throw, taking 5d6 Radiant damage on a failed save or half as much damage on a successful one. Each other creature in the Emanation regains 3d6 Hit Points.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage and healing each increase by 1d6 for each spell slot level above 4.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Infernal Strike" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_INFERNAL_STRIKE">
+		<supports>Demon Hunter, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You jump through the air without provoking Opportunity Attacks and land in an unoccupied space within 30 feet. Each creature in a 10-foot Emanation originating from you makes a Dexterity saving throw. On a failed save, a creature takes 2d6 Fire damage and has Disadvantage on attack rolls against creatures other than you until the start of your next turn. On a successful save, it takes half as much damage only.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Innervate" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_INNERVATE">
+		<supports>Druid</supports>
+		<description>
+			<p>A creature of your choice within range gains a level 4 spell slot. The spell slot vanishes after it is expended or the target finishes a Long Rest. It can use this spell slot to cast any spell it has prepared.</p>
+			<p class="indent">In addition, you regain one expended use of Wild Shape.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Lay Waste" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_LAY_WASTE">
+		<supports>Sorcerer, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You draw a deep breath and spew molten cinders along a 120-foot-long, 10-foot-wide Line originating from you in a direction you choose. Each creature in the Line makes a Dexterity saving throw, taking 12d6 Fire damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent">You then teleport to an unoccupied space within 5 feet of the end of the Line.</p>
+		</description>
+		<setters>
+			<set name="level">7</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Leeching Strike" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_LEECHING_STRIKE">
+		<supports>Death Knight, Damaging Spell</supports>
+		<description>
+			<p>The target hit by the strike takes an extra 3d8 Necrotic damage from the attack, and you regain 3d4 Hit Points.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d8, and the Hit Points you regain increase by 1d4, for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Living Flame" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_LIVING_FLAME">
+		<supports>Sorcerer, Damaging Spell</supports>
+		<description>
+			<p>Flickering flames hurtle toward a creature you choose within range. Choose one of these options:</p>
+			<p class="indent"><strong><em>Healing Flames.</em></strong> The target regains 2d6 Hit Points.</p>
+			<p class="indent"><strong><em>Searing Flames.</em></strong> Make a ranged attack roll against the</p>
+			<p class="indent">target. On a hit, the target takes 2d8 Fire damage.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> For every two spell slot levels above 1, you can choose an additional target (two targets with a level 3 or 4 slot, three targets with a level 5 or 6 slot, four targets with a level 7 or 8 slot, and five targets with a level 9 slot). You choose the flames’ effect separately for each target.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Mass Polymorph" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_MASS_POLYMORPH">
+		<supports>Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You attempt to transform any number of creatures in a 30-foot Emanation originating from you into identical Beasts. Each creature in the Emanation must succeed on a Wisdom saving throw or shape-shift into a Beast form for the duration. A creature that isn’t a Beast, a Giant, a Humanoid, or a Monstrosity automatically succeeds on its saving throw.</p>
+			<p class="indent">The new form can be any Beast you choose that has a Challenge Rating of 0 (Goat is recommended). Each target’s game statistics are replaced by the stat block of the chosen Beast, but the target retains its alignment, personality, creature type, Hit Points, and Hit Point Dice.</p>
+			<p class="indent">Each target gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. The spell ends early on the target if it has no Temporary Hit Points left.</p>
+			<p class="indent">The targets are limited in the actions they can perform by the anatomy of their new form, and they can’t speak or cast spells.</p>
+			<p class="indent">Each target’s gear melds into the new form. The creature can’t use or otherwise benefit from any of that equipment.</p>
+		</description>
+		<setters>
+			<set name="level">9</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a caterpillar cocoon</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+		</setters>
+	</element>
+
+	<element name="Metamorphosis" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_METAMORPHOSIS">
+		<supports>Demon Hunter, Damaging Spell</supports>
+		<description>
+			<p>Uttering an incantation, you draw on fel or Void magic to transform yourself, taking on demonic features. You gain one of the following benefits of your choice until the spell ends:</p>
+			<p class="indent"><strong><em>Devourer.</em></strong> When you roll damage for a spell, weapon,</p>
+			<p class="indent">or feature that deals Force damage, you can treat</p>
+			<p class="indent">any 1 or 2 on a damage die as a 3.</p>
+			<p class="indent"><strong><em>Havoc.</em></strong> Whenever you hit a creature with an attack</p>
+			<p class="indent">roll using a Melee weapon, the target takes an extra</p>
+			<p class="indent">1d6 Fire damage.</p>
+			<p class="indent"><strong><em>Vengeance.</em></strong> You have a +2 bonus to AC, and your Hit</p>
+			<p class="indent">Point maximum and your current Hit Points</p>
+			<p class="indent">increase by 5 for the spell’s duration.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">one soul fragment, which the spell consumes</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Moonfire" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_MOONFIRE">
+		<supports>Druid, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>A beam of lunar light burns a creature you can see within range. The target makes a Dexterity saving throw. On a failed save, it takes 2d8 Radiant damage, sheds Dim Light in a 10-foot radius, and can’t benefit from the Invisible condition until the end of its next turn. At the end of its next turn, it takes an extra 1d8 Radiant damage, and the spell ends. On a successful save, it takes half the initial damage only.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> Both the initial and the later damage increase by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Prayer of Mending" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_PRAYER_OF_MENDING">
+		<supports>Cleric</supports>
+		<description>
+			<p>You place a holy ward on one willing creature in range. The next time that creature takes damage, the ward activates, and the creature regains Hit Points equal to 1d8 plus your spellcasting ability modifier. The ward then jumps to another ally of your choice within 30 feet of the warded creature, with the same effect. If no ally is in range, the spell ends, and it ends after the ward has healed five times.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The spell can heal one additional time for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of powdered silver</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Psychic Horror" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_PSYCHIC_HORROR">
+		<supports>Cleric, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>A creature within range is overwhelmed with mental visions of the Void and makes a Wisdom saving throw. On a failed save, the target takes 2d10 Psychic damage and has the Frightened condition for 1 minute. A Frightened creature also has the Stunned condition until the end of your next turn. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. On a successful save, the creature takes half as much damage only.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d10 for each spell slot level above 4.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Rain of Fire" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_RAIN_OF_FIRE">
+		<supports>Warlock, Damaging Spell, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>Hellfire rains down in a 20-foot-radius, 40-foot-high Cylinder centered on a point within range. Until the spell ends, you can take a Magic action on later turns to move the Cylinder up to 60 feet.</p>
+			<p class="indent">When the Cylinder appears, each creature in it makes a Dexterity saving throw, taking 3d8 Fire damage on a failed save or half as much damage on a successful one. A creature also makes this save when the spell’s area moves into its space and when it enters the spell’s area or ends its turn there. A creature makes this save only once per turn.</p>
+			<p class="indent">You have Advantage on spell attack rolls against a creature in the Cylinder, and you deal an extra 1d6 Necrotic damage to the target if you hit.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The Fire damage increases by 1d8 for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Regrowth" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_REGROWTH">
+		<supports>Druid</supports>
+		<description>
+			<p>One creature you can see within range regains 3d8 Hit Points. For the duration, the target regains 1d8 Hit Points at the start of each of your turns. The spell ends early once it restores at least 24 Hit Points.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Remorseless Winter" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_REMORSELESS_WINTER">
+		<supports>Death Knight, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You drain the warmth from nearby creatures. Each creature of your choice in a 30-foot Emanation originating from you makes a Constitution saving throw, taking 6d6 Cold damage on a failed save or half as much damage on a successful one. Whether or not a creature succeeds on its saving throw, its Speed is reduced to 10 feet until the end of its next turn as clinging frost hinders its movement.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d6 for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Rescue" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_RESCUE">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>You teleport to an unoccupied space you can see within range. One willing creature within 60 feet of the space you left also teleports to an unoccupied space within 5 feet of your destination space.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Roar of Ursoc" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_ROAR_OF_URSOC">
+		<supports>Druid</supports>
+		<description>
+			<p>You shape-shift as if you had used Wild Shape, but you don’t expend a use of your Wild Shape. Until the start of your next turn, any creature that starts its turn within 5 feet of you has Disadvantage on attack rolls against any creature other than you.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Rune Strike" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_RUNE_STRIKE">
+		<supports>Death Knight, Damaging Spell</supports>
+		<description>
+			<p>The target takes an extra 2d8 Necrotic damage. The damage increases by 1d8 if the target is a Celestial.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Scourge Strike" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_SCOURGE_STRIKE">
+		<supports>Death Knight, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>The target takes an extra 2d6 Necrotic damage from the attack, and it must succeed on a Constitution saving throw or have the Poisoned condition until the spell ends. At the end of each of its turns, the Poisoned target repeats the save, ending the spell on itself on a success.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Serpent Sting" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_SERPENT_STING">
+		<supports>Ranger, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>The target takes an extra 4d6 Poison damage from the attack, and the target has the Poisoned condition until the spell ends. At the end of each of its turns, the Poisoned target makes a Constitution saving throw. On a failed save, the creature takes 2d6 Poison damage. On a successful save, the spell ends.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Bonus Action, which you take immediately after hitting a creature with a weapon</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Shadow Word: Pain" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_SHADOW_WORD_PAIN">
+		<supports>Cleric, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Speaking a word of Void power, you cause one creature in range to suffer agonizing pain. The target makes a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to 1d10 plus your spellcasting ability modifier and is cursed for the duration. On a successful save, it takes half as much damage only.</p>
+			<p class="indent">Until the curse ends, the target takes 1d10 Psychic damage at the start of each of its turns. It repeats the save at the end of each of its turns, ending the curse on a success.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The spell’s initial damage increases by 1d10 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Shattering Star" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_SHATTERING_STAR">
+		<supports>Sorcerer, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>You exhale a bolt of concentrated power at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 10d8 Force damage, and it takes a –2 penalty to AC until the start of your next turn as clinging frost makes the target’s exterior brittle.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d8 for each spell slot level above 5.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Sigil of Chains" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_SIGIL_OF_CHAINS">
+		<supports>Demon Hunter, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>A sigil appears at a point on the ground you can see within range, then erupts in a 20-foot-radius Sphere. Each creature in the Sphere makes a Dexterity saving throw. On a failed save, a creature takes 5d6 Force damage, is pulled up to 10 feet straight toward the sigil, and has the Restrained condition until the end of your next turn. On a successful save, the creature takes half as much damage, and its Speed is reduced by 10 feet until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">90 Feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Sigil of Flame" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_SIGIL_OF_FLAME">
+		<supports>Demon Hunter, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You inscribe a sigil in the air that then appears on a creature you can see within range. The target makes a Constitution saving throw, taking 2d8 Fire damage on a failed save or half as much damage on a successful one. Whether or not the target fails its saving throw, it radiates heat in a 10-foot Emanation originating from itself until the end of its next turn. At the start of the target’s next turn, the target and each creature in the Emanation must succeed on a Constitution saving throw or take 1d8 Fire damage.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage (both initial and later) increases by 1d8 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">90 Feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Soul Reap" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_SOUL_REAP">
+		<supports>Demon Hunter, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>You cut a hole in the fabric of reality, sending a bolt of cosmic matter toward a creature in range. Make a ranged spell attack against the target, which gains no benefit from Half Cover or Three-Quarters Cover. On a hit, you deal 6d6 Force damage.</p>
+			<p class="indent">If you roll a 6 on a d6 for this spell, you can roll another d6 and add it to the damage. When you cast this spell, the maximum number of these d6s you can add to the spell’s damage equals your spellcasting ability modifier.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The damage increases by 1d6 for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Starfall" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_STARFALL">
+		<supports>Druid, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You call down falling stars on creatures in a 30-foot-radius, 40-foot-high Cylinder within range. Each creature in the Cylinder makes a Dexterity saving throw, taking 7d8 Radiant damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent">Until the start of your next turn, a creature that enters the Cylinder for the first time on a turn or ends its turn there takes Radiant damage equal to your Druid level. A creature takes this damage only once per turn.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of stardust</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Throw Glaive" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_THROW_GLAIVE">
+		<supports>Demon Hunter, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>You create a demonic warglaive and hurl it at a creature or object in range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Slashing damage plus 1d8 Fire damage, and the glaive ricochets to a different target of your choice within 30 feet of the target. Make new attack and damage rolls against the new target.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The Fire damage increases by 1d8 for each spell slot level above 1. The glaive ricochets a maximum number of times equal to the level of the slot expended; a creature can be targeted only once by each casting of this spell.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Time Dilation" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_TIME_DILATION">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>The target reduces the damage taken by 4d8. At the end of each of the target’s turns, the target loses 1d8 Hit Points until it has lost a total of 4d8 Hit Points (roll these 4d8 separately from the damage reduction).</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Reaction, which you take in response to you or a creature you can see within 60 feet of you taking damage</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Tranquility" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_TRANQUILITY">
+		<supports>Druid</supports>
+		<description>
+			<p>Nature’s power flows around you in a 60-foot Emanation for the duration. Creatures of your choice in the Emanation have Resistance to Bludgeoning, Piercing, and Slashing damage. As a Bonus Action, you can cause each ally in the Emanation to regain Hit Points equal to 2d8 plus your spellcasting ability modifier.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> Creatures regain 1d8 additional Hit Points for each spell slot level above 6.</p>
+		</description>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Tree of Life" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_TREE_OF_LIFE">
+		<supports>Druid</supports>
+		<description>
+			<p>You shape-shift into a Tree of Life form that resembles a treant. In this form, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Tree Form.</em></strong> You become Large. Your Speed becomes 10 feet and can’t be reduced, and Difficult Terrain doesn’t cost you extra movement.</p>
+			<p class="indent"><strong><em>Bark Skin.</em></strong> You gain a +2 bonus to Armor Class and 10 Temporary Hit Points.</p>
+			<p class="indent"><strong><em>Condition Immunity.</em></strong> You gain Immunity to the Paralyzed and Restrained conditions. You can’t be shape-shifted against your will.</p>
+			<p class="indent"><strong><em>Source of Life.</em></strong> When a spell you cast with a spell slot restores Hit Points to a creature, that creature regains an additional 1d8 Hit Points on the turn you cast the spell.</p>
+			<p class="indent"><strong><em>Spells Enhanced.</em></strong> The spell save DC of your Druid spells increases by 1, and you have Advantage on the attack rolls of Druid spells you cast.</p>
+		</description>
+		<setters>
+			<set name="level">8</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Upheaval" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_UPHEAVAL">
+		<supports>Sorcerer, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Fiery stones erupt, filling a 20-foot-radius, 10-foot-tall Cylinder originating from a point on the ground you can see within range. Each creature in the Cylinder makes a Dexterity saving throw. On a failed save, a creature takes 1d12 Bludgeoning damage plus 3d8 Fire damage and is pushed vertically to the top of the cylinder, at which point the creature falls. On a successful save, a creature takes half as much damage only.</p>
+			<p class="indent">Smoldering stones turn the ground in the Cylinder into Difficult Terrain until the end of your next turn.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The Bludgeoning damage increases by 1d12 for each spell slot level above 4.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Vampiric Blood" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_VAMPIRIC_BLOOD">
+		<supports>Death Knight</supports>
+		<description>
+			<p>For the duration, your Hit Point maximum increases by 10. In addition, whenever you regain Hit Points, you regain an extra 1d6 Hit Points.</p>
+			<p class="indent"><strong><em>Using a Higher-Level Spell Slot.</em></strong> The additional healing increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Void Eruption" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_VOID_ERUPTION">
+		<supports>Cleric, Damaging Spell, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>Shadowy Void energy erupts in a 20-foot-radius Sphere centered on a point you choose within range. Each creature in the Sphere makes a Constitution saving throw, taking 5d6 Necrotic damage on a failed save or half as much damage on a successful one. At the same time, you take on a form of Void that grants you the following benefits for the duration.</p>
+			<p class="indent"><strong><em>Void Bolt.</em></strong> As a Bonus Action on your turn, you can hurl a bolt of Void energy at a creature within 60 feet of yourself. Make a ranged spell attack; on a hit, the target takes Necrotic damage equal to 2d6 plus your spellcasting ability modifier.</p>
+			<p class="indent"><strong><em>Void Stealth.</em></strong> While you are in an area of Dim Light or Darkness, you have the Invisible condition.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Wrath" type="Spell" source="World of Warcraft" id="ID_KAYA_WOW_SPELL_WRATH">
+		<supports>Druid, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>You hurl a ball of energy at a target within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and its Speed is reduced by 10 feet until the end of your next turn.</p>
+			<p class="indent"><strong><em>Cantrip Upgrade.</em></strong> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+</elements>

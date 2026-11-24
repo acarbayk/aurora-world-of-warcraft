@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<description>Languages of Azeroth from World of Warcraft (Andrey Kuzinskiy). Common and Orcish use the core Common and Orc languages.</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-languages.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/misc/wow-languages.xml" />
+		</update>
+	</info>
+
+	<element name="Common Sign Language" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_COMMON_SIGN_LANGUAGE">
+		<requirements>!(ID_WOTC_PHB24_LANGUAGE_COMMON_SIGN)</requirements>
+		<supports>WoW Alliance Language</supports>
+		<description>
+			<p>Typically spoken by Humans.</p>
+		</description>
+		<setters>
+			<set name="speakers">Humans</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Darnassian" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_DARNASSIAN">
+		<supports>WoW Alliance Language</supports>
+		<description>
+			<p>Typically spoken by night elves.</p>
+		</description>
+		<setters>
+			<set name="speakers">Night elves</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Draconic" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_DRACONIC">
+		<requirements>!(ID_LANGUAGE_DRACONIC||ID_WOTC_PHB24_LANGUAGE_DRACONIC)</requirements>
+		<supports>WoW Alliance Language, WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Dragons.</p>
+		</description>
+		<setters>
+			<set name="speakers">Dragons</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Draenei" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_DRAENEI">
+		<supports>WoW Alliance Language</supports>
+		<description>
+			<p>Typically spoken by Draenei.</p>
+		</description>
+		<setters>
+			<set name="speakers">Draenei</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Dwarven" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_DWARVEN">
+		<requirements>!(ID_LANGUAGE_DWARVISH)</requirements>
+		<supports>WoW Alliance Language</supports>
+		<description>
+			<p>Typically spoken by Dwarves.</p>
+		</description>
+		<setters>
+			<set name="speakers">Dwarves</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Gnomish" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_GNOMISH">
+		<requirements>!(ID_LANGUAGE_GNOMISH)</requirements>
+		<supports>WoW Alliance Language</supports>
+		<description>
+			<p>Typically spoken by Gnomes.</p>
+		</description>
+		<setters>
+			<set name="speakers">Gnomes</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Hara’ni" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_HARANI">
+		<supports>WoW Alliance Language, WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Haranir.</p>
+		</description>
+		<setters>
+			<set name="speakers">Haranir</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Pandaren" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_PANDAREN">
+		<supports>WoW Alliance Language, WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Pandaren.</p>
+		</description>
+		<setters>
+			<set name="speakers">Pandaren</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Thalassian" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_THALASSIAN">
+		<supports>WoW Alliance Language, WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by high elves.</p>
+		</description>
+		<setters>
+			<set name="speakers">High elves</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Orcish Sign Language" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_ORCISH_SIGN_LANGUAGE">
+		<supports>WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Orcs.</p>
+		</description>
+		<setters>
+			<set name="speakers">Orcs</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Goblin" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_GOBLIN">
+		<requirements>!(ID_LANGUAGE_GOBLIN)</requirements>
+		<supports>WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Goblins.</p>
+		</description>
+		<setters>
+			<set name="speakers">Goblins</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Forsaken" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_FORSAKEN">
+		<supports>WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Forsaken.</p>
+		</description>
+		<setters>
+			<set name="speakers">Forsaken</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Shalassian" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_SHALASSIAN">
+		<supports>WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Nightborne.</p>
+		</description>
+		<setters>
+			<set name="speakers">Nightborne</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Taur-ahe" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_TAUR_AHE">
+		<supports>WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Tauren.</p>
+		</description>
+		<setters>
+			<set name="speakers">Tauren</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Vulpera" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_VULPERA">
+		<supports>WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Vulpera.</p>
+		</description>
+		<setters>
+			<set name="speakers">Vulpera</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Zandali" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_ZANDALI">
+		<supports>WoW Horde Language</supports>
+		<description>
+			<p>Typically spoken by Trolls.</p>
+		</description>
+		<setters>
+			<set name="speakers">Trolls</set>
+			<set name="standard">true</set>
+		</setters>
+	</element>
+
+	<element name="Cyphers of the First Ones" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_CYPHERS_OF_THE_FIRST_ONES">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Fragments of language left by the First Ones, the enigmatic architects of the entire cosmos. They are akin to mathematics and largely incomprehensible to mortals.</p>
+		</description>
+		<setters>
+			<set name="speakers">First Ones</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Eredun" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_EREDUN">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Demons of the Burning Legion.</p>
+		</description>
+		<setters>
+			<set name="speakers">Demons of the Burning Legion</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Furbolg" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_FURBOLG">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Furbolgs.</p>
+		</description>
+		<setters>
+			<set name="speakers">Furbolgs</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Kalimag" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_KALIMAG">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Kalimag, the language of elementals, is equivalent to Primordial.</p>
+		</description>
+		<setters>
+			<set name="speakers">Elementals</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Nathrezim" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_NATHREZIM">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Nathrezim.</p>
+		</description>
+		<setters>
+			<set name="speakers">Nathrezim</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Nazja" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_NAZJA">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Naga.</p>
+		</description>
+		<setters>
+			<set name="speakers">Naga</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Nerglish" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_NERGLISH">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Murlocs.</p>
+		</description>
+		<setters>
+			<set name="speakers">Murlocs</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Nerubian" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_NERUBIAN">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Nerubians.</p>
+		</description>
+		<setters>
+			<set name="speakers">Nerubians</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Ogre" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_OGRE">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Ogres.</p>
+		</description>
+		<setters>
+			<set name="speakers">Ogres</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Qiraji" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_QIRAJI">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Qiraji.</p>
+		</description>
+		<setters>
+			<set name="speakers">Qiraji</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Shath’Yar" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_SHATHYAR">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Shath’Yar, the language of the Old Gods, is equivalent to Deep Speech.</p>
+		</description>
+		<setters>
+			<set name="speakers">Old Gods</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Titan" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_TITAN">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Titans.</p>
+		</description>
+		<setters>
+			<set name="speakers">Titans</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+	<element name="Vrykul" type="Language" source="World of Warcraft" id="ID_KAYA_WOW_LANGUAGE_VRYKUL">
+		<supports>WoW Rare Language</supports>
+		<description>
+			<p>Typically spoken by Vrykul.</p>
+		</description>
+		<setters>
+			<set name="speakers">Vrykul</set>
+			<set name="exotic">true</set>
+		</setters>
+	</element>
+
+</elements>

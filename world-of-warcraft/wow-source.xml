@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Source element for World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-source.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/wow-source.xml" />
+		</update>
+	</info>
+
+	<element name="World of Warcraft" type="Source" source="Homebrew" id="ID_KAYA_WOW_SOURCE_WORLD_OF_WARCRAFT">
+		<description>
+			<p><strong>World of Warcraft</strong> by Andrey Kuzinskiy: a fan-made Dungeons &amp; Dragons sourcebook that brings Azeroth to the fifth edition (2024) rules. It adds World of Warcraft classes built on the Player’s Handbook (2024) classes, seventeen playable species, professions and gear, faction renown and new spells.</p>
+			<p class="indent">This content requires the Player’s Handbook (2024) from Aurora Legacy. World of Warcraft is a trademark of Blizzard Entertainment; this is an unofficial fan conversion.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">WoW</set>
+			<set name="url">https://github.com/acarbayk/aurora-world-of-warcraft</set>
+			<set name="author" abbreviation="AK">Andrey Kuzinskiy</set>
+			<set name="information">D&amp;D 5.5e homebrew</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="supplement">true</set>
+			<set name="homebrew">true</set>
+			<set name="release">20261119</set>
+		</setters>
+	</element>
+</elements>

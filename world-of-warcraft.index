@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>World of Warcraft</name>
+		<description>World of Warcraft by Andrey Kuzinskiy: classes, species, spells, feats, gear and renown for D&amp;D 2024. Requires the Aurora Legacy Player’s Handbook (2024).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="world-of-warcraft.index" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft.index" />
+		</update>
+	</info>
+	<files>
+		<file name="wow-languages.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/misc/wow-languages.xml" />
+		<file name="wow-race-vulpera.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-vulpera.xml" />
+		<file name="wow-spells.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/spells/wow-spells.xml" />
+		<file name="wow-source.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/wow-source.xml" />
+	</files>
+</index>

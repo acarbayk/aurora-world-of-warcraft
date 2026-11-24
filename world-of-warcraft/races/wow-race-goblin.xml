@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Goblin (Azeroth)</name>
+		<description>The Goblin (Azeroth) species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-goblin.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-goblin.xml" />
+		</update>
+	</info>
+
+	<element name="Goblin (Azeroth)" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_GOBLIN_AZEROTH">
+		<description>
+			<p>In distant eons, Keeper Mimiron discovered kaja’mite, a strange ore with magical properties, and the Keeper’s experiments resulted in the creation of goblins from some unknown precursor species. Many centuries later, Zandalari trolls came to the Isle of Kezan and found both goblins and kaja’mite there. The trolls originally paid the goblins to mine the precious ore for them, but eventually they enslaved the goblins and forced them into this backbreaking labor.</p>
+			<p class="indent">Over the course of centuries, the goblins secretly used engineering and alchemy to craft weapons, traps, and explosives and wielded them to overthrow their troll oppressors. The goblins drove the trolls from Kezan and reclaimed the island. The goblins of Kezan celebrated their freedom by turning on each other, forming cartels that vied for control of the island. What began as violent conflict soon simmered down into mercantile rivalry as the cartels established lucrative trade across Azeroth, selling their weaponry and other feats of technology to the highest bidder.</p>
+			<p class="indent">Though one cartel sided with the orcs during the Second War, most goblins remained neutral in the Alliance–Horde conflict. Under the leadership of the cartels and their trade princes, the goblins created a paradise for themselves throughout the nearby islands. Their ingenious feats of engineering and vast trade fleets made Kezan one of the great technological wonders of the world.</p>
+			<p class="indent">However, the rise of Deathwing in the great Cataclysm caused the volcano at the heart of Kezan to erupt. Goblins fled the island in droves, and the fate of the Bilgewater Cartel in particular was changed forever by a chance encounter. A ship carrying Bilgewater refugees from Kezan sailed into the midst of a one-sided battle between an Alliance fleet and a single Horde warship, and the Alliance destroyed the goblin vessel along with the Horde one. The Bilgewater goblins found themselves washed up on shore with none other than Thrall, former Warchief of the Horde. The goblins helped Thrall and the other Horde survivors repel further Alliance attacks, and ultimately the Bilgewater Cartel settled in Azshara and aligned itself with the Horde.</p>
+			<p class="indent">Goblin Cartels. Besides the Bilgewater Cartel, three other cartels remain a significant mercantile force across Azeroth: the Blackwater Cartel, which runs the town of Booty Bay in Stranglethorn; the Steamwheedle Cartel, which remains carefully neutral and oversees operations from its capital, Gadgetzan in Tanaris; and the Venture Company, notorious for plundering natural resources across Azeroth without regard to the consequences.</p>
+			<p class="indent">Though many believed all of Kezan was destroyed in the Cataclysm, the sprawling subterranean city of Undermine survived the volcanic eruption and still serves as the goblins’ capital.</p>
+			<h5>GOBLIN (AZEROTH) RENOWN</h5>
+			<p>Choose a cartel: Bilgewater Cartel, Blackwater Cartel, Steamwheedle Cartel, or Venture Company. If you are associated with the Bilgewater Cartel (Horde) or the Steamwheedle Cartel, your Renown Score with that faction begins at 3. Otherwise, you have no starting Renown Score.</p>
+			<h5>GOBLIN (AZEROTH) TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Small (about 4 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Goblin, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Fey Ancestry.</em></strong> You have Advantage on saving throws you make to avoid or end the Charmed condition.</p>
+			<p class="indent"><strong><em>Fury of the Small.</em></strong> When you damage a creature with an attack or a spell and the creature’s size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your Proficiency Bonus and is the same damage type as the other damage dealt. You can use this trait a number of times equal to your Proficiency Bonus, regaining all expended uses when you finish a Long Rest, and you can use it no more than once per turn.</p>
+			<p class="indent"><strong><em>Nimble Escape.</em></strong> You can take the Disengage or Hide action as a Bonus Action on each of your turns.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Goblin (Azeroth))" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Goblin (Azeroth))" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Goblin (Azeroth))" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_GOBLIN_FEY_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_GOBLIN_FURY_OF_THE_SMALL" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_GOBLIN_NIMBLE_ESCAPE" />
+		</rules>
+	</element>
+
+	<element name="Fey Ancestry" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_GOBLIN_FEY_ANCESTRY">
+		<description>
+			<p>You have Advantage on saving throws you make to avoid or end the Charmed condition.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws you make to avoid or end the Charmed condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Fury of the Small" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_GOBLIN_FURY_OF_THE_SMALL">
+		<description>
+			<p>When you damage a creature with an attack or a spell and the creature’s size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your Proficiency Bonus and is the same damage type as the other damage dealt.</p>
+			<p class="indent">You can use this trait a number of times equal to your Proficiency Bonus, regaining all expended uses when you finish a Long Rest, and you can use it no more than once per turn.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you damage a creature larger than you with an attack or spell, deal {{proficiency}} extra damage of the same type (once per turn).</description>
+		</sheet>
+	</element>
+
+	<element name="Nimble Escape" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_GOBLIN_NIMBLE_ESCAPE">
+		<description>
+			<p>You can take the Disengage or Hide action as a Bonus Action on each of your turns.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can take the Disengage or Hide action as a Bonus Action on each of your turns.</description>
+		</sheet>
+	</element>
+
+</elements>

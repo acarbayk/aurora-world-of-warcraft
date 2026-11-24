@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mechagnome</name>
+		<description>The Mechagnome species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-mechagnome.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-mechagnome.xml" />
+		</update>
+	</info>
+
+	<element name="Mechagnome" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_MECHAGNOME">
+		<description>
+			<p>Many mechagnomes eluded the curse of flesh and remained mechanical. However, a new group of mechagnomes descends from gnomes who settled Mechagon Island in hopes of discovering useful titan technology. These gnomes performed extensive experiments to reverse the curse of flesh and become living machines. After facing the perils of full mechanization, they found the ideal balance between flesh and steel. Now reunited with their gnome cousins, these new mechagnomes bring both tenacity and ingenuity to the Alliance.</p>
+			<h5>MECHAGNOME RENOWN</h5>
+			<p>Your Renown Score with Gnomeregan (Alliance) begins at 3.</p>
+			<h5>MECHAGNOME TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Construct</li>
+				<li><strong>Size:</strong> Small (about 4 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Mechagnome, you have these special traits.</p>
+			<p class="indent"><strong><em>Built for Success.</em></strong> You can add 1d4 to one D20 Test you make, and you can do so after rolling the die but before resolving the effects of the roll. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Emergency Fail-Safe.</em></strong> When you become Bloodied, you can take a Reaction to spend one Hit Point Die, roll it, and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point). Once you use this trait, you can’t use it again until you finish a Short or Long Rest.</p>
+			<p class="indent"><strong><em>Mechanical Nature.</em></strong> You have Resistance to Poison damage, and you have Advantage on saving throws to avoid or end the Paralyzed or Poisoned condition. You don’t gain Exhaustion levels from dehydration, malnutrition, or suffocation.</p>
+			<p class="indent"><strong><em>Sentry’s Rest.</em></strong> You don’t need to sleep. You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</p>
+			<p class="indent"><strong><em>Specialized Design.</em></strong> You gain proficiency with two tools of your choice.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Mechagnome)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Mechagnome)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Mechagnome)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_GNOME" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_BUILT_FOR_SUCCESS" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_EMERGENCY_FAIL_SAFE" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_MECHANICAL_NATURE" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_SENTRYS_REST" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_SPECIALIZED_DESIGN" />
+		</rules>
+	</element>
+
+	<element name="Built for Success" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_BUILT_FOR_SUCCESS">
+		<description>
+			<p>You can add 1d4 to one D20 Test you make, and you can do so after rolling the die but before resolving the effects of the roll. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Add 1d4 to one D20 Test you make, after rolling but before resolving the roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Emergency Fail-Safe" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_EMERGENCY_FAIL_SAFE">
+		<description>
+			<p>When you become Bloodied, you can take a Reaction to spend one Hit Point Die, roll it, and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point). Once you use this trait, you can’t use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When you become Bloodied, spend one Hit Point Die and regain HP equal to the roll + {{constitution:modifier}} (minimum 1).</description>
+		</sheet>
+	</element>
+
+	<element name="Mechanical Nature" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_MECHANICAL_NATURE">
+		<description>
+			<p>You have Resistance to Poison damage, and you have Advantage on saving throws to avoid or end the Paralyzed or Poisoned condition. You don’t gain Exhaustion levels from dehydration, malnutrition, or suffocation.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws to avoid or end the Paralyzed or Poisoned condition. You don’t gain Exhaustion levels from dehydration, malnutrition, or suffocation.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Sentry’s Rest" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_SENTRYS_REST">
+		<description>
+			<p>You don’t need to sleep. You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</p>
+		</description>
+		<sheet>
+			<description>You don’t need to sleep. You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</description>
+		</sheet>
+	</element>
+
+	<element name="Specialized Design" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_MECHAGNOME_SPECIALIZED_DESIGN">
+		<description>
+			<p>You gain proficiency with two tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Specialized Design)" supports="Tool" number="2" />
+		</rules>
+	</element>
+
+</elements>

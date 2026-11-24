@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Human (Azeroth)</name>
+		<description>The Human (Azeroth) species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-human.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-human.xml" />
+		</update>
+	</info>
+
+	<element name="Human (Azeroth)" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_HUMAN_AZEROTH">
+		<description>
+			<p>Humans are descended from the vrykul of Northrend, who are in turn the result of the Old Gods’ curse of flesh taking hold of the titan-forged iron vrykul. Born small and weak as a result of the curse, humans were often killed by their vrykul parents, but some parents took the children to Lordaeron, where the humans formed scattered tribes and, under pressure from the expanding Amani empire of trolls, eventually united into the Empire of Arathor.</p>
+			<p class="indent">After several centuries, the prosperous city-states of Arathor split into the Seven Kingdoms: Alterac, Dalaran, Gilneas, Kul Tiras, Lordaeron, Stromgarde, and Stormwind far to the south. After orcs from Draenor opened the Dark Portal and invaded Azeroth, Stormwind was destroyed, and the survivors fled north. The leaders of the Seven Kingdoms united as the Alliance of Lordaeron to battle the orcs, alongside the dwarves and gnomes of Khaz Modan and the high elves of Quel’Thalas. After the Second War, humans rebuilt Stormwind City—a testament to perseverance in the face of disaster.</p>
+			<p class="indent">The kingdom of Lordaeron suffered a near-fatal blow with the coming of the plague of undeath, which killed countless people and transformed them into mindless undead servants of the Scourge. The lands once claimed by Lordaeron are now the Plaguelands, and few remnants of the human empire’s glories remain.</p>
+			<p class="indent">With Lordaeron and Alterac fallen, the magocracy of Dalaran removed from the Eastern Kingdoms and then destroyed, and Gilneas afflicted with the curse of the worgen (see “Worgen” in this chapter), Stormwind stands now as the strongest bastion of humanity on Azeroth and the most powerful force in the Alliance. Kul Tiras has rejoined the Alliance, and Stromgarde struggles to rebuild its strength after years of conflict against the Horde, the Scourge, and a group of ruffians called the Syndicate.</p>
+			<h5>HUMAN (AZEROTH) RENOWN</h5>
+			<p>Your starting Renown Score with Stormwind (Alliance) begins at 3, but if you hail from the Arathi Empire, you have no starting Renown Score.</p>
+			<h5>HUMAN (AZEROTH) TRAITS</h5>
+			<p>You have the Human species traits from the Player’s Handbook: Resourceful, Skillful, and Versatile. You also have access to Origin feats that reflect your national background: Arathi Heritage, Child of the Sea, and Will to Survive. Humans from Dalaran often choose Magic Initiate (Wizard) as their Origin feat.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Human (Azeroth))" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Human (Azeroth))" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Human (Azeroth))" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
+			<select type="Racial Trait" name="Size (Human (Azeroth))" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_HUMAN_RESOURCEFUL" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_HUMAN_SKILLFUL" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_HUMAN_VERSATILE" />
+		</rules>
+	</element>
+
+</elements>

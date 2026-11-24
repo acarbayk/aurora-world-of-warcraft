@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Forsaken</name>
+		<description>The Forsaken species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-forsaken.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-forsaken.xml" />
+		</update>
+	</info>
+
+	<element name="Forsaken" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_FORSAKEN">
+		<description>
+			<p>The vast undead armies of the Scourge were created by the Burning Legion to prepare Azeroth for its second invasion. Under the command of the dread Lich King, the Scourge spread terror and destruction across the world while conquering Northrend and devastating Lordaeron, the northern portion of the Eastern Kingdoms. But after the Third War, the Lich King’s will faltered, and many of the Scourge broke free from his ironfisted control. Under the leadership of the banshee Sylvanas Windrunner, these renegades took the name of Forsaken and carved out a new existence in a world where no one welcomed them.</p>
+			<p class="indent">With Sylvanas as their Banshee Queen, the Forsaken built a stronghold beneath the ruins of Lordaeron’s former capital city—a hidden Undercity that formed a sprawling labyrinth beneath Tirisfal Glades. From there, they entered an uneasy alliance with the orcs and tauren of the Horde.</p>
+			<p class="indent">Sylvanas regarded the Horde as nothing more than a useful tool, even when she took up its leadership as warchief. After the Fourth War, she abandoned the Forsaken and the Horde, leaving her people under the leadership of a Desolate Council meant to represent the diverse viewpoints of the Forsaken populace.</p>
+			<p class="indent">Like the armies of the Scourge, the Forsaken are undead, with their souls imperfectly attached to their bodies through magic. They feel only faint sensations of pain or discomfort, but the presence of the Holy Light is sharply painful to them. Most of them were formerly human, but they consider themselves a singular people regardless of their past existences. Some of them are pale and stiff but with bodies whole enough to pass as living, while others are thoroughly rotted or mummified.</p>
+			<h5>FORSAKEN RENOWN</h5>
+			<p>Your Renown Score with Undercity (Horde) begins at 3.</p>
+			<h5>FORSAKEN TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Undead</li>
+				<li><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Forsaken, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Deathly Endurance.</em></strong> You have Resistance to Necrotic damage.</p>
+			<p class="indent"><strong><em>Everlasting.</em></strong> You don’t gain Exhaustion levels from dehydration, malnutrition, or suffocation. You don’t need to sleep, and magic can’t put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</p>
+			<p class="indent"><strong><em>Touch of the Grave.</em></strong> When you deal damage to a creature, you can roll a number of d4s equal to your Proficiency Bonus. You deal extra Necrotic damage to the creature equal to the total rolled, and you regain a number of Hit Points equal to the extra damage dealt. Once you use this benefit, you can’t use it again until you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Will of the Forsaken.</em></strong> You have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Forsaken)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Forsaken)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Forsaken)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<select type="Racial Trait" name="Size (Forsaken)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_FORSAKEN_DEATHLY_ENDURANCE" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_FORSAKEN_EVERLASTING" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_FORSAKEN_TOUCH_OF_THE_GRAVE" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_FORSAKEN_WILL_OF_THE_FORSAKEN" />
+		</rules>
+	</element>
+
+	<element name="Deathly Endurance" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_FORSAKEN_DEATHLY_ENDURANCE">
+		<description>
+			<p>You have Resistance to Necrotic damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Everlasting" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_FORSAKEN_EVERLASTING">
+		<description>
+			<p>You don’t gain Exhaustion levels from dehydration, malnutrition, or suffocation. You don’t need to sleep, and magic can’t put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</p>
+		</description>
+		<sheet>
+			<description>You don’t gain Exhaustion levels from dehydration, malnutrition, or suffocation. You don’t need to sleep, and magic can’t put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</description>
+		</sheet>
+	</element>
+
+	<element name="Touch of the Grave" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_FORSAKEN_TOUCH_OF_THE_GRAVE">
+		<description>
+			<p>When you deal damage to a creature, you can roll a number of d4s equal to your Proficiency Bonus. You deal extra Necrotic damage to the creature equal to the total rolled, and you regain a number of Hit Points equal to the extra damage dealt.</p>
+			<p class="indent">Once you use this benefit, you can’t use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you deal damage to a creature, deal an extra {{proficiency}}d4 Necrotic damage and regain Hit Points equal to that extra damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Will of the Forsaken" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_FORSAKEN_WILL_OF_THE_FORSAKEN">
+		<description>
+			<p>You have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</description>
+		</sheet>
+	</element>
+
+</elements>

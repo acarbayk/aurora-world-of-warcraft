@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pandaren</name>
+		<description>The Pandaren species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-pandaren.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-pandaren.xml" />
+		</update>
+	</info>
+
+	<element name="Pandaren" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_PANDAREN">
+		<description>
+			<p>The origins of the pandaren are a mystery, but pandaren settled around the Vale of Eternal Blossoms millennia before the Great Sundering. Wise and peaceful, they forged a strong bond with four Wild Gods called the August Celestials: Chi-Ji the Red Crane, Niuzao the Black Ox, Xuen the White Tiger, and Yu’lon the Jade Serpent. Under the tutelage of these ancient beings, the pandaren developed a rich tradition of philosophy, art, agriculture, and medicine.</p>
+			<p class="indent">That tradition was nearly extinguished when the mogu—a titan-forged people whose infection with the Old Gods’ curse of flesh left them valuing only power and control—conquered and enslaved the pandaren. For millennia, the pandaren were trapped in subservience, not allowed to carry weapons or to read or write. But pandaren monks passed down the traditions of their people and kept the pandaren unified despite their bitter oppression.</p>
+			<p class="indent">As the mogu empire began to falter, the pandaren launched a rebellion. Trained by the monks to fight without weapons, the pandaren overthrew the mogu and formed an empire. This empire persisted in relative peace and prosperity for millennia, until the Burning Legion first invaded Azeroth and caused the Great Sundering.</p>
+			<p class="indent">As the demons of the Burning Legion spread, the pandaren emperor sacrificed himself to shroud his land in mist, protecting it from the devastation of the Legion and the Great Sundering that followed. The mists persisted for ten thousand years, and the pandaren flourished in isolation, almost entirely forgotten by the outside world.</p>
+			<p class="indent">Some eight hundred years before the opening of the Dark Portal, an adventurous pandaren named Liu Lang set out to discover what was beyond the mists. He set sail on the back of a giant sea turtle named Shen-zin Su. As the young turtle grew, so did the number of adventurous pandaren making their home on this “Wandering Isle.” Among the most notable of these adventurous pandaren is Chen Stormstout, a brewmaster who helped Thrall and his allies found the new orc homeland of Durotar. Although the turtle hasn’t made landfall in many years, the pandaren who live on it are driven by a spirit of adventure that is alien to most of their kind.</p>
+			<p class="indent">Pandaren Philosophies. When the mists that shrouded Pandaria vanished, the two philosophical sects of the Wandering Isle each aligned with one of the two global factions. The path of Huojin teaches direct action: injustice must be met with a swift and decisive response, and inaction is often worse than wrong action. Led by Ji Firepaw, the Huojin were drawn to the practical nature of the Horde.</p>
+			<p class="indent">The path of Tushui, by contrast, emphasizes meditation and careful discernment in the context of constant training, meditation, and moral conviction. Its followers believe that living a principled life is the greatest good, a philosophy that attracted the Tushui—and their leader, Aysa Cloudsinger—to the cause of the Alliance.</p>
+			<h5>PANDAREN RENOWN</h5>
+			<p>Choose whether to align with the Huojin (Horde) or the Tushui (Alliance) philosophy. Your Renown Score with the chosen faction begins at 3.</p>
+			<h5>PANDAREN TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Medium (about 6–7 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Pandaren, you have these special traits.</p>
+			<p class="indent"><strong><em>Bouncy.</em></strong> You have Resistance to Bludgeoning damage from falling.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Inner Peace.</em></strong> When you spend Hit Point Dice to regain Hit Points after a Short Rest, you regain 1 additional Hit Point per Hit Point Die you expend.</p>
+			<p class="indent"><strong><em>Quaking Palm.</em></strong> When you hit a creature with a melee attack on your turn, your movement doesn’t provoke Opportunity Attacks from that creature until the end of your turn.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Pandaren)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Pandaren)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Pandaren)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_PANDAREN_BOUNCY" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_PANDAREN_INNER_PEACE" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_PANDAREN_QUAKING_PALM" />
+		</rules>
+	</element>
+
+	<element name="Bouncy" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_PANDAREN_BOUNCY">
+		<description>
+			<p>You have Resistance to Bludgeoning damage from falling.</p>
+		</description>
+		<sheet>
+			<description>You have Resistance to Bludgeoning damage from falling.</description>
+		</sheet>
+	</element>
+
+	<element name="Inner Peace" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_PANDAREN_INNER_PEACE">
+		<description>
+			<p>When you spend Hit Point Dice to regain Hit Points after a Short Rest, you regain 1 additional Hit Point per Hit Point Die you expend.</p>
+		</description>
+		<sheet>
+			<description>When you spend Hit Point Dice to regain Hit Points after a Short Rest, you regain 1 additional Hit Point per Hit Point Die you expend.</description>
+		</sheet>
+	</element>
+
+	<element name="Quaking Palm" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_PANDAREN_QUAKING_PALM">
+		<description>
+			<p>When you hit a creature with a melee attack on your turn, your movement doesn’t provoke Opportunity Attacks from that creature until the end of your turn.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a melee attack on your turn, your movement doesn’t provoke Opportunity Attacks from that creature until the end of your turn.</description>
+		</sheet>
+	</element>
+
+</elements>

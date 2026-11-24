@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tauren</name>
+		<description>The Tauren species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-tauren.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-tauren.xml" />
+		</update>
+	</info>
+
+	<element name="Tauren" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_TAUREN">
+		<description>
+			<p>The tauren are descended from the yak-like yaungol, who roamed the great plains at the heart of the unbroken continent of Kalimdor millennia before the Great Sundering. The yaungol were enslaved and magically altered by the titan-forged mogu, whose infection with the Old Gods’ curse of flesh made them fierce and tyrannical. After winning their freedom from the mogu alongside the pandaren and other peoples of that region, many of the yaungol fled north. Some settled in the area surrounding the Well of Eternity, where they reunited with the Wild God Cenarius and relearned their ancient traditions of druidic magic. The magic of the Well of Eternity reshaped these yaungol into the tauren.</p>
+			<p class="indent">After the Great Sundering, the tauren roamed the plains of the Barrens for countless generations, hunting the mighty kodos and seeking the wisdom of their eternal goddess, the Earth Mother. Scattered across the land, the wandering tribes were united only by a common hatred for their sworn enemy, marauding centaur bands. Seeking aid against these foes, the chieftain Cairne Bloodhoof befriended Warchief Thrall and the other orcs who had journeyed with Thrall to Kalimdor.</p>
+			<p class="indent">With the orcs’ help, Cairne and his Bloodhoof tribe drove back the centaur bands and claimed the grasslands of Mulgore for their own. For the first time in centuries, the tauren had their own land. On the windswept mesa of Thunder Bluff, Cairne built a refuge where tauren of every tribe are welcome. Over time, the tauren tribes united under Cairne’s rule. Since Cairne’s death, his son, Baine, has led Thunder Bluff with calm wisdom and moderation.</p>
+			<p class="indent">Despite their allegiance to the Horde, the tauren— and particularly those among them who follow druidic ways—respect the night elves of Kalimdor. The archdruids of Thunder Bluff have long cooperated with night elf druids in the Cenarion Circle, working together to preserve Azeroth, though their partnership has been strained since it began during the War of the Ancients, ten thousand years ago.</p>
+			<p class="indent">Highmountain Tauren. The tauren of the Broken Isles are direct descendants of the tauren (led by Huln Highmountain) who fought alongside the night elves in the War of the Ancients. Cenarius blessed Huln and his followers with the Horns of Eche’ro, which manifest as antlers like those of a moose.</p>
+			<p class="indent">Taunka. Taunka are the direct descendants of the ancient yaungol. Before the Great Sundering, they settled in the Storm Peaks (in what would become Northrend) and adapted to the harsh environment. In contrast to the peaceful shamanism of the Mulgore tauren, taunka shaman wrest power from the hostile elemental forces of Northrend.</p>
+			<h5>TAUREN RENOWN</h5>
+			<p>Your Renown Score with Thunder Bluff (Horde) begins at 3.</p>
+			<h5>TAUREN TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Medium (about 8–9 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Tauren, you have these special traits.</p>
+			<p class="indent"><strong><em>Horns.</em></strong> Your horns are powerful natural weapons. When you hit with your Unarmed Strike and deal damage, you can deal Piercing damage equal to 1d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p>
+			<p class="indent"><strong><em>Goring Rush.</em></strong> Immediately after you take the Dash action on your turn and move at least 20 feet, you can make one Unarmed Strike as a Bonus Action.</p>
+			<p class="indent"><strong><em>Hammering Horns.</em></strong> Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can use a Bonus Action to shove that target with an Unarmed Strike as long as the target is within 5 feet of you. When you shove a target in this way, you can push the target up to 10 feet away instead of 5 feet.</p>
+			<p class="indent"><strong><em>Tauren Lineage.</em></strong> You are part of a lineage that grants you supernatural qualities. If your lineage grants you an ability that allows a saving throw, the DC equals 8 plus your Strength, Constitution, or Wisdom modifier (choose when you select the lineage) and Proficiency Bonus. Choose one of the following options:</p>
+			<p class="indent"><strong><em>Mulgore Tauren.</em></strong> When you take the Attack action on your turn, you can replace one of the attacks with a magically empowered stomp on the ground. You can’t use this feature if you have the Prone condition or if you are flying, climbing, or swimming. When you use your war stomp, each creature of your choice within a 5-foot Emanation originating from you makes a Constitution saving throw. On a failed save, a creature has the Stunned condition until the end of your current turn.</p>
+			<p class="indent"><strong><em>Highmountain Tauren.</em></strong> As an action, you can move up to your Speed without provoking Opportunity Attacks and can move through the spaces of other creatures. Each Medium or smaller creature whose space you enter makes a Strength saving throw. On a failed save, a creature takes Bludgeoning damage equal to your Proficiency Bonus plus your Strength modifier and has the Prone condition. A creature can take this damage only once per turn.</p>
+			<p class="indent"><strong><em>Taunka.</em></strong> Your shaggy hide gives you a +1 bonus to Armor Class and Resistance to Cold damage.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Tauren)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Tauren)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Tauren)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_HORNS" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_GORING_RUSH" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_HAMMERING_HORNS" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_TAUREN_LINEAGE" />
+		</rules>
+	</element>
+
+	<element name="Horns" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_HORNS">
+		<description>
+			<p>Your horns are powerful natural weapons. When you hit with your Unarmed Strike and deal damage, you can deal Piercing damage equal to 1d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p>
+		</description>
+		<sheet>
+			<description>Your horns are powerful natural weapons. When you hit with your Unarmed Strike and deal damage, you can deal Piercing damage equal to 1d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</description>
+		</sheet>
+	</element>
+
+	<element name="Goring Rush" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_GORING_RUSH">
+		<description>
+			<p>Immediately after you take the Dash action on your turn and move at least 20 feet, you can make one Unarmed Strike as a Bonus Action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Immediately after you take the Dash action on your turn and move at least 20 feet, you can make one Unarmed Strike as a Bonus Action.</description>
+		</sheet>
+	</element>
+
+	<element name="Hammering Horns" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_HAMMERING_HORNS">
+		<description>
+			<p>Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can use a Bonus Action to shove that target with an Unarmed Strike as long as the target is within 5 feet of you. When you shove a target in this way, you can push the target up to 10 feet away instead of 5 feet.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can use a Bonus Action to shove that target with an Unarmed Strike as long as the target is within 5 feet of you. When you shove a target in this way, you can push the target up to 10 feet away instead of 5 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Tauren Lineage" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_TAUREN_LINEAGE">
+		<description>
+			<p>You are part of a lineage that grants you supernatural qualities. If your lineage grants you an ability that allows a saving throw, the DC equals 8 plus your Strength, Constitution, or Wisdom modifier (choose when you select the lineage) and Proficiency Bonus. Choose one of the following options:</p>
+			<p class="indent"><strong><em>Mulgore Tauren.</em></strong> When you take the Attack action on your turn, you can replace one of the attacks with a magically empowered stomp on the ground. You can’t use this feature if you have the Prone condition or if you are flying, climbing, or swimming. When you use your war stomp, each creature of your choice within a 5-foot Emanation originating from you makes a Constitution saving throw. On a failed save, a creature has the Stunned condition until the end of your current turn.</p>
+			<p class="indent"><strong><em>Highmountain Tauren.</em></strong> As an action, you can move up to your Speed without provoking Opportunity Attacks and can move through the spaces of other creatures. Each Medium or smaller creature whose space you enter makes a Strength saving throw. On a failed save, a creature takes Bludgeoning damage equal to your Proficiency Bonus plus your Strength modifier and has the Prone condition. A creature can take this damage only once per turn.</p>
+			<p class="indent"><strong><em>Taunka.</em></strong> Your shaggy hide gives you a +1 bonus to Armor Class and Resistance to Cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Tauren Lineage" supports="WoW Tauren Lineage" />
+		</rules>
+	</element>
+
+	<element name="Mulgore Tauren" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_MULGORE_TAUREN">
+		<supports>WoW Tauren Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of the attacks with a magically empowered stomp on the ground. You can’t use this feature if you have the Prone condition or if you are flying, climbing, or swimming. When you use your war stomp, each creature of your choice within a 5-foot Emanation originating from you makes a Constitution saving throw. On a failed save, a creature has the Stunned condition until the end of your current turn.</p>
+		</description>
+		<sheet>
+			<description>War Stomp: replace one attack with a stomp; each chosen creature within 5 feet makes a Constitution save (DC 8 + Str, Con, or Wis modifier + {{proficiency}}) or is Stunned until the end of your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Highmountain Tauren" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_HIGHMOUNTAIN_TAUREN">
+		<supports>WoW Tauren Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>As an action, you can move up to your Speed without provoking Opportunity Attacks and can move through the spaces of other creatures. Each Medium or smaller creature whose space you enter makes a Strength saving throw. On a failed save, a creature takes Bludgeoning damage equal to your Proficiency Bonus plus your Strength modifier and has the Prone condition. A creature can take this damage only once per turn.</p>
+		</description>
+		<sheet action="Action">
+			<description>Move up to your Speed without provoking Opportunity Attacks, through other creatures’ spaces. Each Medium or smaller creature you enter makes a Strength save (DC 8 + Str, Con, or Wis modifier + {{proficiency}}) or takes {{proficiency}} + Str modifier Bludgeoning damage and is knocked Prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Taunka" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TAUREN_TAUNKA">
+		<supports>WoW Tauren Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your shaggy hide gives you a +1 bonus to Armor Class and Resistance to Cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ac:misc" value="1" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+</elements>

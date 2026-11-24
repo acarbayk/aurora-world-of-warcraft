@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Worgen</name>
+		<description>The Worgen species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-worgen.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-worgen.xml" />
+		</update>
+	</info>
+
+	<element name="Worgen" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_WORGEN">
+		<description>
+			<p>The worgen curse originated among a sect of night elf druids called the Druids of the Pack during the War of the Satyr, over nine thousand years ago. The druids adopted a feral “pack form” inspired by the lupine Wild God Goldrinn, but they succumbed to the bestial rage of this form. Attempting to bring their rage under control, a druid crafted the Scythe of Elune (with the help of a night elf priestess, Belysra Starbreeze), which instead transformed the druids into the first worgen. As they fought fiercely against the satyrs, the worgen spread their curse to other night elves, leading Malfurion Stormrage to banish the worgen to the Emerald Dream.</p>
+			<p class="indent">Thousands of years later, during the Third War, a Kirin Tor archmage named Arugal summoned worgen from the Emerald Dream to defend the human kingdom of Gilneas from the Scourge—but accidentally unleashed them and their curse on Gilneas.</p>
+			<p class="indent">Night elf druids (along with Belysra), feeling responsible for the worgen curse, taught Gilnean worgen a rite called the Ritual of Balance, which helps them control their transformation and retain clear minds in worgen form. The night elves’s aid and the worgen’s kinship with the humans of Stormwind ushered the Gilnean worgen into the Alliance.</p>
+			<h5>WORGEN RENOWN</h5>
+			<p>Your Renown Score with Gilneas (Alliance) begins at 3.</p>
+			<h5>WORGEN TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Medium (4–7 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Worgen, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkflight.</em></strong> As a Bonus Action, you can shape-shift to assume a more bestial appearance. This transformation lasts for 1 minute or until you revert to your normal appearance as a Bonus Action. When you enter your bestial form, you gain Temporary Hit Points equal to 2 times your Proficiency Bonus. You can enter this form a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. In your bestial form, you gain the following benefits:</p>
+			<p class="indent"><strong><em>Increased Speed.</em></strong> Your Speed increases by 10 feet.</p>
+			<p class="indent"><strong><em>Reactive Movement.</em></strong> You can take a Reaction to move up to 10 feet when a creature ends its turn within 5 feet of you. This reactive movement doesn’t provoke Opportunity Attacks.</p>
+			<p class="indent"><strong><em>Necrotic Resistance.</em></strong> You have Resistance to Necrotic damage.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Instinctual Shift.</em></strong> When you roll Initiative while you have one or more uses of your Darkflight species trait remaining, you can immediately use that trait to shape-shift (no action required).</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Worgen)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Worgen)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Worgen)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_WORGEN_DARKFLIGHT" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_WORGEN_INSTINCTUAL_SHIFT" />
+		</rules>
+	</element>
+
+	<element name="Darkflight" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_WORGEN_DARKFLIGHT">
+		<description>
+			<p>As a Bonus Action, you can shape-shift to assume a more bestial appearance. This transformation lasts for 1 minute or until you revert to your normal appearance as a Bonus Action. When you enter your bestial form, you gain Temporary Hit Points equal to 2 times your Proficiency Bonus. You can enter this form a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">In your bestial form, you gain the following benefits:</p>
+			<p class="indent"><strong><em>Increased Speed.</em></strong> Your Speed increases by 10 feet.</p>
+			<p class="indent"><strong><em>Reactive Movement.</em></strong> You can take a Reaction to move up to 10 feet when a creature ends its turn within 5 feet of you. This reactive movement doesn’t provoke Opportunity Attacks.</p>
+			<p class="indent"><strong><em>Necrotic Resistance.</em></strong> You have Resistance to Necrotic damage.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>Shape-shift into bestial form for 1 minute, gaining {{proficiency}}×2 Temporary Hit Points. While in this form: Speed +10 feet; you can take a Reaction to move up to 10 feet (without provoking Opportunity Attacks) when a creature ends its turn within 5 feet of you; and you have Resistance to Necrotic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Instinctual Shift" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_WORGEN_INSTINCTUAL_SHIFT">
+		<description>
+			<p>When you roll Initiative while you have one or more uses of your Darkflight species trait remaining, you can immediately use that trait to shape-shift (no action required).</p>
+		</description>
+		<sheet>
+			<description>When you roll Initiative while you have one or more uses of your Darkflight species trait remaining, you can immediately use that trait to shape-shift (no action required).</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Draenei</name>
+		<description>The Draenei species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-draenei.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-draenei.xml" />
+		</update>
+	</info>
+
+	<element name="Draenei" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_DRAENEI">
+		<description>
+			<p>Long ago, on the world of Argus, the magically gifted people called eredar drew the attention of Sargeras, the Destroyer of Worlds. Sargeras offered untold power to the three leaders of the eredar—Kil’jaeden, Archimonde, and Velen—in exchange for their unquestioning loyalty. A troubling vision soon came to Velen, who saw the eredar transformed into unspeakable demons as members of the Burning Legion, a force that would grow immense and decimate all life. Despite Velen’s warnings, Kil’jaeden and Archimonde accepted Sargeras’s offer. Velen despaired at his former friends’ decision and prayed for help. To his surprise and relief, he was answered by the benevolent naaru. These energy beings had, like Velen, foreseen the formation of the Legion.</p>
+			<p class="indent">The naaru offered to shepherd Velen and his followers to safety. Velen quietly gathered eredar who seemed trustworthy. As Sargeras came to Argus and transformed many willing eredar into demons, Velen and his followers narrowly escaped their home world. Furious, Kil’jaeden vowed to track Velen to the ends of creation. Even as the Burning Legion chased Velen across the cosmos, the naaru instructed the exiles, now dubbed draenei (or “exiled ones”), in the way of the Light. Deeply affected, the draenei vowed to honor the Light and uphold the naaru’s ideals. In time the draenei settled on a remote world and met the orcs who inhabited it. The draenei came to call their new home Draenor or “Exiles’ Refuge.”</p>
+			<p class="indent">Kil’jaeden eventually learned of the idyllic world and its unsuspecting inhabitants. Working through the shaman Ner’zhul, the demon lord corrupted the orcs, who began slaughtering the peaceful draenei. When Ner’zhul refused to serve the Legion’s agenda past a certain point, Kil’jaeden turned to Ner’zhul’s apprentice, Gul’dan, who worked the orcs into a frenzy of bloodlust. The orc campaign against the draenei was brutally effective. Over eighty percent of the draenei population was destroyed, though a small group of survivors remained.</p>
+			<p class="indent">Velen and most of the remaining draenei survivors eventually gained control of a dimensional ship called the Exodar and used it to escape to Azeroth. In the Alliance, they found aid in their battle against the Burning Legion.</p>
+			<p class="indent">Krokul. The draenei known as Krokul (which means “Broken” in the Draenei language) are remnants of the original eredar who were neither preserved by the naaru, as the draenei were, nor transformed into demons, as the man’ari eredar were, but were corrupted by fel energies.</p>
+			<p class="indent">Lightforged Draenei. The draenei most committed to the crusade against the Burning Legion underwent a ritual to become Lightforged, infusing their bodies with the essence of the Holy Light. Their eyes turned golden, and their bodies were marked with glowing golden tattoos.</p>
+			<p class="indent">Man’ari Eredar. The man’ari eredar are those who followed Kil’jaeden and Archimonde and joined the Burning Legion, becoming demons. A group of these eredar, called the Penitents, now cooperate with their draenei kin in service to the Alliance.</p>
+			<h5>DRAENEI RENOWN</h5>
+			<p>If you choose the draenei or Lightforged draenei Eredar Lineage, your Renown Score with the Exodar (Alliance) begins at 3. Otherwise, you have no starting Renown Score.</p>
+			<h5>DRAENEI TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Medium (over 7 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Draenei, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Eredar Lineage.</em></strong> You are part of a lineage related to your ancestors’ embrace of the Light—or of the power of the Burning Legion. This lineage grants you supernatural abilities. Choose a lineage from the Eredar Lineages table: Draenei, Krokul, Lightforged, or Man’ari. You gain the level 1 benefit of that lineage. When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast it using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p>
+			<table><thead><tr><td>Lineage</td><td class="col-50">Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead><tr><td>Draenei</td><td>You have Resistance to Necrotic damage. You also know the <i>Spare the Dying</i> cantrip.</td><td><i>Healing Word</i></td><td><i>Prayer of Healing</i></td></tr><tr><td>Krokul</td><td>You have Resistance to Poison damage. You also know the <i>Poison Spray</i> cantrip.</td><td><i>Ray of Sickness</i></td><td><i>Hold Person</i></td></tr><tr><td>Lightforged</td><td>You have Resistance to Radiant damage. You also know the <i>Sacred Flame</i> cantrip.</td><td><i>Guiding Bolt</i></td><td><i>Aid</i></td></tr><tr><td>Man’ari</td><td>You have Resistance to Fire damage. You also know the <i>Fire Bolt</i> cantrip.</td><td><i>Hellish Rebuke</i></td><td><i>Darkness</i></td></tr></table>
+			<p class="indent"><strong><em>Heroic Presence.</em></strong> When you cast a spell granted by your Eredar Lineage, if you don’t have Heroic Inspiration, you gain it. You can gain Heroic Inspiration in this way once, and you regain the ability to do so when you finish a Short or Long Rest.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Draenei)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Draenei)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Draenei)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_EREDAR_LINEAGE" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_HEROIC_PRESENCE" />
+		</rules>
+	</element>
+
+	<element name="Eredar Lineage" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_EREDAR_LINEAGE">
+		<description>
+			<p>You are part of a lineage related to your ancestors’ embrace of the Light—or of the power of the Burning Legion. This lineage grants you supernatural abilities. Choose a lineage from the Eredar Lineages table: Draenei, Krokul, Lightforged, or Man’ari. You gain the level 1 benefit of that lineage.</p>
+			<p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast it using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p>
+			<h5>Eredar Lineages</h5>
+			<table><thead><tr><td>Lineage</td><td class="col-50">Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead><tr><td>Draenei</td><td>You have Resistance to Necrotic damage. You also know the <i>Spare the Dying</i> cantrip.</td><td><i>Healing Word</i></td><td><i>Prayer of Healing</i></td></tr><tr><td>Krokul</td><td>You have Resistance to Poison damage. You also know the <i>Poison Spray</i> cantrip.</td><td><i>Ray of Sickness</i></td><td><i>Hold Person</i></td></tr><tr><td>Lightforged</td><td>You have Resistance to Radiant damage. You also know the <i>Sacred Flame</i> cantrip.</td><td><i>Guiding Bolt</i></td><td><i>Aid</i></td></tr><tr><td>Man’ari</td><td>You have Resistance to Fire damage. You also know the <i>Fire Bolt</i> cantrip.</td><td><i>Hellish Rebuke</i></td><td><i>Darkness</i></td></tr></table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Eredar Lineage" supports="WoW Eredar Lineage" />
+		</rules>
+	</element>
+
+	<element name="Heroic Presence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_HEROIC_PRESENCE">
+		<description>
+			<p>When you cast a spell granted by your Eredar Lineage, if you don’t have Heroic Inspiration, you gain it. You can gain Heroic Inspiration in this way once, and you regain the ability to do so when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you cast a spell granted by your Eredar Lineage, if you don’t have Heroic Inspiration, you gain it. You can gain Heroic Inspiration in this way once, and you regain the ability to do so when you finish a Short or Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Draenei" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_DRAENEI">
+		<supports>WoW Eredar Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have Resistance to Necrotic damage. You also know the Spare the Dying cantrip. At character level 3 you learn Healing Word, and at level 5 you learn Prayer of Healing.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<select type="Racial Trait" name="Spellcasting Ability (Eredar Lineage)" supports="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_DRAENEI_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_DRAENEI_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_DRAENEI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_DRAENEI_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Draenei)">
+			<description>You have Resistance to Necrotic damage and know the Spare the Dying cantrip. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Necrotic damage and know the Spare the Dying cantrip. You can cast Healing Word once per Long Rest without a spell slot, or with a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Necrotic damage and know the Spare the Dying cantrip. You can cast Healing Word and Prayer of Healing once each per Long Rest without a spell slot, or with spell slots. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPARE_THE_DYING" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEALING_WORD" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PRAYER_OF_HEALING" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_DRAENEI_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Draenei)">
+			<description>You have Resistance to Necrotic damage and know the Spare the Dying cantrip. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Necrotic damage and know the Spare the Dying cantrip. You can cast Healing Word once per Long Rest without a spell slot, or with a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Necrotic damage and know the Spare the Dying cantrip. You can cast Healing Word and Prayer of Healing once each per Long Rest without a spell slot, or with spell slots. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPARE_THE_DYING" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEALING_WORD" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PRAYER_OF_HEALING" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_DRAENEI_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Draenei)">
+			<description>You have Resistance to Necrotic damage and know the Spare the Dying cantrip. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Necrotic damage and know the Spare the Dying cantrip. You can cast Healing Word once per Long Rest without a spell slot, or with a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Necrotic damage and know the Spare the Dying cantrip. You can cast Healing Word and Prayer of Healing once each per Long Rest without a spell slot, or with spell slots. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPARE_THE_DYING" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEALING_WORD" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PRAYER_OF_HEALING" level="5" />
+		</rules>
+	</element>
+
+	<element name="Krokul" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_KROKUL">
+		<supports>WoW Eredar Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have Resistance to Poison damage. You also know the Poison Spray cantrip. At character level 3 you learn Ray of Sickness, and at level 5 you learn Hold Person.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<select type="Racial Trait" name="Spellcasting Ability (Eredar Lineage)" supports="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_KROKUL_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_KROKUL_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_KROKUL_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_KROKUL_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Krokul)">
+			<description>You have Resistance to Poison damage and know the Poison Spray cantrip. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Poison damage and know the Poison Spray cantrip. You can cast Ray of Sickness once per Long Rest without a spell slot, or with a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Poison damage and know the Poison Spray cantrip. You can cast Ray of Sickness and Hold Person once each per Long Rest without a spell slot, or with spell slots. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POISON_SPRAY" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_KROKUL_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Krokul)">
+			<description>You have Resistance to Poison damage and know the Poison Spray cantrip. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Poison damage and know the Poison Spray cantrip. You can cast Ray of Sickness once per Long Rest without a spell slot, or with a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Poison damage and know the Poison Spray cantrip. You can cast Ray of Sickness and Hold Person once each per Long Rest without a spell slot, or with spell slots. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POISON_SPRAY" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_KROKUL_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Krokul)">
+			<description>You have Resistance to Poison damage and know the Poison Spray cantrip. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Poison damage and know the Poison Spray cantrip. You can cast Ray of Sickness once per Long Rest without a spell slot, or with a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Poison damage and know the Poison Spray cantrip. You can cast Ray of Sickness and Hold Person once each per Long Rest without a spell slot, or with spell slots. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POISON_SPRAY" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" level="5" />
+		</rules>
+	</element>
+
+	<element name="Lightforged" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_LIGHTFORGED">
+		<supports>WoW Eredar Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have Resistance to Radiant damage. You also know the Sacred Flame cantrip. At character level 3 you learn Guiding Bolt, and at level 5 you learn Aid.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			<select type="Racial Trait" name="Spellcasting Ability (Eredar Lineage)" supports="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_LIGHTFORGED_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_LIGHTFORGED_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_LIGHTFORGED_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_LIGHTFORGED_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Lightforged)">
+			<description>You have Resistance to Radiant damage and know the Sacred Flame cantrip. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Radiant damage and know the Sacred Flame cantrip. You can cast Guiding Bolt once per Long Rest without a spell slot, or with a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Radiant damage and know the Sacred Flame cantrip. You can cast Guiding Bolt and Aid once each per Long Rest without a spell slot, or with spell slots. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SACRED_FLAME" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDING_BOLT" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AID" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_LIGHTFORGED_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Lightforged)">
+			<description>You have Resistance to Radiant damage and know the Sacred Flame cantrip. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Radiant damage and know the Sacred Flame cantrip. You can cast Guiding Bolt once per Long Rest without a spell slot, or with a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Radiant damage and know the Sacred Flame cantrip. You can cast Guiding Bolt and Aid once each per Long Rest without a spell slot, or with spell slots. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SACRED_FLAME" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDING_BOLT" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AID" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_LIGHTFORGED_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Lightforged)">
+			<description>You have Resistance to Radiant damage and know the Sacred Flame cantrip. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Radiant damage and know the Sacred Flame cantrip. You can cast Guiding Bolt once per Long Rest without a spell slot, or with a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Radiant damage and know the Sacred Flame cantrip. You can cast Guiding Bolt and Aid once each per Long Rest without a spell slot, or with spell slots. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SACRED_FLAME" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDING_BOLT" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AID" level="5" />
+		</rules>
+	</element>
+
+	<element name="Man’ari" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_MANARI">
+		<supports>WoW Eredar Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have Resistance to Fire damage. You also know the Fire Bolt cantrip. At character level 3 you learn Hellish Rebuke, and at level 5 you learn Darkness.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<select type="Racial Trait" name="Spellcasting Ability (Eredar Lineage)" supports="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_MANARI_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_MANARI_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_MANARI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_MANARI_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Man’ari)">
+			<description>You have Resistance to Fire damage and know the Fire Bolt cantrip. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Fire damage and know the Fire Bolt cantrip. You can cast Hellish Rebuke once per Long Rest without a spell slot, or with a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Fire damage and know the Fire Bolt cantrip. You can cast Hellish Rebuke and Darkness once each per Long Rest without a spell slot, or with spell slots. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_BOLT" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HELLISH_REBUKE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_MANARI_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Man’ari)">
+			<description>You have Resistance to Fire damage and know the Fire Bolt cantrip. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Fire damage and know the Fire Bolt cantrip. You can cast Hellish Rebuke once per Long Rest without a spell slot, or with a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Fire damage and know the Fire Bolt cantrip. You can cast Hellish Rebuke and Darkness once each per Long Rest without a spell slot, or with spell slots. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_BOLT" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HELLISH_REBUKE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRAENEI_LINEAGE_MANARI_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Eredar Lineage trait.</p>
+		</description>
+		<sheet alt="Eredar Lineage (Man’ari)">
+			<description>You have Resistance to Fire damage and know the Fire Bolt cantrip. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">You have Resistance to Fire damage and know the Fire Bolt cantrip. You can cast Hellish Rebuke once per Long Rest without a spell slot, or with a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">You have Resistance to Fire damage and know the Fire Bolt cantrip. You can cast Hellish Rebuke and Darkness once each per Long Rest without a spell slot, or with spell slots. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_BOLT" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HELLISH_REBUKE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+
+</elements>

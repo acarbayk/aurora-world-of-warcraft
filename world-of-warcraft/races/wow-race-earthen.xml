@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Earthen</name>
+		<description>The Earthen species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-earthen.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-earthen.xml" />
+		</update>
+	</info>
+
+	<element name="Earthen" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_EARTHEN">
+		<description>
+			<p>The titans created the earthen eons ago in the Forge of Wills, and the earthen helped the titans shape the world of Azeroth so its Worldsoul could flourish. The earthen specialized in carving out caverns beneath the surface of the world. Many of them succumbed to Yogg-Saron’s curse of flesh and became dwarves, but sizable populations of earthen remain in Uldaman (beneath the Badlands), Ulduar (in the Storm Peaks in Northrend), and Khaz Algar, as well as in Deepholm in the Elemental Plane.</p>
+			<p class="indent">In Khaz Algar, earthen are stirred from stasis by a device called the Awakening Machine. This device was long shut down and later corrupted, and only recently did the dwarf Magni Bronzebeard channel the power of Azeroth into the machine to restore it to its proper function. In its new configuration, the Awakening Machine allows newly awakened earthen to choose their own fate, rather than being bound to instructions handed down from the titans of old. These awakened earthen often leave Khaz Algar to explore Azeroth, and many of them have allied themselves with the Alliance or the Horde.</p>
+			<p class="indent">Earthen resemble dwarves whose bodies are made from living stone and infused with Azerite, the lifeblood of Azeroth itself. Large crystalline structures jut from their bodies, and fine mineral structures resembling hair adorn their heads and faces. They don’t need to eat, but consuming certain minerals can provide benefits—including changes to the growth of the hairlike minerals on their heads.</p>
+			<h5>EARTHEN RENOWN</h5>
+			<p>You have no starting Renown Score.</p>
+			<h5>EARTHEN TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Medium (about 4–5 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As an Earthen, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 120 feet.</p>
+			<p class="indent"><strong><em>Azerite Surge.</em></strong> When you take the Attack action on your turn, you can replace one of the attacks with a blast of Azerite energy in a 15-foot Cone. Each creature of your choice in the Cone regains 1d10 Hit Points. Each other creature in the Cone makes a Dexterity saving throw (DC 8 plus your Constitution modifier and your Proficiency Bonus), taking 1d10 Radiant damage on a failed save or half as much damage on a successful one. Both the damage and the healing increase by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Earthen Resilience.</em></strong> You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</p>
+			<p class="indent"><strong><em>Ingest Minerals.</em></strong> You don’t gain Exhaustion levels from malnutrition.</p>
+			<p class="indent"><strong><em>Quiet Contemplation.</em></strong> When you spend Hit Point Dice when you finish a Short Rest, you regain 1 additional Hit Point per Hit Point Die you spend.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Earthen)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Earthen)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Earthen)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_EARTHEN_AZERITE_SURGE" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_EARTHEN_EARTHEN_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_EARTHEN_INGEST_MINERALS" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_EARTHEN_QUIET_CONTEMPLATION" />
+		</rules>
+	</element>
+
+	<element name="Azerite Surge" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_EARTHEN_AZERITE_SURGE">
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of the attacks with a blast of Azerite energy in a 15-foot Cone. Each creature of your choice in the Cone regains 1d10 Hit Points. Each other creature in the Cone makes a Dexterity saving throw (DC 8 plus your Constitution modifier and your Proficiency Bonus), taking 1d10 Radiant damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent">Both the damage and the healing increase by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).</p>
+			<p class="indent">You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Replace one attack with a 15-ft Cone: chosen creatures regain 1d10 HP; others make a DC {{azerite surge:dc}} Dex save or take 1d10 Radiant (half on success).</description>
+			<description level="5">Replace one attack with a 15-ft Cone: chosen creatures regain 2d10 HP; others make a DC {{azerite surge:dc}} Dex save or take 2d10 Radiant (half on success).</description>
+			<description level="11">Replace one attack with a 15-ft Cone: chosen creatures regain 3d10 HP; others make a DC {{azerite surge:dc}} Dex save or take 3d10 Radiant (half on success).</description>
+			<description level="17">Replace one attack with a 15-ft Cone: chosen creatures regain 4d10 HP; others make a DC {{azerite surge:dc}} Dex save or take 4d10 Radiant (half on success).</description>
+		</sheet>
+		<rules>
+			<stat name="azerite surge:dc" value="8" />
+			<stat name="azerite surge:dc" value="constitution:modifier" />
+			<stat name="azerite surge:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Earthen Resilience" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_EARTHEN_EARTHEN_RESILIENCE">
+		<description>
+			<p>You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws you make to avoid or end the Poisoned condition.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Ingest Minerals" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_EARTHEN_INGEST_MINERALS">
+		<description>
+			<p>You don’t gain Exhaustion levels from malnutrition.</p>
+		</description>
+		<sheet>
+			<description>You don’t gain Exhaustion levels from malnutrition.</description>
+		</sheet>
+	</element>
+
+	<element name="Quiet Contemplation" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_EARTHEN_QUIET_CONTEMPLATION">
+		<description>
+			<p>When you spend Hit Point Dice when you finish a Short Rest, you regain 1 additional Hit Point per Hit Point Die you spend.</p>
+		</description>
+		<sheet>
+			<description>When you spend Hit Point Dice when you finish a Short Rest, you regain 1 additional Hit Point per Hit Point Die you spend.</description>
+		</sheet>
+	</element>
+
+</elements>

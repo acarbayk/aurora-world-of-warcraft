@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Orc (Azeroth)</name>
+		<description>The Orc (Azeroth) species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-orc.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-orc.xml" />
+		</update>
+	</info>
+
+	<element name="Orc (Azeroth)" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_ORC_AZEROTH">
+		<description>
+			<p>Orcs originate from the planet of Draenor, and as such their primordial history is separate from the efforts of the titan Pantheon to preserve Azeroth’s Worldsoul from corruption. Orcs descend from Grond, a living mountain shaped by the titan Aggramar to battle the massive botanical hivemind of the Evergrowth, which dominated ancient Draenor. Infused with life, the broken pieces that fell from Grond’s body became creatures in their own right—first the mighty earth giants called colossi, then the magma giants called magnaron, then the fearsome gronn, then ogron, and finally, from the ogron came ogres and orcs. Though the orcs are the smallest and weakest of Grond’s descendants, they possess a fierce intellect and strong sense of community.</p>
+			<p class="indent">Some early orcs were drawn to the site of Grond’s demise, and there they learned about the elemental spirits of air, earth, fire, and water. Cultivating harmony among the four elements, these orcs became the first shaman, who rose to become the spiritual leaders of their people.</p>
+			<p class="indent">In the decades before the opening of the Dark Portal, the demon lord Kil’jaeden manipulated Ner’zhul, one of the spiritual leaders of the orcs of Draenor, and through him the rest of the orc clans. Kil’jaeden convinced Ner’zhul that the draenei were conspiring against the orcs and goaded him into attacking the draenei. When Ner’zhul balked at an all-out assault on Shattrath City, Kil’jaeden discarded him and turned to Ner’zhul’s apprentice, Gul’dan, who was all too eager to wreak destruction across the world in exchange for the power offered by the Burning Legion. Gul’dan gave the leaders of the orc tribes demon blood to drink, transforming them and their followers into a merciless, destructive force bound to the Legion’s service.</p>
+			<p class="indent">After defeating the draenei and sating their bloodlust with internecine warfare, the orcs were lured to the world of Azeroth and enticed to make war on the human kingdoms of Stormwind and Lordaeron in what became known as the First and Second Wars. Though the Horde nearly succeeded in annihilating humanity, the Horde ultimately devoured itself from within and collapsed. The defeated orcs spent many years in internment camps, listless and lethargic without access to the fel magic that had empowered them. After many years, a visionary young warchief named Thrall rose to lead his people in their darkest hour. Under his rule, the orcs freed themselves from the chains of demonic corruption and embraced their ancient heritage.</p>
+			<p class="indent">Thrall led his people away from human lands to the continent of Kalimdor. There, Thrall and the Horde came face to face with their old oppressor, the Burning Legion. With the aid of humans and night elves, the orcs repelled the Legion and set out to find their own path in their adopted world. The orcs claimed the harsh wastelands of Durotar as their kingdom in Kalimdor.</p>
+			<p class="indent">Now based in the city of Orgrimmar, the orcs look forward to a shining new future. With the death of the pit lord Mannoroth, whose blood brought the demonic curse on the orcs of Draenor, the curse is now lifted, and the orcs are free of demonic influence. Though they are no longer driven by dreams of conquest, they stand ready to destroy all who would challenge their sovereignty or their supremacy. It is every orc’s duty to crush the enemies of Durotar, both seen and unseen, for the nefarious agents of the Burning Legion still wander the land.</p>
+			<p class="indent">Exposure to the fel magic of the Burning Legion transformed the orcs of Draenor, turning their skin green. Though the orcs of Azeroth are now free of fel corruption, they retain this green skin.</p>
+			<p class="indent">Mag’har Orcs. A few orcs were never tainted by fel magic, remaining uncorrupted—in Orcish, “mag’har.” Retaining their original brown or gray skin, they also preserve the shamanistic traditions the orcs cherished before the Burning Legion’s intervention.</p>
+			<h5>ORC (AZEROTH) RENOWN</h5>
+			<p>Your Renown Score with Orgrimmar (Horde) begins at 3.</p>
+			<h5>ORC (AZEROTH) TRAITS</h5>
+			<p>You have the Orc species traits from the Player’s Handbook: Adrenaline Rush, Darkvision (120 feet), and Relentless Endurance.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Orc (Azeroth))" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Orc (Azeroth))" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Orc (Azeroth))" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_ORC" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ORC_ADRENALINE_RUSH" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ORC_RELENTLESS_ENDURANCE" />
+		</rules>
+	</element>
+
+</elements>

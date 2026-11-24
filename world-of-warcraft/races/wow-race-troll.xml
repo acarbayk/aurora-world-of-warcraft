@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Troll</name>
+		<description>The Troll species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-troll.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-troll.xml" />
+		</update>
+	</info>
+
+	<element name="Troll" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_TROLL">
+		<description>
+			<p>Trolls are among Azeroth’s oldest peoples. From their earliest days, they revered the Wild Gods of nature, which they called “loa”—a name they later applied to a wide variety of beings and spirits they worship and serve.</p>
+			<p class="indent">The first center of troll society was in the mountainous region of Zandalar, where trolls established the city of Zuldazar thousands of years before the Great Sundering. Even as Zuldazar flourished, troll tribes spread across the entire continent, claiming vast swaths of territory. The tribes briefly united to battle the insectoid aqir—minions of the Old Gods—and drive them underground.</p>
+			<p class="indent">After this war, the leaders of Zandalar convinced the most prominent and power-hungry tribes to establish permanent strongholds across Azeroth to keep the aqir in check. The Amani, Drakkari, and Gurubashi heeded this call, establishing the strongholds of Zul’Aman, Zul’Drak, and Zul’Gurub, respectively, as the capitals of their new empires.</p>
+			<p class="indent">The Amani Empire occupied the plains and forests of the northeast, and its people became known as forest trolls. The Gurubashi Empire was based in the southeast but spread west as far as Zul’Farrak, and its people became known as jungle trolls. The Drakkari Empire in the north was made up of ice trolls. Another group of trolls, called dark trolls, dwelled underground near Mount Hyjal and in other places in the west. Some believe that a group of dark trolls dwelling near the Well of Eternity were transformed into the first night elves.</p>
+			<p class="indent">The Great Sundering isolated the troll empires and tribes from each other. It also split the Gurubashi Empire in half, with those in the west adapting to the new desert climate of their home to become sand trolls. Mighty Zandalar was reduced to a tiny island with little influence on the other troll nations.</p>
+			<p class="indent">In the ages after the Great Sundering, the Amani trolls warred against the high elves of Quel’Thalas, the Gurubashi pushed back against human incursion from Stormwind into Stranglethorn, and the Zandalari explored the islands near their home, leading them to enslave the goblins of Kezan for a time. The tribes that made up the Gurubashi empire warred with each other, particularly when some turned to the service of Hakkar the Soulflayer, the Loa of Blood.</p>
+			<p class="indent">With the exception of Zandalar, the great troll empires now lie largely in ruins, splintered once more into their component tribes. Even so, each of the ancient fortresses is still inhabited by trolls.</p>
+			<p class="indent">Trolls average over seven feet tall, with a lithe and slender build, long limbs, and prominent tusks. Their large, long ears are often pierced or otherwise decorated. The different offshoots of trollkind vary in coloration: The jungle trolls of Gurubashi (including the Darkspear tribe) range from sickly green to bruised purple, with ghostly shades of blue in between. Their hair is typically a more vibrant shade in the same range. Forest trolls are slightly shorter than other trolls and uniformly green in coloration, thanks to a moss that grows on their skin. Ice trolls’ skin ranges from blue to white, but their hair can be almost any color. The sand trolls of Zul’Farrak and Tanaris have brown or gold skin. And Zandalari trolls have green, blue, gray, or black skin.</p>
+			<p class="indent">Darkspear Trolls. The first trolls to join the Horde were jungle trolls of the Darkspear tribe, driven out of Stranglethorn in fierce conflicts with other tribes of the Gurubashi Empire. When Thrall led the liberated orcs to Kalimdor, he offered the Darkspear tribe a place in the Horde’s new domain, and they settled on the Echo Isles, just off the coast of Durotar.</p>
+			<p class="indent">Zandalari Trolls. Originally established by the first troll tribe, from which all other troll tribes descend, the ancient Zandalari Empire is steeped in ritual and spirituality. Its warriors ride mighty dinosaurs into battle. Under Queen Talanji’s rule, the Zandalari Empire has joined the Horde.</p>
+			<p class="indent">Amani Trolls. The forest trolls of Zul’Aman, after centuries of war with the elves of Quel’Thalas, recently forged an uneasy alliance with the blood elves against common enemies serving the Void. These trolls remain suspicious of outsiders, but some have ventured out to learn more of the world.</p>
+			<h5>TROLL RENOWN</h5>
+			<p>If you choose the Darkspear troll or Zandalari troll Troll Lineage, your Renown Score with the Darkspear Tribe (Horde) begins at 3. Otherwise, you have no starting Renown Score.</p>
+			<h5>TROLL TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Medium (about 7 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Troll, you have these special traits.</p>
+			<p class="indent"><strong><em>Bloodied Frenzy.</em></strong> While Bloodied, you have Advantage on attack rolls.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Troll Healing.</em></strong> When you expend Hit Point Dice to regain Hit Points after a Short Rest, you regain Hit Points equal to the maximum roll of the dice plus your Constitution modifier.</p>
+			<p class="indent"><strong><em>Troll Lineage.</em></strong> You are part of a lineage that grants you supernatural qualities. Choose one of the following options:</p>
+			<p class="indent"><strong><em>Amani Troll.</em></strong> Whenever you spend Heroic Inspiration, you regain 1 expended Hit Point Die.</p>
+			<p class="indent"><strong><em>Darkspear Troll.</em></strong> When you take the Dash action, Difficult Terrain composed of ice, rubble, snow, or undergrowth doesn’t cost you extra movement until the end of your turn.</p>
+			<p class="indent"><strong><em>Zandalari Troll.</em></strong> If you roll a 1 on the d20 for a D20 Test, you gain Heroic Inspiration at the end of the current turn.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Troll)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Troll)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Troll)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_TROLL_BLOODIED_FRENZY" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_TROLL_TROLL_HEALING" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_TROLL_TROLL_LINEAGE" />
+		</rules>
+	</element>
+
+	<element name="Bloodied Frenzy" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TROLL_BLOODIED_FRENZY">
+		<description>
+			<p>While Bloodied, you have Advantage on attack rolls.</p>
+		</description>
+		<sheet>
+			<description>While Bloodied, you have Advantage on attack rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Troll Healing" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TROLL_TROLL_HEALING">
+		<description>
+			<p>When you expend Hit Point Dice to regain Hit Points after a Short Rest, you regain Hit Points equal to the maximum roll of the dice plus your Constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>When you expend Hit Point Dice to regain Hit Points after a Short Rest, you regain Hit Points equal to the maximum roll of the dice plus your Constitution modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Troll Lineage" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TROLL_TROLL_LINEAGE">
+		<description>
+			<p>You are part of a lineage that grants you supernatural qualities. Choose one of the following options:</p>
+			<p class="indent"><strong><em>Amani Troll.</em></strong> Whenever you spend Heroic Inspiration, you regain 1 expended Hit Point Die.</p>
+			<p class="indent"><strong><em>Darkspear Troll.</em></strong> When you take the Dash action, Difficult Terrain composed of ice, rubble, snow, or undergrowth doesn’t cost you extra movement until the end of your turn.</p>
+			<p class="indent"><strong><em>Zandalari Troll.</em></strong> If you roll a 1 on the d20 for a D20 Test, you gain Heroic Inspiration at the end of the current turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Troll Lineage" supports="WoW Troll Lineage" />
+		</rules>
+	</element>
+
+	<element name="Amani Troll" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TROLL_AMANI_TROLL">
+		<supports>WoW Troll Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Whenever you spend Heroic Inspiration, you regain 1 expended Hit Point Die.</p>
+		</description>
+		<sheet>
+			<description>Whenever you spend Heroic Inspiration, you regain 1 expended Hit Point Die.</description>
+		</sheet>
+	</element>
+
+	<element name="Darkspear Troll" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TROLL_DARKSPEAR_TROLL">
+		<supports>WoW Troll Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Dash action, Difficult Terrain composed of ice, rubble, snow, or undergrowth doesn’t cost you extra movement until the end of your turn.</p>
+		</description>
+		<sheet>
+			<description>When you take the Dash action, Difficult Terrain composed of ice, rubble, snow, or undergrowth doesn’t cost you extra movement until the end of your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Zandalari Troll" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_TROLL_ZANDALARI_TROLL">
+		<supports>WoW Troll Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you roll a 1 on the d20 for a D20 Test, you gain Heroic Inspiration at the end of the current turn.</p>
+		</description>
+		<sheet>
+			<description>If you roll a 1 on the d20 for a D20 Test, you gain Heroic Inspiration at the end of the current turn.</description>
+		</sheet>
+	</element>
+
+</elements>

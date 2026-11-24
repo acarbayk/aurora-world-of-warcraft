@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Haranir</name>
+		<description>The Haranir species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-haranir.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-haranir.xml" />
+		</update>
+	</info>
+
+	<element name="Haranir" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_HARANIR">
+		<description>
+			<p>Haranir are reclusive people who dwell in the magical forests of Harandar, a subterranean realm where the roots of the World Trees grow together. Their ancient druidic traditions connect them to the earth and teach them to protect the roots that reach into the deep places where they dwell.</p>
+			<p class="indent">Haranir have little contact with the surface world and its peoples, and they are reluctant to share the details of their traditions with strangers. They have long avoided even allowing other peoples to know of their existence, striving to stay out of sight and conceal traces of their presence.</p>
+			<p class="indent">Haranir bear a passing resemblance to both night elves and trolls. They have tusks (smaller than trolls’), bat-like ears, and grayish-purple skin with patches of fur or sharp quills. They tend to favor clothing made from leaves and thorns.</p>
+			<h5>HARANIR RENOWN</h5>
+			<p>You have no starting Renown Score.</p>
+			<h5>HARANIR TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Medium (about 7–8 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Haranir, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 120 feet.</p>
+			<p class="indent"><strong><em>Gift of the World Trees.</em></strong> Because of your supernatural connection to the world trees, you have proficiency in the Nature and Survival skills.</p>
+			<p class="indent"><strong><em>Haranir Magic.</em></strong> You know the Druidcraft and Thorn Whip cantrips. When you reach character level 3, you learn the Entangle spell. You always have it prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. When you reach character level 5, you also always have the Spike Growth spell prepared and can cast it the same way. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species).</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Haranir)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Haranir)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Haranir)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_GIFT_OF_THE_WORLD_TREES" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_HARANIR_MAGIC" />
+		</rules>
+	</element>
+
+	<element name="Gift of the World Trees" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_GIFT_OF_THE_WORLD_TREES">
+		<description>
+			<p>Because of your supernatural connection to the world trees, you have proficiency in the Nature and Survival skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+
+	<element name="Haranir Magic" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_HARANIR_MAGIC">
+		<description>
+			<p>You know the Druidcraft and Thorn Whip cantrips.</p>
+			<p class="indent">When you reach character level 3, you learn the Entangle spell. You always have it prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.</p>
+			<p class="indent">When you reach character level 5, you also always have the Spike Growth spell prepared and can cast it the same way.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Spellcasting Ability (Haranir Magic)" supports="ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_HARANIR_MAGIC_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_HARANIR_MAGIC_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_HARANIR_MAGIC_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_HARANIR_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Haranir Magic trait.</p>
+		</description>
+		<sheet alt="Haranir Magic">
+			<description>You know the Druidcraft and Thorn Whip cantrips. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">You know the Druidcraft and Thorn Whip cantrips, and you can cast Entangle once per Long Rest without a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">You know the Druidcraft and Thorn Whip cantrips, and you can cast Entangle and Spike Growth once each per Long Rest without a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_THORN_WHIP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ENTANGLE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPIKE_GROWTH" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_HARANIR_MAGIC_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Haranir Magic trait.</p>
+		</description>
+		<sheet alt="Haranir Magic">
+			<description>You know the Druidcraft and Thorn Whip cantrips. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">You know the Druidcraft and Thorn Whip cantrips, and you can cast Entangle once per Long Rest without a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">You know the Druidcraft and Thorn Whip cantrips, and you can cast Entangle and Spike Growth once each per Long Rest without a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_THORN_WHIP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ENTANGLE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPIKE_GROWTH" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_HARANIR_HARANIR_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Haranir Magic trait.</p>
+		</description>
+		<sheet alt="Haranir Magic">
+			<description>You know the Druidcraft and Thorn Whip cantrips. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">You know the Druidcraft and Thorn Whip cantrips, and you can cast Entangle once per Long Rest without a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">You know the Druidcraft and Thorn Whip cantrips, and you can cast Entangle and Spike Growth once each per Long Rest without a spell slot. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_THORN_WHIP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ENTANGLE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPIKE_GROWTH" level="5" />
+		</rules>
+	</element>
+
+</elements>

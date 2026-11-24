@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dwarf (Azeroth)</name>
+		<description>The Dwarf (Azeroth) species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-dwarf.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-dwarf.xml" />
+		</update>
+	</info>
+
+	<element name="Dwarf (Azeroth)" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_DWARF_AZEROTH">
+		<description>
+			<p>Eons ago, the titans built the World Forges—the Forge of Wills in Ulduar and the Forge of Origination in Uldum—to strengthen and stabilize the slumbering Worldsoul of Azeroth. In addition, the Forge of Wills drew on the life essence of Azeroth to give shape and sentience to creatures of living stone and metal, including the kindhearted earthen and the clockwork mechagnomes. These titan-forged beings helped the titans shape the world of Azeroth, laying a groundwork of order that would allow the Worldsoul to mature and flourish.</p>
+			<p class="indent">But the Old God Yogg-Saron, imprisoned beneath Ulduar, devised a plan to weaken its jailers and escape imprisonment: It would corrupt the Forge of Wills, tainting its creation matrix with a malady called the curse of flesh, which would make the titan-forged mortal. As this curse slowly spread and infected the earthen, many of them asked to be placed in hibernation until a cure could be found. Keeper Archaedas sealed them within the subterranean realm of Uldaman, promising to rouse them in the future.</p>
+			<p class="indent">Uncounted ages later, most of the mechagnomes tending the slumbering earthen had succumbed to the curse of flesh, becoming gnomes, and either died of old age or ventured out into the world. The last gnome guarding Uldaman awakened the sleepers, and these first dwarves found themselves in a new world. Drawn to a mountain range to the west, these hardy folk settled in the snowy region of Dun Morogh. There, they carved out the proud city of Ironforge, which became the seat of a great and mighty nation that stretched deep under the mountains. For more than two thousand years, Ironforge prospered, bolstered by trade partnerships with the human-built city-states to the north.</p>
+			<p class="indent">Then, about 230 years before the opening of the Dark Portal, long-simmering tensions among the three powerful clans of Ironforge erupted into war as the clans vied for dominion of the mountain in the War of the Three Hammers. In the end, the Bronzebeard clan used its martial expertise to drive the other clans—the Dark Irons and the Wildhammers —from the mountain range.</p>
+			<p class="indent">Bronzebeard Dwarves. The Bronzebeard clan was the largest of Ironforge’s three factions and formed the bulk of its military and mercantile classes. Ironforge is now governed by the Council of Three Hammers, with representatives of all three clans.</p>
+			<p class="indent">Dark Iron Dwarves. The Dark Iron clan inhabited the deepest and darkest corners of Ironforge. Enslaved for centuries by Ragnaros the Firelord, they rejoined Ironforge under Queen-Regent Moira Thaurissan and are now proud members of the Alliance.</p>
+			<p class="indent">Frostborn. The Frostborn dwarves of Northrend descend directly from a different group of earthen who succumbed to the curse of flesh, and consider themselves friendly cousins of the other clans.</p>
+			<p class="indent">Wildhammer Dwarves. The Wildhammers settled in the mountains of the Hinterlands, crafting the city of Aerie Peak, where they learned to train gryphons for use in war and travel.</p>
+			<h5>DWARF (AZEROTH) RENOWN</h5>
+			<p>Your Renown Score with Ironforge (Alliance) begins at 3.</p>
+			<h5>DWARF (AZEROTH) TRAITS</h5>
+			<p>You have the Dwarf species traits from the Player’s Handbook: Darkvision (120 feet), Dwarven Resilience, Dwarven Toughness, and Stonecunning.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Dwarf (Azeroth))" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Dwarf (Azeroth))" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Dwarf (Azeroth))" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DWARF" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_DWARF_DWARVEN_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_DWARF_DWARVEN_TOUGHNESS" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_DWARF_STONECUNNING" />
+		</rules>
+	</element>
+
+</elements>

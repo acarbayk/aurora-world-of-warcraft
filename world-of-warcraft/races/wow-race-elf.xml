@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Elf (Azeroth)</name>
+		<description>The Elf (Azeroth) species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-elf.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-elf.xml" />
+		</update>
+	</info>
+
+	<element name="Elf (Azeroth)" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_ELF_AZEROTH">
+		<description>
+			<p>In ancient ages, night elves founded a vast empire that spanned the world. But as Queen Azshara and the elite Highborne nobles of her court delved into the secrets of arcane magic, using spells to manipulate the cosmic energy of the Well of Eternity, the elves drew the attention of the titan Sargeras, creator of the demonic Burning Legion. Sargeras convinced Azshara and her loyal high councilor, Xavius, to open a portal that would allow the Legion to enter the world. The resulting conflict, the War of the Ancients, brought all the young peoples of the world together—night elves, tauren, furbolgs, earthen, dragons, and Wild Gods—to repel the Burning Legion. But the price of closing the portal was the Great Sundering, which shattered the continent into the landmasses of the world today. The Great Sea covered the heart of the ancient continent, and the site of the Well of Eternity is now the swirling Maelstrom.</p>
+			<p class="indent">Just as the continent was shattered in the Great Sundering, the elves were scattered and divided by the cataclysmic event. The Highborne who sided with Azshara were transformed into naga and satyrs (see chapter 7), while those who resisted her continued to pursue arcane magic. The rest of the night elves remained isolated for ten thousand years.</p>
+			<p class="indent">Night Elves (Kaldorei). Forswearing the use of arcane magic, the night elves (or kaldorei, which means “children of the stars” in their own language, Darnassian) cultivated a druidic society in the shadowed recesses of Ashenvale Forest. Night elves average between 7 and 8 feet in height, with skin from pale lilac to dark violet and eyes that glow white, blue, or gold.</p>
+			<p class="indent">Nightborne (Shal’dorei). Isolated for ten thousand years in Suramar and transformed by the energy of the Nightwell, the nightborne joined the ranks of the Horde after a rebellion toppled their corrupt leaders. They resemble night elves, though their skin is darker and grayer.</p>
+			<p class="indent">High Elves (Quel’dorei). Descendants of the Highborne who founded Quel’Thalas around the Sunwell, the high elves who refused to adopt the blood elves’ parasitic techniques now live among the peoples of the Alliance with no nation of their own. Their eyes glow blue.</p>
+			<p class="indent">Blood Elves (Sin’dorei). Most survivors of Quel’Thalas took on the name “blood elves” to honor their fallen kindred and joined the Horde. They resemble high elves, but their eyes glow green or gold.</p>
+			<p class="indent">Void Elves (Ren’dorei). Exiled from Silvermoon for studying the Void and trained by Alleria Windrunner to control the shadows within themselves, the void elves pledged their support to the Alliance. Their eyes glow violet, and their hair is varying shades of purple and blue.</p>
+			<h5>ELF (AZEROTH) RENOWN</h5>
+			<p>Your starting Renown Score depends on your elven origin:</p>
+			<p class="indent">Blood Elf or Nightborne. Your Renown Score with Silvermoon City (Horde) begins at 3.</p>
+			<p class="indent">High Elf. You have no starting Renown Score.</p>
+			<p class="indent">Night Elf or Void Elf. Your Renown Score with Darnassus (Alliance) begins at 3.</p>
+			<h5>ELF (AZEROTH) TRAITS</h5>
+			<p>You have the Elf species traits from the Player’s Handbook: Darkvision (60 feet), Fey Ancestry, Keen Senses, and Trance. Instead of the Player’s Handbook Elven Lineage options, choose one of the lineages below or the High Elf option. The general rules for Elven Lineage apply in any case.</p>
+			<p class="indent"><strong><em>Elven Lineage.</em></strong> You are part of a lineage that grants you supernatural abilities. Choose one of the Elven Lineage options from the Azeroth Elven Lineages table or the High Elf option from the Player’s Handbook. You gain the level 1 benefit of that lineage. When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast it using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p>
+			<table><thead><tr><td>Lineage</td><td class="col-50">Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead><tr><td>Blood Elf</td><td>You know the <i>Prestidigitation</i> cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.</td><td><i>Detect Magic</i></td><td><i>Arcane Vigor</i></td></tr><tr><td>Night Elf</td><td>You have proficiency in the Stealth skill, and while you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action.</td><td><i>Longstrider</i></td><td><i>Pass Without Trace</i></td></tr><tr><td>Nightborne</td><td>The range of your Darkvision increases to 120 feet. You also know the <i>Arcane Pulse</i> cantrip.</td><td><i>Faerie Fire</i></td><td><i>Darkness</i></td></tr><tr><td>Void Elf</td><td>The range of your Darkvision increases to 120 feet. You also know the <i>Mind Sliver</i> cantrip.</td><td><i>Entropic Embrace</i></td><td><i>Misty Step</i></td></tr></table>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Elf (Azeroth))" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Elf (Azeroth))" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Elf (Azeroth))" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_ELF" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_ELVEN_LINEAGE" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_FEY_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_KEEN_SENSES" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_TRANCE" />
+		</rules>
+	</element>
+
+	<element name="Elven Lineage" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_ELVEN_LINEAGE">
+		<description>
+			<p>You are part of a lineage that grants you supernatural abilities. Choose one of the Elven Lineage options from the Azeroth Elven Lineages table or the High Elf option from the Player’s Handbook. You gain the level 1 benefit of that lineage.</p>
+			<p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast it using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p>
+			<h5>Azeroth Elven Lineages</h5>
+			<table><thead><tr><td>Lineage</td><td class="col-50">Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead><tr><td>Blood Elf</td><td>You know the <i>Prestidigitation</i> cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.</td><td><i>Detect Magic</i></td><td><i>Arcane Vigor</i></td></tr><tr><td>Night Elf</td><td>You have proficiency in the Stealth skill, and while you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action.</td><td><i>Longstrider</i></td><td><i>Pass Without Trace</i></td></tr><tr><td>Nightborne</td><td>The range of your Darkvision increases to 120 feet. You also know the <i>Arcane Pulse</i> cantrip.</td><td><i>Faerie Fire</i></td><td><i>Darkness</i></td></tr><tr><td>Void Elf</td><td>The range of your Darkvision increases to 120 feet. You also know the <i>Mind Sliver</i> cantrip.</td><td><i>Entropic Embrace</i></td><td><i>Misty Step</i></td></tr></table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Elven Lineage (Azeroth)" supports="WoW Azeroth Elven Lineage" />
+		</rules>
+	</element>
+
+	<element name="Blood Elf" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_BLOOD_ELF">
+		<supports>WoW Azeroth Elven Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list. At character level 3 you learn Detect Magic, and at level 5 you learn Arcane Vigor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Spellcasting Ability (Elven Lineage)" supports="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_BLOOD_ELF_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_BLOOD_ELF_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_BLOOD_ELF_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_BLOOD_ELF_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Blood Elf)">
+			<description>You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic once per Long Rest without a spell slot, or with a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic and Arcane Vigor once each per Long Rest without a spell slot, or with spell slots. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Wizard Cantrip (Blood Elf)" supports="Wizard,0" default="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_VIGOR" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_BLOOD_ELF_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Blood Elf)">
+			<description>You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic once per Long Rest without a spell slot, or with a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic and Arcane Vigor once each per Long Rest without a spell slot, or with spell slots. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Wizard Cantrip (Blood Elf)" supports="Wizard,0" default="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_VIGOR" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_BLOOD_ELF_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Blood Elf)">
+			<description>You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic once per Long Rest without a spell slot, or with a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic and Arcane Vigor once each per Long Rest without a spell slot, or with spell slots. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Wizard Cantrip (Blood Elf)" supports="Wizard,0" default="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_VIGOR" level="5" />
+		</rules>
+	</element>
+
+	<element name="High Elf" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_HIGH_ELF">
+		<supports>WoW Azeroth Elven Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list. At character level 3 you learn Detect Magic, and at level 5 you learn Misty Step. (This is the High Elf option from the Player’s Handbook.)</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Spellcasting Ability (Elven Lineage)" supports="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_HIGH_ELF_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_HIGH_ELF_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_HIGH_ELF_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_HIGH_ELF_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (High Elf)">
+			<description>You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic once per Long Rest without a spell slot, or with a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic and Misty Step once each per Long Rest without a spell slot, or with spell slots. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Wizard Cantrip (High Elf)" supports="Wizard,0" default="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_HIGH_ELF_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (High Elf)">
+			<description>You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic once per Long Rest without a spell slot, or with a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic and Misty Step once each per Long Rest without a spell slot, or with spell slots. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Wizard Cantrip (High Elf)" supports="Wizard,0" default="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_HIGH_ELF_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (High Elf)">
+			<description>You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic once per Long Rest without a spell slot, or with a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">You know a Wizard cantrip (Prestidigitation by default); you can replace it with another Wizard cantrip when you finish a Long Rest. You can cast Detect Magic and Misty Step once each per Long Rest without a spell slot, or with spell slots. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Wizard Cantrip (High Elf)" supports="Wizard,0" default="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" />
+		</rules>
+	</element>
+
+	<element name="Night Elf" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHT_ELF">
+		<supports>WoW Azeroth Elven Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have proficiency in the Stealth skill, and while you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. At character level 3 you learn Longstrider, and at level 5 you learn Pass Without Trace.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elven Lineage)" supports="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHT_ELF_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHT_ELF_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHT_ELF_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHT_ELF_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Night Elf)">
+			<description>While you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">While you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. You can cast Longstrider once per Long Rest without a spell slot, or with a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">While you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. You can cast Longstrider and Pass Without Trace once each per Long Rest without a spell slot, or with spell slots. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LONGSTRIDER" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PASS_WITHOUT_TRACE" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHT_ELF_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Night Elf)">
+			<description>While you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">While you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. You can cast Longstrider once per Long Rest without a spell slot, or with a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">While you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. You can cast Longstrider and Pass Without Trace once each per Long Rest without a spell slot, or with spell slots. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LONGSTRIDER" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PASS_WITHOUT_TRACE" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHT_ELF_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Night Elf)">
+			<description>While you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">While you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. You can cast Longstrider once per Long Rest without a spell slot, or with a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">While you are in Dim Light or Darkness, you can take the Hide action as a Bonus Action. You can cast Longstrider and Pass Without Trace once each per Long Rest without a spell slot, or with spell slots. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LONGSTRIDER" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PASS_WITHOUT_TRACE" level="5" />
+		</rules>
+	</element>
+
+	<element name="Nightborne" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHTBORNE">
+		<supports>WoW Azeroth Elven Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>The range of your Darkvision increases to 120 feet. You also know the Arcane Pulse cantrip. At character level 3 you learn Faerie Fire, and at level 5 you learn Darkness.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="darkvision:range" value="120" bonus="base" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elven Lineage)" supports="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHTBORNE_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHTBORNE_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHTBORNE_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHTBORNE_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Nightborne)">
+			<description>You know the Arcane Pulse cantrip. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">You know the Arcane Pulse cantrip. You can cast Faerie Fire once per Long Rest without a spell slot, or with a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">You know the Arcane Pulse cantrip. You can cast Faerie Fire and Darkness once each per Long Rest without a spell slot, or with spell slots. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_ARCANE_PULSE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FAERIE_FIRE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHTBORNE_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Nightborne)">
+			<description>You know the Arcane Pulse cantrip. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">You know the Arcane Pulse cantrip. You can cast Faerie Fire once per Long Rest without a spell slot, or with a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">You know the Arcane Pulse cantrip. You can cast Faerie Fire and Darkness once each per Long Rest without a spell slot, or with spell slots. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_ARCANE_PULSE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FAERIE_FIRE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_NIGHTBORNE_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Nightborne)">
+			<description>You know the Arcane Pulse cantrip. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">You know the Arcane Pulse cantrip. You can cast Faerie Fire once per Long Rest without a spell slot, or with a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">You know the Arcane Pulse cantrip. You can cast Faerie Fire and Darkness once each per Long Rest without a spell slot, or with spell slots. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_ARCANE_PULSE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FAERIE_FIRE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+
+	<element name="Void Elf" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_VOID_ELF">
+		<supports>WoW Azeroth Elven Lineage</supports>
+		<compendium display="false" />
+		<description>
+			<p>The range of your Darkvision increases to 120 feet. You also know the Mind Sliver cantrip. At character level 3 you learn Entropic Embrace, and at level 5 you learn Misty Step.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="darkvision:range" value="120" bonus="base" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elven Lineage)" supports="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_VOID_ELF_INTELLIGENCE|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_VOID_ELF_WISDOM|ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_VOID_ELF_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_VOID_ELF_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Void Elf)">
+			<description>You know the Mind Sliver cantrip. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="3">You know the Mind Sliver cantrip. You can cast Entropic Embrace once per Long Rest without a spell slot, or with a spell slot. Intelligence is your spellcasting ability for this trait.</description>
+			<description level="5">You know the Mind Sliver cantrip. You can cast Entropic Embrace and Misty Step once each per Long Rest without a spell slot, or with spell slots. Intelligence is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIND_SLIVER" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_ENTROPIC_EMBRACE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_VOID_ELF_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Void Elf)">
+			<description>You know the Mind Sliver cantrip. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="3">You know the Mind Sliver cantrip. You can cast Entropic Embrace once per Long Rest without a spell slot, or with a spell slot. Wisdom is your spellcasting ability for this trait.</description>
+			<description level="5">You know the Mind Sliver cantrip. You can cast Entropic Embrace and Misty Step once each per Long Rest without a spell slot, or with spell slots. Wisdom is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIND_SLIVER" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_ENTROPIC_EMBRACE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_ELF_LINEAGE_VOID_ELF_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with the Elven Lineage trait.</p>
+		</description>
+		<sheet alt="Elven Lineage (Void Elf)">
+			<description>You know the Mind Sliver cantrip. Charisma is your spellcasting ability for this trait.</description>
+			<description level="3">You know the Mind Sliver cantrip. You can cast Entropic Embrace once per Long Rest without a spell slot, or with a spell slot. Charisma is your spellcasting ability for this trait.</description>
+			<description level="5">You know the Mind Sliver cantrip. You can cast Entropic Embrace and Misty Step once each per Long Rest without a spell slot, or with spell slots. Charisma is your spellcasting ability for this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIND_SLIVER" />
+			<grant type="Spell" id="ID_KAYA_WOW_SPELL_ENTROPIC_EMBRACE" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" />
+		</rules>
+	</element>
+
+</elements>

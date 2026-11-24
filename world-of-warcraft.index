@@ -4,13 +4,29 @@
 		<name>World of Warcraft</name>
 		<description>World of Warcraft by Andrey Kuzinskiy: classes, species, spells, feats, gear and renown for D&amp;D 2024. Requires the Aurora Legacy Player’s Handbook (2024).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="0.1.0">
+		<update version="0.2.0">
 			<file name="world-of-warcraft.index" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft.index" />
 		</update>
 	</info>
 	<files>
 		<file name="wow-languages.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/misc/wow-languages.xml" />
+		<file name="wow-race-dracthyr.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-dracthyr.xml" />
+		<file name="wow-race-draenei.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-draenei.xml" />
+		<file name="wow-race-dwarf.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-dwarf.xml" />
+		<file name="wow-race-earthen.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-earthen.xml" />
+		<file name="wow-race-elf.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-elf.xml" />
+		<file name="wow-race-forsaken.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-forsaken.xml" />
+		<file name="wow-race-gnome.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-gnome.xml" />
+		<file name="wow-race-goblin.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-goblin.xml" />
+		<file name="wow-race-haranir.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-haranir.xml" />
+		<file name="wow-race-human.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-human.xml" />
+		<file name="wow-race-mechagnome.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-mechagnome.xml" />
+		<file name="wow-race-orc.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-orc.xml" />
+		<file name="wow-race-pandaren.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-pandaren.xml" />
+		<file name="wow-race-tauren.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-tauren.xml" />
+		<file name="wow-race-troll.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-troll.xml" />
 		<file name="wow-race-vulpera.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-vulpera.xml" />
+		<file name="wow-race-worgen.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-worgen.xml" />
 		<file name="wow-spells.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/spells/wow-spells.xml" />
 		<file name="wow-source.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/wow-source.xml" />
 	</files>

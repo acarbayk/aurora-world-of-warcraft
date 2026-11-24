@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dracthyr</name>
+		<description>The Dracthyr species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-dracthyr.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-dracthyr.xml" />
+		</update>
+	</info>
+
+	<element name="Dracthyr" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_DRACTHYR">
+		<description>
+			<p>In ages long past, Neltharion the Earth-Warder—the former leader of the black dragonflight—foresaw a world-shaking conflict and set out to create soldiers for that war. Neltharion was inspired by the mortal peoples who had just begun their spread across Azeroth. He blended together the essence of dragons and the adaptability of those peoples, creating the dracthyr. He set them in the Forbidden Reach, the northernmost of the Dragon Isles, which would serve as their training grounds and barracks.</p>
+			<p class="indent">The dracthyr embodied the might of all five dragonflights, and they were bound to Neltharion’s service by the power of a titan relic called the Oathbinder. Then the Oathbinder was destroyed in a battle against the primal dragon Raszageth, and Neltharion feared that the dracthyr would turn against him and the other Dragon Aspects. Rather than allow the dracthyr to choose their own destinies, he and the blue Aspect, Malygos, sealed them away in hidden creches in the Forbidden Reach and put them into a magical stasis, where they remained for nearly twenty millennia.</p>
+			<p class="indent">The return of Raszageth caused the dracthyr to awaken from their stasis. The five weyrns—close-knit fighting groups charged with specific purposes in Neltharion’s original vision—chose new paths in a world very different from the one they were created for.</p>
+			<p class="indent">The Adamant Vigil, intended as scouts and spies for the black dragonflight, were destroyed as they awakened from their stasis by the Primalists who freed Raszageth. Only their leader, Scalecommander Emberthal, survived, and she remains in the Forbidden Reach searching for slumbering dracthyr creches.</p>
+			<p class="indent">The Dark Talons, trained to be an elite force of destruction feared by enemies of the black dragonflight, left the Dragon Isles and warned the Horde of the danger posed by Raszageth. They later allied with the Horde.</p>
+			<p class="indent">The Ebon Scales, honed as a destructive force, rebelled against the dragons. The weyrn’s leader, Scalecommander Sarkareth, tried to reconstruct the Oathbinder and subjugate all dracthyr once more. After Sarkareth’s death, Scalecommander Emberthal took up the work of reawakening more creches of slumbering dracthyr.</p>
+			<p class="indent">The Healing Wings, trained in the healing arts to give hope to the allies of the dragonflights, remained in the Dragon Isles.</p>
+			<p class="indent">The Obsidian Warders, charged with defending the allies of the black dragonflight and protecting its strongholds, journeyed to Stormwind City to warn the Alliance and subsequently joined forces with that faction.</p>
+			<h5>DRACTHYR RENOWN</h5>
+			<p>Choose one of the following weyrns to align yourself with: the Dark Talons, the Ebon Scales, the Healing Wings, or the Obsidian Warders. If you choose the Dark Talons (Horde) or the Obsidian Warders (Alliance), your Renown Score with the chosen faction begins at 3. If you choose a different weyrn, your Renown Score with the Valdrakken Accord begins at 3.</p>
+			<h5>DRACTHYR TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Dragon</li>
+				<li><strong>Size:</strong> Medium (about 7 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Dracthyr, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Gliding Wings.</em></strong> While you’re in your natural form and don’t have the Incapacitated condition, when you fall, you subtract up to 100 feet from the distance fallen when calculating the fall’s damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</p>
+			<p class="indent"><strong><em>Natural Weaponry.</em></strong> While you’re in your natural form, your wings and tail are powerful weapons. As a Bonus Action, you can use your wings or tail to make an Unarmed Strike to Shove a creature.</p>
+			<p class="indent"><strong><em>Visage.</em></strong> As a Magic action, you can shape-shift into a humanoid form called your visage, or back to your natural form. Your visage has a specific appearance that you choose when you select this species, including your coloration, height and weight, hair length, and sex. Changing shape with this trait doesn’t change your clothing, equipment, or game statistics.</p>
+			<p class="indent"><strong><em>Draconic Flight.</em></strong> When you reach character level 5, you can use your natural form’s wings to fly short distances. As a Bonus Action, you leap into the air and give yourself a Fly Speed equal to your Speed that lasts for 10 minutes. Once you use this trait, you can’t use it again until you finish a Long Rest.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Dracthyr)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Dracthyr)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Dracthyr)" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_DRACTHYR_GLIDING_WINGS" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_DRACTHYR_NATURAL_WEAPONRY" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_DRACTHYR_VISAGE" />
+			<grant type="Racial Trait" id="ID_KAYA_WOW_RACIAL_TRAIT_DRACTHYR_DRACONIC_FLIGHT" level="5" />
+		</rules>
+	</element>
+
+	<element name="Gliding Wings" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRACTHYR_GLIDING_WINGS">
+		<description>
+			<p>While you’re in your natural form and don’t have the Incapacitated condition, when you fall, you subtract up to 100 feet from the distance fallen when calculating the fall’s damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</p>
+		</description>
+		<sheet>
+			<description>While you’re in your natural form and don’t have the Incapacitated condition, when you fall, you subtract up to 100 feet from the distance fallen when calculating the fall’s damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</description>
+		</sheet>
+	</element>
+
+	<element name="Natural Weaponry" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRACTHYR_NATURAL_WEAPONRY">
+		<description>
+			<p>While you’re in your natural form, your wings and tail are powerful weapons. As a Bonus Action, you can use your wings or tail to make an Unarmed Strike to Shove a creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>While you’re in your natural form, your wings and tail are powerful weapons. As a Bonus Action, you can use your wings or tail to make an Unarmed Strike to Shove a creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Visage" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRACTHYR_VISAGE">
+		<description>
+			<p>As a Magic action, you can shape-shift into a humanoid form called your visage, or back to your natural form. Your visage has a specific appearance that you choose when you select this species, including your coloration, height and weight, hair length, and sex. Changing shape with this trait doesn’t change your clothing, equipment, or game statistics.</p>
+		</description>
+		<sheet action="Magic Action">
+			<description>As a Magic action, you can shape-shift into a humanoid form called your visage, or back to your natural form. Your visage has a specific appearance that you choose when you select this species, including your coloration, height and weight, hair length, and sex. Changing shape with this trait doesn’t change your clothing, equipment, or game statistics.</description>
+		</sheet>
+	</element>
+
+	<element name="Draconic Flight" type="Racial Trait" source="World of Warcraft" id="ID_KAYA_WOW_RACIAL_TRAIT_DRACTHYR_DRACONIC_FLIGHT">
+		<description>
+			<p>When you reach character level 5, you can use your natural form’s wings to fly short distances. As a Bonus Action, you leap into the air and give yourself a Fly Speed equal to your Speed that lasts for 10 minutes. Once you use this trait, you can’t use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>As a Bonus Action, you gain a Fly Speed equal to your Speed for 10 minutes.</description>
+		</sheet>
+	</element>
+
+</elements>

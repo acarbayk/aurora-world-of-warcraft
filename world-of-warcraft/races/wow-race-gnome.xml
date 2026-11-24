@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gnome (Azeroth)</name>
+		<description>The Gnome (Azeroth) species from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-race-gnome.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-gnome.xml" />
+		</update>
+	</info>
+
+	<element name="Gnome (Azeroth)" type="Race" source="World of Warcraft" id="ID_KAYA_WOW_RACE_GNOME_AZEROTH">
+		<description>
+			<p>When the titans built the World Forges to empower the slumbering Worldsoul of Azeroth, they also used the Forge of Wills in Ulduar to draw on the Worldsoul to give shape and sentience to the titan-forged: mechagnomes, earthen, vrykul, and others. The titans intended mechagnomes to be servants and caretakers, and the mechagnomes fulfilled this duty as the world took shape.</p>
+			<p class="indent">But Ulduar and its Forge of Wills were also the prison that bound the Old God Yogg-Saron deep beneath the earth, and the Old God schemed to weaken its jailers so it could escape. It corrupted the Forge of Wills, tainting the forge’s creation matrix with the curse of flesh, which would make the titan-forged mortal. Most of the mechagnomes succumbed to this curse, becoming gnomes and abandoning their assigned tasks. Those who had labored in Uldaman spread throughout the snowy mountains to the west, eventually carving out the fortress of Gnomeregan in the mountains of Dun Morogh.</p>
+			<p class="indent">As generations passed, the gnomes dedicated themselves to technological advancement as a means to survive in a harsh world. They became obsessed with developing radical new technologies and constructing marvels of mind-bending engineering. Over the years, the gnomes have contributed ingenious weapons to aid the Alliance in its fierce battles against the Horde. During the Third War, Gnomeregan came under attack from below, as vicious troggs assailed the city. Though the gnome defense forces staged a valiant defense, they couldn’t save their wondrous city. At the command of High Tinker Gelbin Mekkatorque, the gnomes opened the pressure valves of their massive grinding machines and released toxic radiation throughout the city. Not only did the radiation fail to kill the troggs, the gnomes soon discovered that it killed their own people instead. Nearly eighty percent of the population of Gnomeregan died within days. Most of the survivors fled to the protection of their dwarf cousins in Ironforge. In the years since, gnomes have labored to reclaim Gnomeregan from the mutated gnomes that inhabit it and render it fit for habitation once again.</p>
+			<h5>GNOME (AZEROTH) RENOWN</h5>
+			<p>Your Renown Score with Gnomeregan (Alliance) begins at 3.</p>
+			<h5>GNOME (AZEROTH) TRAITS</h5>
+			<p>You have the Gnome species traits from the Player’s Handbook, with the Rock Gnome lineage: Darkvision (60 feet), Gnomish Cunning, and Gnomish Lineage (Rock Gnome). If you are a Mechagnome, choose the Mechagnome species instead.</p>
+			<h5>LANGUAGES</h5>
+			<p>You know Common (Alliance) or Orcish (Horde), plus two languages from the Alliance Languages or Horde Languages tables. At least one of Common or Orcish is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Gnome (Azeroth))" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Language" name="Faction Language (Gnome (Azeroth))" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ORC" />
+			<select type="Language" name="Language (Gnome (Azeroth))" supports="WoW Alliance Language||WoW Horde Language" number="2" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_GNOME" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_GNOME_GNOMISH_CUNNING" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_GNOME_GNOMISH_LINEAGE_ROCK_GNOME" />
+		</rules>
+	</element>
+
+</elements>

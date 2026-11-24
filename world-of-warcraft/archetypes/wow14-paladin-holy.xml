@@ -4,7 +4,7 @@
 		<name>Oath of the Holy</name>
 		<description>The Oath of the Holy Paladin subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow14-paladin-holy.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-paladin-holy.xml" />
 		</update>
 	</info>
@@ -40,16 +40,16 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" level="3" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEALING_WORD" level="3" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LESSER_RESTORATION" level="5" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PRAYER_OF_HEALING" level="5" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISPEL_MAGIC" level="9" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_HEALING_WORD" level="9" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AURA_OF_LIFE" level="13" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" level="13" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_RESTORATION" level="17" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_PRAYER_OF_HEALING" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="17" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Paladin" />
 		</rules>
 	</element>
 

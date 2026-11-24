@@ -1,5 +1,7 @@
 """Companion stat blocks (Legion demons, mounts) and the Druid Circle Forms addition."""
-import sys, re
+import sys
+sys.path.insert(0,"/home/claude/tools")
+from sublib import conv, spell14, re
 sys.path.insert(0, "/home/claude/tools")
 from textfmt import escape, slug
 from common import header, footer, SOURCE, PREFIX, ROOT, ED, FP
@@ -156,5 +158,5 @@ if not E14:
   path = "companions/wow-companions.xml"
   open(f"{ROOT}/world-of-warcraft/{path}", "w").write(header(path, "Companions", "Companion stat blocks from World of Warcraft (Andrey Kuzinskiy): Legion demons and mounts.") + "\n\n".join(els) + footer())
 path = f"archetypes/{FP}druid-forms.xml"
-open(f"{ROOT}/world-of-warcraft/{path}", "w").write(header(path, "Druid Forms", "Cat Form and Bear Form for the Circle of the Moon from World of Warcraft (Andrey Kuzinskiy).") + forms + footer())
+open(f"{ROOT}/world-of-warcraft/{path}", "w").write(header(path, "Druid Forms", "Cat Form and Bear Form for the Circle of the Moon from World of Warcraft (Andrey Kuzinskiy).") + (spell14(conv(forms)) if E14 else forms) + footer())
 print("companions written")

@@ -4,7 +4,7 @@
 		<name>Origin Feats</name>
 		<description>Human Origin feats from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow-feats-origin.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-feats-origin.xml" />
 		</update>
 	</info>

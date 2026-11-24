@@ -4,7 +4,7 @@
 		<name>Oath of the Ebon Blade</name>
 		<description>Oath of the Ebon Blade (Death Knight) Paladin subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow14-paladin-ebon-blade.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-paladin-ebon-blade.xml" />
 		</update>
 	</info>
@@ -84,9 +84,9 @@
 		<rules>
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_DEATH_GRIP" level="3" spellcasting="Paladin" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_DEATH_AND_DECAY" level="5" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUMMON_UNDEAD" level="9" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CIRCLE_OF_POWER" level="17" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_UNDEAD" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_CIRCLE_OF_POWER" level="17" spellcasting="Paladin" />
 		</rules>
 	</element>
 
@@ -107,7 +107,7 @@
 		<description>
 			<p>Immediately after you cast Rune Strike, you can expend one use of your Channel Divinity to gain one of the following benefits based on the rune inscribed on your weapon.</p>
 			<p class="indent"><strong><em>Blood.</em></strong> You regain a number of Hit Points equal to the Necrotic damage dealt with your Rune Strike.</p>
-			<p class="indent"><strong><em>Frost.</em></strong> Frost covers your weapon and shatters on impact. The target of your Rune Strike and each enemy in a 10-foot Emanation originating from the target take 2d6 Cold damage.</p>
+			<p class="indent"><strong><em>Frost.</em></strong> Frost covers your weapon and shatters on impact. The target of your Rune Strike and each enemy in a within 10 feet of the target take 2d6 Cold damage.</p>
 			<p class="indent"><strong><em>Unholy.</em></strong> The target of your Rune Strike is cursed until the end of your next turn. The next time the cursed target makes a saving throw, it subtracts 1d6 from the roll, and the curse ends.</p>
 		</description>
 		<sheet alt="Runic Power" usage="Channel Divinity">
@@ -124,7 +124,7 @@
 			<description>You always have the Find Steed spell prepared, and you can cast it once without expending a spell slot; you regain the ability to do so when you finish a Long Rest. When you cast Find Steed, the steed can be Undead (such as a skeletal warhorse). An Undead steed deals Necrotic damage with its attacks and has this Bonus Action: Ghostly Stride (Undead Only; Recharges After a Long Rest). The steed and its rider can move through other creatures and objects this turn as if they were Difficult Terrain. Both steed and rider take 5 (1d10) Force damage if they end their turn inside an object.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_STEED" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" spellcasting="Paladin" />
 		</rules>
 	</element>
 
@@ -197,9 +197,9 @@
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_VAMPIRIC_BLOOD" level="3" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPIRITUAL_WEAPON" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="5" spellcasting="Paladin" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_LEECHING_STRIKE" level="9" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="13" spellcasting="Paladin" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_BONESTORM" level="17" spellcasting="Paladin" />
 		</rules>
 	</element>
@@ -217,8 +217,8 @@
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_CHAINS_OF_ICE" level="3" spellcasting="Paladin" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_FROSTSCYTHE" level="5" spellcasting="Paladin" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_REMORSELESS_WINTER" level="9" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ICE_STORM" level="13" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONE_OF_COLD" level="17" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="17" spellcasting="Paladin" />
 		</rules>
 	</element>
 
@@ -233,10 +233,10 @@
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SCOURGE_STRIKE" level="3" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" level="9" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" level="13" spellcasting="Paladin" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTAGION" level="17" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="17" spellcasting="Paladin" />
 		</rules>
 	</element>
 

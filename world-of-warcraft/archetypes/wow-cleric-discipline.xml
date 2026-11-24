@@ -4,7 +4,7 @@
 		<name>Discipline Domain</name>
 		<description>The Discipline Domain Cleric subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow-cleric-discipline.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-cleric-discipline.xml" />
 		</update>
 	</info>

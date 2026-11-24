@@ -4,7 +4,7 @@
 		<name>Path of the Spiritual Guardian</name>
 		<description>The Path of the Spiritual Guardian Barbarian subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow14-barbarian-spiritual-guardian.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-barbarian-spiritual-guardian.xml" />
 		</update>
 	</info>
@@ -59,8 +59,8 @@
 			<description>You gain the ability to consult with your guardian spirits. When you do so, you cast the Augury or Clairvoyance spell without expending a spell slot or needing Material components. Rather than creating a spherical sensor, this use of Clairvoyance invisibly summons one of your guardian spirits to the chosen location. Wisdom is your spellcasting ability for these spells. After you cast either spell in this way, you can’t use this feature again until you finish a Short or Long Rest.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AUGURY" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" />
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" />
 		</rules>
 	</element>
 

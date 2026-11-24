@@ -29,7 +29,9 @@ The book is written for the 2024 rules. The 2014 version is an unofficial adapta
 - Evoker Spells (Draconic Bloodline, level 1), Pet Specialization (Beast Master, level 6), Shaman Totems (Barbarian, level 3) and Cat/Bear Form (Circle of the Moon, level 2) are optional additions; in 2014 they don't replace anything.
 - Swashbuckler's Panache options are paid for by giving up Sneak Attack dice. Spiritual Guardian's Hinder reduces Speed by 10 feet instead of using Weapon Mastery.
 - Pact of the Legion is a Pact Boon. The other new invocations work with both warlocks.
-- Focus Points become ki points, Bloodied becomes "half Hit Points or fewer", Heroic Inspiration becomes Inspiration and the Magic action becomes an action.
+- Focus Points become ki points, Bloodied becomes "half Hit Points or fewer", Heroic Inspiration becomes Inspiration and the Magic action becomes an action, Emanations become radii or "within X feet" and Hit Point Dice become Hit Dice.
+- The Hunter pet table has no Mastery column in 2014 (the 2014 Ranger has no Weapon Mastery). Pet Specialization and Shaman Totems replace nothing in 2014, because the 2014 Ranger and Barbarian have no Roving or Primal Knowledge.
+- 2014 subclasses use the 2014 spell IDs (Player's Handbook, Xanathar's, Tasha's) wherever one exists. Arcane Vigor, Elementalism and Summon Dragon only exist in the 2024 Player's Handbook, so the 2014 version still needs it for those three.
 - Discipline and Shadow Domain features start at Cleric level 3, as in the book, even though 2014 clerics pick their domain at level 1.
 
 ## What's included

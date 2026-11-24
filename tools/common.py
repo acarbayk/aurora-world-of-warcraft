@@ -14,7 +14,7 @@ def idp(kind, name):
     return f"{PREFIX}_{kind}_{slug(name)}"
 
 
-def header(path, name, desc, version="1.1.0"):
+def header(path, name, desc, version="1.2.0"):
     """path is relative to the world-of-warcraft/ folder."""
     fname = path.split("/")[-1]
     return f'''<?xml version="1.0" encoding="utf-8" ?>

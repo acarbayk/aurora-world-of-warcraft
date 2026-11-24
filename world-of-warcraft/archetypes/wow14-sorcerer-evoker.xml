@@ -4,7 +4,7 @@
 		<name>Evoker</name>
 		<description>Evoker option for the Draconic Sorcery subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow14-sorcerer-evoker.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-sorcerer-evoker.xml" />
 		</update>
 	</info>
@@ -18,10 +18,10 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHROMATIC_ORB" level="3" spellcasting="Sorcerer" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DRAGONS_BREATH" level="3" spellcasting="Sorcerer" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FLY" level="5" spellcasting="Sorcerer" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_EYE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CHROMATIC_ORB" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DRAGONS_BREATH" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="7" spellcasting="Sorcerer" />
 			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUMMON_DRAGON" level="9" spellcasting="Sorcerer" />
 			<select type="Archetype Feature" name="Evoker Spells (Column)" supports="WoW Evoker Specialization" />
 		</rules>
@@ -52,8 +52,8 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_AZURE_STRIKE" level="3" spellcasting="Sorcerer" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCORCHING_RAY" level="3" spellcasting="Sorcerer" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIREBALL" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Sorcerer" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_EMBERSTORM" level="7" spellcasting="Sorcerer" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SHATTERING_STAR" level="9" spellcasting="Sorcerer" />
 		</rules>

@@ -4,7 +4,7 @@
 		<name>Shadow Domain</name>
 		<description>The Shadow Domain Cleric subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow14-cleric-shadow.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-cleric-shadow.xml" />
 		</update>
 	</info>
@@ -38,15 +38,15 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CROWN_OF_MADNESS" level="3" spellcasting="Cleric" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISSONANT_WHISPERS" level="3" spellcasting="Cleric" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIND_SPIKE" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_PHB_SPELL_CROWN_OF_MADNESS" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISSONANT_WHISPERS" level="3" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MIND_SPIKE" level="3" spellcasting="Cleric" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SHADOW_WORD_PAIN" level="3" spellcasting="Cleric" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUMMON_UNDEAD" level="5" spellcasting="Cleric" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Cleric" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_UNDEAD" level="5" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Cleric" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_PSYCHIC_HORROR" level="7" spellcasting="Cleric" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_VOID_ERUPTION" level="9" spellcasting="Cleric" />
 		</rules>
 	</element>
@@ -75,11 +75,11 @@
 
 	<element name="Level 6: Dispersion" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_SHADOW_DOMAIN_DISPERSION">
 		<description>
-			<p>When you are hit by an attack roll, you can take a Reaction to disperse into shadowy energy. Until the end of your next turn, you have Resistance to all damage (including the damage from the triggering attack); you can’t take any action, Bonus Action, or Reaction; and you have a Fly Speed of 40 feet. When the effect ends, you can spend up to half of your total Hit Point Dice, regaining Hit Points as if you had finished a Short Rest.</p>
+			<p>When you are hit by an attack roll, you can take a Reaction to disperse into shadowy energy. Until the end of your next turn, you have Resistance to all damage (including the damage from the triggering attack); you can’t take any action, Bonus Action, or Reaction; and you have a Fly Speed of 40 feet. When the effect ends, you can spend up to half of your total Hit Dice, regaining Hit Points as if you had finished a Short Rest.</p>
 			<p class="indent">Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</p>
 		</description>
 		<sheet alt="Dispersion" action="Reaction" usage="1/Short Rest">
-			<description>When you are hit by an attack roll, you can take a Reaction to disperse into shadowy energy. Until the end of your next turn, you have Resistance to all damage (including the damage from the triggering attack); you can’t take any action, Bonus Action, or Reaction; and you have a Fly Speed of 40 feet. When the effect ends, you can spend up to half of your total Hit Point Dice, regaining Hit Points as if you had finished a Short Rest. Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</description>
+			<description>When you are hit by an attack roll, you can take a Reaction to disperse into shadowy energy. Until the end of your next turn, you have Resistance to all damage (including the damage from the triggering attack); you can’t take any action, Bonus Action, or Reaction; and you have a Fly Speed of 40 feet. When the effect ends, you can spend up to half of your total Hit Dice, regaining Hit Points as if you had finished a Short Rest. Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</description>
 		</sheet>
 	</element>
 

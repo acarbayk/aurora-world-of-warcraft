@@ -17,7 +17,7 @@ F = Feature
 
 
 def write(path, name, desc, elements):
-    open(f"{ROOT}/world-of-warcraft/{path}", "w").write(header(path, name, desc) + "\n\n".join(elements) + footer())
+    open(f"{ROOT}/world-of-warcraft/{path}", "w").write(spell14(header(path, name, desc) + "\n\n".join(elements) + footer()))
 
 
 def option(fid, name, paras, supports, rules=(), sheet=None, usage=None, action=None, etype="Archetype Feature"):
@@ -228,11 +228,12 @@ pets = [("Basilisk", "Land", "C", "Slow"), ("Bat", "Sky", "F", "Vex"), ("Bear", 
         ("Scorpid", "Land", "F", "Cleave"), ("Serpent", "Land or Sea", "C", "Graze"), ("Shark", "Sea", "C", "Graze"), ("Spider", "Land", "F", "Slow"),
         ("Stag", "Land", "T", "Vex"), ("Tallstrider (flightless bird)", "Land", "F", "Slow"), ("Threshadon* (plesiosaur)", "Sea", "T", "Sap"), ("Turtle", "Land", "T", "Sap"),
         ("Wasp", "Sky", "F", "Cleave"), ("Waterfowl", "Land", "T", "Vex"), ("Wolf", "Land", "F", "Slow")]
-pet_table = spell_table("Pet Families", ["Family", "Stat Block", "Spec.", "Mastery"], [list(p) for p in pets])
+pet_table = spell_table("Pet Families", ["Family", "Stat Block", "Spec."] + ([] if E14 else ["Mastery"]), [list(p)[:3] if E14 else list(p) for p in pets])
 pet_intro = ["As a Beast Master, when you use your Primal Companion feature to summon a primal beast, you choose the form it takes from among the pet families shown on the table below. Each family has three characteristics:",
              "Stat Block. Your primal beast’s family determines which one of the stat blocks in the Player’s Handbook it uses: Beast of the Land, Beast of the Sea, or Beast of the Sky.",
              "Specialization (Spec.). Each pet family has a specialization—Cunning (C), Ferocity (F), or Tenacity (T)—that comes into play only if you have the Pet Specialization feature.",
-             "Mastery Property (Mastery). When you gain the Primal Companion feature and whenever you finish a Long Rest, you can choose your pet’s family as one of the weapons for your Weapon Mastery feature. Then its mastery property applies to your primal companion’s Beast’s Strike attack.",
+             ("Mastery Property (Mastery). When you gain the Primal Companion feature and whenever you finish a Long Rest, you can choose your pet’s family as one of the weapons for your Weapon Mastery feature. Then its mastery property applies to your primal companion’s Beast’s Strike attack." if not E14 else
+              "The Mastery column of the book is left out of this version: the 2014 Ranger has no Weapon Mastery feature, so the table has only the Stat Block and Spec. columns."),
              pet_table, "*Unusual pet family; a hunter must acquire a special ability (typically by reading a magical tome) to tame an unusual pet."]
 PET_TAG = "WoW Pet Specialization"
 pet_specs = {
@@ -244,7 +245,7 @@ pet_specs = {
 }
 spec_opts = [option(f"{base}_PET_SPECIALIZATION_{k.upper()}", f"Pet Specialization: {k}", [v[0]], f"{PET_TAG} Option", rules=v[1], sheet=v[0])
              for k, v in pet_specs.items()]
-petspec = F(6, "Pet Specialization", ["This feature replaces the Ranger’s Roving feature. (Beast mastery and survival hunters.)",
+petspec = F(6, "Pet Specialization", [("This feature replaces the Ranger’s Roving feature. (Beast mastery and survival hunters.)" if not E14 else "This is an optional addition for hunters (beast mastery and survival). The 2014 Ranger has no Roving feature, so it replaces nothing."),
                                       "While the beast from your Primal Companion feature is within 60 feet of you, you gain one of the following benefits, depending on the beast’s pet family and its specialization (see “Hunter Pets”)."] +
             [f"{k}. {v[0]}" for k, v in pet_specs.items()] + ["<h5>Hunter Pets</h5>"] + pet_intro,
             sheet=False, fid=f"{base}_PET_SPECIALIZATION", supports=PET_TAG, grant=False, replaces=[] if E14 else [R("RANGER", "ROVING")],
@@ -388,7 +389,7 @@ totem_list = [
     ("Tremor Totem", "Each ally in the Emanation has Immunity to the Charmed and Frightened conditions until the end of your next turn. If the creature was already Charmed or Frightened, those conditions are suppressed until the end of its next turn."),
     ("Wind Rush Totem", "Each ally in the Emanation has its Speed increased by 10 feet until the end of your next turn."),
 ]
-totems = F(3, "Totems", ["This feature replaces the Barbarian’s Primal Knowledge feature. (Shaman are Barbarians in World of Warcraft; adopting the Barbarian class as a shaman increases a character’s Renown Score with the Earthen Ring by 3.)",
+totems = F(3, "Totems", [("This feature replaces the Barbarian’s Primal Knowledge feature. " if not E14 else "This is an optional addition for shaman; the 2014 Barbarian has no Primal Knowledge feature, so it replaces nothing. ")+"(Shaman are Barbarians in World of Warcraft; adopting the Barbarian class as a shaman increases a character’s Renown Score with the Earthen Ring by 3.)",
                          "You can coalesce elemental spirits into a totem that aids you and your allies. As a Bonus Action, you can plant one of the totems below into the ground in an unoccupied space you can see within 10 feet of yourself.",
                          "A totem is a Small object that has AC 10 and 1 Hit Point and lasts for 1 minute, until it drops to 0 Hit Points, or until you use this feature again. At the end of each of your turns, the totem pulses with elemental energy that fills a 30-foot Emanation."] +
            [f"{n}. {t}" for n, t in totem_list],

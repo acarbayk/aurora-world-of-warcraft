@@ -22,12 +22,49 @@ CONV14 = [
 ]
 
 
+REGEX14 = [
+    (r"(\d+)-foot Emanation originating from the target", r"within \1 feet of the target"),
+    (r"within a (\d+)-foot Emanation originating from you", r"within \1 feet of you"),
+    (r"in a (\d+)-foot Emanation originating from you", r"within \1 feet of you"),
+    (r"fills a (\d+)-foot Emanation", r"fills a \1-foot radius"),
+    (r"in a (\d+)-foot Emanation", r"in a \1-foot radius"),
+    (r"in the Emanation", r"within the totem’s radius"),
+    (r"Hit Point Dice", "Hit Dice"), (r"Hit Point Die", "Hit Die"),
+]
+
+
 def conv(t):
     if ED != "2014" or not isinstance(t, str):
         return t
     for a, b in CONV14:
         t = t.replace(a, b)
+    for a, b in REGEX14:
+        t = re.sub(a, b, t)
     return t
+
+
+_IDX14 = {}
+
+
+def spell14(text):
+    """2014 edition: point PHB24 spell IDs at their 2014 counterparts when one exists."""
+    if ED != "2014":
+        return text
+    if not _IDX14:
+        import glob
+        for f in glob.glob("/home/claude/legacy/**/*.xml", recursive=True):
+            t = open(f, encoding="utf8", errors="ignore").read()
+            for m in re.finditer(r'type="Spell" source="([^"]+)" id="(ID_[A-Z0-9_]+)"', t):
+                if "PHB24" not in m.group(2) and "(2024)" not in m.group(1):
+                    _IDX14.setdefault(m.group(2).split("_SPELL_", 1)[1], []).append(m.group(2))
+    def f(m):
+        k = m.group(1)
+        c = _IDX14.get(k)
+        if not c:
+            return m.group(0)
+        pref = [x for x in c if x.startswith("ID_PHB_")] or c
+        return pref[0]
+    return re.sub(r"ID_WOTC_PHB24_SPELL_([A-Z0-9_]+)", f, text)
 
 
 def html(paras):
@@ -128,9 +165,9 @@ def archetype(fname, name, cls, flavor, intro, features, extra=(), spellcasting=
     x.append("\t\t</rules>")
     x.append("\t</element>")
     path = f"archetypes/{fname}"
-    open(f"{ROOT}/world-of-warcraft/{path}", "w").write(
+    open(f"{ROOT}/world-of-warcraft/{path}", "w").write(spell14(
         header(path, name, file_desc or f"The {name} {cls} subclass from World of Warcraft (Andrey Kuzinskiy).") +
-        "\n\n".join(["\n".join(x)] + body) + footer())
+        "\n\n".join(["\n".join(x)] + body) + footer()))
     return aid, base
 
 

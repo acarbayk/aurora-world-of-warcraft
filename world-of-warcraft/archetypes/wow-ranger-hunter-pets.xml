@@ -4,7 +4,7 @@
 		<name>Hunter Pets</name>
 		<description>Hunter Pet Specialization option for the Beast Master subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow-ranger-hunter-pets.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-ranger-hunter-pets.xml" />
 		</update>
 	</info>

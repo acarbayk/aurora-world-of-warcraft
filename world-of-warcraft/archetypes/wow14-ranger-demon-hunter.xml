@@ -4,7 +4,7 @@
 		<name>Demon Hunter</name>
 		<description>The Demon Hunter Ranger subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow14-ranger-demon-hunter.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-ranger-demon-hunter.xml" />
 		</update>
 	</info>
@@ -77,7 +77,7 @@
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SIGIL_OF_FLAME" level="5" spellcasting="Ranger" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_METAMORPHOSIS" level="9" spellcasting="Ranger" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_CHAOS_NOVA" level="13" spellcasting="Ranger" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DESTRUCTIVE_WAVE" level="17" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" level="17" spellcasting="Ranger" />
 			<select type="Archetype Feature" name="Demon Hunter Spells (Column)" supports="WoW Demon Hunter Specialization" />
 		</rules>
 	</element>
@@ -89,7 +89,7 @@
 			<p class="indent">The number of soul fragments you gain when you finish a Long Rest increases when you reach Ranger levels 13 (Wisdom modifier plus one soul fragment) and 17 (Wisdom modifier plus two soul fragments).</p>
 			<p class="indent"><strong><em>Using Soul Fragments.</em></strong> You can use soul fragments in the following ways:</p>
 			<p class="indent"><strong><em>Double Jump.</em></strong> You can expend one soul fragment to cast Feather Fall or Jump without expending a spell slot.</p>
-			<p class="indent"><strong><em>Soul Cleave.</em></strong> Once on each of your turns, when you take the Attack action, you can expend one soul fragment and replace one of your attacks with a whirlwind of soul energy. Each creature in a 10-foot Emanation originating from you makes a Dexterity saving throw. On a failed save, a creature takes Psychic damage equal to 1d12 plus your Wisdom modifier, and you regain Hit Points equal to your Wisdom modifier.</p>
+			<p class="indent"><strong><em>Soul Cleave.</em></strong> Once on each of your turns, when you take the Attack action, you can expend one soul fragment and replace one of your attacks with a whirlwind of soul energy. Each creature within 10 feet of you makes a Dexterity saving throw. On a failed save, a creature takes Psychic damage equal to 1d12 plus your Wisdom modifier, and you regain Hit Points equal to your Wisdom modifier.</p>
 			<p class="indent"><strong><em>Regaining Soul Fragments.</em></strong> When an enemy you can see within 30 feet of you dies, you can take a Reaction to regain one expended soul fragment.</p>
 		</description>
 		<sheet alt="Soul Fragments" usage="{{soul fragments}}/Long Rest">
@@ -101,8 +101,8 @@
 			<stat name="soul fragments" value="wisdom:modifier" />
 			<stat name="soul fragments" value="1" level="13" />
 			<stat name="soul fragments" value="1" level="17" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEATHER_FALL" level="3" spellcasting="Ranger" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_JUMP" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_JUMP" level="3" spellcasting="Ranger" />
 		</rules>
 	</element>
 
@@ -137,7 +137,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COUNTERSPELL" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" spellcasting="Ranger" />
 		</rules>
 	</element>
 
@@ -171,10 +171,10 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_CONSUME_SOUL" level="3" spellcasting="Ranger" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" spellcasting="Ranger" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SOUL_REAP" level="9" spellcasting="Ranger" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_COLLAPSING_STAR" level="13" spellcasting="Ranger" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STEEL_WIND_STRIKE" level="17" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" level="17" spellcasting="Ranger" />
 		</rules>
 	</element>
 
@@ -188,9 +188,9 @@
 		<rules>
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_FEL_RUSH" level="3" spellcasting="Ranger" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_EYE_BEAM" level="5" spellcasting="Ranger" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLINK" level="9" spellcasting="Ranger" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_SHIELD" level="13" spellcasting="Ranger" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONJURE_VOLLEY" level="17" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_VOLLEY" level="17" spellcasting="Ranger" />
 		</rules>
 	</element>
 
@@ -205,7 +205,7 @@
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_INFERNAL_STRIKE" level="3" spellcasting="Ranger" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_FIERY_BRAND" level="5" spellcasting="Ranger" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_DEMON_SPIKES" level="9" spellcasting="Ranger" />
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANISHMENT" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Ranger" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_SIGIL_OF_CHAINS" level="17" spellcasting="Ranger" />
 		</rules>
 	</element>

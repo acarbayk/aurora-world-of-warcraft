@@ -4,7 +4,7 @@
 		<name>Pact of the Legion</name>
 		<description>Pact of the Legion as a 2014 Pact Boon, from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="wow14-warlock-pact-of-the-legion.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-warlock-pact-of-the-legion.xml" />
 		</update>
 	</info>
@@ -20,7 +20,7 @@
 			<description>You can cast Find Familiar without a spell slot, summoning a Fel Imp. You can forgo one of your attacks to let your familiar attack with its reaction.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
 			<select type="Companion" name="Pact of the Legion Familiar" supports="WoW Legion Familiar" />
 		</rules>
 	</element>

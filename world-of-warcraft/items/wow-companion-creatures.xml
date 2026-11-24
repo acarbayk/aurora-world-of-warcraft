@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companion Creatures</name>
+		<description>Companion creature types from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-companion-creatures.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-companion-creatures.xml" />
+		</update>
+	</info>
+
+	<element name="Companion Creature (Aquatic)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_COMPANION_CREATURE_AQUATIC">
+		<description>
+			<p>Aquatic companion creatures include fish, crabs, frogs, octopi, water birds, turtles, otters, and other water-dwelling creatures. Sometimes they float in a bubble of water near their owners.</p>
+			<p class="indent"><strong><em>Loyalty Gift.</em></strong> While you have a aquatic companion whose Loyalty Score is 10 or higher, you have the Blessing of the Aquatic Companion, which gives you a Swim Speed equal to your Speed.</p>
+			<p class="indent">Companion creatures are magically bound to a character. Summoning or dismissing a companion requires the Magic action, and a character can have only one companion summoned at a time. A companion creature can’t take actions and can’t be targeted by attacks; if it takes any damage, it is instantly dismissed or deactivated. When a character acquires a companion, its Loyalty Score equals the character’s Charisma modifier (minimum of 1) and can’t be higher than the character’s Charisma. It increases by 1d4 if the companion is treated particularly well, and decreases by 1 if it is dismissed or deactivated by taking damage. If a companion’s Loyalty Score reaches 10 or higher, it gives the character a small supernatural gift while present.</p>
+		</description>
+		<setters>
+			<set name="category">Companion Creatures</set>
+			<set name="type">Companion Creature</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Companion Creature (Beast)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_COMPANION_CREATURE_BEAST">
+		<description>
+			<p>Beast companion creatures include natural animals that neither fly nor swim, including Tiny and Small beasts, as well as the young of larger creatures. (These beasts don’t age while kept as a companion.)</p>
+			<p class="indent"><strong><em>Loyalty Gift.</em></strong> While you have a beast companion whose Loyalty Score is 10 or higher, you have the Blessing of the Beast Companion, which gives you proficiency and Expertise in Animal Handling and Survival.</p>
+			<p class="indent">Companion creatures are magically bound to a character. Summoning or dismissing a companion requires the Magic action, and a character can have only one companion summoned at a time. A companion creature can’t take actions and can’t be targeted by attacks; if it takes any damage, it is instantly dismissed or deactivated. When a character acquires a companion, its Loyalty Score equals the character’s Charisma modifier (minimum of 1) and can’t be higher than the character’s Charisma. It increases by 1d4 if the companion is treated particularly well, and decreases by 1 if it is dismissed or deactivated by taking damage. If a companion’s Loyalty Score reaches 10 or higher, it gives the character a small supernatural gift while present.</p>
+		</description>
+		<setters>
+			<set name="category">Companion Creatures</set>
+			<set name="type">Companion Creature</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Companion Creature (Dragonkin)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_COMPANION_CREATURE_DRAGONKIN">
+		<description>
+			<p>Dragonkin companion creatures include dragon whelplings—younger and smaller than the whelps described in chapter 7—as well as draconic animals native to the Dragon Isles.</p>
+			<p class="indent"><strong><em>Loyalty Gift.</em></strong> While you have a dragonkin companion whose Loyalty Score is 10 or higher, you have the Blessing of the Dragonkin Companion, which gives you Advantage on saving throws to avoid or end the Frightened condition.</p>
+			<p class="indent">Companion creatures are magically bound to a character. Summoning or dismissing a companion requires the Magic action, and a character can have only one companion summoned at a time. A companion creature can’t take actions and can’t be targeted by attacks; if it takes any damage, it is instantly dismissed or deactivated. When a character acquires a companion, its Loyalty Score equals the character’s Charisma modifier (minimum of 1) and can’t be higher than the character’s Charisma. It increases by 1d4 if the companion is treated particularly well, and decreases by 1 if it is dismissed or deactivated by taking damage. If a companion’s Loyalty Score reaches 10 or higher, it gives the character a small supernatural gift while present.</p>
+		</description>
+		<setters>
+			<set name="category">Companion Creatures</set>
+			<set name="type">Companion Creature</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Companion Creature (Elemental)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_COMPANION_CREATURE_ELEMENTAL">
+		<description>
+			<p>Elemental companion creatures include animate plants and remnants of the Old Gods’ power as well as living motes of elemental energy.</p>
+			<p class="indent"><strong><em>Loyalty Gift.</em></strong> While you have a elemental companion whose Loyalty Score is 10 or higher, you have the Blessing of the Elemental Companion, which gives you Advantage on saving throws to avoid or end the Exhaustion condition.</p>
+			<p class="indent">Companion creatures are magically bound to a character. Summoning or dismissing a companion requires the Magic action, and a character can have only one companion summoned at a time. A companion creature can’t take actions and can’t be targeted by attacks; if it takes any damage, it is instantly dismissed or deactivated. When a character acquires a companion, its Loyalty Score equals the character’s Charisma modifier (minimum of 1) and can’t be higher than the character’s Charisma. It increases by 1d4 if the companion is treated particularly well, and decreases by 1 if it is dismissed or deactivated by taking damage. If a companion’s Loyalty Score reaches 10 or higher, it gives the character a small supernatural gift while present.</p>
+		</description>
+		<setters>
+			<set name="category">Companion Creatures</set>
+			<set name="type">Companion Creature</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Companion Creature (Flying)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_COMPANION_CREATURE_FLYING">
+		<description>
+			<p>Flying companion creatures include flying creatures—ordinary birds, bats, moths, bumblebees, and flying snakes—and magical versions of these creatures.</p>
+			<p class="indent"><strong><em>Loyalty Gift.</em></strong> While you have a flying companion whose Loyalty Score is 10 or higher, you have the Blessing of the Flying Companion, which increases your Speed by 5 feet.</p>
+			<p class="indent">Companion creatures are magically bound to a character. Summoning or dismissing a companion requires the Magic action, and a character can have only one companion summoned at a time. A companion creature can’t take actions and can’t be targeted by attacks; if it takes any damage, it is instantly dismissed or deactivated. When a character acquires a companion, its Loyalty Score equals the character’s Charisma modifier (minimum of 1) and can’t be higher than the character’s Charisma. It increases by 1d4 if the companion is treated particularly well, and decreases by 1 if it is dismissed or deactivated by taking damage. If a companion’s Loyalty Score reaches 10 or higher, it gives the character a small supernatural gift while present.</p>
+		</description>
+		<setters>
+			<set name="category">Companion Creatures</set>
+			<set name="type">Companion Creature</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Companion Creature (Humanoid)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_COMPANION_CREATURE_HUMANOID">
+		<description>
+			<p>Humanoid companion creatures include imps, kobolds, baby murlocs, and a range of other beings that can help you in ways that don’t involve combat.</p>
+			<p class="indent"><strong><em>Loyalty Gift.</em></strong> While you have a humanoid companion whose Loyalty Score is 10 or higher, you have the Blessing of the Humanoid Companion, which gives you proficiency and Expertise in the Persuasion skill.</p>
+			<p class="indent">Companion creatures are magically bound to a character. Summoning or dismissing a companion requires the Magic action, and a character can have only one companion summoned at a time. A companion creature can’t take actions and can’t be targeted by attacks; if it takes any damage, it is instantly dismissed or deactivated. When a character acquires a companion, its Loyalty Score equals the character’s Charisma modifier (minimum of 1) and can’t be higher than the character’s Charisma. It increases by 1d4 if the companion is treated particularly well, and decreases by 1 if it is dismissed or deactivated by taking damage. If a companion’s Loyalty Score reaches 10 or higher, it gives the character a small supernatural gift while present.</p>
+		</description>
+		<setters>
+			<set name="category">Companion Creatures</set>
+			<set name="type">Companion Creature</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Companion Creature (Magic)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_COMPANION_CREATURE_MAGIC">
+		<description>
+			<p>Magic companion creatures include a variety of beings that are fundamentally magical, including tiny fragments of Old Gods or other powers, stray eyes or tentacles of otherworldly origin, oozes, creatures of the Void, ghostly spirits, and animated magical tomes.</p>
+			<p class="indent"><strong><em>Loyalty Gift.</em></strong> While you have a magic companion whose Loyalty Score is 10 or higher, you have the Blessing of the Magic Companion, which gives you proficiency and Expertise in the Arcana skill.</p>
+			<p class="indent">Companion creatures are magically bound to a character. Summoning or dismissing a companion requires the Magic action, and a character can have only one companion summoned at a time. A companion creature can’t take actions and can’t be targeted by attacks; if it takes any damage, it is instantly dismissed or deactivated. When a character acquires a companion, its Loyalty Score equals the character’s Charisma modifier (minimum of 1) and can’t be higher than the character’s Charisma. It increases by 1d4 if the companion is treated particularly well, and decreases by 1 if it is dismissed or deactivated by taking damage. If a companion’s Loyalty Score reaches 10 or higher, it gives the character a small supernatural gift while present.</p>
+		</description>
+		<setters>
+			<set name="category">Companion Creatures</set>
+			<set name="type">Companion Creature</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Companion Creature (Mechanical)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_COMPANION_CREATURE_MECHANICAL">
+		<description>
+			<p>Mechanical companion creatures include clockwork or otherwise engineered creatures, ranging from mechanical chickens to diminutive replicas of the Burning Legion’s terrifying fel reaver constructs.</p>
+			<p class="indent"><strong><em>Loyalty Gift.</em></strong> While you have a mechanical companion whose Loyalty Score is 10 or higher, you have the Blessing of the Mechanical Companion, which allows you to roll 1d4 whenever you take Psychic damage and reduce the damage taken by the number rolled.</p>
+			<p class="indent">Companion creatures are magically bound to a character. Summoning or dismissing a companion requires the Magic action, and a character can have only one companion summoned at a time. A companion creature can’t take actions and can’t be targeted by attacks; if it takes any damage, it is instantly dismissed or deactivated. When a character acquires a companion, its Loyalty Score equals the character’s Charisma modifier (minimum of 1) and can’t be higher than the character’s Charisma. It increases by 1d4 if the companion is treated particularly well, and decreases by 1 if it is dismissed or deactivated by taking damage. If a companion’s Loyalty Score reaches 10 or higher, it gives the character a small supernatural gift while present.</p>
+		</description>
+		<setters>
+			<set name="category">Companion Creatures</set>
+			<set name="type">Companion Creature</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Companion Creature (Undead)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_COMPANION_CREATURE_UNDEAD">
+		<description>
+			<p>Undead companion creatures include skeletal or ghostly animals and similar creatures.</p>
+			<p class="indent"><strong><em>Loyalty Gift.</em></strong> While you have a undead companion whose Loyalty Score is 10 or higher, you have the Blessing of the Undead Companion, which gives you Advantage on Death Saving Throws.</p>
+			<p class="indent">Companion creatures are magically bound to a character. Summoning or dismissing a companion requires the Magic action, and a character can have only one companion summoned at a time. A companion creature can’t take actions and can’t be targeted by attacks; if it takes any damage, it is instantly dismissed or deactivated. When a character acquires a companion, its Loyalty Score equals the character’s Charisma modifier (minimum of 1) and can’t be higher than the character’s Charisma. It increases by 1d4 if the companion is treated particularly well, and decreases by 1 if it is dismissed or deactivated by taking damage. If a companion’s Loyalty Score reaches 10 or higher, it gives the character a small supernatural gift while present.</p>
+		</description>
+		<setters>
+			<set name="category">Companion Creatures</set>
+			<set name="type">Companion Creature</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+</elements>

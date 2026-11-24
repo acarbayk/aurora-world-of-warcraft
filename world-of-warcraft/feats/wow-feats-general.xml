@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>General Feats</name>
+		<description>New General feats from World of Warcraft (Andrey Kuzinskiy): mage, monk and inscription feats.</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-feats-general.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-feats-general.xml" />
+		</update>
+	</info>
+
+	<element name="Clearcasting" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_CLEARCASTING">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Intelligence score by 1, to a maximum of 20.</p>
+			<p class="indent"><strong><em>Clearcasting.</em></strong> When you score a Critical Hit with a spell’s attack roll, you can take a Reaction to cast a cantrip with a casting time of an action.</p>
+			<p class="indent"><strong><em>Force Adept.</em></strong> When you roll damage for a spell you cast that deals Force damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet>
+			<description>When you score a Critical Hit with a spell attack, you can take a Reaction to cast a cantrip with a casting time of an action. You can treat any 1 on a Force damage die of your spells as a 2.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Clearcasting)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE" />
+		</rules>
+	</element>
+
+	<element name="Fingers of Frost" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_FINGERS_OF_FROST">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Intelligence score by 1, to a maximum of 20.</p>
+			<p class="indent"><strong><em>Cold Mastery.</em></strong> Spells you cast ignore Resistance to Cold damage.</p>
+			<p class="indent"><strong><em>Frostbite.</em></strong> When you deal Cold damage to a creature that has the Restrained condition, the creature takes extra Cold damage. To determine the extra damage, roll a number of d4s equal to your Proficiency Bonus and add them together.</p>
+		</description>
+		<sheet>
+			<description>Your spells ignore Resistance to Cold damage. When you deal Cold damage to a Restrained creature, it takes an extra {{proficiency}}d4 Cold damage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Fingers of Frost)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE" />
+		</rules>
+	</element>
+
+	<element name="Hot Streak" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_HOT_STREAK">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Intelligence score by 1, to a maximum of 20.</p>
+			<p class="indent"><strong><em>Fire Mastery.</em></strong> Spells you cast ignore Resistance to Fire damage.</p>
+			<p class="indent"><strong><em>Ignite.</em></strong> When a spell you cast deals Fire damage to a creature, the target starts burning. When you deal Fire damage to a creature that is already burning, the flames become more severe, increasing the burning damage by 1d4.</p>
+		</description>
+		<sheet>
+			<description>Your spells ignore Resistance to Fire damage. When your spell deals Fire damage, the target starts burning; dealing Fire damage to a burning creature increases its burning damage by 1d4.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Hot Streak)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE" />
+		</rules>
+	</element>
+
+	<element name="Elusive Brawler" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_ELUSIVE_BRAWLER">
+		<supports>General</supports>
+		<requirements>([character:4],[dex:13],[wis:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Dexterity and Wisdom 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity and Wisdom 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</p>
+			<p class="indent"><strong><em>Reactive Dodge.</em></strong> When you take damage, you can take a Reaction to take the Dodge action.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take damage, you can take a Reaction to take the Dodge action.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Elusive Brawler)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM" />
+		</rules>
+	</element>
+
+	<element name="Enveloping Mist" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_ENVELOPING_MIST">
+		<supports>General</supports>
+		<requirements>([character:4],[dex:13],[wis:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Dexterity and Wisdom 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity and Wisdom 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</p>
+			<p class="indent"><strong><em>Enveloping Mist.</em></strong> When you cast a spell or use a feature to restore Hit Points to a creature, the creature is wrapped in a healing mist. Roll one of the dice from the feature that healed it, and note that number as the creature’s Life Cocoon value.</p>
+			<p class="indent">If the creature is hit by an attack roll before the start of its next turn, you can take a Reaction to reduce the damage it takes from that attack by its Life Cocoon value. The mist then disappears.</p>
+			<p class="indent">At the start of the creature’s next turn, if the mist persists, the creature gains Temporary Hit Points equal to its Life Cocoon value.</p>
+		</description>
+		<sheet>
+			<description>When you heal a creature, roll one of the healing dice as its Life Cocoon value. If it’s hit before its next turn, Reaction: reduce the damage by that value; otherwise it gains that many Temporary Hit Points at the start of its turn.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Enveloping Mist)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM" />
+		</rules>
+	</element>
+
+	<element name="Fists of Fury" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_FISTS_OF_FURY">
+		<supports>General</supports>
+		<requirements>([character:4],[dex:13],[wis:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Dexterity and Wisdom 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity and Wisdom 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</p>
+			<p class="indent"><strong><em>Clean Hits.</em></strong> When you roll damage for an attack you make with an Unarmed Strike or a weapon that has the Light property, you can treat any 1 on a damage die as a 2.</p>
+			<p class="indent"><strong><em>Combo Strikes.</em></strong> When you deal damage to a creature with an Unarmed Strike, you gain a +1 bonus to the damage roll for each time you previously hit that creature with a melee attack roll in the same turn.</p>
+		</description>
+		<sheet>
+			<description>Treat 1s on damage dice of Unarmed Strikes and Light weapons as 2s. Unarmed Strike damage gains +1 for each earlier melee hit on the same creature this turn.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Fists of Fury)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM" />
+		</rules>
+	</element>
+
+	<element name="Stagger and Sway" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_STAGGER_AND_SWAY">
+		<supports>General</supports>
+		<requirements>([character:4],[dex:13],[wis:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Dexterity and Wisdom 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity and Wisdom 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</p>
+			<p class="indent"><strong><em>Defer Damage.</em></strong> When you take damage, reduce the damage you take by your Dexterity modifier (minimum of 1). Then add a d6 to your Delayed Reaction pool. At the end of your turn, remove all the dice from your Delayed Reaction pool and roll them. You take Force damage equal to the total rolled.</p>
+			<p class="indent"><strong><em>Purify.</em></strong> As a Bonus Action, you can remove a number of dice equal to your Wisdom modifier from your Delayed Reaction pool.</p>
+		</description>
+		<sheet>
+			<description>When you take damage, reduce it by {{dexterity:modifier}} (minimum 1) and add a d6 to your Delayed Reaction pool; at the end of your turn, take Force damage equal to the pool’s roll. Bonus Action: remove {{wisdom:modifier}} dice from the pool.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Stagger and Sway)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM" />
+		</rules>
+	</element>
+
+	<element name="Inscription Adept" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_INSCRIPTION_ADEPT">
+		<supports>General</supports>
+		<requirements>([character:4],(ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES||ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS||ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES))||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Proficiency with Calligrapher’s Supplies, Cartographer’s Tools, or Painter’s Supplies</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Proficiency with Calligrapher’s Supplies, Cartographer’s Tools, or Painter’s Supplies)</p>
+			<p>Your mastery of inscription allows you to duplicate the effects of certain spells with your written magic. You gain the following benefits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><strong><em>Inscription Magic.</em></strong> You learn the Illusory Script spell and always have it prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. You can use herbalism resources of the appropriate value in place of the Material component specified for that spell. The spell’s spellcasting ability is the ability increased by this feat.</p>
+			<p class="indent">When you reach higher levels of proficiency in inscription, you learn higher-level spells and can cast them in the same way, as shown on the table.</p>
+			<table><thead><tr><td>Proficiency</td><td>Spell</td></tr></thead><tr><td>Journeyman (+3)</td><td><i>Glyph of Warding</i></td></tr><tr><td>Artisan (+5)</td><td><i>Symbol</i></td></tr></table>
+		</description>
+		<sheet>
+			<description>You can cast Illusory Script (and Glyph of Warding at Proficiency Bonus +3, Symbol at +5) once each per Long Rest without a spell slot; herbalism resources can replace their Material components.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Inscription Adept)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ILLUSORY_SCRIPT" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GLYPH_OF_WARDING" level="5" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SYMBOL" level="13" />
+		</rules>
+	</element>
+
+</elements>

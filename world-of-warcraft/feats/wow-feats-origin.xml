@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Origin Feats</name>
+		<description>Human Origin feats from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-feats-origin.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-feats-origin.xml" />
+		</update>
+	</info>
+
+	<element name="Arathi Heritage" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_ARATHI_HERITAGE">
+		<supports>Origin</supports>
+		<requirements>(ID_INTERNAL_GRANT_RACE_HUMAN||ID_KAYA_WOW_RACE_HUMAN_AZEROTH)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>World of Warcraft Campaign, Human Species</prerequisite>
+		<description>
+			<p class="flavor">Origin Feat (Prerequisite: World of Warcraft Campaign, Human Species)</p>
+			<p>As a descendant of humans from Arathor and high elves from Quel’Thalas, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Fey Ancestry.</em></strong> You have Advantage on saving throws to avoid or end the Charmed condition.</p>
+			<p class="indent"><strong><em>Lethargy Resilience.</em></strong> When you fail a saving throw to avoid or end the Unconscious condition, you can succeed instead. Once you use this trait, you can’t do so again until you finish 1d4 Long Rests.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws to avoid or end the Charmed condition. Once per 1d4 Long Rests, when you fail a save to avoid or end the Unconscious condition, you can succeed instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Child of the Sea" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_CHILD_OF_THE_SEA">
+		<supports>Origin</supports>
+		<requirements>(ID_INTERNAL_GRANT_RACE_HUMAN||ID_KAYA_WOW_RACE_HUMAN_AZEROTH)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>World of Warcraft Campaign, Human Species</prerequisite>
+		<description>
+			<p class="flavor">Origin Feat (Prerequisite: World of Warcraft Campaign, Human Species)</p>
+			<p>As a Kul Tiran, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Lasting Breath.</em></strong> You can hold your breath for a number of minutes equal to 2 plus your Constitution modifier (minimum of 1 minute).</p>
+			<p class="indent"><strong><em>Ocean Born.</em></strong> You have a Swim Speed equal to your Speed.</p>
+		</description>
+		<sheet>
+			<description>You can hold your breath for 2 + {{constitution:modifier}} minutes (minimum 1). You have a Swim Speed equal to your Speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Will to Survive" type="Feat" source="World of Warcraft" id="ID_KAYA_WOW_FEAT_WILL_TO_SURVIVE">
+		<supports>Origin</supports>
+		<requirements>(ID_INTERNAL_GRANT_RACE_HUMAN||ID_KAYA_WOW_RACE_HUMAN_AZEROTH)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>World of Warcraft Campaign, Human Species</prerequisite>
+		<description>
+			<p class="flavor">Origin Feat (Prerequisite: World of Warcraft Campaign, Human Species)</p>
+			<p>When you have the Incapacitated condition but not the Unconscious condition, you can draw on the proud heritage of Stormwind or Stromgarde to ignore the Incapacitated condition on your turn. If you do, you gain 1 Exhaustion level.</p>
+		</description>
+		<sheet>
+			<description>When you are Incapacitated but not Unconscious, you can ignore the Incapacitated condition on your turn; if you do, you gain 1 Exhaustion level.</description>
+		</sheet>
+	</element>
+
+</elements>

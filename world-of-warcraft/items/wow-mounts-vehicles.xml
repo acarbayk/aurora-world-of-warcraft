@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mounts and Vehicles</name>
+		<description>Mounts and powered vehicles from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-mounts-vehicles.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-mounts-vehicles.xml" />
+		</update>
+	</info>
+
+	<element name="Camel (Azeroth)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_CAMEL">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> None</p>
+			<p><strong>Carrying Capacity:</strong> 450 lb.</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Dire Wolf" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_DIRE_WOLF">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with Orgrimmar</p>
+			<p><strong>Carrying Capacity:</strong> 510 lb.</p>
+			<p><strong>Stat Block:</strong> Dire Wolf</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Draft Horse (Azeroth)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_DRAFT_HORSE">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> None</p>
+			<p><strong>Carrying Capacity:</strong> 540 lb.</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Elekk" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_ELEKK">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with the Exodar</p>
+			<p><strong>Carrying Capacity:</strong> 510 lb.</p>
+			<p><strong>Stat Block:</strong> Giant Goat</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Giant Goat" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_GIANT_GOAT">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with Ironforge</p>
+			<p><strong>Carrying Capacity:</strong> 510 lb.</p>
+			<p><strong>Stat Block:</strong> Giant Goat</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Giant Hyena" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_GIANT_HYENA">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with Steamwheedle Cartel</p>
+			<p><strong>Carrying Capacity:</strong> 480 lb.</p>
+			<p><strong>Stat Block:</strong> Giant Hyena</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Giant Seahorse" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_GIANT_SEAHORSE">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> None</p>
+			<p><strong>Carrying Capacity:</strong> 450 lb.</p>
+			<p><strong>Stat Block:</strong> Giant Seahorse</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Gryphon" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_GRYPHON">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 25+ with the Alliance</p>
+			<p><strong>Carrying Capacity:</strong> 540 lb.</p>
+			<p><strong>Stat Block:</strong> Griffon</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Hawkstrider" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_HAWKSTRIDER">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with Silvermoon City</p>
+			<p><strong>Carrying Capacity:</strong> 420 lb.</p>
+			<p><strong>Stat Block:</strong> Axe Beak</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Kodo" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_KODO">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with Thunder Bluff</p>
+			<p><strong>Carrying Capacity:</strong> 450 lb.</p>
+			<p><strong>Stat Block:</strong> Giant Lizard</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Mechanostrider" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_MECHANOSTRIDER">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with Gnomeregan</p>
+			<p><strong>Carrying Capacity:</strong> 420 lb.</p>
+			<p><strong>Stat Block:</strong> Mechanostrider (see the Mechanostrider companion)</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Nightsaber" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_NIGHTSABER">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with Darnassus</p>
+			<p><strong>Carrying Capacity:</strong> 510 lb.</p>
+			<p><strong>Stat Block:</strong> Tiger</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Pandarian Dragon Turtle" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_PANDARIAN_DRAGON_TURTLE">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with the Huojin or the Tushui</p>
+			<p><strong>Carrying Capacity:</strong> 480 lb.</p>
+			<p><strong>Stat Block:</strong> Pandarian Dragon Turtle (see the Pandarian Dragon Turtle companion)</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Raptor" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_RAPTOR">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with the Darkspear Tribe</p>
+			<p><strong>Carrying Capacity:</strong> 570 lb.</p>
+			<p><strong>Stat Block:</strong> Allosaurus</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Riding Horse (Azeroth)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_RIDING_HORSE">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> None</p>
+			<p><strong>Carrying Capacity:</strong> 480 lb.</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Talbuk" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_TALBUK">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> None</p>
+			<p><strong>Carrying Capacity:</strong> 480 lb.</p>
+			<p><strong>Stat Block:</strong> Elk</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Warhorse (Azeroth)" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_WARHORSE">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with Stormwind</p>
+			<p><strong>Carrying Capacity:</strong> 540 lb.</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Warhorse Skeleton" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_WARHORSE_SKELETON">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with Undercity</p>
+			<p><strong>Carrying Capacity:</strong> 540 lb.</p>
+			<p><strong>Stat Block:</strong> Warhorse Skeleton</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Wind Rider" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_WIND_RIDER">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> Renown 25+ with the Horde</p>
+			<p><strong>Carrying Capacity:</strong> 450 lb.</p>
+			<p><strong>Stat Block:</strong> Giant Bat</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Zhevra" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_MOUNT_ZHEVRA">
+		<description>
+			<p style="margin-bottom:5px"><i>Mount</i></p>
+			<p><strong>Prerequisite:</strong> None</p>
+			<p><strong>Carrying Capacity:</strong> 480 lb.</p>
+			<p><strong>Stat Block:</strong> Elk</p>
+			<p>Many of these mounts can’t be purchased unless a character has achieved a certain level of renown with a particular faction (see chapter 4). They follow the mount rules in the Player’s Handbook.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+
+	<element name="Flying Machine" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_VEHICLE_FLYING_MACHINE">
+		<description>
+			<p style="margin-bottom:5px"><i>Powered Vehicle</i></p>
+			<p>A small gyrocopter with a rotor on top, two side-mounted engines, and skis as landing gear.</p>
+			<p><strong>Prerequisite:</strong> None (must be made with expert engineering; 2,000 GP of resources)</p>
+			<p><strong>Speed</strong> 4 mph; <strong>Crew</strong> 1; <strong>Passengers</strong> 0; <strong>Cargo</strong> 300 lb.; <strong>AC</strong> 19; <strong>HP</strong> 27</p>
+			<p>Characters traveling in these vehicles use the vehicle’s speed in miles per hour to determine their rate of travel, and they don’t choose a travel pace. These vehicles require Fuel, which weighs 10 pounds and costs 1 GP for each 8 hours of travel. (Characters can use the alchemy profession to craft Fuel.)</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Vehicle</set>
+		</setters>
+	</element>
+
+	<element name="Goblin Trike" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_VEHICLE_GOBLIN_TRIKE">
+		<description>
+			<p style="margin-bottom:5px"><i>Powered Vehicle</i></p>
+			<p>A three-wheeled motor vehicle with luxurious wood paneling.</p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with any goblin cartel</p>
+			<p><strong>Speed</strong> 3 mph; <strong>Crew</strong> 1; <strong>Passengers</strong> 0; <strong>Cargo</strong> 600 lb.; <strong>AC</strong> 19; <strong>HP</strong> 27</p>
+			<p>Characters traveling in these vehicles use the vehicle’s speed in miles per hour to determine their rate of travel, and they don’t choose a travel pace. These vehicles require Fuel, which weighs 10 pounds and costs 1 GP for each 8 hours of travel. (Characters can use the alchemy profession to craft Fuel.)</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Vehicle</set>
+		</setters>
+	</element>
+
+	<element name="Mechano-Hog" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_VEHICLE_MECHANO_HOG">
+		<description>
+			<p style="margin-bottom:5px"><i>Powered Vehicle</i></p>
+			<p>A powerful motorcycle with an optional sidecar, made by the Horde.</p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with the Horde</p>
+			<p><strong>Speed</strong> 4 mph; <strong>Crew</strong> 1; <strong>Passengers</strong> 1; <strong>Cargo</strong> 800 lb.; <strong>AC</strong> 19; <strong>HP</strong> 27</p>
+			<p>Characters traveling in these vehicles use the vehicle’s speed in miles per hour to determine their rate of travel, and they don’t choose a travel pace. These vehicles require Fuel, which weighs 10 pounds and costs 1 GP for each 8 hours of travel. (Characters can use the alchemy profession to craft Fuel.)</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Vehicle</set>
+		</setters>
+	</element>
+
+	<element name="Mekgineer’s Chopper" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_VEHICLE_MEKGINEERS_CHOPPER">
+		<description>
+			<p style="margin-bottom:5px"><i>Powered Vehicle</i></p>
+			<p>A powerful motorcycle with an optional sidecar, made by the Alliance.</p>
+			<p><strong>Prerequisite:</strong> Renown 10+ with the Alliance</p>
+			<p><strong>Speed</strong> 4 mph; <strong>Crew</strong> 1; <strong>Passengers</strong> 1; <strong>Cargo</strong> 800 lb.; <strong>AC</strong> 19; <strong>HP</strong> 27</p>
+			<p>Characters traveling in these vehicles use the vehicle’s speed in miles per hour to determine their rate of travel, and they don’t choose a travel pace. These vehicles require Fuel, which weighs 10 pounds and costs 1 GP for each 8 hours of travel. (Characters can use the alchemy profession to craft Fuel.)</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Vehicle</set>
+		</setters>
+	</element>
+
+	<element name="Fuel" type="Item" source="World of Warcraft" id="ID_KAYA_WOW_ITEM_FUEL">
+		<description>
+			<p>Powered vehicles require Fuel, which weighs 10 pounds and costs 1 GP for each 8 hours of travel. Characters can use the alchemy profession to craft Fuel.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="type">Adventuring Gear</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+</elements>

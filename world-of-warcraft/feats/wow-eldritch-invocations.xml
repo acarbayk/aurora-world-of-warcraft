@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Eldritch Invocations</name>
+		<description>New Eldritch Invocations from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-eldritch-invocations.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/feats/wow-eldritch-invocations.xml" />
+		</update>
+	</info>
+
+	<element name="Pact of the Legion" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_LEGION">
+		<supports>PHB24 Eldritch Invocation</supports>
+		<description>
+			<p>You learn the Find Familiar spell and can cast it as a Magic action without expending a spell slot. When you cast the spell, you summon a Fel Imp familiar (see chapter 7).</p>
+			<p class="indent">Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack with its Reaction.</p>
+		</description>
+		<sheet>
+			<description>You can cast Find Familiar without a spell slot, summoning a Fel Imp. You can forgo one of your attacks to let your familiar attack with its Reaction.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" />
+			<select type="Companion" name="Pact of the Legion Familiar" supports="WoW Legion Familiar" />
+		</rules>
+	</element>
+
+	<element name="Call of the Void" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_CALL_OF_THE_VOID">
+		<supports>PHB24 Eldritch Invocation</supports>
+		<requirements>[level:warlock:5],ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_LEGION</requirements>
+		<prerequisite>Level 5+ Warlock, Pact of the Legion Invocation</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 5+ Warlock, Pact of the Legion Invocation</em></p>
+			<p>When you cast Find Familiar using Pact of the Legion, you can choose to summon a Fel Imp familiar or a Voidwalker (see chapter 7 for both stat blocks). In addition, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Quick Attack.</em></strong> As a Bonus Action, you can command the familiar to take the Attack action.</p>
+			<p class="indent"><strong><em>Your Spell Attack.</em></strong> The familiar uses your spell attack bonus for its attacks.</p>
+			<p class="indent"><strong><em>Shadow Shield.</em></strong> When your Voidwalker familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</p>
+		</description>
+		<sheet>
+			<description>Your Pact of the Legion familiar can be a Fel Imp or a Voidwalker. Bonus Action: command the familiar to Attack; it uses your spell attack bonus. Reaction: give your Voidwalker Resistance to damage it takes.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of Corruption" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_CURSE_OF_CORRUPTION">
+		<supports>PHB24 Eldritch Invocation</supports>
+		<requirements>[level:warlock:2]</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>When an enemy starts its turn cursed by a Warlock spell you cast (such as Hex), it must succeed on a Charisma saving throw or take Necrotic damage equal to your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>When an enemy starts its turn cursed by your Warlock spell, it makes a Charisma save (DC {{warlock:spellcasting:dc}}) or takes {{charisma:modifier}} Necrotic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Expendable Minions" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_EXPENDABLE_MINIONS">
+		<supports>PHB24 Eldritch Invocation</supports>
+		<requirements>[level:warlock:9]</requirements>
+		<prerequisite>Level 9+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 9+ Warlock</em></p>
+			<p>When your familiar or a summoned creature you control dies, you or another creature within 60 feet of you regains Hit Points equal to your Warlock level plus your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>When your familiar or a summoned creature you control dies, you or a creature within 60 feet regains {{level:warlock}} + {{charisma:modifier}} HP.</description>
+		</sheet>
+	</element>
+
+	<element name="Health Funnel" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_HEALTH_FUNNEL">
+		<supports>PHB24 Eldritch Invocation</supports>
+		<requirements>[level:warlock:2]</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>As a Bonus Action, you can expend any number of your unexpended Hit Dice to roll those dice, add your Charisma modifier to each die, and total the rolls. Your familiar or another Fiend you command gains that many Temporary Hit Points.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Expend Hit Dice and roll them, adding {{charisma:modifier}} to each; your familiar or a Fiend you command gains that many Temporary Hit Points.</description>
+		</sheet>
+	</element>
+
+	<element name="Legion Summoning" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_LEGION_SUMMONING">
+		<supports>PHB24 Eldritch Invocation</supports>
+		<requirements>[level:warlock:9],ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_LEGION</requirements>
+		<prerequisite>Level 9+ Warlock, Pact of the Legion Invocation</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 9+ Warlock, Pact of the Legion Invocation</em></p>
+			<p>You can cast Planar Binding without expending a spell slot. When you do, you summon a Felguard, a Felhound, an Incubus, or a Succubus, and that Fiend becomes the target of the spell. (Felguards and felhounds are described in chapter 7.) Once you cast the spell in this way, you can’t do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Cast Planar Binding without a spell slot, summoning a Felguard, Felhound, Incubus, or Succubus as its target.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PLANAR_BINDING" />
+			<select type="Companion" name="Legion Summoning" supports="WoW Legion Summon" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Master Demonologist" type="Class Feature" source="World of Warcraft" id="ID_KAYA_WOW_CLASS_FEATURE_ELDRITCH_INVOCATION_MASTER_DEMONOLOGIST">
+		<supports>PHB24 Eldritch Invocation</supports>
+		<requirements>[level:warlock:5]</requirements>
+		<prerequisite>Level 5+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 5+ Warlock</em></p>
+			<p>Any Fiends you command also deal extra damage to the target of your Hex spell as if they were you.</p>
+		</description>
+		<sheet>
+			<description>Fiends you command also deal Hex’s extra damage to its target.</description>
+		</sheet>
+	</element>
+
+</elements>

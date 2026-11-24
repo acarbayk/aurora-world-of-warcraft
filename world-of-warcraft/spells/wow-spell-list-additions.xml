@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spell List Additions</name>
+		<description>Player’s Handbook spells added to the Wizard (mage) and Cleric (priest) spell lists in World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-spell-list-additions.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/spells/wow-spell-list-additions.xml" />
+		</update>
+	</info>
+
+	<append id="ID_WOTC_PHB24_SPELL_CREATE_FOOD_AND_WATER">
+		<supports>Wizard</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_FLAME_STRIKE">
+		<supports>Wizard</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_HEROES_FEAST">
+		<supports>Wizard</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_MIND_SLIVER">
+		<supports>Cleric</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_BLUR">
+		<supports>Cleric</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_LEVITATE">
+		<supports>Cleric</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_HASTE">
+		<supports>Cleric</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_SUMMON_UNDEAD">
+		<supports>Cleric</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_DOMINATE_PERSON">
+		<supports>Cleric</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_DOMINATE_MONSTER">
+		<supports>Cleric</supports>
+	</append>
+
+</elements>

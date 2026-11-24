@@ -4,11 +4,24 @@
 		<name>World of Warcraft</name>
 		<description>World of Warcraft by Andrey Kuzinskiy: classes, species, spells, feats, gear and renown for D&amp;D 2024. Requires the Aurora Legacy Player’s Handbook (2024).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="0.2.0">
+		<update version="0.3.0">
 			<file name="world-of-warcraft.index" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft.index" />
 		</update>
 	</info>
 	<files>
+		<file name="wow-barbarian-elements.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-barbarian-elements.xml" />
+		<file name="wow-barbarian-shaman-totems.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-barbarian-shaman-totems.xml" />
+		<file name="wow-barbarian-spiritual-guardian.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-barbarian-spiritual-guardian.xml" />
+		<file name="wow-cleric-discipline.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-cleric-discipline.xml" />
+		<file name="wow-cleric-shadow.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-cleric-shadow.xml" />
+		<file name="wow-fighter-warrior-maneuvers.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-fighter-warrior-maneuvers.xml" />
+		<file name="wow-monk-mystic-brews.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-monk-mystic-brews.xml" />
+		<file name="wow-paladin-ebon-blade.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-paladin-ebon-blade.xml" />
+		<file name="wow-paladin-holy.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-paladin-holy.xml" />
+		<file name="wow-ranger-demon-hunter.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-ranger-demon-hunter.xml" />
+		<file name="wow-ranger-hunter-pets.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-ranger-hunter-pets.xml" />
+		<file name="wow-rogue-swashbuckler.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-rogue-swashbuckler.xml" />
+		<file name="wow-sorcerer-evoker.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-sorcerer-evoker.xml" />
 		<file name="wow-languages.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/misc/wow-languages.xml" />
 		<file name="wow-race-dracthyr.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-dracthyr.xml" />
 		<file name="wow-race-draenei.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-draenei.xml" />
@@ -27,6 +40,7 @@
 		<file name="wow-race-troll.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-troll.xml" />
 		<file name="wow-race-vulpera.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-vulpera.xml" />
 		<file name="wow-race-worgen.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-worgen.xml" />
+		<file name="wow-spell-list-additions.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/spells/wow-spell-list-additions.xml" />
 		<file name="wow-spells.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/spells/wow-spells.xml" />
 		<file name="wow-source.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/wow-source.xml" />
 	</files>

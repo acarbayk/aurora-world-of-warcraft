@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warrior of Mystic Brews</name>
+		<description>The Warrior of Mystic Brews Monk subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-monk-mystic-brews.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-monk-mystic-brews.xml" />
+		</update>
+	</info>
+
+	<element name="Warrior of Mystic Brews" type="Archetype" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_MONK_WARRIOR_OF_MYSTIC_BREWS">
+		<supports>Monk Subclass</supports>
+		<description>
+			<p class="flavor">Drink Mystic Brews to Overwhelm and Confound Foes</p>
+			<p>Warriors of Mystic Brews move with the jerky, unpredictable movements typical of someone who is intoxicated. Their apparently erratic stumbles conceal a carefully executed dance of blocks, parries, advances, attacks, and retreats. Warriors of Mystic Brews frequent bars and taverns to gather information or spy on potential threats. These warriors drink magical concoctions that enhance their martial arts.</p>
+			<p class="indent">Warriors of Mystic Brews often enjoy playing the fool to bring gladness to the downtrodden or to teach humility to the arrogant, but these Monks are maddening, masterful foes in battle.</p>
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_BONUS_PROFICIENCIES" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_DRUNKEN_TECHNIQUE" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_TIPSY_SWAY" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_MYSTIC_BREW" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_WIZENED_BREWER" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_MASTER_BREWER" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_INTOXICATED_FRENZY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_DRUNKEN_TECHNIQUE" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_TIPSY_SWAY" level="6" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_MYSTIC_BREW" level="6" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_WIZENED_BREWER" level="11" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_MASTER_BREWER" level="17" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_INTOXICATED_FRENZY" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Bonus Proficiencies" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency in the Performance skill, or if you already have it, you gain proficiency in one skill of your choice from the skills available to Monks at level 1. You also gain proficiency with Brewer’s Supplies if you don’t already have it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Drunken Technique" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_DRUNKEN_TECHNIQUE">
+		<description>
+			<p>You twist and turn quickly as you move. Whenever you expend a Focus Point using Patient Defense, your Speed increases by 10 feet until the end of the current turn, and you can make one Unarmed Strike immediately after the Bonus Action.</p>
+		</description>
+		<sheet alt="Drunken Technique">
+			<description>You twist and turn quickly as you move. Whenever you expend a Focus Point using Patient Defense, your Speed increases by 10 feet until the end of the current turn, and you can make one Unarmed Strike immediately after the Bonus Action.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Tipsy Sway" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_TIPSY_SWAY">
+		<description>
+			<p>You can move in sudden, swaying ways. You gain the following benefits.</p>
+			<p class="indent"><strong><em>Leap to Your Feet.</em></strong> When you have the Prone condition, you can stand up by spending 5 feet of movement.</p>
+			<p class="indent"><strong><em>Redirect Attack.</em></strong> When an enemy misses you with a melee attack roll, you can take a Reaction and spend 1 Focus Point to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of yourself.</p>
+		</description>
+		<sheet alt="Tipsy Sway">
+			<description>You can move in sudden, swaying ways. You gain the following benefits. Leap to Your Feet. When you have the Prone condition, you can stand up by spending 5 feet of movement. Redirect Attack. When an enemy misses you with a melee attack roll, you can take a Reaction and spend 1 Focus Point to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of yourself.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Mystic Brew" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_MYSTIC_BREW">
+		<description>
+			<p>Whenever you finish a Short or Long Rest while holding Brewer’s Supplies, you can use that tool to magically produce one magical beverage, chosen from the following options: Cinnamon Dragon, Heavenly Spirit, or Refreshing Dip. A pint of the beverage appears in a bottle or flask you are holding or carrying; otherwise, the beverage spills out on the ground and then vanishes. If any beverage remains when you finish a Short or Long Rest, the beverage vanishes.</p>
+			<p class="indent"><strong><em>Drinking a Magical Beverage.</em></strong> Only you can gain the benefits of drinking the beverage. You must drink the full pint of the beverage before gaining its benefit. You can spend 1 minute drinking the beverage. You then gain the benefits of the beverage for 1 hour or until you drink another magical beverage, as described below:</p>
+			<p class="indent"><strong><em>Cinnamon Dragon.</em></strong> You can take a Magic action to exhale toxic flames in a 30-foot Cone. Each creature in the Cone makes a Dexterity saving throw (DC 8 plus your Wisdom modifier and Proficiency Bonus). On a failed save, a creature takes Fire damage equal to four rolls of your Martial Arts die and has the Poisoned condition until the end of its next turn. On a successful save, a creature takes half as much damage only.</p>
+			<p class="indent"><strong><em>Heavenly Spirit.</em></strong> You gain Resistance to two of the following damage types of your choice: Cold, Necrotic, Psychic, or Radiant damage.</p>
+			<p class="indent"><strong><em>Refreshing Dip.</em></strong> You have a pool of dice of the same type as your Martial Arts die. The maximum number of dice equals your Wisdom modifier plus half your Monk level (round down). Whenever you regain Hit Points, you can expend and roll one die from this pool to regain additional Hit Points equal to the number rolled.</p>
+			<p class="indent"><strong><em>Enhancing a Magical Beverage.</em></strong> When you create a magical beverage, you can expend 1 Focus Point to extend the benefits’ duration to 8 hours.</p>
+		</description>
+		<sheet alt="Mystic Brew" usage="1/Short Rest">
+			<description>After a Short or Long Rest with Brewer’s Supplies, brew one beverage (1 hour; 1 Focus Point for 8 hours): Cinnamon Dragon (Magic action, 30-ft Cone, Dex save DC 8 + Wis + PB, 4 Martial Arts dice Fire and Poisoned), Heavenly Spirit (Resistance to two of Cold, Necrotic, Psychic, Radiant), or Refreshing Dip (pool of Martial Arts dice to boost healing).</description>
+			<description level="11">After a Short or Long Rest with Brewer’s Supplies, brew one beverage (1 hour; 1 Focus Point for 8 hours): Cinnamon Dragon, Heavenly Spirit, Refreshing Dip, Blue Lightning, Drunkard’s Luck, or Stumbling Monk.</description>
+			<description level="17">After a Short or Long Rest with Brewer’s Supplies, brew one beverage combining two different options (1 hour; 1 Focus Point for 8 hours): Cinnamon Dragon, Heavenly Spirit, Refreshing Dip, Blue Lightning, Drunkard’s Luck, or Stumbling Monk.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Wizened Brewer" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_WIZENED_BREWER">
+		<description>
+			<p>You learn more complex flavors. The following beverages are added to your Mystic Brew options:</p>
+			<p class="indent"><strong><em>Blue Lightning.</em></strong> Whenever you take a Reaction that isn’t making an Opportunity Attack or casting a spell, you can make one Unarmed Strike as part of that Reaction.</p>
+			<p class="indent"><strong><em>Drunkard’s Luck.</em></strong> You gain Heroic Inspiration if you don’t already have it. In addition, you can give yourself Heroic Inspiration when you make an ability check or saving throw without it.</p>
+			<p class="indent"><strong><em>Stumbling Monk.</em></strong> When you take a Bonus Action other than Patient Defense, you can also use Patient Defense immediately after that Bonus Action.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 17: Master Brewer" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_MASTER_BREWER">
+		<description>
+			<p>When you create a magical beverage using your Mystic Brew feature, you can choose two different options and produce one magical beverage. Drinking the beverage provides the effects of both options for the duration.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 17: Intoxicated Frenzy" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_MONK_WARRIOR_OF_MYSTIC_BREWS_INTOXICATED_FRENZY">
+		<description>
+			<p>Immediately after you use your Patient Defense, you can move up to your Speed. During this movement, whenever you enter a space within 5 feet of a creature, you can make an Unarmed Strike targeting that creature. In addition, when you hit a creature with an Unarmed Strike granted by this feature, the creature must succeed on a Dexterity saving throw or have the Prone condition. A creature can be targeted by an Unarmed Strike granted by this feature only once per turn.</p>
+		</description>
+		<sheet alt="Intoxicated Frenzy">
+			<description>Immediately after you use your Patient Defense, you can move up to your Speed. During this movement, whenever you enter a space within 5 feet of a creature, you can make an Unarmed Strike targeting that creature. In addition, when you hit a creature with an Unarmed Strike granted by this feature, the creature must succeed on a Dexterity saving throw or have the Prone condition. A creature can be targeted by an Unarmed Strike granted by this feature only once per turn.</description>
+		</sheet>
+	</element>
+
+</elements>

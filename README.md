@@ -22,7 +22,7 @@ Aurora Builder content for **World of Warcraft**, a fan-made D&D 5e (2024 rules)
 | Spells (69) | ✅ |
 | Languages of Azeroth | ✅ |
 | Species (17, incl. Mechagnome and Azeroth elven lineages) | ✅ |
-| Subclasses and class options | 🚧 |
+| Subclasses and class options (Ebon Blade, Demon Hunter, Evoker, Hunter pets, Mystic Brews, Holy, Discipline, Shadow, Swashbuckler, Shaman totems, Elements, Spiritual Guardian, warrior maneuvers) | ✅ |
 | Feats, invocations | 🚧 |
 | Magic items, mounts, vehicles | 🚧 |
 | Faction renown perks | 🚧 |

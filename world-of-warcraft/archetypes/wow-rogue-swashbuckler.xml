@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Swashbuckler (World of Warcraft)</name>
+		<description>The Swashbuckler (World of Warcraft) Rogue subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-rogue-swashbuckler.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-rogue-swashbuckler.xml" />
+		</update>
+	</info>
+
+	<element name="Swashbuckler (World of Warcraft)" type="Archetype" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT">
+		<supports>Rogue Subclass</supports>
+		<description>
+			<p class="flavor">Glide into Melee with Panache and Agility</p>
+			<p>As a Swashbuckler, you focus on the art of the blade, bringing speed, elegance, and charm to your combat style—topped off with an exquisite flourish of panache. You excel in single combat, and your methods make a duel look like a flamboyant performance.</p>
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_FANCY_FOOTWORK" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_RAKISH_AUDACITY" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_PANACHE" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_DASHING_STRIKES" />
+			<div element="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_MASTER_DUELIST" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_FANCY_FOOTWORK" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_RAKISH_AUDACITY" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_PANACHE" level="9" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_DASHING_STRIKES" level="13" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_MASTER_DUELIST" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Fancy Footwork" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_FANCY_FOOTWORK">
+		<description>
+			<p>You’ve learned how to land a strike and then slip away without reprisal. If you make a melee attack roll against a creature during your turn, that creature can’t make Opportunity Attacks against you for the rest of that turn.</p>
+		</description>
+		<sheet alt="Fancy Footwork">
+			<description>You’ve learned how to land a strike and then slip away without reprisal. If you make a melee attack roll against a creature during your turn, that creature can’t make Opportunity Attacks against you for the rest of that turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Rakish Audacity" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_RAKISH_AUDACITY">
+		<description>
+			<p>When you roll Initiative, you can give yourself a bonus to the roll equal to your Charisma modifier.</p>
+			<p class="indent">You also gain an additional way to use your Sneak Attack: You don’t need Advantage on the attack roll to use your Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don’t have Disadvantage on the attack roll. All the other rules for Sneak Attack still apply to you.</p>
+		</description>
+		<sheet alt="Rakish Audacity">
+			<description>You can use Sneak Attack without Advantage against a creature within 5 feet of you if no other creatures are within 5 feet of you and you don’t have Disadvantage.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Panache" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_PANACHE">
+		<description>
+			<p>You have practiced new ways to use your Sneak Attack. The following effects are now among your Cunning Strike options.</p>
+			<p class="indent"><strong><em>Goad (Cost: 1d6).</em></strong> The target must succeed on a Wisdom saving throw, or until the end of its next turn, the target has Disadvantage on attack rolls against targets other than you and can’t make Opportunity Attacks against targets other than you.</p>
+			<p class="indent"><strong><em>Awe (Cost: 3d6).</em></strong> Each creature of your choice within 30 feet of you must succeed on a Wisdom saving throw or have the Charmed condition until the end of your next turn.</p>
+		</description>
+		<sheet alt="Panache">
+			<description>You have practiced new ways to use your Sneak Attack. The following effects are now among your Cunning Strike options. Goad (Cost: 1d6). The target must succeed on a Wisdom saving throw, or until the end of its next turn, the target has Disadvantage on attack rolls against targets other than you and can’t make Opportunity Attacks against targets other than you. Awe (Cost: 3d6). Each creature of your choice within 30 feet of you must succeed on a Wisdom saving throw or have the Charmed condition until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 13: Dashing Strikes" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_DASHING_STRIKES">
+		<description>
+			<p>You have practiced new ways to use your Sneak Attack. The following effects are now among your Cunning Strike options.</p>
+			<p class="indent"><strong><em>Invigorate (Cost: 2d6).</em></strong> Choose a creature you can see within 30 feet of yourself. Until the end of that creature’s next turn, whenever it makes an attack roll or a saving throw, it can roll 1d6 and add the number rolled to the attack roll or saving throw.</p>
+			<p class="indent"><strong><em>Parrying Stance (Cost: 2d6).</em></strong> Roll 1d6. Until the start of your next turn, you gain a bonus to your AC equal to the number rolled.</p>
+		</description>
+		<sheet alt="Dashing Strikes">
+			<description>You have practiced new ways to use your Sneak Attack. The following effects are now among your Cunning Strike options. Invigorate (Cost: 2d6). Choose a creature you can see within 30 feet of yourself. Until the end of that creature’s next turn, whenever it makes an attack roll or a saving throw, it can roll 1d6 and add the number rolled to the attack roll or saving throw. Parrying Stance (Cost: 2d6). Roll 1d6. Until the start of your next turn, you gain a bonus to your AC equal to the number rolled.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Master Duelist" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_ROGUE_SWASHBUCKLER_WORLD_OF_WARCRAFT_MASTER_DUELIST">
+		<description>
+			<p>Immediately after you use your Sneak Attack, you can make another attack against the same target, provided you are within 5 feet of it and no other creatures are within 5 feet of you.</p>
+		</description>
+		<sheet alt="Master Duelist">
+			<description>Immediately after you use your Sneak Attack, you can make another attack against the same target, provided you are within 5 feet of it and no other creatures are within 5 feet of you.</description>
+		</sheet>
+	</element>
+
+</elements>

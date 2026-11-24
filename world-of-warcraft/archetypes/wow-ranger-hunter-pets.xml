@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hunter Pets</name>
+		<description>Hunter Pet Specialization option for the Beast Master subclass from World of Warcraft (Andrey Kuzinskiy).</description>
+		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
+		<update version="0.1.0">
+			<file name="wow-ranger-hunter-pets.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-ranger-hunter-pets.xml" />
+		</update>
+	</info>
+
+	<element name="Level 6: Pet Specialization" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_RANGER_BEAST_MASTER_PET_SPECIALIZATION">
+		<supports>WoW Pet Specialization</supports>
+		<description>
+			<p>This feature replaces the Ranger’s Roving feature. (Beast mastery and survival hunters.)</p>
+			<p class="indent">While the beast from your Primal Companion feature is within 60 feet of you, you gain one of the following benefits, depending on the beast’s pet family and its specialization (see “Hunter Pets”).</p>
+			<p class="indent"><strong><em>Cunning.</em></strong> Your Speed and all of your primal beast’s speeds increase by 10 feet. In addition, your primal beast can use its action to cast Freedom of Movement without any spell components, affecting itself and you (if you are within range). Once it does so, it can’t do so again until you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Ferocity.</em></strong> When your primal beast is Bloodied and it hits with its Beast’s Strike attack, you and your primal beast each regain Hit Points equal to your Wisdom modifier. In addition, your primal beast can use its action to cast Haste without any spell components, affecting itself and you (if you are within range). Once it does so, it can’t do so again until you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Tenacity.</em></strong> Your Hit Point maximum increases by 6. Whenever you gain a Ranger level, your Hit Point maximum increases by an additional 1 Hit Point. Your primal beast’s Hit Point maximum also increases by your Ranger level. In addition, your primal beast can use its action to cast Stoneskin without any spell components, affecting itself and you (if you are within range). Once it does so, it can’t do so again until you finish a Long Rest.</p>
+			<h5>Hunter Pets</h5>
+			<p class="indent">As a Beast Master, when you use your Primal Companion feature to summon a primal beast, you choose the form it takes from among the pet families shown on the table below. Each family has three characteristics:</p>
+			<p class="indent"><strong><em>Stat Block.</em></strong> Your primal beast’s family determines which one of the stat blocks in the Player’s Handbook it uses: Beast of the Land, Beast of the Sea, or Beast of the Sky.</p>
+			<p class="indent">Specialization (Spec.). Each pet family has a specialization—Cunning (C), Ferocity (F), or Tenacity (T)—that comes into play only if you have the Pet Specialization feature.</p>
+			<p class="indent"><strong><em>Mastery Property (Mastery).</em></strong> When you gain the Primal Companion feature and whenever you finish a Long Rest, you can choose your pet’s family as one of the weapons for your Weapon Mastery feature. Then its mastery property applies to your primal companion’s Beast’s Strike attack.</p>
+			<h5>Pet Families</h5><table class="class-features"><thead><tr><td>Family</td><td>Stat Block</td><td>Spec.</td><td>Mastery</td></tr></thead><tr><td>Basilisk</td><td>Land</td><td>C</td><td>Slow</td></tr><tr><td>Bat</td><td>Sky</td><td>F</td><td>Vex</td></tr><tr><td>Bear</td><td>Land</td><td>T</td><td>Push</td></tr><tr><td>Beetle</td><td>Land</td><td>T</td><td>Sap</td></tr><tr><td>Bird of Prey</td><td>Sky</td><td>C</td><td>Slow</td></tr><tr><td>Blood Beast* (stirge)</td><td>Sky</td><td>T</td><td>Slow</td></tr><tr><td>Boar</td><td>Land</td><td>C</td><td>Sap</td></tr><tr><td>Camel</td><td>Land</td><td>C</td><td>Push</td></tr><tr><td>Carrion Bird</td><td>Sky</td><td>F</td><td>Cleave</td></tr><tr><td>Cat</td><td>Land</td><td>F</td><td>Graze</td></tr><tr><td>Courser (horses)</td><td>Land</td><td>F</td><td>Graze</td></tr><tr><td>Crab</td><td>Land</td><td>T</td><td>Slow</td></tr><tr><td>Crocolisk</td><td>Land</td><td>F</td><td>Slow</td></tr><tr><td>Direhorn* (triceratops)</td><td>Land</td><td>T</td><td>Cleave</td></tr><tr><td>Dolphin</td><td>Sea</td><td>T</td><td>Vex</td></tr><tr><td>Dragonhawk</td><td>Sky</td><td>T</td><td>Graze</td></tr><tr><td>Feathermane* (gryphon)</td><td>Sky</td><td>T</td><td>Graze</td></tr><tr><td>Fox</td><td>Land</td><td>C</td><td>Graze</td></tr><tr><td>Frenzy (piranha-like fish)</td><td>Sea</td><td>F</td><td>Cleave</td></tr><tr><td>Gorilla</td><td>Land</td><td>F</td><td>Push</td></tr><tr><td>Gruffhorn (goats)</td><td>Land</td><td>C</td><td>Push</td></tr><tr><td>Hopper (frogs, toads)</td><td>Land</td><td>T</td><td>Graze</td></tr><tr><td>Hound</td><td>Land</td><td>C</td><td>Slow</td></tr><tr><td>Hydra</td><td>Land</td><td>T</td><td>Cleave</td></tr><tr><td>Hyena</td><td>Land</td><td>C</td><td>Cleave</td></tr><tr><td>Lizard</td><td>Land</td><td>T</td><td>Cleave</td></tr><tr><td>Mammoth</td><td>Land</td><td>T</td><td>Slow</td></tr><tr><td>Mechanized animal*</td><td>Land</td><td>C</td><td>Sap</td></tr><tr><td>Monkey</td><td>Land</td><td>C</td><td>Graze</td></tr><tr><td>Moth</td><td>Sky</td><td>C</td><td>Vex</td></tr><tr><td>Oxen</td><td>Land</td><td>T</td><td>Push</td></tr><tr><td>Raptor (allosaurus)</td><td>Land</td><td>C</td><td>Cleave</td></tr><tr><td>Ray</td><td>Sky</td><td>F</td><td>Vex</td></tr><tr><td>Riverbeast (hippo)</td><td>Land</td><td>T</td><td>Cleave</td></tr><tr><td>Rodent</td><td>Land</td><td>C</td><td>Cleave</td></tr><tr><td>Scalehide (ankylosaurus)</td><td>Land</td><td>F</td><td>Sap</td></tr><tr><td>Scorpid</td><td>Land</td><td>F</td><td>Cleave</td></tr><tr><td>Serpent</td><td>Land or Sea</td><td>C</td><td>Graze</td></tr><tr><td>Shark</td><td>Sea</td><td>C</td><td>Graze</td></tr><tr><td>Spider</td><td>Land</td><td>F</td><td>Slow</td></tr><tr><td>Stag</td><td>Land</td><td>T</td><td>Vex</td></tr><tr><td>Tallstrider (flightless bird)</td><td>Land</td><td>F</td><td>Slow</td></tr><tr><td>Threshadon* (plesiosaur)</td><td>Sea</td><td>T</td><td>Sap</td></tr><tr><td>Turtle</td><td>Land</td><td>T</td><td>Sap</td></tr><tr><td>Wasp</td><td>Sky</td><td>F</td><td>Cleave</td></tr><tr><td>Waterfowl</td><td>Land</td><td>T</td><td>Vex</td></tr><tr><td>Wolf</td><td>Land</td><td>F</td><td>Slow</td></tr></table>
+			<p class="indent">*Unusual pet family; a hunter must acquire a special ability (typically by reading a magical tome) to tame an unusual pet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_ROVING" />
+			<select type="Archetype Feature" name="Pet Family Specialization" supports="WoW Pet Specialization Option" />
+		</rules>
+	</element>
+
+	<element name="Pet Specialization: Cunning" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_RANGER_BEAST_MASTER_PET_SPECIALIZATION_CUNNING">
+		<supports>WoW Pet Specialization Option</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Speed and all of your primal beast’s speeds increase by 10 feet. In addition, your primal beast can use its action to cast Freedom of Movement without any spell components, affecting itself and you (if you are within range). Once it does so, it can’t do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>Your Speed and all of your primal beast’s speeds increase by 10 feet. In addition, your primal beast can use its action to cast Freedom of Movement without any spell components, affecting itself and you (if you are within range). Once it does so, it can’t do so again until you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="10" />
+		</rules>
+	</element>
+
+	<element name="Pet Specialization: Ferocity" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_RANGER_BEAST_MASTER_PET_SPECIALIZATION_FEROCITY">
+		<supports>WoW Pet Specialization Option</supports>
+		<compendium display="false" />
+		<description>
+			<p>When your primal beast is Bloodied and it hits with its Beast’s Strike attack, you and your primal beast each regain Hit Points equal to your Wisdom modifier. In addition, your primal beast can use its action to cast Haste without any spell components, affecting itself and you (if you are within range). Once it does so, it can’t do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>When your primal beast is Bloodied and it hits with its Beast’s Strike attack, you and your primal beast each regain Hit Points equal to your Wisdom modifier. In addition, your primal beast can use its action to cast Haste without any spell components, affecting itself and you (if you are within range). Once it does so, it can’t do so again until you finish a Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Pet Specialization: Tenacity" type="Archetype Feature" source="World of Warcraft" id="ID_KAYA_WOW_ARCHETYPE_FEATURE_RANGER_BEAST_MASTER_PET_SPECIALIZATION_TENACITY">
+		<supports>WoW Pet Specialization Option</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Hit Point maximum increases by 6. Whenever you gain a Ranger level, your Hit Point maximum increases by an additional 1 Hit Point. Your primal beast’s Hit Point maximum also increases by your Ranger level. In addition, your primal beast can use its action to cast Stoneskin without any spell components, affecting itself and you (if you are within range). Once it does so, it can’t do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>Your Hit Point maximum increases by 6. Whenever you gain a Ranger level, your Hit Point maximum increases by an additional 1 Hit Point. Your primal beast’s Hit Point maximum also increases by your Ranger level. In addition, your primal beast can use its action to cast Stoneskin without any spell components, affecting itself and you (if you are within range). Once it does so, it can’t do so again until you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="hp" value="6" />
+			<stat name="hp" value="level:ranger" />
+		</rules>
+	</element>
+
+	<append id="ID_WOTC_PHB24_ARCHETYPE_RANGER_BEAST_MASTER">
+		<rules>
+			<select type="Archetype Feature" name="Pet Specialization (World of Warcraft, optional)" supports="WoW Pet Specialization" level="6" optional="true" />
+		</rules>
+	</append>
+
+</elements>

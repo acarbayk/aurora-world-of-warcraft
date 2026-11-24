@@ -4,7 +4,7 @@
 		<name>Warrior Maneuvers</name>
 		<description>Additional Battle Master maneuvers for World of Warcraft warriors (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="0.1.0">
+		<update version="1.0.0">
 			<file name="wow-fighter-warrior-maneuvers.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow-fighter-warrior-maneuvers.xml" />
 		</update>
 	</info>

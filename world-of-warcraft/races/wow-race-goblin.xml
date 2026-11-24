@@ -4,7 +4,7 @@
 		<name>Goblin (Azeroth)</name>
 		<description>The Goblin (Azeroth) species from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="0.1.0">
+		<update version="1.0.0">
 			<file name="wow-race-goblin.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-goblin.xml" />
 		</update>
 	</info>

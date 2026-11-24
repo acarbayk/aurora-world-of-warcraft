@@ -4,7 +4,7 @@
 		<name>Renown Perks</name>
 		<description>Faction renown perks from World of Warcraft (Andrey Kuzinskiy). Add earned perks to your character from the Equipment tab (category: Renown Perks).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="0.1.0">
+		<update version="1.0.0">
 			<file name="wow-renown-perks.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/items/wow-renown-perks.xml" />
 		</update>
 	</info>

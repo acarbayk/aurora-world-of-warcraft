@@ -320,16 +320,36 @@ archetype(f"{FP}paladin-holy.xml", "Oath of the Holy", "Paladin", "Serve as a Be
 # =====================================================================
 # Discipline Domain / Shadow Domain (Cleric)
 # =====================================================================
+
+SPL_LV = {"Arcane Vigor": 2, "Guiding Bolt": 1, "Magic Weapon": 2, "Shield of Faith": 1, "Prayer of Mending": 3, "Protection from Energy": 3,
+          "Guardian of Faith": 4, "Stoneskin": 4, "Circle of Power": 5, "Destructive Wave": 5, "Crown of Madness": 2, "Dissonant Whispers": 1,
+          "Mind Spike": 2, "Shadow Word: Pain": 1, "Summon Undead": 3, "Vampiric Touch": 3, "Evard’s Black Tentacles": 4, "Psychic Horror": 4,
+          "Dominate Person": 5, "Void Eruption": 5}
+
+
+def dom14(rows):
+    """2014 domain spells: 1st-level at Cleric 1, 2nd at 3, 3rd at 5, 4th at 7, 5th at 9."""
+    if not E14:
+        return rows
+    out = {}
+    for _, ns in rows:
+        for n in ns:
+            out.setdefault({1: 1, 2: 3, 3: 5, 4: 7, 5: 9}[SPL_LV[n]], []).append(n)
+    return sorted(out.items())
+
+
+CL1, CL2 = (1, 2) if E14 else (3, 3)
 disc_sp = [(3, ["Arcane Vigor", "Guiding Bolt", "Magic Weapon", "Shield of Faith"]), (5, ["Prayer of Mending", "Protection from Energy"]),
            (7, ["Guardian of Faith", "Stoneskin"]), (9, ["Circle of Power", "Destructive Wave"])]
+disc_sp = dom14(disc_sp)
 disc = [
-    F(3, "Discipline Spells", ["Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Discipline Domain Spells table, you thereafter always have the listed spells prepared.",
+    F(CL1, "Discipline Spells", ["Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Discipline Domain Spells table, you thereafter always have the listed spells prepared.",
                                spell_table("Discipline Domain Spells", ["Cleric Level", "Spells"], [[l, ", ".join(n)] for l, n in disc_sp])],
       sheet=False, rules=[grant_spell(n, l, "Cleric") for l, ns in disc_sp for n in ns]),
-    F(3, "Holy Bolt", ["As a Bonus Action, you present your Holy Symbol and expend a use of your Channel Divinity to make a ranged spell attack, hurling a bolt of holy energy targeting one creature within 60 feet of yourself. On a hit, the target takes Radiant damage equal to 2d10 plus your Wisdom modifier, and you can choose a creature you can see within 60 feet of yourself to regain Hit Points equal to 1d10 plus your Wisdom modifier."],
+    F(CL2, "Holy Bolt", ["As a Bonus Action, you present your Holy Symbol and expend a use of your Channel Divinity to make a ranged spell attack, hurling a bolt of holy energy targeting one creature within 60 feet of yourself. On a hit, the target takes Radiant damage equal to 2d10 plus your Wisdom modifier, and you can choose a creature you can see within 60 feet of yourself to regain Hit Points equal to 1d10 plus your Wisdom modifier."],
       action="Bonus Action", usage="Channel Divinity",
       sheet="Ranged spell attack (+{{cleric:spellcasting:attack}}) against a creature within 60 feet: 2d10 + {{wisdom:modifier}} Radiant damage on a hit, and a creature you can see within 60 feet regains 1d10 + {{wisdom:modifier}} HP."),
-    F(3, "Atonement", ["When a level 1+ spell you cast restores Hit Points to one or more creatures, each of those creatures gains a blessing that lasts until the end of your next turn. Whenever you cast a spell that deals damage to a creature using a spell slot, each blessed creature regains additional Hit Points equal to the level of the spell slot you used to cast the damaging spell."]),
+    F(CL2, "Atonement", ["When a level 1+ spell you cast restores Hit Points to one or more creatures, each of those creatures gains a blessing that lasts until the end of your next turn. Whenever you cast a spell that deals damage to a creature using a spell slot, each blessed creature regains additional Hit Points equal to the level of the spell slot you used to cast the damaging spell."]),
     F(6, "Luminous Barrier", ["As a Bonus Action, you can expend a use of your Channel Divinity to place a magical ward of glowing light on each creature blessed by your Atonement. Each affected creature gains a number of Temporary Hit Points equal to your Cleric level plus your Wisdom modifier. While a creature has Temporary Hit Points gained from this feature, it has Resistance to all damage."],
       action="Bonus Action", usage="Channel Divinity"),
     F(17, "Ultimate Penitence", ["Your Holy Bolt grows more powerful as detailed below.",
@@ -340,16 +360,17 @@ archetype(f"{FP}cleric-discipline.xml", "Discipline Domain", "Cleric", "Cure All
           ["The Discipline Domain focuses on the balance between the Holy Light and its shadowy mirror, the Void. Wielding both powers at once, Clerics who embrace this domain aid their allies and harm their foes, often with a single spell."], disc, tag=TAG("Cleric"))
 shad_sp = [(3, ["Crown of Madness", "Dissonant Whispers", "Mind Spike", "Shadow Word: Pain"]), (5, ["Summon Undead", "Vampiric Touch"]),
            (7, ["Evard’s Black Tentacles", "Psychic Horror"]), (9, ["Dominate Person", "Void Eruption"])]
+shad_sp = dom14(shad_sp)
 shad = [
-    F(3, "Shadow Spells", ["Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Shadow Domain Spells table, you thereafter always have the listed spells prepared.",
+    F(CL1, "Shadow Spells", ["Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Shadow Domain Spells table, you thereafter always have the listed spells prepared.",
                            spell_table("Shadow Domain Spells", ["Cleric Level", "Spells"], [[l, ", ".join(n)] for l, n in shad_sp])],
       sheet=False, rules=[grant_spell(n, l, "Cleric") for l, ns in shad_sp for n in ns]),
-    F(3, "Shadowform", ["As a Bonus Action, you can expend a use of your Channel Divinity to take on a shadowy form that grants you the following benefits:",
+    F(CL2, "Shadowform", ["As a Bonus Action, you can expend a use of your Channel Divinity to take on a shadowy form that grants you the following benefits:",
                         "Shadow Stealth. While you are in an area of Dim Light or Darkness, you can take the Hide action as a Bonus Action.",
                         "Void Empowerment. When you cast a spell using a spell slot that deals Psychic or Necrotic damage, you can add 1d6 to one damage roll of the spell.",
                         "The form lasts for 1 minute, but it ends early if you dismiss it (no action required), if you have the Incapacitated condition, or if you deal Radiant damage with a spell."],
       action="Bonus Action", usage="Channel Divinity"),
-    F(3, "Devouring Plague", ["When a creature you can see within 30 feet of you fails a saving throw, you can cause that creature to take 1d10 Necrotic damage. If you do, you regain Hit Points equal to the Necrotic damage dealt.",
+    F(CL2, "Devouring Plague", ["When a creature you can see within 30 feet of you fails a saving throw, you can cause that creature to take 1d10 Necrotic damage. If you do, you regain Hit Points equal to the Necrotic damage dealt.",
                               "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."],
       usage="{{wisdom:modifier}}/Long Rest", sheet="When a creature you can see within 30 feet fails a saving throw, it takes 1d10 Necrotic damage and you regain that many HP."),
     F(6, "Dispersion", ["When you are hit by an attack roll, you can take a Reaction to disperse into shadowy energy. Until the end of your next turn, you have Resistance to all damage (including the damage from the triggering attack); you can’t take any action, Bonus Action, or Reaction; and you have a Fly Speed of 40 feet. When the effect ends, you can spend up to half of your total Hit Point Dice, regaining Hit Points as if you had finished a Short Rest.",

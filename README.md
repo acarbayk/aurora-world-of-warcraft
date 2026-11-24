@@ -32,7 +32,7 @@ The book is written for the 2024 rules. The 2014 version is an unofficial adapta
 - Focus Points become ki points, Bloodied becomes "half Hit Points or fewer", Heroic Inspiration becomes Inspiration and the Magic action becomes an action, Emanations become radii or "within X feet" and Hit Point Dice become Hit Dice.
 - The Hunter pet table has no Mastery column in 2014 (the 2014 Ranger has no Weapon Mastery). Pet Specialization and Shaman Totems replace nothing in 2014, because the 2014 Ranger and Barbarian have no Roving or Primal Knowledge.
 - 2014 subclasses use the 2014 spell IDs (Player's Handbook, Xanathar's, Tasha's) wherever one exists. Arcane Vigor, Elementalism and Summon Dragon only exist in the 2024 Player's Handbook, so the 2014 version still needs it for those three.
-- Discipline and Shadow Domain features start at Cleric level 3, as in the book, even though 2014 clerics pick their domain at level 1.
+- Discipline and Shadow Domain follow the 2014 domain pattern: domain spells at Cleric levels 1, 3, 5, 7 and 9 (by spell level), the Channel Divinity features (Holy Bolt, Shadowform) and Atonement / Devouring Plague at level 2, then levels 6 and 17 as in the book.
 
 ## What's included
 

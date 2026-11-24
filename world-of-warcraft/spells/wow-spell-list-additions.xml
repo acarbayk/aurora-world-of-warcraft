@@ -4,7 +4,7 @@
 		<name>Spell List Additions</name>
 		<description>Player’s Handbook spells added to the Wizard (mage) and Cleric (priest) spell lists in World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.2.0">
+		<update version="1.2.1">
 			<file name="wow-spell-list-additions.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/spells/wow-spell-list-additions.xml" />
 		</update>
 	</info>

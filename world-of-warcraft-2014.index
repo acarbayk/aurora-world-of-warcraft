@@ -4,7 +4,7 @@
 		<name>World of Warcraft (2014 rules)</name>
 		<description>World of Warcraft by Andrey Kuzinskiy, with subclasses and class options adapted to the 2014 Player’s Handbook classes. Species, spells, feats, items and renown are shared with the 2024 version. Requires the Aurora Legacy Player’s Handbook (2024) to be loaded as well.</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.2.0">
+		<update version="1.2.1">
 			<file name="world-of-warcraft-2014.index" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft-2014.index" />
 		</update>
 	</info>

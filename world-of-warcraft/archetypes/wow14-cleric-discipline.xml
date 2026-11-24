@@ -4,7 +4,7 @@
 		<name>Discipline Domain</name>
 		<description>The Discipline Domain Cleric subclass from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.2.0">
+		<update version="1.2.1">
 			<file name="wow14-cleric-discipline.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/archetypes/wow14-cleric-discipline.xml" />
 		</update>
 	</info>
@@ -23,25 +23,25 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_DISCIPLINE_SPELLS" level="3" />
-			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_HOLY_BOLT" level="3" />
-			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ATONEMENT" level="3" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_DISCIPLINE_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_HOLY_BOLT" level="2" />
+			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ATONEMENT" level="2" />
 			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_LUMINOUS_BARRIER" level="6" />
 			<grant type="Archetype Feature" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ULTIMATE_PENITENCE" level="17" />
 		</rules>
 	</element>
 
-	<element name="Level 3: Discipline Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_DISCIPLINE_SPELLS">
+	<element name="Level 1: Discipline Spells" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_DISCIPLINE_SPELLS">
 		<description>
 			<p>Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Discipline Domain Spells table, you thereafter always have the listed spells prepared.</p>
-			<h5>Discipline Domain Spells</h5><table class="class-features"><thead><tr><td>Cleric Level</td><td>Spells</td></tr></thead><tr><td>3</td><td>Arcane Vigor, Guiding Bolt, Magic Weapon, Shield of Faith</td></tr><tr><td>5</td><td>Prayer of Mending, Protection from Energy</td></tr><tr><td>7</td><td>Guardian of Faith, Stoneskin</td></tr><tr><td>9</td><td>Circle of Power, Destructive Wave</td></tr></table>
+			<h5>Discipline Domain Spells</h5><table class="class-features"><thead><tr><td>Cleric Level</td><td>Spells</td></tr></thead><tr><td>1</td><td>Guiding Bolt, Shield of Faith</td></tr><tr><td>3</td><td>Arcane Vigor, Magic Weapon</td></tr><tr><td>5</td><td>Prayer of Mending, Protection from Energy</td></tr><tr><td>7</td><td>Guardian of Faith, Stoneskin</td></tr><tr><td>9</td><td>Circle of Power, Destructive Wave</td></tr></table>
 		</description>
 		<sheet display="false" />
 		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" level="1" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" level="1" spellcasting="Cleric" />
 			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_VIGOR" level="3" spellcasting="Cleric" />
-			<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" level="3" spellcasting="Cleric" />
 			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="3" spellcasting="Cleric" />
-			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" level="3" spellcasting="Cleric" />
 			<grant type="Spell" id="ID_KAYA_WOW_SPELL_PRAYER_OF_MENDING" level="5" spellcasting="Cleric" />
 			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Cleric" />
 			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Cleric" />
@@ -51,7 +51,7 @@
 		</rules>
 	</element>
 
-	<element name="Level 3: Holy Bolt" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_HOLY_BOLT">
+	<element name="Level 2: Holy Bolt" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_HOLY_BOLT">
 		<description>
 			<p>As a Bonus Action, you present your Holy Symbol and expend a use of your Channel Divinity to make a ranged spell attack, hurling a bolt of holy energy targeting one creature within 60 feet of yourself. On a hit, the target takes Radiant damage equal to 2d10 plus your Wisdom modifier, and you can choose a creature you can see within 60 feet of yourself to regain Hit Points equal to 1d10 plus your Wisdom modifier.</p>
 		</description>
@@ -60,7 +60,7 @@
 		</sheet>
 	</element>
 
-	<element name="Level 3: Atonement" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ATONEMENT">
+	<element name="Level 2: Atonement" type="Archetype Feature" source="World of Warcraft (2014)" id="ID_KAYA_WOW14_ARCHETYPE_FEATURE_CLERIC_DISCIPLINE_DOMAIN_ATONEMENT">
 		<description>
 			<p>When a level 1+ spell you cast restores Hit Points to one or more creatures, each of those creatures gains a blessing that lasts until the end of your next turn. Whenever you cast a spell that deals damage to a creature using a spell slot, each blessed creature regains additional Hit Points equal to the level of the spell slot you used to cast the damaging spell.</p>
 		</description>

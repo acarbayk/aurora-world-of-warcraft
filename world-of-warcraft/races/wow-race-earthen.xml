@@ -4,7 +4,7 @@
 		<name>Earthen</name>
 		<description>The Earthen species from World of Warcraft (Andrey Kuzinskiy).</description>
 		<author url="https://github.com/acarbayk/aurora-world-of-warcraft">Andrey Kuzinskiy (book), converted by Kaya Acarbay</author>
-		<update version="1.2.0">
+		<update version="1.2.1">
 			<file name="wow-race-earthen.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/world-of-warcraft/races/wow-race-earthen.xml" />
 		</update>
 	</info>

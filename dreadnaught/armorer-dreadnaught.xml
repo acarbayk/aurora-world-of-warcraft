@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>Dreadnaught (Juggernaut) - Armorer Add-on</name>
+    <description>2025 Dreadnaught model adapted for the legacy Tasha Armorer. Requires the existing Armorer content.</description>
+    <author>Custom Content</author>
+    <update version="1.0.0">
+      <file name="armorer-dreadnaught.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/dreadnaught/armorer-dreadnaught.xml" />
+    </update>
+  </info>
+  <element name="Dreadnaught (Juggernaut)" type="Archetype Feature" source="Custom: Dreadnaught Armorer" id="ID_CUSTOM_DREADNAUGHT_ARMOR_MODEL">
+    <compendium display="false" />
+    <supports>Armor Model</supports>
+    <description>
+      <p>A siege-oriented Arcane Armor configuration with an integrated force weapon and temporary enlargement. Its benefits apply while you wear the armor.</p>
+      <div element="ID_CUSTOM_DREADNAUGHT_FORCE_DEMOLISHER" />
+      <div element="ID_CUSTOM_DREADNAUGHT_GIANT_STATURE" />
+      <p>Change models after a short or long rest with smith's tools. This add-on retains the legacy Armorer's other features, including Armor Modifications at level 9.</p>
+    </description>
+    <sheet usage="Armor Model">
+      <description>Your Arcane Armor is configured for size and battlefield control.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_CUSTOM_DREADNAUGHT_FORCE_DEMOLISHER" />
+      <grant type="Archetype Feature" id="ID_CUSTOM_DREADNAUGHT_GIANT_STATURE" />
+      <grant type="Archetype Feature" id="ID_CUSTOM_DREADNAUGHT_PERFECTED" level="15" />
+    </rules>
+  </element>
+  <element name="Force Demolisher" type="Archetype Feature" source="Custom: Dreadnaught Armorer" id="ID_CUSTOM_DREADNAUGHT_FORCE_DEMOLISHER">
+    <compendium display="false" />
+    <description>
+      <p>Your armor incorporates a magical hammer or wrecking ball. It is a simple melee weapon with Reach (normally 10 ft.) and inflicts 1d10 force damage plus the ability modifier. Intelligence can replace Strength for its attack and damage rolls. On a hit against a creature at least one size category below yours, you may move it directly toward or away from you by up to 10 ft. No saving throw is required.</p>
+      <p>At Artificer level 15, replace the weapon's damage die with 2d6.</p>
+    </description>
+    <sheet>
+      <description>Simple melee, Reach (10 ft.), 1d10 force + INT or STR. On a hit against a smaller creature, optionally push or pull it up to 10 ft. At Artificer 15: 2d6 force instead of 1d10.</description>
+    </sheet>
+  </element>
+  <element name="Giant Stature" type="Archetype Feature" source="Custom: Dreadnaught Armorer" id="ID_CUSTOM_DREADNAUGHT_GIANT_STATURE">
+    <compendium display="false" />
+    <description>
+      <p>Use a bonus action to enlarge your armor for 1 minute. Add 5 ft. to your reach and, if below Large, become Large with your worn gear. Your size stays unchanged if space is insufficient. Uses per long rest equal your Intelligence modifier, but never fewer than one. Concentration is not needed.</p>
+    </description>
+    <sheet action="Bonus Action" usage="INT modifier (min. 1)/Long Rest">
+      <description>For 1 minute, gain 5 ft. reach and grow to Large if smaller and space permits. No concentration. At Artificer 15 see Perfected Dreadnaught Armor.</description>
+    </sheet>
+  </element>
+  <element name="Perfected Dreadnaught Armor" type="Archetype Feature" source="Custom: Dreadnaught Armorer" id="ID_CUSTOM_DREADNAUGHT_PERFECTED">
+    <compendium display="false" />
+    <description>
+      <p>At Artificer level 15, your Force Demolisher deals 2d6 force damage instead of 1d10. Giant Stature now adds 10 ft. to your reach instead of 5 ft., lets you grow to Large or Huge as space permits, and grants advantage on Strength checks and Strength saving throws for its duration.</p>
+    </description>
+    <sheet>
+      <description>Force Demolisher: 2d6 force. Giant Stature: +10 ft. reach (20 ft. with Demolisher), choose Large or Huge, advantage on STR checks and saves while enlarged.</description>
+    </sheet>
+  </element>
+  <element name="Dreadnaught Arcane Armor" type="Magic Item" source="Custom: Dreadnaught Armorer" id="ID_CUSTOM_DREADNAUGHT_ARCANE_ARMOR">
+    <description>
+      <p>Apply this entry to your existing suit of armor to represent the Dreadnaught configuration; it does not create a free suit. The normal Arcane Armor benefits apply. Select Dreadnaught in your Armorer's Armor Model menu for the model features.</p>
+      <p>Force Demolisher: 1d10 force, Reach. Giant Stature: temporary enlargement and extended reach. At Artificer 15, use the Perfected Dreadnaught Armor feature.</p>
+    </description>
+    <setters>
+      <set name="keywords">artificer, armorer, dreadnaught, juggernaut</set>
+      <set name="category">Magic Armor</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="slot">body</set>
+      <set name="type">Armor</set>
+      <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+      <set name="name-format">Dreadnaught Arcane {{parent}}</set>
+    </setters>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
+    </rules>
+  </element>
+</elements>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <name>Dreadnaught Armorer Add-on</name>
+    <update version="1.0.0">
+      <file name="dreadnaught.index" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/dreadnaught/dreadnaught.index" />
+    </update>
+  </info>
+  <files>
+    <file name="armorer-dreadnaught.xml" url="https://raw.githubusercontent.com/acarbayk/aurora-world-of-warcraft/main/dreadnaught/armorer-dreadnaught.xml" />
+  </files>
+</index>
